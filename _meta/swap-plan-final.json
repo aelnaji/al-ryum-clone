@@ -1,0 +1,110 @@
+[
+  {
+    "live_id": 1,
+    "live_name": "Golf Grove & Club Villas Community Facilities",
+    "live_image": "assets/unsplash/photo-1735320865438-2dda05da6d04-w1080-q80.jpg",
+    "source_pdf_page": 61,
+    "source_image_file": "/Users/admin/al-ryum-clone/_meta/pdf-source/images/p61_img1_750x378_0ac1e5c00e.jpeg",
+    "source_dimensions": "750x378",
+    "source_size_kb": 28,
+    "new_filename": "golf-grove-and-club-villas.jpg",
+    "new_path": "assets/real/golf-grove-and-club-villas.jpg",
+    "description": "Trump International Golf Club (Dubai)"
+  },
+  {
+    "live_id": 4,
+    "live_name": "Ruwais Golf Course Club House & Access Road",
+    "live_image": "assets/unsplash/photo-1722081290281-57a3152839b2-w1080-q80.jpg",
+    "source_pdf_page": 59,
+    "source_image_file": "/Users/admin/al-ryum-clone/_meta/pdf-source/images/p59_img0_2560x1707_63a5a36e18.jpeg",
+    "source_dimensions": "2560x1707",
+    "source_size_kb": 576,
+    "new_filename": "ruwais-golf-course.jpg",
+    "new_path": "assets/real/ruwais-golf-course.jpg",
+    "description": "Yas Link Golf (closest golf match in deck)"
+  },
+  {
+    "live_id": 5,
+    "live_name": "Central Park & Villas Community Facilities at Ruwais City",
+    "live_image": "assets/unsplash/photo-1702569111348-ed1c25197766-w1080-q80.jpg",
+    "source_pdf_page": 63,
+    "source_image_file": "/Users/admin/al-ryum-clone/_meta/pdf-source/images/p63_img0_2000x596_f70f88c210.jpeg",
+    "source_dimensions": "2000x596",
+    "source_size_kb": 133,
+    "new_filename": "ruwais-central-park.jpg",
+    "new_path": "assets/real/ruwais-central-park.jpg",
+    "description": "Ruwais Central Park"
+  },
+  {
+    "live_id": 6,
+    "live_name": "Louvre Abu Dhabi External Works",
+    "live_image": "assets/unsplash/photo-1708058929482-2c297c6f642a-w1080-q80.jpg",
+    "source_pdf_page": 64,
+    "source_image_file": "/Users/admin/al-ryum-clone/_meta/pdf-source/images/p64_img0_843x500_3462673eb1.jpeg",
+    "source_dimensions": "843x500",
+    "source_size_kb": 68,
+    "new_filename": "louvre-abu-dhabi.jpg",
+    "new_path": "assets/real/louvre-abu-dhabi.jpg",
+    "description": "Louvre Museum (Saadiyat)"
+  },
+  {
+    "live_id": 7,
+    "live_name": "Central Park \u2013 MASDAR",
+    "live_image": "assets/unsplash/photo-1761662826910-3a2480223933-w1080-q80.jpg",
+    "source_pdf_page": 62,
+    "source_image_file": "/Users/admin/al-ryum-clone/_meta/pdf-source/images/p62_img0_880x536_d6a9acbd68.jpeg",
+    "source_dimensions": "880x536",
+    "source_size_kb": 59,
+    "new_filename": "masdar-central-park.jpg",
+    "new_path": "assets/real/masdar-central-park.jpg",
+    "description": "Masdar Central Park"
+  },
+  {
+    "live_id": 8,
+    "live_name": "Dubai Parks and Resort",
+    "live_image": "assets/unsplash/photo-1640765865471-0c5a8a5f96e2-w1080-q80.jpg",
+    "source_pdf_page": 48,
+    "source_image_file": "/Users/admin/al-ryum-clone/_meta/pdf-source/images/p48_img0_1920x1125_ef93fa661e.jpeg",
+    "source_dimensions": "1920x1125",
+    "source_size_kb": 195,
+    "new_filename": "dubai-parks-and-resort.jpg",
+    "new_path": "assets/real/dubai-parks-and-resort.jpg",
+    "description": "Legoland Water Park (Dubai Parks & Resorts)"
+  },
+  {
+    "live_id": 9,
+    "live_name": "Yas Island Public Realm Enhancement",
+    "live_image": "assets/unsplash/photo-1582268611958-ebfd161ef9cf-w800.jpg",
+    "source_pdf_page": 42,
+    "source_image_file": "/Users/admin/al-ryum-clone/_meta/pdf-source/images/p42_img1_873x518_88a4f518d7.jpeg",
+    "source_dimensions": "873x518",
+    "source_size_kb": 62,
+    "new_filename": "yas-island-public-realm.jpg",
+    "new_path": "assets/real/yas-island-public-realm.jpg",
+    "description": "Yas Pavilion Water Cascade (Yas Island)"
+  },
+  {
+    "live_id": 10,
+    "live_name": "Saadiyat Cultural District Streetscaping",
+    "live_image": "assets/unsplash/photo-1594563703937-fdc640497dcd-w800.jpg",
+    "source_pdf_page": 39,
+    "source_image_file": "/Users/admin/al-ryum-clone/_meta/pdf-source/images/p39_img1_880x518_bc85d5ec46.jpeg",
+    "source_dimensions": "880x518",
+    "source_size_kb": 90,
+    "new_filename": "saadiyat-cultural-district.jpg",
+    "new_path": "assets/real/saadiyat-cultural-district.jpg",
+    "description": "Saadiyat Expressway"
+  },
+  {
+    "live_id": 11,
+    "live_name": "Dubai Expo 2020 Legacy Park",
+    "live_image": "assets/unsplash/photo-1518531933037-91b2f5f229cc-w800.jpg",
+    "source_pdf_page": 68,
+    "source_image_file": "/Users/admin/al-ryum-clone/_meta/pdf-source/images/p68_img1_873x518_27c9dc86fb.jpeg",
+    "source_dimensions": "873x518",
+    "source_size_kb": 69,
+    "new_filename": "dubai-expo-2020-legacy.jpg",
+    "new_path": "assets/real/dubai-expo-2020-legacy.jpg",
+    "description": "DMT Parks - Madinat Zayed (closest to EXPO theme)"
+  }
+]

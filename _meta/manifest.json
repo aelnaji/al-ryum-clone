@@ -1,0 +1,1662 @@
+[
+  {
+    "local_path": "assets/arc-logo.png",
+    "original_url": "https://cloudis.ai/wp-content/uploads/2026/03/arc-logo-e1773394117616.png",
+    "type": "logo",
+    "on_disk": true,
+    "note": "Company logo, top-left of navbar. PNG 768x657, 1.1 MB."
+  },
+  {
+    "local_path": "assets/hero-garden.mp4",
+    "original_url": "https://cloudis.ai/wp-content/uploads/2026/03/garden-01_draft-02-color-graded.mp4",
+    "type": "hero-video",
+    "on_disk": true,
+    "note": "Hero video background, autoplays muted/loop. 416 MB MP4. Replace with your own hero loop."
+  },
+  {
+    "local_path": "assets/unsplash/photo-1441974231531-c6227db76b6e-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1080&q=80"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "alt": "Modern construction and architecture",
+      "title": "Construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1441974231531-c6227db76b6e-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "description": "Complete civil construction from foundations to superstructure",
+      "title": "Electrical & Mechanical Works",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1441974231531-c6227db76b6e-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "label": "Years of Expertise",
+      "title": "Landscape & Irrigation",
+      "description": "'We are committed to creating sustainable"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1449824913935-59a10b8d2000-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Founded",
+      "year": "1990",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi",
+      "type": "Landscape & External Works"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1449824913935-59a10b8d2000-w900-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=900&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2020",
+      "title": "EXPO 2020 Delivery",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi",
+      "type": "Landscape & External Works",
+      "label": "Landscape Architecture"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1451187580459-43490279c0fa-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Smart Infrastructure & IoT",
+      "description": "Sensor networks",
+      "name": "Smart Building Integration",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1451187580459-43490279c0fa-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {
+      "label": "Buildings Focus",
+      "title": "Building Management Systems",
+      "description": "Integrated BMS platforms controlling HVAC"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1454165804606-c3d57bc86b40-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {
+      "label": "Facility Specialists",
+      "title": "Export Credit Agency Facilities",
+      "description": "Structuring and arrangement of ECA-backed financing for large-scale infrastructure and construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1464822759023-fed622ff2c3b-w800-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "People-First Culture",
+      "description": "Our 5",
+      "year": "1989"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1464822759023-fed622ff2c3b-w900-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "alt": "Al Ryum Landscape Excellence"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1472396961693-142e6e269027-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential",
+      "description": "A landmark residential community project featuring premium landscaping",
+      "year": "2023"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1473341304170-971dccb5ac1e-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Digital Twin Development",
+      "description": "High-fidelity digital replicas of physical assets enabling predictive maintenance",
+      "name": "Smart Building Integration",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1477959858617-67f85cf4f1df-w1920-q50-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1920&q=50&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {}
+  },
+  {
+    "local_path": "assets/unsplash/photo-1477959858617-67f85cf4f1df-w800-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Sustainable Future",
+      "description": "We engineer green into every project \u2014 transforming arid landscapes into thriving environments",
+      "year": "1989"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1486325212027-8081e485255e-w1920-q90-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=90&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {
+      "name": "Dubai Parks & Resorts",
+      "location": "Dubai",
+      "type": "Theme Park Development",
+      "label": "Landscape Architecture",
+      "alt": "Al Ryum Group \u2014 Building Excellence"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1486325212027-8081e485255e-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Quality Excellence",
+      "description": "Triple-certified under ISO 9001:2015",
+      "year": "1989"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1486406146926-c627a92ad1ab-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1080&q=80"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {
+      "alt": "Modern construction and architecture",
+      "title": "Construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1486406146926-c627a92ad1ab-w1600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Technology & Innovation Ventures",
+      "description": "Early-stage to growth-stage investment in technology companies addressing the built environment",
+      "alt": "Investment"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1486406146926-c627a92ad1ab-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Superstructure Civil Construction",
+      "description": "Complete civil construction from foundations to superstructure",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1486406146926-c627a92ad1ab-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "label": "Buildings Focus",
+      "title": "Building Management Systems",
+      "description": "Integrated BMS platforms controlling HVAC",
+      "name": "Smart Building Integration",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1497366216548-37526070297c-w1600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {
+      "country": "UAE",
+      "alt": "Contact Al Ryum"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1497366216548-37526070297c-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2020",
+      "name": "Louvre Abu Dhabi External Works",
+      "location": "Saadiyat Island \u2013 Abu Dhabi",
+      "industry": "Cultural",
+      "sector": "Heritage",
+      "description": "Iconic external works for the Louvre Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1497366811353-6870744d04b2-w400-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "unknown",
+    "nearby_fields": {
+      "alt": "Al Ryum Landscape Excellence",
+      "label": "Golf Courses"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1497366811353-6870744d04b2-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "name": "Louvre Abu Dhabi External Works",
+      "location": "Saadiyat Island \u2013 Abu Dhabi",
+      "industry": "Cultural",
+      "sector": "Heritage",
+      "description": "Iconic external works for the Louvre Abu Dhabi",
+      "year": "2017"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1504307651254-35680f356dfd-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1080&q=80"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "alt": "Modern construction and architecture",
+      "title": "Construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1504307651254-35680f356dfd-w1600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "name": "Saadiyat Expressway",
+      "location": "Abu Dhabi",
+      "alt": "Construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1504307651254-35680f356dfd-w300-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=300&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "services",
+    "nearby_fields": {
+      "label": "Public Realm & Urban Design",
+      "alt": "Al Ryum Group \u2014 Building Excellence"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1504307651254-35680f356dfd-w400-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "unknown",
+    "nearby_fields": {
+      "alt": "Al Ryum Landscape Excellence",
+      "label": "Golf Courses"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1504307651254-35680f356dfd-w500-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "unknown",
+    "nearby_fields": {
+      "alt": "Theme Park"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1504307651254-35680f356dfd-w800-q50-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=50&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {}
+  },
+  {
+    "local_path": "assets/unsplash/photo-1504307651254-35680f356dfd-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "unknown",
+    "nearby_fields": {
+      "alt": "i.title",
+      "label": "Founded",
+      "title": "Infrastructure & Earthworks",
+      "description": "For over 30 years"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1504307651254-35680f356dfd-w900-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2020",
+      "title": "EXPO 2020 Delivery",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi",
+      "type": "Landscape & External Works",
+      "label": "Landscape Architecture"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1504868584819-f8e8b4b6d7e3-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Smart Infrastructure & IoT",
+      "description": "Sensor networks",
+      "name": "Smart Building Integration",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1504868584819-f8e8b4b6d7e3-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {
+      "label": "Buildings Focus",
+      "title": "Building Management Systems",
+      "description": "Integrated BMS platforms controlling HVAC",
+      "name": "Smart Building Integration",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1506905925346-21bda4d32df4-w1600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "name": "Emirates Hills",
+      "location": "Dubai",
+      "alt": "Real Estate"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1506905925346-21bda4d32df4-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Superstructure Civil Construction",
+      "description": "Complete civil construction from foundations to superstructure",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1512453979798-5ea266f8880c-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "label": "Design-to-Delivery",
+      "title": "Landscape & Irrigation",
+      "description": "'We are committed to creating sustainable",
+      "name": "Palm Jumeirah Landscaping",
+      "location": "Dubai"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1512453979798-5ea266f8880c-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "label": "Investment Focus",
+      "title": "Strategic Growth Investment",
+      "description": "We identify and back high-growth opportunities at the intersection of construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1518531933037-91b2f5f229cc-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2020",
+      "name": "Louvre Abu Dhabi External Works",
+      "location": "Saadiyat Island \u2013 Abu Dhabi",
+      "industry": "Cultural",
+      "sector": "Heritage",
+      "description": "Iconic external works for the Louvre Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1518684079-3c830dcef090-w800-q50-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800&q=50&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {}
+  },
+  {
+    "local_path": "assets/unsplash/photo-1518684079-3c830dcef090-w800-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "End-to-End Delivery",
+      "description": "Design. Engineer. Build. Maintain. We are your single trusted partner across the full project lifecy",
+      "year": "1989"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1518770660439-4636190af475-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1080&q=80"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "alt": "Modern construction and architecture",
+      "title": "Construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1518770660439-4636190af475-w1600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "name": "Yas Island Smart Systems",
+      "location": "Abu Dhabi",
+      "alt": "Technology"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1518770660439-4636190af475-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Smart Infrastructure & IoT",
+      "description": "Sensor networks",
+      "name": "Smart Building Integration",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1518770660439-4636190af475-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {
+      "label": "Buildings Focus",
+      "title": "Building Management Systems",
+      "description": "Integrated BMS platforms controlling HVAC"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1519331379826-f10be5486c6f-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2022",
+      "name": "Ruwais Golf Course Club House & Access Road",
+      "location": "Ruwais \u2013 Abu Dhabi",
+      "industry": "Sports & Leisure",
+      "sector": "Recreation",
+      "description": "A world-class golf course clubhouse featuring premium architectural finishes"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1524661135-423995f22d0b-w1600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {
+      "alt": "Map \u2014 GCC Region"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1529156069898-49953e39b3ac-w500-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "alt": "Al Ryum construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1529156069898-49953e39b3ac-w900-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2011",
+      "title": "ARCO Dubai Launch",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi",
+      "type": "Landscape & External Works",
+      "label": "Landscape Architecture"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1531058020387-3be344556be6-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2017",
+      "name": "Central Park \u2013 MASDAR",
+      "location": "Masdar City \u2013 Abu Dhabi",
+      "industry": "Sustainable",
+      "sector": "Eco Development",
+      "description": "Pioneering sustainable urban park within Masdar City"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1533929736458-ca588d08c8be-w800-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=800&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Safety First",
+      "description": "Zero-harm is not a target \u2014 it is our standard. Rigorous HSE protocols protect every worker on every",
+      "year": "1989",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi",
+      "type": "Landscape & External Works"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1535131749006-b7f58c99034b-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Masterplanning & Communities",
+      "description": "End-to-end masterplanning from concept architecture through detailed design",
+      "name": "Palm Jumeirah Landscaping",
+      "location": "Dubai"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1535131749006-b7f58c99034b-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2022",
+      "name": "Public Realm Landscaping at Akoya by Damac",
+      "location": "Dubai",
+      "industry": "Landscaping",
+      "sector": "Residential",
+      "description": "Public realm enhancement across Akoya community streetscapes"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1535637603896-07c179d71103-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1535637603896-07c179d71103?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "description": "Comprehensive streetscaping for one of the world's most ambitious cultural destinations",
+      "year": "2024",
+      "name": "Dubai Expo 2020 Legacy Park",
+      "location": "Dubai",
+      "industry": "Sustainable",
+      "sector": "Eco Development"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1541726360-b6a3e75a7462-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1541726360-b6a3e75a7462?w=800"
+    ],
+    "on_disk": false,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2021",
+      "name": "Central Park & Villas Community Facilities at Ruwais City",
+      "location": "Ruwais \u2013 Abu Dhabi",
+      "industry": "Community",
+      "sector": "Residential",
+      "description": "Central community park spanning 85"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1541888946425-d81bb19240f5-w1920-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "alt": "Al Ryum construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1541888946425-d81bb19240f5-w700-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "alt": "Team at work"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1543488702-b1ef8f46fcc2-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1543488702-b1ef8f46fcc2?w=800"
+    ],
+    "on_disk": false,
+    "section": "partners",
+    "nearby_fields": {
+      "name": "Central Park & Villas Community Facilities at Ruwais City",
+      "location": "Ruwais \u2013 Abu Dhabi",
+      "industry": "Community",
+      "sector": "Residential",
+      "description": "Central community park spanning 85",
+      "year": "2020"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1546412414-e1885e51cfa5-w900-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1546412414-e1885e51cfa5?w=900&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": false,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2000",
+      "title": "GCC Expansion",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi",
+      "type": "Landscape & External Works"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1549144511-f099e773c147-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1549144511-f099e773c147?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2017",
+      "name": "Central Park \u2013 MASDAR",
+      "location": "Masdar City \u2013 Abu Dhabi",
+      "industry": "Sustainable",
+      "sector": "Eco Development",
+      "description": "Pioneering sustainable urban park within Masdar City"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1555881400-74d7acaacd8b-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2017",
+      "name": "Central Park \u2013 MASDAR",
+      "location": "Masdar City \u2013 Abu Dhabi",
+      "industry": "Sustainable",
+      "sector": "Eco Development",
+      "description": "Pioneering sustainable urban park within Masdar City"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1558618666-fcd25c85cd64-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Electrical & Mechanical Works",
+      "description": "Quality contractor providing MEP services tailored to clients' needs \u2014 from Pump Stations",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1558618666-fcd25c85cd64-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential",
+      "description": "A landmark residential community project featuring premium landscaping",
+      "year": "2023"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1559827291-72ee739d0d9a-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "label": "Founded",
+      "title": "Infrastructure & Earthworks",
+      "description": "For over 30 years",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1560179707-f14e90ef3623-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Golf Course Development",
+      "description": "Specialist golf course construction and landscaping for landmark leisure destinations. From concept",
+      "name": "Palm Jumeirah Landscaping",
+      "location": "Dubai"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1560179707-f14e90ef3623-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "label": "Years of Expertise",
+      "title": "Landscape & Irrigation",
+      "description": "'We are committed to creating sustainable",
+      "name": "Palm Jumeirah Landscaping",
+      "location": "Dubai"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1564013799919-ab600027ffc6-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential",
+      "description": "A landmark residential community project featuring premium landscaping",
+      "year": "2023"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1564349683136-77e08dba1ef7-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2024",
+      "name": "Dubai Expo 2020 Legacy Park",
+      "location": "Dubai",
+      "industry": "Sustainable",
+      "sector": "Eco Development",
+      "description": "Transforming the Expo 2020 site into a lasting urban legacy park"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1566073771259-6a8506099945-w500-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "unknown",
+    "nearby_fields": {
+      "alt": "Theme Park"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1566073771259-6a8506099945-w900-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "1990",
+      "title": "First Major Contract",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi",
+      "type": "Landscape & External Works"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1568605114967-8130f3a36994-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2019",
+      "name": "Dubai Parks and Resort",
+      "location": "Dubai",
+      "industry": "Hospitality",
+      "sector": "Entertainment",
+      "description": "Large-scale entertainment landscape featuring thematic gardens"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1568605117036-5fe5e7bab0b7-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "label": "GCC Countries",
+      "title": "Infrastructure & Earthworks",
+      "description": "For over 30 years",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1570129477492-45c003edd2be-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2023",
+      "name": "Dubai Production City \u2013 Landscaping Works",
+      "location": "Dubai",
+      "industry": "Landscaping",
+      "sector": "Commercial",
+      "description": "Comprehensive urban landscaping transformation across Dubai Production City"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1571939228382-b2f2b585ce15-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2019",
+      "name": "Dubai Parks and Resort",
+      "location": "Dubai",
+      "industry": "Hospitality",
+      "sector": "Entertainment",
+      "description": "Large-scale entertainment landscape featuring thematic gardens"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1572204097183-e1ab140342ed-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1572204097183-e1ab140342ed?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2024",
+      "name": "Dubai Expo 2020 Legacy Park",
+      "location": "Dubai",
+      "industry": "Sustainable",
+      "sector": "Eco Development",
+      "description": "Transforming the Expo 2020 site into a lasting urban legacy park"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1575362682049-e7c267c1cd53-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1575362682049-e7c267c1cd53?w=800"
+    ],
+    "on_disk": false,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2022",
+      "name": "Ruwais Golf Course Club House & Access Road",
+      "location": "Ruwais \u2013 Abu Dhabi",
+      "industry": "Sports & Leisure",
+      "sector": "Recreation",
+      "description": "A world-class golf course clubhouse featuring premium architectural finishes"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1575671883877-71e6519c7570-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1575671883877-71e6519c7570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGZvdW5kZXIlMjBlbnRyZXByZW5ldXIlMjAxOTgwcyUyMGVzdGFibGlzaG1lbnR8ZW58MXx8fHwxNzczMzg4NDYzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "1989",
+      "title": "Al Ryum Group is Established",
+      "description": "Al Ryum Group was founded by Chairman Mr. Ara Khanoyan. The company began with a vision to bring lan"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1581092160607-ee22621dd758-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Digital Twin Development",
+      "description": "High-fidelity digital replicas of physical assets enabling predictive maintenance",
+      "name": "Smart Building Integration",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1581092160607-ee22621dd758-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "label": "Founded",
+      "title": "Infrastructure & Earthworks",
+      "description": "For over 30 years",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1581094794329-c8112a89af12-w900-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "alt": "Construction team"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1582268611958-ebfd161ef9cf-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential",
+      "description": "A landmark residential community project featuring premium landscaping",
+      "year": "2023"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1586528116311-ad8dd3c8310d-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1080&q=80"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {
+      "alt": "Modern construction and architecture",
+      "title": "Construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1586528116311-ad8dd3c8310d-w1600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Quality Assurance & Inspection",
+      "description": "Rigorous quality assurance at the point of supply \u2014 from factory audits and third-party inspections",
+      "alt": "Procurement"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1586528116311-ad8dd3c8310d-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Real Estate Development",
+      "description": "We develop"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1587174486073-ae5e5cff23aa-w300-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=300&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {
+      "label": "Nursery Operations",
+      "alt": "Al Ryum Group \u2014 Building Excellence"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1587174486073-ae5e5cff23aa-w400-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=400&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "unknown",
+    "nearby_fields": {
+      "alt": "Al Ryum Landscape Excellence",
+      "label": "Golf Courses"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1587174486073-ae5e5cff23aa-w500-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=500&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "alt": "Al Ryum construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1587174486073-ae5e5cff23aa-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2022",
+      "name": "Public Realm Landscaping at Akoya by Damac",
+      "location": "Dubai",
+      "industry": "Landscaping",
+      "sector": "Residential",
+      "description": "Public realm enhancement across Akoya community streetscapes"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1587174486073-ae5e5cff23aa-w900-q80-auto-fit.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=900&q=80&auto=format&fit=crop"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2000",
+      "title": "GCC Expansion",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi",
+      "type": "Landscape & External Works"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1590073242678-70ee3fc28f8a-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1590073242678-70ee3fc28f8a?w=600&q=80"
+    ],
+    "on_disk": false,
+    "section": "partners",
+    "nearby_fields": {
+      "label": "Founded",
+      "title": "Infrastructure & Earthworks",
+      "description": "For over 30 years",
+      "name": "Emirates Palace Hotel",
+      "location": "Abu Dhabi"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1590736704728-f4730bb30770-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1590736704728-f4730bb30770?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2018",
+      "name": "Yas Island Public Realm Enhancement",
+      "location": "Abu Dhabi",
+      "industry": "Hospitality",
+      "sector": "Entertainment",
+      "description": "Ongoing public realm enhancement across Yas Island's entertainment district"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1591134678430-b46a4dab3b34-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1591134678430-b46a4dab3b34?w=800"
+    ],
+    "on_disk": false,
+    "section": "partners",
+    "nearby_fields": {
+      "description": "A landmark residential community project featuring premium landscaping",
+      "year": "2023",
+      "name": "Dubai Production City \u2013 Landscaping Works",
+      "location": "Dubai",
+      "industry": "Landscaping",
+      "sector": "Commercial"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1591453214154-c95db71dbd83-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1591453214154-c95db71dbd83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHBhcnRuZXJzaGlwJTIwaGFuZHNoYWtlJTIwY29uc3RydWN0aW9ufGVufDF8fHx8MTc3MzM4ODcwNHww&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Al Ryum Group Wins Excellence in Landscaping Award"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1594563703937-fdc640497dcd-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1594563703937-fdc640497dcd?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2021",
+      "name": "Central Park & Villas Community Facilities at Ruwais City",
+      "location": "Ruwais \u2013 Abu Dhabi",
+      "industry": "Community",
+      "sector": "Residential",
+      "description": "Central community park spanning 85"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1596178065887-1198b6148b2b-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2022",
+      "name": "Ruwais Golf Course Club House & Access Road",
+      "location": "Ruwais \u2013 Abu Dhabi",
+      "industry": "Sports & Leisure",
+      "sector": "Recreation",
+      "description": "A world-class golf course clubhouse featuring premium architectural finishes"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1600596542815-ffad4c1539a9-w600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Golf Course Development",
+      "description": "Specialist golf course construction and landscaping for landmark leisure destinations. From concept",
+      "name": "Palm Jumeirah Landscaping",
+      "location": "Dubai"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1600607687920-4e2a09cf159d-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential",
+      "description": "A landmark residential community project featuring premium landscaping",
+      "year": "2023"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1611374243147-44a702c2d44c-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1611374243147-44a702c2d44c?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "description": "Comprehensive urban landscaping transformation across Dubai Production City",
+      "year": "2022",
+      "name": "Public Realm Landscaping at Akoya by Damac",
+      "location": "Dubai",
+      "industry": "Landscaping",
+      "sector": "Residential"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1611974789855-9c2a0a7236a3-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1080&q=80"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {
+      "alt": "Modern construction and architecture",
+      "title": "Construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1611974789855-9c2a0a7236a3-w1600-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1600&q=80"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Project Finance Structuring",
+      "description": "End-to-end project finance advisory and arrangement for capital-intensive construction",
+      "alt": "Finance"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1611974789855-9c2a0a7236a3-w800-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80"
+    ],
+    "on_disk": true,
+    "section": "regions",
+    "nearby_fields": {
+      "label": "Facility Specialists",
+      "title": "Export Credit Agency Facilities",
+      "description": "Structuring and arrangement of ECA-backed financing for large-scale infrastructure and construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1613977257363-707ba9348227-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential",
+      "description": "A landmark residential community project featuring premium landscaping",
+      "year": "2023"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1631679706909-1844bbd07221-w800.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "2023",
+      "name": "Dubai Production City \u2013 Landscaping Works",
+      "location": "Dubai",
+      "industry": "Landscaping",
+      "sector": "Commercial",
+      "description": "Comprehensive urban landscaping transformation across Dubai Production City"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1640765865471-0c5a8a5f96e2-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1640765865471-0c5a8a5f96e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aGVtZSUyMHBhcmslMjByZXNvcnQlMjBlbnRlcnRhaW5tZW50JTIwZHViYWl8ZW58MXx8fHwxNzczMzg4MzgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "https://images.unsplash.com/photo-1640765865471-0c5a8a5f96e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkdWJhaSUyMHBhcmtzJTIwcmVzb3J0JTIwZW50ZXJ0YWlubWVudCUyMGNvbXBsZXh8ZW58MXx8fHwxNzczMzg4NDY1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "1990",
+      "title": "Start of First Projects",
+      "description": "Al Ryum was awarded multiple public park projects across Abu Dhabi Island by the Abu Dhabi Municipal"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1666413767635-78c79a06b4db-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1666413767635-78c79a06b4db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXRlciUyMGZlYXR1cmUlMjBmb3VudGFpbiUyMGluZnJhc3RydWN0dXJlJTIwY29uc3RydWN0aW9ufGVufDF8fHx8MTc3MzM4ODQ2NHww&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "1989",
+      "title": "Al Ryum Group is Established",
+      "description": "Al Ryum Group was founded by Chairman Mr. Ara Khanoyan. The company began with a vision to bring lan"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1666718770634-47506ed7b5ba-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1666718770634-47506ed7b5ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsYW5kc2NhcGUlMjBhcmNoaXRlY3R1cmUlMjBzdHJlZXRzY2FwZXxlbnwxfHx8fDE3NzMzODgzODN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1702569111348-ed1c25197766-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1702569111348-ed1c25197766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjZW50cmFsJTIwcGFyayUyMHVyYmFuJTIwZGV2ZWxvcG1lbnQlMjBncmVlbiUyMHNwYWNlfGVufDF8fHx8MTc3MzM4ODM4M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1708058929482-2c297c6f642a-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1708058929482-2c297c6f642a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb3V2cmUlMjBtdXNldW0lMjBhcmNoaXRlY3R1cmUlMjBleHRlcmlvcnxlbnwxfHx8fDE3NzMzODgzODJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1722081290281-57a3152839b2-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1722081290281-57a3152839b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb2xmJTIwY291cnNlJTIwY2x1YmhvdXNlJTIwbHV4dXJ5JTIwYXJjaGl0ZWN0dXJlfGVufDF8fHx8MTc3MzM4ODM2NHww&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1723755416144-7dd387f0978c-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1723755416144-7dd387f0978c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnY2MlMjBtaWRkbGUlMjBlYXN0JTIwb2ZmaWNlJTIwYnVpbGRpbmclMjBpbnRlcm5hdGlvbmFsfGVufDF8fHx8MTc3MzM4ODQ2NXww&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "1989",
+      "title": "Al Ryum Group is Established",
+      "description": "Al Ryum Group was founded by Chairman Mr. Ara Khanoyan. The company began with a vision to bring lan"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1726533765275-a69cfd7f9897-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1726533765275-a69cfd7f9897?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb25zdHJ1Y3Rpb24lMjBidWlsZGluZ3MlMjBkdWJhaSUyMHNreWxpbmV8ZW58MXx8fHwxNzczMzg2NTYwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "alt": "Modern construction and architecture",
+      "title": "Construction"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1735320865438-2dda05da6d04-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1735320865438-2dda05da6d04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB2aWxsYXMlMjBjb21tdW5pdHklMjBsYW5kc2NhcGluZyUyMGR1YmFpfGVufDF8fHx8MTc3MzM4ODM4MXww&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "journey-timeline",
+    "nearby_fields": {
+      "alt": "r.title",
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1759702132757-3f6dc69e5189-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1759702132757-3f6dc69e5189?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1cmJhbiUyMGxhbmRzY2FwaW5nJTIwcGFyayUyMGNvbW11bml0eSUyMGdyZWVufGVufDF8fHx8MTc3MzM4ODM2NXww&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "alt": "r.title",
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1760553120312-2821bf54e767-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1760553120312-2821bf54e767?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjB0ZWNobm9sb2d5JTIwc21hcnQlMjBidWlsZGluZyUyMGZ1dHVyZXxlbnwxfHx8fDE3NzMzODg3MDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "title": "Al Ryum Group Wins Excellence in Landscaping Award"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1761386973476-e46517b54dd7-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1761386973476-e46517b54dd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml0ZWQlMjBhcmFiJTIwZW1pcmF0ZXMlMjBza3lsaW5lJTIwZGV2ZWxvcG1lbnR8ZW58MXx8fHwxNzczMzg4NDY0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "1989",
+      "title": "Al Ryum Group is Established",
+      "description": "Al Ryum Group was founded by Chairman Mr. Ara Khanoyan. The company began with a vision to bring lan"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1761486533154-cec2262c4d53-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1761486533154-cec2262c4d53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMGNvbnN0cnVjdGlvbiUyMGlubm92YXRpb24lMjBncmVlbiUyMGJ1aWxkaW5nfGVufDF8fHx8MTc3MzM4ODcwM3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "title": "Al Ryum Group Wins Excellence in Landscaping Award"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1761662826910-3a2480223933-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1761662826910-3a2480223933?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMGdyZWVuJTIwY2l0eSUyMGFyY2hpdGVjdHVyZSUyMG1vZGVybnxlbnwxfHx8fDE3NzMzODgzODV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "name": "Golf Grove & Club Villas Community Facilities",
+      "location": "Dubai",
+      "industry": "Community",
+      "sector": "Residential"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1762687508992-effc04be64b8-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1762687508992-effc04be64b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnUlMjBkaGFiaSUyMHBhcmslMjBsYW5kc2NhcGUlMjAxOTkwc3xlbnwxfHx8fDE3NzMzODg0NjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "partners",
+    "nearby_fields": {
+      "year": "1989",
+      "title": "Al Ryum Group is Established",
+      "description": "Al Ryum Group was founded by Chairman Mr. Ara Khanoyan. The company began with a vision to bring lan"
+    }
+  },
+  {
+    "local_path": "assets/unsplash/photo-1764874299025-d8b2251f307d-w1080-q80.jpg",
+    "original_urls": [
+      "https://images.unsplash.com/photo-1764874299025-d8b2251f307d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBhd2FyZHMlMjBjZXJlbW9ueSUyMGNlbGVicmF0aW9ufGVufDF8fHx8MTc3MzM4ODcwN3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    ],
+    "on_disk": true,
+    "section": "project-gallery",
+    "nearby_fields": {
+      "title": "Al Ryum Group Wins Excellence in Landscaping Award"
+    }
+  }
+]

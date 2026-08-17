@@ -1,0 +1,130 @@
+/* cinematic-styles.css
+   Required styles for cinematic-scroll.js, cinematic-content-reveal.js,
+   and project-3d-cards.js. Additive only — does not override existing site CSS
+   unless your existing classes happen to collide with these names. */
+
+/* ---- Hero frame-scrub ---- */
+.cinematic-hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+.cinematic-hero canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.cinematic-hero__caption {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  color: #fff;
+  z-index: 2;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* ---- Parallax wrapper for gallery/project photos ---- */
+.parallax-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 4 / 3;
+}
+.parallax-wrap img[data-parallax] {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  height: 140%;
+  object-fit: cover;
+}
+
+/* ---- Journey/timeline cinematic reveal ---- */
+img[data-reveal] {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+
+[data-reveal-text] {
+  margin-top: 1rem;
+}
+
+/* ---- 3D project tilt cards ---- */
+.project-card-3d {
+  position: relative;
+  perspective: 1000px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.project-card-3d__inner {
+  display: flex;
+  align-items: stretch;
+  gap: 1.5rem;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+.project-card-3d__image {
+  flex: 1 1 55%;
+  overflow: hidden;
+  border-radius: 16px 0 0 16px;
+  min-height: 260px;
+}
+.project-card-3d__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: translateZ(20px);
+}
+.project-card-3d__info {
+  flex: 1 1 45%;
+  padding: 1.5rem;
+  transform: translateZ(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-card-3d__info h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+.project-card-3d__info p {
+  margin: 0;
+  color: #555;
+}
+.project-card-3d__glare {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at var(--glare-x, 50%) var(--glare-y, 50%),
+    rgba(255, 255, 255, 0.25),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.project-card-3d:hover .project-card-3d__glare {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .project-card-3d__inner {
+    flex-direction: column;
+  }
+  .project-card-3d__image {
+    border-radius: 16px 16px 0 0;
+  }
+}

@@ -1,10 +1,12 @@
 // ══════════════════════════════════════════════════════════════
-// HERO SCROLL-SCRUB FRAME SEQUENCE  (drone descent → landing)
-// Replaces the hero background video with a scroll-controlled
-// WebP frame sequence drawn on a <canvas>.
+// HERO SCROLL-SCRUB FRAME SEQUENCE  (garden video → WebP stills)
+// Draws WebP frames extracted from the garden video onto a
+// <canvas> — there is NO <video> element, so the hero can never
+// play on its own. It stays frozen on frame 1 until the user
+// scrolls; scrolling scrubs through the stills (forward + reverse).
 // Frames: /transitions/frame_0001.webp … frame_00NN.webp
-// NN is detected automatically at runtime (no hardcoded count).
-// Falls back to the original hero video if no frames exist.
+// NN is auto-detected at runtime. Falls back to the garden video
+// only if frames or GSAP are unavailable.
 // ══════════════════════════════════════════════════════════════
 (() => {
   "use strict";
@@ -14,25 +16,24 @@
   const frameUrl = (n) => `/transitions/frame_${String(n).padStart(4, "0")}.webp`;
   const heroSel = () => document.getElementById("hero-scrub-canvas");
 
-  // ── 1. DISCOVER FRAME COUNT WITHOUT HARDCODING NN ──
-  // Binary-probe /transitions/frame_0001.webp … until a 404.
+  // ── 1. DISCOVER FRAME COUNT (binary probe, no hardcoded NN) ──
   async function frameExists(n) {
     try { return (await fetch(frameUrl(n), { method: "HEAD" })).ok; }
     catch { return false; }
   }
   async function countFrames() {
-    if (!(await frameExists(1))) return 0;      // no frames at all
+    if (!(await frameExists(1))) return 0;
     let lo = 1, hi = 2;
     while (hi <= 3000 && (await frameExists(hi))) { lo = hi; hi *= 2; }
-    if (hi > 3000) return 3000;                  // safety cap
-    while (lo < hi) {                            // lo exists, hi missing
+    if (hi > 3000) return 3000;
+    while (lo < hi) {
       const mid = Math.ceil((lo + hi) / 2);
       if (await frameExists(mid)) lo = mid; else hi = mid - 1;
     }
     return lo;
   }
 
-  // ── 2. PRELOAD ALL FRAMES INTO MEMORY ──
+  // ── 2. PRELOAD ALL FRAMES ──
   function preloadFrames(total, onProgress) {
     return new Promise((resolve) => {
       const imgs = new Array(total).fill(null);
@@ -46,10 +47,10 @@
         const img = new Image();
         img.decoding = "async";
         img.onload = () => { imgs[i] = img; tick(); };
-        img.onerror = tick;                       // missing frame → null slot
+        img.onerror = tick;
         img.src = frameUrl(i + 1);
       }
-      setTimeout(resolve, 30000, imgs);           // never hang the loader
+      setTimeout(resolve, 30000, imgs);
     });
   }
 
@@ -60,7 +61,7 @@
     return { dx: (W - dw) / 2, dy: (H - dh) / 2, dw, dh };
   }
 
-  // ── 4. BIND SCROLL SCRUB ONCE FRAMES ARE READY ──
+  // ── 4. BIND SCROLL SCRUB ONCE FRAMES READY ──
   function bindScroll(canvas, imgs) {
     const ctx = canvas.getContext("2d");
     const loader = document.getElementById("hero-scrub-loader");
@@ -69,6 +70,7 @@
     const hero = canvas.closest("section") || canvas.parentElement;
     const usable = imgs.filter(Boolean);
     if (!usable.length) return fallbackToVideo(canvas, loader, fallback);
+    if (!window.gsap || !window.ScrollTrigger) return fallbackToVideo(canvas, loader, fallback);
 
     let W = 0, H = 0, dpr = 1, current = -1;
     const sizeCanvas = () => {
@@ -87,12 +89,7 @@
       const c = coverCrop(img.naturalWidth, img.naturalHeight, W, H);
       ctx.drawImage(img, c.dx, c.dy, c.dw, c.dh);
     };
-    const setFrame = (index) => {
-      const i = Math.max(0, Math.min(usable.length - 1, index));
-      if (i !== current) { current = i; draw(i); }
-    };
 
-    if (!window.gsap || !window.ScrollTrigger) return fallbackToVideo(canvas, loader, fallback);
     gsap.registerPlugin(ScrollTrigger);
     let rafPending = false;
     const scheduleDraw = (index) => {
@@ -104,42 +101,23 @@
       }
     };
 
-    const scrub = ScrollTrigger.create({
+    ScrollTrigger.create({
       trigger: hero,
       start: "top top",
       end: "+=6000",
       pin: true,
       scrub: true,
       anticipatePin: 1,
-      onUpdate: (self) => {
-        scheduleDraw(Math.round(self.progress * (usable.length - 1)));
-        // Fade the original hero video in once the drone has fully landed
-        // (last ~15% of the pinned scroll), then back out on reverse.
-        const land = self.progress > 0.85;
-        if (fallback) {
-          const shown = fallback.style.opacity === "1";
-          if (land && !shown) {
-            if (fallback.paused || fallback.readyState < 2) {
-              const p = fallback.play();
-              if (p && typeof p.catch === "function") p.catch(() => {});
-            }
-            fallback.style.transition = "opacity 0.6s ease";
-            fallback.style.opacity = "1";
-          } else if (!land && shown) {
-            fallback.style.transition = "opacity 0.6s ease";
-            fallback.style.opacity = "0";
-          }
-        }
-      },
+      onUpdate: (self) => scheduleDraw(Math.round(self.progress * (usable.length - 1))),
     });
     window.addEventListener("resize", () => { sizeCanvas(); if (current >= 0) draw(current); });
 
-    // Reveal canvas once frames are preloaded
+    // Reveal canvas once frames preloaded
     canvas.style.display = "block";
     if (loader) loader.style.display = "none";
     if (fallback) fallback.style.display = "none";
     sizeCanvas();
-    setFrame(0);
+    scheduleDraw(0);
   }
 
   // ── 5. GRACEFUL DEGRADATION (no frames / no GSAP) ──
@@ -148,9 +126,15 @@
     if (loader) loader.style.display = "none";
     if (fallback) {
       fallback.style.display = "block";
-      fallback.style.opacity = "1";       // no frame sequence → show video immediately
-      const p = fallback.play();
-      if (p && typeof p.catch === "function") p.catch(() => {});
+      fallback.style.opacity = "1";
+      // keep it frozen on frame 1 unless reduced-motion → then autoplay is fine
+      const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (reduce) {
+        const p = fallback.play();
+        if (p && typeof p.catch === "function") p.catch(() => {});
+      } else {
+        try { fallback.currentTime = 0.001; } catch (e) {}
+      }
     }
   }
 
@@ -166,8 +150,7 @@
     try { total = await countFrames(); } catch {}
     if (total < 1) return fallbackToVideo(canvas, loader, fallback);
     const imgs = await preloadFrames(total, (pct) => { if (loaderText) loaderText.textContent = `Loading ${pct}%`; });
-    if (window.gsap && window.ScrollTrigger) bindScroll(canvas, imgs);
-    else fallbackToVideo(canvas, loader, fallback);
+    bindScroll(canvas, imgs);
   }
 
   // Script runs in <head>, before React mounts the hero — poll for it.

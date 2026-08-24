@@ -6,7 +6,7 @@
 > **How it works in the site:** each generated video is converted to a WebP frame
 > sequence (`frame_0001.webp … frame_00NN.webp`) and dropped into a folder. A pinned
 > `ScrollTrigger` scrubs through those frames as the user scrolls — forward *and*
-> reverse. So the prompt's #1 job is a **smooth, continuous, single-direction camera
+> reverse. So every prompt's #1 job is a **smooth, continuous, single-direction camera
 > move** with no cuts, no text, no people. The video is a camera path, not a story.
 
 ---
@@ -42,11 +42,9 @@ and gold grade.
 
 ---
 
-## The clips to generate
+## HERO
 
-### 1. HERO — "BUILT FOR MODERN WEALTH" equivalent
-Subject: Al Ryum's signature — **desert transforming into a lush green garden** (their
-core business is landscaping).
+**Subject:** Al Ryum's signature — **desert transforming into a lush green garden**.
 
 ```
 A barren desert landscape transforming into a lush manicured garden with
@@ -60,21 +58,71 @@ Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
 
 **Image ref:** first frame of `assets/hero-garden-full.mp4`.
 
-### 2. PROJECT OBJECT — golden architectural model (the "card" moment)
-Moto-card's hero is a **single object rotating in 3D**. Mirror that with a golden
-building model.
+---
 
+## ALL 18 PROJECTS (ready-to-paste)
+
+Each uses the master formula; the subject + camera move are set per project.
+**Image ref = the project's existing photo in `assets/real/` (its `cover.jpg`).**
+
+---
+
+### 1. Abu Dhabi Corniche
 ```
-A miniature golden architectural model of a modern Abu Dhabi landmark on a dark
-polished marble surface, photorealistic, macro cinematic shot.
-The camera orbits slowly around the model, keeping it centered, gold light
-sweeping across the facade, slow and steady, 5 seconds, no cuts.
-Shallow depth of field, soft reflections, lens: 50mm macro.
+The Abu Dhabi Corniche waterfront promenade, landscaped boardwalk and palms
+along turquoise water, photorealistic, cinematic wide shot.
+The camera tracks laterally, gliding past the promenade and shoreline,
+slow and steady, 5 seconds, no cuts. Golden-hour light, soft haze,
+shallow depth of field, lens: 35mm anamorphic.
 Nothing moves except the camera — no people, no text, no logos, no morphing.
-Style: premium product film, dark charcoal and gold grade.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
 ```
 
-### 3. PROJECT — Louvre Abu Dhabi dome
+### 2. DMT Parks — Al Falah Event Plaza
+```
+Al Falah Event Plaza, modern public park with landscaped event lawn and
+geometric paving, photorealistic, cinematic wide shot.
+The camera pulls back and rises, revealing the full plaza and its greenery,
+slow and steady, 5 seconds, no cuts. Volumetric golden light, soft haze,
+shallow depth of field, lens: 32mm.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 3. Dubai Hills — Golf Grove
+```
+Dubai Hills Golf Grove, manicured fairways and rolling green landscaping at
+dusk, photorealistic, cinematic wide shot.
+The camera slowly flies forward at low altitude over the fairways toward the
+distant clubhouse, slow and steady, 5 seconds, no cuts. Volumetric golden light,
+soft haze, shallow depth of field, lens: 35mm anamorphic.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 4. Dubai Parks — Motiongate
+```
+Motiongate Dubai theme park, landscaped entrance plaza with Hollywood-style
+architecture and palms, photorealistic, cinematic wide shot.
+The camera pushes forward through the entrance plaza toward the park gate,
+slow and steady, 5 seconds, no cuts. Golden-hour light, soft haze,
+shallow depth of field, lens: 28mm.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 5. La Mer Water Park
+```
+La Mer Water Park, landscaped water park with pools, slides and beach palms,
+photorealistic, cinematic wide shot.
+The camera orbits slowly around the park, revealing the pools and landscaping,
+slow and steady, 5 seconds, no cuts. Bright golden light, soft haze,
+shallow depth of field, lens: 28mm.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 6. Louvre Abu Dhabi
 ```
 The Louvre Abu Dhabi dome, geometric star-lattice roof filtering shafts of light
 onto still water, photorealistic, cinematic.
@@ -85,7 +133,126 @@ Nothing moves except the camera — no people, no text, no logos, no morphing.
 Style: quiet-luxury architectural film, dark teal and gold grade.
 ```
 
-### 4. PROJECT — Zayed National Museum
+### 7. Marsa Al Arab — Kempinski
+```
+Marsa Al Arab Kempinski resort, grand luxury hotel facade and landscaped marina
+promenade, photorealistic, cinematic wide shot.
+The camera pulls back and up, revealing the full resort, marina and greenery,
+slow and steady, 5 seconds, no cuts. Golden-hour light, soft haze,
+shallow depth of field, lens: 35mm anamorphic.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: opulent quiet-luxury film, rich gold and charcoal grade.
+```
+
+### 8. Masdar Central Park
+```
+Masdar Central Park, sustainable city park with native landscaping, shaded
+walkways and modern architecture, photorealistic, cinematic wide shot.
+The camera tracks laterally, gliding past the park and its eco architecture,
+slow and steady, 5 seconds, no cuts. Soft golden light, gentle haze,
+shallow depth of field, lens: 32mm.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 9. Pearl Jumeirah
+```
+Pearl Jumeirah, beachfront island with landscaped promenade, villas and palms
+along turquoise water, photorealistic, cinematic wide shot.
+The camera slowly flies forward over the island promenade toward the shoreline,
+slow and steady, 5 seconds, no cuts. Golden-hour light, soft haze,
+shallow depth of field, lens: 35mm anamorphic.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 10. Trump International Golf Club — Dubai
+```
+Trump International Golf Club Dubai, pristine fairways and sculpted green
+landscaping at dusk, photorealistic, cinematic wide shot.
+The camera orbits slowly around the course, revealing the fairways and
+clubhouse, slow and steady, 5 seconds, no cuts. Volumetric golden light,
+soft haze, shallow depth of field, lens: 35mm.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 11. Emirates Palace
+```
+Emirates Palace, grand golden facade and domes, photorealistic, cinematic wide shot.
+The camera pushes forward along the approach boulevard toward the central dome,
+slow and steady, 5 seconds, no cuts. Warm golden light, soft haze, lens: 35mm anamorphic.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: opulent quiet-luxury film, rich gold and charcoal grade.
+```
+
+### 12. Legoland Dubai
+```
+Legoland Dubai theme park, colorful landscaped entrance with castle and
+family attractions, photorealistic, cinematic wide shot.
+The camera pushes forward through the entrance plaza toward the castle,
+slow and steady, 5 seconds, no cuts. Golden-hour light, soft haze,
+shallow depth of field, lens: 28mm.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 13. Meydan
+```
+Meydan racecourse, grand grandstand and landscaped approach with fountains
+and palms, photorealistic, cinematic wide shot.
+The camera pulls back and rises, revealing the full grandstand and its
+landscaping, slow and steady, 5 seconds, no cuts. Golden-hour light, soft haze,
+shallow depth of field, lens: 35mm anamorphic.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 14. Ruwais Golf Course
+```
+Ruwais golf course, emerald fairways carved into desert landscape at golden
+hour, photorealistic, cinematic wide shot.
+The camera slowly flies forward at low altitude over the fairways,
+slow and steady, 5 seconds, no cuts. Volumetric golden light, soft haze,
+shallow depth of field, lens: 35mm anamorphic.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 15. Shamkah Parks
+```
+Shamkah community park, landscaped pavilion, gazebo and playgrounds among
+palms at dusk, photorealistic, cinematic wide shot.
+The camera tracks laterally, gliding past the pavilion and playgrounds,
+slow and steady, 5 seconds, no cuts. Golden-hour light, soft haze,
+shallow depth of field, lens: 32mm.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 16. Umm Suqeim Island
+```
+Umm Suqeim Island, exclusive island with landscaped shoreline and villas along
+turquoise water, photorealistic, cinematic wide shot.
+The camera orbits slowly around the island, revealing the shoreline and
+landscaping, slow and steady, 5 seconds, no cuts. Golden-hour light, soft haze,
+shallow depth of field, lens: 35mm anamorphic.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 17. Yas Island Public Realm
+```
+Yas Island public realm, landscaped boulevard and plazas linking attractions,
+photorealistic, cinematic wide shot.
+The camera pushes forward along the boulevard past the landscaping and plazas,
+slow and steady, 5 seconds, no cuts. Golden-hour light, soft haze,
+shallow depth of field, lens: 35mm anamorphic.
+Nothing moves except the camera — no people, no text, no logos, no morphing.
+Style: ultra-premium quiet-luxury film, dark charcoal and gold grade.
+```
+
+### 18. Zayed National Museum
 ```
 Zayed National Museum, sculptural curved steel wings over a landscaped plaza,
 photorealistic, cinematic.
@@ -95,19 +262,9 @@ Nothing moves except the camera — no people, no text, no logos, no morphing.
 Style: museum architectural film, muted sand and gold grade.
 ```
 
-### 5. PROJECT — Emirates Palace
-```
-Emirates Palace, grand golden facade and domes, photorealistic, cinematic wide shot.
-The camera pushes forward along the approach boulevard toward the central dome,
-slow and steady, 5 seconds, no cuts. Warm golden light, soft haze, lens: 35mm anamorphic.
-Nothing moves except the camera — no people, no text, no logos, no morphing.
-Style: opulent quiet-luxury film, rich gold and charcoal grade.
-```
-
 ---
 
 ## B-roll / macro loops (what makes moto-card feel expensive)
-Extreme macro "material" shots that go between sections:
 
 ```
 [1] Close-up of brushed gold metal with a thin light streak sweeping across it,
@@ -129,23 +286,15 @@ Extreme macro "material" shots that go between sections:
 - **One** camera move, **one** direction. Never "zooms in and out" or "reverses".
 - `"5 seconds, no cuts"` in every prompt.
 - `"no people, no text, no logos, no morphing, no flicker"` in every prompt.
-- Name a lens (24/32/35/50mm) + a grade (`dark charcoal and gold`).
+- Name a lens (24/28/32/35/50mm) + a grade (`dark charcoal and gold`).
 - Image ref = the **first frame** of that shot.
 
 ---
 
 ## Output → site wiring (what I need back)
 
-Export each clip to WebP frames and drop them in:
+Export each clip to WebP frames (`frame_0001.webp … frame_00NN.webp`) and drop into
+`assets/frames/{project-slug}/`. The scrub scripts auto-detect the frame count, so
+you only need to drop the folder and refresh.
 
-| Clip | Folder | Used by |
-|---|---|---|
-| Hero | `assets/frames/hero/` | `index-v10-scrub.js` |
-| Golden model (b-roll) | `assets/frames/object/` | new section |
-| Louvre | `assets/frames/louvre/` | `al-ryum-cinematic.js` |
-| Zayed | `assets/frames/zayed/` | `al-ryum-cinematic.js` |
-| Emirates | `assets/frames/emirates/` | `al-ryum-cinematic.js` |
-
-> Convert video → frames at https://ezgif.com/video-to-webp. Name them
-> `frame_0001.webp … frame_00NN.webp`. The scrub scripts auto-detect the frame
-> count, so you only need to drop the folder and refresh.
+> Convert video → frames at https://ezgif.com/video-to-webp.

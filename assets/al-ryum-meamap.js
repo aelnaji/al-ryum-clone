@@ -34,7 +34,7 @@
       document.head.appendChild(s);
     });
   }
-  var VENDOR = "/assets/vendor/";
+  var VENDOR = "assets/vendor/";
   var D3_SRC = VENDOR + "d3.min.js";
   var TOPO_SRC = VENDOR + "topojson-client.min.js";
   var WORLD_SRC = VENDOR + "countries-110m.json";

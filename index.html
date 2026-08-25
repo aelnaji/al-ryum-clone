@@ -66,6 +66,33 @@
         }
         .page-flash.active { opacity: 0.08; }
 
+        /* ── SKIP TO MAIN CONTENT ── */
+        .skip-link {
+          position: absolute;
+          top: -100px;
+          left: 1rem;
+          background: #7DD6AA;
+          color: #122023;
+          padding: 0.75rem 1.25rem;
+          z-index: 10000;
+          font-weight: 600;
+          border-radius: 0.375rem;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+          transition: top 0.2s ease;
+          text-decoration: none;
+        }
+        .skip-link:focus {
+          top: 1rem;
+          outline: 2px solid #ffffff;
+          outline-offset: 2px;
+        }
+
+        /* ── FOCUS VISIBLE INDICATORS ── */
+        :focus-visible {
+          outline: 2px solid #7DD6AA !important;
+          outline-offset: 2px !important;
+        }
+
         /* ── SMOOTH APPEAR ON LOAD ── */
         #root { opacity: 0; transition: opacity 0.8s ease; }
         #root.app-ready { opacity: 1; }
@@ -86,6 +113,7 @@
     </head>
 
     <body>
+      <a href="#about" class="skip-link">Skip to main content</a>
       <div class="cursor-glow" id="cursorGlow"></div>
       <canvas class="noise-overlay" id="noiseCanvas"></canvas>
       <div class="page-flash" id="pageFlash"></div>
@@ -152,22 +180,28 @@
           }
           requestAnimationFrame(raf);
 
-          // Attach smooth anchor nav
-          document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', e => {
-              const h = a.getAttribute('href');
-              if (!h || h === '#') return;
-              const t = document.querySelector(h);
-              if (t) {
-                e.preventDefault();
-                const pf = document.getElementById('pageFlash');
-                pf.classList.add('active');
-                lenis.scrollTo(t, {
-                  duration: 1.2,
-                  onComplete: () => { setTimeout(() => pf.classList.remove('active'), 200); }
-                });
+          // Attach smooth anchor nav with focus management
+          document.addEventListener('click', e => {
+            const a = e.target.closest('a[href^="#"]');
+            if (!a) return;
+            const h = a.getAttribute('href');
+            if (!h || h === '#') return;
+            const t = document.querySelector(h);
+            if (t) {
+              e.preventDefault();
+              const pf = document.getElementById('pageFlash');
+              if (pf) pf.classList.add('active');
+              if (!t.hasAttribute('tabindex')) {
+                t.setAttribute('tabindex', '-1');
               }
-            });
+              lenis.scrollTo(t, {
+                duration: 1.2,
+                onComplete: () => {
+                  if (pf) setTimeout(() => pf.classList.remove('active'), 200);
+                  t.focus({ preventScroll: true });
+                }
+              });
+            }
           });
 
           console.log('[Al Ryum] Lenis scroll active');

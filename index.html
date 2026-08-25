@@ -13,7 +13,7 @@
       <script src="/assets/index-v10-scrub.js"></script>
       <script src="/assets/al-ryum-motion.js"></script>
       <script src="/assets/al-ryum-cinematic.js"></script>
-      <script src="/assets/al-ryum-meamap.js"></script>
+      <script src="/assets/al-ryum-gcc-globe.js"></script>
       <script src="/assets/vivid-amplify.js"></script>
       <script src="/assets/corniche-legoland.js"></script>
       <style>
@@ -138,10 +138,10 @@
 
           // Init Lenis
           lenis = new Lenis({
-            duration: 1.2,
+            duration: 1.45,
             easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             smoothWheel: true,
-            wheelMultiplier: 0.85,
+            wheelMultiplier: 0.72,
             touchMultiplier: 1.0
           });
           window.lenis = lenis; // expose for ScrollTrigger scrub sync
@@ -177,4 +177,3 @@
       </script>
     </body>
   </html>
-  

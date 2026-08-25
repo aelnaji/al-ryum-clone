@@ -7,7 +7,7 @@ const source = await response.text();
 const patched = source
   .replaceAll('L?L.story.quote:""', 'L&&L.story?L.story.quote:""')
   .replaceAll('L?L.story.author:""', 'L&&L.story?L.story.author:""')
-  .replaceAll('"/assets/hero-garden-full.mp4', '"assets/hero-garden.mp4')
+  .replaceAll('"/assets/hero-garden-full.mp4', '"https://media.githubusercontent.com/media/aelnaji/al-ryum-clone/main/assets/hero-garden-full.mp4')
   .replaceAll('"/assets/', '"assets/')
   .replaceAll("'/assets/", "'assets/");
 

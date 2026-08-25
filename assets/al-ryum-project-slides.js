@@ -8,7 +8,7 @@
       title: 'Abu Dhabi Corniche',
       lead: 'A public shoreline shaped for everyday life.',
       description: 'A landmark public-beach project where robust infrastructure, planting and civic space come together along the capital’s waterfront.',
-      image: '/assets/real/master/corniche-new.jpg',
+      image: 'assets/real/master/corniche-new.jpg',
       imageAlt: 'Abu Dhabi Corniche public realm landscape',
       position: 'center center'
     },
@@ -18,7 +18,7 @@
       title: 'Louvre Abu Dhabi',
       lead: 'Landscape that frames a global cultural landmark.',
       description: 'External works and planting establish a calm, precise approach to Jean Nouvel’s museum — a threshold between the city, sea and art.',
-      image: '/assets/real/Louvre_Abu_Dhabi/04_louvre_approach.jpg',
+      image: 'assets/real/Louvre_Abu_Dhabi/04_louvre_approach.jpg',
       imageAlt: 'Louvre Abu Dhabi exterior approach',
       position: 'center center'
     },
@@ -28,7 +28,7 @@
       title: 'Zayed National Museum',
       lead: 'A living landscape for a new national icon.',
       description: 'Irrigation, planting and car-park works are integrated into an enduring landscape that supports the museum’s architecture and visitor experience.',
-      image: '/assets/real/zayed-national-museum.jpg',
+      image: 'assets/real/zayed-national-museum.jpg',
       imageAlt: 'Zayed National Museum landscape',
       position: 'center center'
     }

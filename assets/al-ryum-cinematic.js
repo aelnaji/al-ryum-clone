@@ -30,8 +30,8 @@
       eyebrow: "Landscaping · Abu Dhabi", title: "Zayed National Museum",
       body: "Architecture in the landscape — irrigation & car park." },
     { id: "film-emirates", canvas: "canvas-emirates", base: "assets/frames/emirates/", n: 80,
-      eyebrow: "Architectural film · Abu Dhabi", title: "Emirates Palace",
-      body: "A landmark of the capital." },
+      eyebrow: "Hospitality · Abu Dhabi", title: "Emirates Palace",
+      body: "Grand gardens, palace grounds & beachfront landscaping." },
   ];
 
   function buildSections() {
@@ -123,8 +123,8 @@
       }
 
       ScrollTrigger.create({
-        trigger: section, start: "top top", end: "+=2200",
-        pin: true, scrub: true, anticipatePin: 1,
+        trigger: section, start: "top top", end: "+=900",
+        pin: true, scrub: true, anticipatePin: 1, invalidateOnRefresh: true,
         onUpdate: function (self) { scheduleDraw(Math.round(self.progress * (good.length - 1))); },
       });
       window.addEventListener("resize", function () { sizeCanvas(); if (current >= 0) draw(current); });
@@ -132,7 +132,7 @@
       // caption reveal mid-scrub
       gsap.to(section.querySelectorAll("h2, p, span"), {
         opacity: 1, y: 0, stagger: 0.08, ease: "power2.out",
-        scrollTrigger: { trigger: section, start: "25% top", end: "55% top", scrub: true },
+        scrollTrigger: { trigger: section, start: "25% top", end: "55% top", scrub: true, invalidateOnRefresh: true },
       });
 
       canvas.style.display = "block";
@@ -144,9 +144,10 @@
       // Start at opacity 0 and fade to 1 as this film's pin begins.
       gsap.fromTo(canvas, { opacity: 0 }, {
         opacity: 1, ease: "none",
-        scrollTrigger: { trigger: section, start: "top bottom", end: "top top", scrub: true },
+        scrollTrigger: { trigger: section, start: "top bottom", end: "top top", scrub: true, invalidateOnRefresh: true },
       });
     });
+    return loaded;
   }
 
   /* ---------- boot: inject cinematic into the React root container ----------
@@ -177,8 +178,13 @@
     // The Projects section keeps ALL its cards — films are an intro, the grid
     // shows every project including Louvre/Zayed/Emirates.
 
-    // Bind film scroll triggers
-    FILMS.forEach(function (f) { bindFilm(f.canvas, f.base, f.n); });
+    // Bind film scroll triggers, then refresh ScrollTrigger once everything
+    // has actually loaded (fixes stale start/end offsets from layout shifts
+    // that happen while images are still downloading).
+    var filmLoads = FILMS.map(function (f) { return bindFilm(f.canvas, f.base, f.n); });
+    Promise.all(filmLoads).then(function () {
+      if (window.ScrollTrigger) ScrollTrigger.refresh();
+    });
 
     // Intro bridge: fade in on scroll into view
     var intro = document.querySelector(".arc-bridge-intro");

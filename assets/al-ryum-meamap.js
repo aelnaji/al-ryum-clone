@@ -34,7 +34,7 @@
       document.head.appendChild(s);
     });
   }
-  var VENDOR = "assets/vendor/";
+  var VENDOR = "/assets/vendor/";
   var D3_SRC = VENDOR + "d3.min.js";
   var TOPO_SRC = VENDOR + "topojson-client.min.js";
   var WORLD_SRC = VENDOR + "countries-110m.json";
@@ -189,7 +189,17 @@
       var tries = 0, MAX = 8;
       function loadWorld() {
         tries++;
-        d3.json(WORLD_SRC).then(function (world) {
+        // Guard: vendor globals can race on React re-mounts (stale <script> tag
+        // makes loadScript resolve early). Retry instead of throwing.
+        if (!window.d3 || !window.topojson) {
+          if (tries < MAX) setTimeout(loadWorld, 500 * tries);
+          return;
+        }
+        // Native fetch — the vendored d3 build may not ship d3.json (d3-fetch).
+        fetch(WORLD_SRC).then(function (r) {
+          if (!r.ok) throw new Error("world json HTTP " + r.status);
+          return r.json();
+        }).then(function (world) {
           try {
             drawMap(world);
             if (!svg.getAttribute("data-mea-injected") && tries < MAX) {

@@ -26,17 +26,12 @@
     {
       title: "Louvre Abu Dhabi",
       sub: "External works & landscaping, Saadiyat Island",
-      base: "assets/projects/louvre/frame_",
+      base: "/assets/projects/louvre/frame_",
     },
     {
       title: "Zayed National Museum",
       sub: "Landscaping, Irrigation & Car Park — Abu Dhabi",
-      base: "assets/projects/zayed/frame_",
-    },
-    {
-      title: "Emirates Palace",
-      sub: "Architectural film — Abu Dhabi",
-      base: "assets/projects/emirates/frame_",
+      base: "/assets/projects/zayed/frame_",
     },
   ];
 
@@ -137,7 +132,7 @@
     ScrollTrigger.create({
       trigger: section,
       start: "top top",
-      end: "+=3000",
+      end: "+=900",
       pin: true,
       scrub: true,
       anticipatePin: 1,

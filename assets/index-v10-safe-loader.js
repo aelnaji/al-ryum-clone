@@ -1,14 +1,9 @@
-// Load the compiled application and make its static assets work both locally and
-// when the site is served from the /al-ryum-clone/ GitHub Pages subdirectory.
-const response = await fetch(new URL("index-v10-timeline.js?v=30", import.meta.url));
+const response = await fetch("/assets/index-v10-timeline.js?v=30");
 if (!response.ok) throw new Error(`Preview bundle failed to load: ${response.status}`);
 
 const source = await response.text();
 const patched = source
   .replaceAll('L?L.story.quote:""', 'L&&L.story?L.story.quote:""')
-  .replaceAll('L?L.story.author:""', 'L&&L.story?L.story.author:""')
-  .replaceAll('"/assets/hero-garden-full.mp4', '"assets/hero-garden-full-web.mp4')
-  .replaceAll('"/assets/', '"assets/')
-  .replaceAll("'/assets/", "'assets/");
+  .replaceAll('L?L.story.author:""', 'L&&L.story?L.story.author:""');
 
 await import(URL.createObjectURL(new Blob([patched], { type: "text/javascript" })));

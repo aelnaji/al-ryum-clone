@@ -1,0 +1,53 @@
+/* Icreon-style project cards, scoped to the #projects section so the rest of
+   the (light-mint) Al Ryum site is untouched. */
+.icreon-projects-host { width: 100vw; margin-left: calc(50% - 50vw); }
+.icreon-projects { background: #0b1416; color: #f2fbfa; padding: clamp(4rem, 9vw, 8rem) 0; overflow: hidden; width: 100%; }
+.icreon-projects__head { max-width: 1400px; margin: 0 auto; padding: 0 clamp(1.5rem, 6vw, 5rem); display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: 3rem; }
+.icreon-projects__kicker { display: block; color: #9ef3ee; font-size: .66rem; font-weight: 800; letter-spacing: .2em; margin-bottom: 1rem; }
+.icreon-projects__title { margin: 0; font-family: "DM Serif Display", Georgia, serif; font-size: clamp(2.4rem, 6vw, 6rem); font-weight: 400; letter-spacing: -.06em; line-height: .92; max-width: 14ch; }
+.icreon-projects__count { color: rgba(242,251,250,.5); font-size: .7rem; font-weight: 700; letter-spacing: .14em; white-space: nowrap; }
+.icreon-projects__rail { display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; scroll-behavior: auto; }
+.icreon-projects__rail::-webkit-scrollbar { display: none; }
+.icreon-projects__rail::-webkit-scrollbar { width: 0; height: 0; }
+.icreon-projects__hint { max-width: 1400px; margin: 0 auto; padding: 1.4rem clamp(1.5rem, 6vw, 5rem) 0; color: rgba(242,251,250,.38); font-size: .62rem; font-weight: 700; letter-spacing: .16em; text-align: right; }
+.icreon-projects__filters { max-width: 1400px; margin: 0 auto 2.6rem; padding: 0 clamp(1.5rem, 6vw, 5rem); display: flex; flex-wrap: wrap; gap: .8rem; align-items: center; }
+.icreon-projects__search { flex: 1 1 220px; min-width: 200px; background: rgba(9,20,22,.55); border: 1px solid rgba(242,251,250,.16); border-radius: .5rem; padding: .75rem 1rem; color: #f2fbfa; font-size: .85rem; outline: none; transition: border-color .2s ease; }
+.icreon-projects__search::placeholder { color: rgba(242,251,250,.4); }
+.icreon-projects__search:focus { border-color: #9ef3ee; }
+.icreon-projects__select { background: rgba(9,20,22,.55); border: 1px solid rgba(242,251,250,.16); border-radius: .5rem; padding: .75rem 2.2rem .75rem 1rem; color: #f2fbfa; font-size: .78rem; font-weight: 600; letter-spacing: .06em; cursor: pointer; outline: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%239ef3ee' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right .9rem center; }
+.icreon-projects__select:focus { border-color: #9ef3ee; }
+.icreon-projects__select option { background: #0b1416; color: #f2fbfa; }
+.icreon-projects__empty { max-width: 1400px; margin: 0 auto; padding: 4rem clamp(1.5rem, 6vw, 5rem); text-align: center; color: rgba(242,251,250,.6); font-size: .9rem; }
+.icreon-projects__empty button { color: #9ef3ee; background: none; border: none; cursor: pointer; font-size: .9rem; text-decoration: underline; }
+.icreon-projects__rail-wrap { position: relative; padding: 0; }
+.icreon-projects__arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; width: 4.2rem; height: 4.2rem; display: inline-flex; align-items: center; justify-content: center; background: rgba(9,20,22,.72); border: 1px solid rgba(242,251,250,.18); border-radius: 50%; color: #9ef3ee; cursor: pointer; transition: border-color .2s ease, background .2s ease, transform .18s ease; backdrop-filter: blur(7px); }
+.icreon-projects__arrow:hover { border-color: #9ef3ee; background: rgba(158,243,238,.14); }
+.icreon-projects__arrow:active { transform: translateY(-50%) scale(.92); }
+.icreon-projects__arrow--left { left: clamp(.75rem, 2vw, 2rem); }
+.icreon-projects__arrow--right { right: clamp(.75rem, 2vw, 2rem); }
+@media (max-width: 760px) { .icreon-projects__arrow { width: 2.9rem; height: 2.9rem; } }
+
+.icreon-card { flex: 0 0 min(58vw, 34rem); min-height: clamp(25rem, 40vw, 31rem); display: grid; grid-template-rows: 1fr 18rem; border-top: 1px solid rgba(242,251,250,.14); border-bottom: 1px solid rgba(242,251,250,.14); cursor: pointer; transition: background .3s ease; }
+.icreon-card:hover { background: rgba(9,20,22,.5); }
+.icreon-card__body { padding: clamp(1.25rem, 2.4vw, 2.1rem); display: flex; flex-direction: column; }
+.icreon-card__eyebrow { color: #9ef3ee; font-size: .62rem; font-weight: 800; letter-spacing: .18em; margin-bottom: 1.1rem; }
+.icreon-card__title { margin: 0 0 1rem; font-family: "DM Serif Display", Georgia, serif; font-size: clamp(1.7rem, 3vw, 2.9rem); font-weight: 400; letter-spacing: -.04em; line-height: .95; }
+.icreon-card__infos { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; padding: 1rem 0; border-top: 1px solid rgba(242,251,250,.14); border-bottom: 1px solid rgba(242,251,250,.14); margin-bottom: 1rem; }
+.icreon-card__label { display: block; color: rgba(242,251,250,.45); font-size: .56rem; font-weight: 800; letter-spacing: .16em; margin-bottom: .5rem; }
+.icreon-card__value { display: block; color: #f2fbfa; font-size: clamp(1rem, 1.6vw, 1.4rem); font-weight: 600; line-height: 1.3; }
+.icreon-card__value--accent { color: #9ef3ee; font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 500; letter-spacing: -.02em; }
+.icreon-card__summary { margin-bottom: 1rem; }
+.icreon-card__sumlabel { display: block; color: rgba(242,251,250,.45); font-size: .56rem; font-weight: 800; letter-spacing: .16em; margin-bottom: .7rem; }
+.icreon-card__desc { margin: 0; color: rgba(242,251,250,.66); font-size: .82rem; line-height: 1.62; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.icreon-card__cta { margin-top: auto; display: inline-flex; align-items: center; gap: .6rem; color: #9ef3ee; font-size: .68rem; font-weight: 800; letter-spacing: .14em; text-decoration: none; text-transform: uppercase; }
+.icreon-card__cta span { transition: transform .25s ease; }
+.icreon-card__cta:hover span { transform: translateX(4px); }
+.icreon-card__asset { position: relative; min-height: 18rem; overflow: hidden; }
+.icreon-card__asset img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+@media (max-width: 760px) {
+  .icreon-card { flex-basis: min(86vw, 24rem); grid-template-rows: auto 15rem; }
+  .icreon-projects__head { flex-direction: column; align-items: flex-start; }
+  .icreon-projects__title { font-size: clamp(2.2rem, 11vw, 3.4rem); }
+  .icreon-projects__count { display: none; }
+}

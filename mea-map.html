@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Middle East Connected — Regional Map</title>
+<style>
+  :root {
+    --bg-0: #07120c;
+    --bg-1: #0d2017;
+    --land: #143a26;
+    --land-stroke: #1f5236;
+    --ocean: #061a10;
+    --accent: #5cffae;
+    --accent-2: #ffb547;
+    --dot: #b8ffd9;
+    --dot-ring: #5cffae;
+    --line: #5cffae;
+    --text: #e8f7ee;
+    --muted: #7ea08a;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(1200px 800px at 20% 0%, #163828 0%, var(--bg-0) 60%) var(--bg-0);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+    min-height: 100vh;
+  }
+
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 32px 24px 48px; }
+
+  header {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    flex-wrap: wrap; gap: 16px; margin-bottom: 18px;
+  }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.01em; margin: 0; }
+  h1 span { color: var(--accent); }
+  .subtitle { color: var(--muted); font-size: 14px; margin-top: 4px; }
+
+  .legend { display: flex; gap: 14px; align-items: center; font-size: 13px;
+            color: var(--muted); flex-wrap: wrap; }
+  .legend .sw { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .dot { width: 10px; height: 10px; border-radius: 50%;
+                 background: var(--dot);
+                 box-shadow: 0 0 0 3px rgba(255,177,71,0.18); }
+  .legend .ln  { width: 22px; height: 2px; background: var(--line); }
+
+  .card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 18px;
+    padding: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    position: relative;
+  }
+
+  svg.map { width: 100%; height: auto; display: block; cursor: grab; }
+  svg.map:active { cursor: grabbing; }
+
+  .country { fill: var(--land); stroke: var(--land-stroke); stroke-width: 0.5;
+             transition: fill 200ms ease; }
+  .country.target { fill: #1f5a3a; stroke: #5cffae; stroke-width: 0.9; }
+  .country.context { fill: #102a1c; }
+
+  .graticule { fill: none; stroke: rgba(255,255,255,0.05); stroke-width: 0.4; }
+
+  .connect-line {
+    fill: none; stroke: var(--line); stroke-width: 2.4;
+    stroke-linecap: round; stroke-linejoin: round;
+    stroke-dasharray: 6 5;
+    filter: drop-shadow(0 0 5px rgba(255,181,71,0.7));
+    animation: dash 18s linear infinite;
+  }
+  @keyframes dash { to { stroke-dashoffset: -440; } }
+
+  .marker-pulse {
+    fill: none; stroke: var(--dot-ring); stroke-width: 1.8; opacity: 0.7;
+    animation: pulse 2.4s ease-out infinite;
+  }
+  .marker-pulse.d1 { animation-delay: 0.3s; }
+  .marker-pulse.d2 { animation-delay: 0.6s; }
+  .marker-pulse.d3 { animation-delay: 0.9s; }
+  .marker-pulse.d4 { animation-delay: 1.2s; }
+  @keyframes pulse {
+    0%   { r: 6;  opacity: 0.85; }
+    100% { r: 24; opacity: 0;    }
+  }
+
+  .marker { fill: var(--dot); stroke: #fff8e7; stroke-width: 1.5;
+            filter: drop-shadow(0 0 8px rgba(255,209,102,1)); }
+
+  .label { font-size: 15px; font-weight: 700; fill: var(--text);
+           paint-order: stroke;
+           stroke: rgba(11,16,32,0.9); stroke-width: 3.5px; stroke-linejoin: round; }
+
+  .order-circle { fill: var(--accent-2); stroke: #fff8e7; stroke-width: 1.5; }
+  .order-text   { font-size: 12px; font-weight: 800; fill: #0b1020; }
+
+  .controls {
+    position: absolute; top: 26px; right: 26px;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .controls button {
+    width: 34px; height: 34px; border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(20,28,60,0.7); color: var(--text);
+    font-size: 18px; font-weight: 700; cursor: pointer; backdrop-filter: blur(6px);
+  }
+  .controls button:hover  { background: rgba(40,52,100,0.9); }
+  .controls button:active { transform: translateY(1px); }
+
+  footer { margin-top: 18px; color: var(--muted); font-size: 12px;
+           display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+  @media (max-width: 640px) {
+    h1 { font-size: 22px; }
+    .wrap { padding: 20px 14px 32px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Connected on the Map · <span>Middle East</span></h1>
+        <div class="subtitle">UAE · Qatar · Saudi Arabia · Iraq · Jordan — auto-fitted and connected in order</div>
+      </div>
+      <div class="legend">
+        <span class="sw"><span class="dot"></span> Country</span>
+        <span class="sw"><span class="ln"></span> Connection</span>
+        <span class="sw" style="color:#8a93b8">🖱 drag to pan · scroll to zoom</span>
+      </div>
+    </header>
+
+    <div class="card">
+      <svg class="map" id="map" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet"
+           aria-label="Regional map of the Middle East with highlighted countries"></svg>
+      <div class="controls">
+        <button id="zoom-in"  title="Zoom in">+</button>
+        <button id="zoom-out" title="Zoom out">−</button>
+        <button id="zoom-reset" title="Reset view">⟳</button>
+      </div>
+    </div>
+
+    <footer>
+      <div>Projection: Mercator (auto-fit) · D3 v7 · Natural Earth (110m)</div>
+      <div id="status">Loading map…</div>
+    </footer>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+<script>
+(async function () {
+  const TARGETS = [
+    { name: "United Arab Emirates", label: "UAE",   order: 1 },
+    { name: "Qatar",               label: "Qatar", order: 2 },
+    { name: "Saudi Arabia",        label: "Saudi Arabia", order: 3 },
+    { name: "Iraq",                label: "Iraq", order: 4 },
+    { name: "Jordan",              label: "Jordan", order: 5 },
+  ];
+
+  // Surrounding countries for visual context (optional)
+  const CONTEXT = [
+    "Oman","Bahrain","Kuwait","Yemen","Egypt","Israel",
+    "Lebanon","Syria","Turkey","Iran","Cyprus",
+    "Sudan","Eritrea","Ethiopia","Djibouti"
+  ];
+
+  const svg = d3.select("#map");
+  const W = 1000, H = 700;
+
+  // Pannable/zoomable root: countries + graticule + line live here.
+  const gZoom      = svg.append("g").attr("class", "g-zoom");
+  const gGraticule = gZoom.append("g").attr("class", "g-graticule");
+  const gCountries = gZoom.append("g").attr("class", "g-countries");
+  const gLine      = gZoom.append("g").attr("class", "g-line");
+
+  // Overlay — dots + labels stay constant pixel size while you zoom
+  const gOverlay   = svg.append("g").attr("class", "g-overlay");
+  const gMarkers   = gOverlay.append("g").attr("class", "g-markers");
+  const gLabels    = gOverlay.append("g").attr("class", "g-labels");
+
+  const zoom = d3.zoom()
+    .scaleExtent([0.6, 12])
+    .on("zoom", (event) => {
+      gZoom.attr("transform", event.transform);
+      const k = event.transform.k;
+      gMarkers.attr("transform", `scale(${1/k})`);
+      gLabels.attr("transform",  `scale(${1/k})`);
+    });
+  svg.call(zoom);
+
+  d3.select("#zoom-in").on("click",  () => svg.transition().duration(250).call(zoom.scaleBy, 1.4));
+  d3.select("#zoom-out").on("click", () => svg.transition().duration(250).call(zoom.scaleBy, 1 / 1.4));
+  d3.select("#zoom-reset").on("click", () => svg.transition().duration(350).call(zoom.transform, d3.zoomIdentity));
+
+  try {
+    const world = await d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json");
+    const countries = topojson.feature(world, world.objects.countries);
+
+    // Build feature collection: targets + context (only those that exist in dataset)
+    const targetNames = new Set(TARGETS.map(t => t.name));
+    const contextSet  = new Set(CONTEXT);
+    const visibleFeatures = countries.features.filter(f => {
+      const n = f.properties.name;
+      return targetNames.has(n) || contextSet.has(n);
+    });
+
+    // Auto-fit the bounding box of the visible region into the viewBox
+    const featureCollection = { type: "FeatureCollection", features: visibleFeatures };
+    const projection = d3.geoMercator()
+      .fitExtent([[20, 20], [W - 20, H - 20]], featureCollection);
+    const path = d3.geoPath(projection);
+
+    // graticule
+    const graticule = d3.geoGraticule10();
+    gGraticule.append("path")
+      .datum(graticule)
+      .attr("class", "graticule")
+      .attr("d", path);
+
+    // countries
+    gCountries.selectAll("path.country")
+      .data(visibleFeatures)
+      .join("path")
+      .attr("class", d => targetNames.has(d.properties.name) ? "country target" : "country context")
+      .attr("d", path);
+
+    // target centroids (in projected coordinates)
+    const targets = TARGETS.map(t => {
+      const f = visibleFeatures.find(c => c.properties.name === t.name);
+      if (!f) return null;
+      const c = path.centroid(f);
+      return { ...t, feature: f, cx: c[0], cy: c[1] };
+    }).filter(Boolean);
+
+    // label offsets in screen pixels (overlay stays at constant size)
+    const offsets = {
+      "United Arab Emirates": [ 22,  -4 ],
+      "Qatar":               [ -6,  -28],
+      "Saudi Arabia":        [ -8,  34],
+      "Iraq":                [ -6,  -22],
+      "Jordan":              [ -6,  22],
+    };
+
+    // connection line — lives in zoom group, scales with the map
+    const lineData = targets.map(t => [t.cx, t.cy]);
+    const lineGen = d3.line().curve(d3.curveCatmullRom.alpha(0.5));
+    gLine.append("path")
+      .datum(lineData)
+      .attr("class", "connect-line")
+      .attr("d", lineGen);
+
+    // markers (overlay)
+    const marker = gMarkers.selectAll("g.marker")
+      .data(targets)
+      .join("g")
+      .attr("class", "marker")
+      .attr("transform", d => `translate(${d.cx}, ${d.cy})`);
+
+    marker.append("circle")
+      .attr("class", (d, i) => "marker-pulse" + (i ? " d" + Math.min(i, 4) : ""))
+      .attr("r", 6);
+
+    marker.append("circle")
+      .attr("class", "marker")
+      .attr("r", 8);
+
+    marker.append("circle")
+      .attr("class", "order-circle")
+      .attr("cx", 13)
+      .attr("cy", -13)
+      .attr("r", 11);
+
+    marker.append("text")
+      .attr("class", "order-text")
+      .attr("x", 13)
+      .attr("y", -13)
+      .attr("text-anchor", "middle")
+      .attr("dominant-baseline", "central")
+      .text(d => d.order);
+
+    // labels
+    gLabels.selectAll("text.label")
+      .data(targets)
+      .join("text")
+      .attr("class", "label")
+      .attr("x", d => d.cx + (offsets[d.name]?.[0] ?? 12))
+      .attr("y", d => d.cy + (offsets[d.name]?.[1] ?? 0))
+      .attr("dominant-baseline", "central")
+      .text(d => d.label);
+
+    document.getElementById("status").textContent =
+      `Plotted ${targets.length} countries + ${visibleFeatures.length - targets.length} context · auto-fitted to view`;
+  } catch (err) {
+    console.error(err);
+    document.getElementById("status").textContent = "Failed to load map data: " + err.message;
+  }
+})();
+</script>
+</body>
+</html>

@@ -104,7 +104,7 @@
     ScrollTrigger.create({
       trigger: hero,
       start: "top top",
-      end: "+=6000",
+      end: "+=1400",
       pin: true,
       scrub: true,
       anticipatePin: 1,

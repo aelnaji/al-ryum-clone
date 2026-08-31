@@ -1,0 +1,3 @@
+## 2025-08-31 - Smooth Scroll Focus Transfer & Map Control Accessibility
+**Learning:** Lenis smooth scrolling intercepts native anchor jump navigation, which leaves keyboard focus stranded at the triggering anchor link. Transferring focus to the target section via `target.focus({ preventScroll: true })` on scroll completion restores smooth keyboard & screen reader navigation. Additionally, map zoom control buttons with symbol labels (`+`, `−`, `⟳`) require explicit `aria-label` attributes to be readable by screen readers.
+**Action:** Always set programmatic focus on anchor scroll targets upon scroll completion and ensure icon/symbol control buttons specify accessible `aria-label` attributes.

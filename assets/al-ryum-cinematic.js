@@ -112,13 +112,18 @@
         var c = coverCrop(img.naturalWidth, img.naturalHeight, W, H);
         ctx.drawImage(img, c.dx, c.dy, c.dw, c.dh);
       }
-      var rafPending = false;
+      var rafPending = false, pendingIndex = 0;
       function scheduleDraw(index) {
         var i = Math.max(0, Math.min(good.length - 1, index));
-        if (i === current) return;
+        pendingIndex = i;
+        if (i === current && !rafPending) return;
         if (!rafPending) {
           rafPending = true;
-          requestAnimationFrame(function () { rafPending = false; current = i; draw(i); });
+          requestAnimationFrame(function () {
+            rafPending = false;
+            current = pendingIndex;
+            draw(current);
+          });
         }
       }
 
@@ -126,6 +131,10 @@
         trigger: section, start: "top top", end: "+=900",
         pin: true, scrub: true, anticipatePin: 1, invalidateOnRefresh: true,
         onUpdate: function (self) { scheduleDraw(Math.round(self.progress * (good.length - 1))); },
+        // ScrollTrigger can release the pin directly from a progress fraction
+        // below 1. Force the terminal frame so every film resolves on its shot.
+        onLeave: function () { scheduleDraw(good.length - 1); },
+        onLeaveBack: function () { scheduleDraw(0); },
       });
       window.addEventListener("resize", function () { sizeCanvas(); if (current >= 0) draw(current); });
 

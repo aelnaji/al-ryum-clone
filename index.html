@@ -192,7 +192,13 @@
                 pf.classList.add('active');
                 lenis.scrollTo(t, {
                   duration: 1.2,
-                  onComplete: () => { setTimeout(() => pf.classList.remove('active'), 200); }
+                  onComplete: () => {
+                    setTimeout(() => pf.classList.remove('active'), 200);
+                    if (!t.hasAttribute('tabindex')) {
+                      t.setAttribute('tabindex', '-1');
+                    }
+                    t.focus({ preventScroll: true });
+                  }
                 });
               }
             });

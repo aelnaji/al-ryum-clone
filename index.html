@@ -180,22 +180,28 @@
           }
           requestAnimationFrame(raf);
 
-          // Attach smooth anchor nav
-          document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', e => {
-              const h = a.getAttribute('href');
-              if (!h || h === '#') return;
-              const t = document.querySelector(h);
-              if (t) {
-                e.preventDefault();
-                const pf = document.getElementById('pageFlash');
-                pf.classList.add('active');
-                lenis.scrollTo(t, {
-                  duration: 1.2,
-                  onComplete: () => { setTimeout(() => pf.classList.remove('active'), 200); }
-                });
-              }
-            });
+          // Attach smooth anchor nav with focus management for accessibility
+          document.addEventListener('click', e => {
+            const a = e.target.closest('a[href^="#"]');
+            if (!a) return;
+            const h = a.getAttribute('href');
+            if (!h || h === '#') return;
+            const t = document.querySelector(h);
+            if (t) {
+              e.preventDefault();
+              const pf = document.getElementById('pageFlash');
+              if (pf) pf.classList.add('active');
+              lenis.scrollTo(t, {
+                duration: 1.2,
+                onComplete: () => {
+                  if (!t.hasAttribute('tabindex')) {
+                    t.setAttribute('tabindex', '-1');
+                  }
+                  t.focus({ preventScroll: true });
+                  if (pf) setTimeout(() => pf.classList.remove('active'), 200);
+                }
+              });
+            }
           });
 
           console.log('[Al Ryum] Lenis scroll active');

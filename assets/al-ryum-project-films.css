@@ -1,0 +1,319 @@
+/* ════════════════════════════════════════════════════════════════
+   Al Ryum — Project Films (cinematic scroll-scrub frame sequence)
+   Mirrors the existing al-ryum-cinematic.js look exactly:
+   - #C8A86E copper eyebrow, #f8fafa off-white title
+   - UPPERCASE editorial typography, bottom-anchored caption
+   - Loading strip in the bottom-left while frames pre-render
+   - Lazy frame load as the user scrolls
+   Hero, garden video and existing WebP project scrub are
+   completely untouched.
+   ════════════════════════════════════════════════════════════════ */
+
+.ar-pf-section {
+  position: relative;
+  width: 100%;
+  background: #061112;
+  color: #f8fafa;
+  font-family: "Manrope", system-ui, Arial, sans-serif;
+}
+.ar-pf-section * { box-sizing: border-box; }
+.ar-pf-section a { color: inherit; }
+
+/* ── 1. INTRO BRIDGE (mirrors arc-bridge-intro) ────────────── */
+.ar-pf-intro {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: #122023;
+}
+.ar-pf-intro__title {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.6rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  color: #f8fafa;
+  line-height: 1.05;
+}
+.ar-pf-intro__title em { font-style: normal; color: #C8A86E; }
+
+/* ── 1b. SECTION TITLE BAR (gold heading, centered, lede/meta removed) ─ */
+.ar-pf-titlebar {
+  position: relative;
+  width: 100%;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(4rem, 10vw, 8rem) 2rem;
+  background: linear-gradient(180deg, #0a1718 0%, #061112 100%);
+  border-bottom: 1px solid rgba(200,168,110,.15);
+}
+.ar-pf-titlebar__heading {
+  margin: 0;
+  color: #C8A86E;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(3rem, 7.5vw, 6.5rem);
+  font-weight: 400;
+  letter-spacing: -.02em;
+  line-height: 1;
+  text-transform: none;
+  max-width: 18ch;
+}
+
+/* ── 2. PROJECT FILM NAV RAIL (sticky, minimal) ─────────────── */
+.ar-pf-nav {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 1px;
+  padding: 0;
+  background: rgba(18, 32, 35, .88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid rgba(200, 168, 110, .18);
+  border-bottom: 1px solid rgba(200, 168, 110, .18);
+}
+.ar-pf-nav__item {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-left: 1px solid rgba(200, 168, 110, .12);
+  padding: 1rem clamp(1.1rem, 2.2vw, 1.75rem);
+  text-align: left;
+  cursor: pointer;
+  color: rgba(248, 250, 250, .6);
+  font-family: inherit;
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  transition: color .35s ease, background .35s ease;
+}
+.ar-pf-nav__item:first-child { border-left: 0; }
+.ar-pf-nav__item:hover { color: #f8fafa; background: rgba(200, 168, 110, .08); }
+.ar-pf-nav__item:focus-visible {
+  outline: 2px solid #C8A86E;
+  outline-offset: -2px;
+  color: #f8fafa;
+}
+.ar-pf-nav__index {
+  display: block;
+  color: #C8A86E;
+  font-size: .72rem;
+  margin-bottom: .3rem;
+  letter-spacing: .2em;
+}
+.ar-pf-nav__label {
+  display: block;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  letter-spacing: .12em;
+  color: #f8fafa;
+  font-weight: 700;
+}
+.ar-pf-nav__item.is-active {
+  color: #f8fafa;
+  background: rgba(200, 168, 110, .12);
+}
+.ar-pf-nav__item.is-active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: .5rem;
+  background: linear-gradient(90deg, #C8A86E, transparent 70%);
+}
+
+/* ── 3. SCENE (tall outer + sticky inner, like arc-film) ──── */
+.ar-pf-scene {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a1416;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .18s linear;
+}
+.ar-pf-stage {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #0a1416;
+}
+
+/* Canvas that draws the current frame */
+.ar-pf-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #0a1416;
+  z-index: 1;
+}
+
+/* Subtle bottom gradient so the caption text is always readable */
+.ar-pf-scene::before { display: none; }
+.ar-pf-stage-host { position: relative; isolation: isolate; height: 400vh; }
+.ar-pf-stage { isolation: isolate; }
+
+/* ── 4. LOADING STRIP (mirrors hero-scrub-loader) ──────────── */
+.ar-pf-loader {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  bottom: 22%;
+  transform: translateX(-50%);
+  display: grid;
+  gap: .55rem;
+  font-size: .55rem;
+  font-weight: 800;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  color: rgba(248, 250, 250, .9);
+  pointer-events: none;
+  transition: opacity .45s ease;
+  width: min(20rem, 60vw);
+  text-align: center;
+}
+.ar-pf-loader__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-variant-numeric: tabular-nums;
+}
+.ar-pf-loader__label { color: #C8A86E; }
+.ar-pf-loader__pct { color: #f8fafa; }
+.ar-pf-loader__rail {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  background: rgba(248, 250, 250, .22);
+  overflow: hidden;
+}
+.ar-pf-loader__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0%;
+  background: linear-gradient(90deg, #C8A86E 0%, #f8fafa 100%);
+  transition: width 90ms linear;
+}
+.ar-pf-loader[data-done="true"] {
+  opacity: 0;
+}
+
+/* ── 5. CAPTION (mirrors arc-film caption block, bottom-anchored) */
+.ar-pf-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 9%;
+  text-align: center;
+  z-index: 5;
+  pointer-events: none;
+  padding: 0 1.5rem;
+}
+.ar-pf-caption__eyebrow {
+  display: block;
+  font-size: .78rem;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: #C8A86E;
+  font-weight: 700;
+}
+.ar-pf-caption__title {
+  display: block;
+  margin: .6rem 0 0;
+  font-size: clamp(1.7rem, 5vw, 3.2rem);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-weight: 600;
+  color: #f8fafa;
+  line-height: 1.05;
+}
+.ar-pf-caption__body {
+  display: block;
+  margin: .5rem 0 0;
+  opacity: .85;
+  font-size: clamp(.9rem, 2vw, 1.05rem);
+  color: #f8fafa;
+}
+.ar-pf-caption__place {
+  display: block;
+  margin: .35rem 0 0;
+  opacity: .7;
+  font-size: clamp(.7rem, 1.3vw, .85rem);
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #C8A86E;
+}
+
+/* ── 6. PROGRESS RAIL (bottom, like Apogee) ────────────────── */
+.ar-pf-progress {
+  position: absolute;
+  z-index: 6;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  gap: .35rem;
+  padding: 0 1.5rem .85rem;
+  font-size: .5rem;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: rgba(248, 250, 250, .7);
+  pointer-events: none;
+}
+.ar-pf-progress__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-variant-numeric: tabular-nums;
+}
+.ar-pf-progress__row b { color: #f8fafa; font-weight: 800; }
+.ar-pf-progress__row b em { color: #C8A86E; font-style: normal; }
+.ar-pf-progress__rail {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  background: rgba(248, 250, 250, .18);
+  overflow: hidden;
+}
+.ar-pf-progress__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0%;
+  background: linear-gradient(90deg, #C8A86E 0%, #f8fafa 100%);
+  transition: width 80ms linear;
+}
+
+/* ── 7. REDUCED MOTION ─────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .ar-pf-progress__fill,
+  .ar-pf-loader__fill { transition: none; }
+}
+
+/* ── 8. RESPONSIVE ─────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .ar-pf-nav { grid-auto-flow: row; }
+  .ar-pf-nav__item {
+    border-left: 0;
+    border-top: 1px solid rgba(200, 168, 110, .12);
+  }
+  .ar-pf-nav__item:first-child { border-top: 0; }
+  .ar-pf-caption__title { font-size: clamp(1.4rem, 6vw, 2.2rem); }
+}

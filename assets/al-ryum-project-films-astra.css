@@ -1,0 +1,530 @@
+/* ==== AL RYUM @astra ==== Rebuilt via GPT-6 Astra (experientiallabs). CANDIDATE - disconnect: remove file + revert index.html src. */
+
+/* Al Ryum — Project Films
+   Local layers: canvas 1, shade 2, loader 4, caption 5, progress 6.
+   Keep scroll containers unclipped: clipping belongs to each stage.
+   Frame loading, drawing and playback remain controlled by existing JS. */
+
+.ar-pf-section {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  background: #061112;
+  color: #f8fafa;
+  font-family: "Manrope", system-ui, Arial, sans-serif;
+}
+
+.ar-pf-section,
+.ar-pf-section *,
+.ar-pf-section *::before,
+.ar-pf-section *::after {
+  box-sizing: border-box;
+}
+
+.ar-pf-section a { color: inherit; }
+
+/* 1. Intro bridge */
+.ar-pf-intro {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: #122023;
+  text-align: center;
+}
+
+.ar-pf-intro__title {
+  margin: 0;
+  color: #f8fafa;
+  font-size: clamp(2rem, 6vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.ar-pf-intro__title em {
+  color: #c8a86e;
+  font-style: normal;
+}
+
+/* 1b. Section title bar */
+.ar-pf-titlebar {
+  position: relative;
+  width: 100%;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(4rem, 10vw, 8rem) 2rem;
+  border-bottom: 1px solid rgba(200, 168, 110, .15);
+  background: linear-gradient(180deg, #0a1718 0%, #061112 100%);
+  text-align: center;
+}
+
+.ar-pf-titlebar__heading {
+  max-width: 18ch;
+  min-width: 0;
+  margin: 0;
+  color: #c8a86e;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(3rem, 7.5vw, 6.5rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.02em;
+  text-transform: none;
+  overflow-wrap: anywhere;
+}
+
+/* 2. Sticky navigation; active underline reserves its space. */
+.ar-pf-nav {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 1px;
+  padding: 0;
+  border-top: 1px solid rgba(200, 168, 110, .18);
+  border-bottom: 1px solid rgba(200, 168, 110, .18);
+  background: rgba(18, 32, 35, .97);
+}
+
+@supports ((backdrop-filter: blur(14px)) or (-webkit-backdrop-filter: blur(14px))) {
+  .ar-pf-nav {
+    background: rgba(18, 32, 35, .88);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+  }
+}
+
+.ar-pf-nav__item {
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  padding: 1rem clamp(1.1rem, 2.2vw, 1.75rem);
+  border: 0;
+  border-left: 1px solid rgba(200, 168, 110, .12);
+  border-radius: 0;
+  background: transparent;
+  color: rgba(248, 250, 250, .6);
+  font-family: inherit;
+  font-size: .8rem;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: .16em;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  transition: color .35s ease, background-color .35s ease;
+}
+
+.ar-pf-nav__item:first-child { border-left: 0; }
+
+.ar-pf-nav__item::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: .5rem;
+  background: linear-gradient(90deg, #c8a86e, transparent 70%);
+  opacity: 0;
+}
+
+.ar-pf-nav__item:hover {
+  background: rgba(200, 168, 110, .08);
+  color: #f8fafa;
+}
+
+.ar-pf-nav__item:focus-visible {
+  outline: 2px solid #c8a86e;
+  outline-offset: -2px;
+  color: #f8fafa;
+}
+
+.ar-pf-nav__index {
+  display: block;
+  margin-bottom: .3rem;
+  color: #c8a86e;
+  font-size: .72rem;
+  letter-spacing: .2em;
+}
+
+.ar-pf-nav__label {
+  display: block;
+  color: #f8fafa;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.ar-pf-nav__item.is-active {
+  background: rgba(200, 168, 110, .12);
+  color: #f8fafa;
+}
+
+.ar-pf-nav__item.is-active::after { opacity: 1; }
+
+/* 3. Scroll geometry and containment.
+   A standalone scene owns its scroll distance and sticky stage.
+   The existing shared-host structure is also supported: scenes inside
+   its stage remain local overlays, with visibility controlled by JS.
+   Never force inline visibility/opacity or pinning styles with !important. */
+.ar-pf-scene {
+  position: relative;
+  isolation: isolate;
+  z-index: 0;
+  width: 100%;
+  height: 400vh;
+  background: #0a1416;
+}
+
+.ar-pf-stage-host {
+  position: relative;
+  isolation: isolate;
+  z-index: 0;
+  width: 100%;
+  height: 400vh;
+  background: #0a1416;
+}
+
+/* A host wrapping standalone scenes must grow with those scenes. */
+.ar-pf-stage-host:has(> .ar-pf-scene) {
+  height: auto;
+}
+
+.ar-pf-stage {
+  position: sticky;
+  top: 0;
+  isolation: isolate;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  contain: paint;
+  background: #0a1416;
+}
+
+/* Shared-stage compatibility: retain the original JS visibility contract.
+   No crossfade: the outgoing canvas/caption cannot ghost through the next. */
+.ar-pf-stage .ar-pf-scene {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  contain: paint;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: none;
+}
+
+.ar-pf-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #0a1416;
+}
+
+/* Shade follows the pinned viewport, not the tall scroll container. */
+.ar-pf-scene::before { display: none; }
+
+.ar-pf-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    180deg,
+    rgba(6, 17, 18, 0) 35%,
+    rgba(6, 17, 18, .28) 65%,
+    rgba(6, 17, 18, .88) 100%
+  );
+  pointer-events: none;
+}
+
+/* In shared-stage markup, shade and caption must share a scene context. */
+.ar-pf-stage .ar-pf-scene {
+  z-index: 3;
+}
+
+.ar-pf-stage .ar-pf-scene::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: block;
+  background: linear-gradient(
+    180deg,
+    rgba(6, 17, 18, 0) 35%,
+    rgba(6, 17, 18, .28) 65%,
+    rgba(6, 17, 18, .88) 100%
+  );
+  pointer-events: none;
+}
+
+/* 4. Loading strip */
+.ar-pf-loader {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  bottom: 22%;
+  transform: translateX(-50%);
+  display: grid;
+  gap: .55rem;
+  width: min(20rem, 60vw);
+  max-width: calc(100% - 2rem);
+  color: rgba(248, 250, 250, .9);
+  font-size: .55rem;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: .32em;
+  text-align: center;
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: opacity .45s ease;
+}
+
+.ar-pf-loader__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .35rem 1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.ar-pf-loader__label { color: #c8a86e; }
+.ar-pf-loader__pct { color: #f8fafa; }
+
+.ar-pf-loader__rail {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  overflow: hidden;
+  background: rgba(248, 250, 250, .22);
+}
+
+.ar-pf-loader__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0%;
+  background: linear-gradient(90deg, #c8a86e 0%, #f8fafa 100%);
+  transition: width 90ms linear;
+}
+
+.ar-pf-loader[data-done="true"] { opacity: 0; }
+
+/* 5. Bottom-anchored caption */
+.ar-pf-caption {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  bottom: 9%;
+  left: 0;
+  padding: 0 1.5rem;
+  padding-right: max(1.5rem, env(safe-area-inset-right, 0px));
+  padding-left: max(1.5rem, env(safe-area-inset-left, 0px));
+  text-align: center;
+  overflow-wrap: anywhere;
+  pointer-events: none;
+}
+
+.ar-pf-caption__eyebrow {
+  display: block;
+  color: #c8a86e;
+  font-size: .78rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+}
+
+.ar-pf-caption__title {
+  display: block;
+  margin: .6rem 0 0;
+  color: #f8fafa;
+  font-size: clamp(1.7rem, 5vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.ar-pf-caption__body {
+  display: block;
+  max-width: 65ch;
+  margin: .5rem auto 0;
+  color: #f8fafa;
+  font-size: clamp(.9rem, 2vw, 1.05rem);
+  line-height: 1.5;
+  opacity: .85;
+}
+
+.ar-pf-caption__place {
+  display: block;
+  margin: .35rem 0 0;
+  color: #c8a86e;
+  font-size: clamp(.7rem, 1.3vw, .85rem);
+  line-height: 1.5;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  opacity: .7;
+}
+
+/* 6. Progress rail */
+.ar-pf-progress {
+  position: absolute;
+  z-index: 6;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  gap: .35rem;
+  padding: 0 1.5rem .85rem;
+  padding-right: max(1.5rem, env(safe-area-inset-right, 0px));
+  padding-bottom: max(.85rem, env(safe-area-inset-bottom, 0px));
+  padding-left: max(1.5rem, env(safe-area-inset-left, 0px));
+  color: rgba(248, 250, 250, .7);
+  font-size: .5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.ar-pf-progress__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.ar-pf-progress__row b {
+  color: #f8fafa;
+  font-weight: 800;
+}
+
+.ar-pf-progress__row b em {
+  color: #c8a86e;
+  font-style: normal;
+}
+
+.ar-pf-progress__rail {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  overflow: hidden;
+  background: rgba(248, 250, 250, .18);
+}
+
+.ar-pf-progress__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0%;
+  background: linear-gradient(90deg, #c8a86e 0%, #f8fafa 100%);
+  transition: width 80ms linear;
+}
+
+/* 7. Responsive
+   Stable viewport units prevent browser-chrome changes from resizing
+   the pinned canvas during a mobile scrub. */
+@supports (height: 100svh) {
+  .ar-pf-intro { min-height: 60svh; }
+  .ar-pf-titlebar { min-height: 45svh; }
+  .ar-pf-stage { height: 100svh; }
+}
+
+@media (max-width: 900px) {
+  /* A horizontal rail avoids a tall sticky menu obscuring the film. */
+  .ar-pf-nav {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(10rem, 1fr);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    scrollbar-color: #c8a86e #122023;
+  }
+
+  .ar-pf-nav__item {
+    padding: .75rem 1rem;
+  }
+
+  .ar-pf-nav__label {
+    font-size: 1rem;
+    letter-spacing: .08em;
+  }
+
+  .ar-pf-caption__title {
+    font-size: clamp(1.4rem, 6vw, 2.2rem);
+  }
+
+  .ar-pf-loader {
+    bottom: auto;
+    top: 24%;
+  }
+}
+
+@media (max-height: 540px) and (orientation: landscape) {
+  .ar-pf-nav__item { padding: .4rem .85rem; }
+  .ar-pf-nav__index { margin-bottom: .1rem; }
+  .ar-pf-nav__item::after { margin-top: .2rem; }
+
+  .ar-pf-caption {
+    bottom: max(3rem, 10%);
+  }
+
+  .ar-pf-caption__title {
+    margin-top: .3rem;
+    font-size: clamp(1.3rem, 4vw, 2rem);
+  }
+
+  .ar-pf-caption__body,
+  .ar-pf-caption__place {
+    margin-top: .2rem;
+  }
+
+  .ar-pf-loader {
+    top: 25%;
+    bottom: auto;
+  }
+}
+
+/* 8. Reduced motion
+   Suppress CSS motion without changing JS scroll geometry or state.
+   Canvas frame changes and programmatic scrolling must also respect
+   this preference in the existing playback controller; CSS cannot
+   stop requestAnimationFrame or canvas drawing. */
+@media (prefers-reduced-motion: reduce) {
+  .ar-pf-section,
+  .ar-pf-section * {
+    scroll-behavior: auto !important;
+  }
+
+  .ar-pf-scene,
+  .ar-pf-nav__item,
+  .ar-pf-nav__item::after,
+  .ar-pf-loader,
+  .ar-pf-loader__fill,
+  .ar-pf-progress__fill {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Clean cinematic: hide all film overlay chrome (nav, topbar, title, footbar). */
+.ar-pf-topbar, .ar-pf-titleblock, .ar-pf-footbar { display: none !important; }

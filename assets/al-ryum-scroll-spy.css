@@ -1,0 +1,210 @@
+/* ════════════════════════════════════════════════════════════════
+   Al Ryum — full-page scroll-spy navigation (gold + white boxes + green text)
+   Right route rail (one dot per section), top chips nav, top progress
+   line, bottom scroll hint. Accent gold #C8A86E, boxes white, text
+   mint-green #9ef3ee, dots glow.
+   ════════════════════════════════════════════════════════════════ */
+
+/* ── Route rail: fixed vertical dots on the right (one per section) ── */
+.sw-route {
+  position: fixed;
+  right: clamp(12px, 2vw, 26px);
+  top: 50%;
+  z-index: 45;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 18px 10px;
+}
+/* vertical line joining ALL the dots — full rail height */
+.sw-route::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 22px;
+  bottom: 22px;
+  width: 2px;
+  transform: translateX(-50%);
+  background: var(--sw-accent, #C8A86E);
+  opacity: .35;
+}
+.sw-route__dot {
+  position: relative;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+.sw-route__dot i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--sw-accent, #C8A86E) 45%, transparent);
+  border: 1px solid color-mix(in srgb, var(--sw-accent, #C8A86E) 70%, transparent);
+  transition: transform .3s, background .3s, box-shadow .3s;
+  display: block;
+}
+.sw-route__dot:hover i {
+  transform: scale(1.25);
+  background: var(--sw-accent, #C8A86E);
+  box-shadow: 0 0 10px 2px color-mix(in srgb, var(--sw-accent, #C8A86E) 60%, transparent);
+}
+.sw-route__dot.is-active i {
+  background: var(--sw-accent, #C8A86E);
+  transform: scale(1.4);
+  box-shadow: 0 0 8px 2px var(--sw-accent, #C8A86E),
+              0 0 20px 6px color-mix(in srgb, var(--sw-accent, #C8A86E) 55%, transparent),
+              0 0 0 5px color-mix(in srgb, var(--sw-accent, #C8A86E) 25%, transparent);
+  animation: sw-dot-pulse 2.2s ease-in-out infinite;
+}
+@keyframes sw-dot-pulse {
+  0%, 100% { box-shadow: 0 0 8px 2px var(--sw-accent, #C8A86E),
+             0 0 16px 4px color-mix(in srgb, var(--sw-accent, #C8A86E) 45%, transparent),
+             0 0 0 5px color-mix(in srgb, var(--sw-accent, #C8A86E) 25%, transparent); }
+  50%      { box-shadow: 0 0 14px 5px var(--sw-accent, #C8A86E),
+             0 0 32px 10px color-mix(in srgb, var(--sw-accent, #C8A86E) 60%, transparent),
+             0 0 0 5px color-mix(in srgb, var(--sw-accent, #C8A86E) 25%, transparent); }
+}
+/* hover / active label that slides out left of the dot — white box, green text */
+.sw-route__label {
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
+  white-space: nowrap;
+  font-size: .78rem;
+  font-weight: 700;
+  color: #0a1718;
+  background: #ffffff;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 5px 12px;
+  border-radius: 999px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s, transform .25s;
+  border: 1px solid color-mix(in srgb, var(--sw-accent, #C8A86E) 40%, transparent);
+  box-shadow: 0 4px 14px rgba(0,0,0,.35);
+}
+.sw-route__dot:hover .sw-route__label,
+.sw-route__dot.is-active .sw-route__label {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+.sw-route__dot:hover .sw-route__label { color: #0a1718; }
+.sw-route__dot.is-active .sw-route__label { color: #0f7a52; }
+
+/* ── Top chips nav (same sections, horizontal) — white box, green text ── */
+.sw-nav {
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 46;
+  display: flex;
+  gap: 4px;
+  padding: 6px;
+  background: #ffffff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid color-mix(in srgb, var(--sw-accent, #C8A86E) 45%, transparent);
+  border-radius: 999px;
+  box-shadow: 0 8px 28px rgba(0,0,0,.35);
+}
+.sw-nav__item {
+  font: inherit;
+  font-size: .8rem;
+  font-weight: 700;
+  color: #0a1718;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 7px 13px;
+  border-radius: 999px;
+  transition: color .25s, background .25s;
+  white-space: nowrap;
+}
+.sw-nav__item:hover { color: #0f7a52; }
+.sw-nav__item.is-active {
+  color: #ffffff;
+  background: var(--sw-accent, #C8A86E);
+  box-shadow: 0 2px 10px color-mix(in srgb, var(--sw-accent, #C8A86E) 45%, transparent);
+}
+
+/* ── Top progress line — gold ── */
+.sw-scrollbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 60;
+  background: color-mix(in srgb, var(--sw-accent, #C8A86E) 18%, transparent);
+}
+.sw-scrollbar span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  background: var(--sw-accent, #C8A86E);
+  box-shadow: 0 0 8px var(--sw-accent, #C8A86E);
+}
+
+/* ── Bottom scroll hint — green text, gold wheel ── */
+.sw-hint {
+  position: fixed;
+  left: 50%;
+  bottom: 26px;
+  z-index: 30;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #9ef3ee;
+  transition: opacity .3s;
+  pointer-events: none;
+  text-shadow: 0 0 12px rgba(158,243,238,.5);
+}
+.sw-hint i {
+  width: 22px;
+  height: 34px;
+  border-radius: 12px;
+  border: 2px solid rgba(158,243,238,.5);
+  position: relative;
+  display: block;
+}
+.sw-hint i::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 7px;
+  width: 4px;
+  height: 7px;
+  border-radius: 2px;
+  background: var(--sw-accent, #C8A86E);
+  box-shadow: 0 0 8px var(--sw-accent, #C8A86E);
+  transform: translateX(-50%);
+  animation: sw-wheel 1.7s ease-in-out infinite;
+}
+@keyframes sw-wheel {
+  0%   { transform: translateX(-50%) translateY(0); opacity: 1; }
+  70%  { transform: translateX(-50%) translateY(12px); opacity: 0; }
+  100% { transform: translateX(-50%) translateY(0); opacity: 0; }
+}
+
+/* ── Hide on small screens (mobile has its own header nav) ── */
+@media (max-width: 820px) {
+  .sw-nav { display: none; }
+  .sw-route { display: none; }
+  .sw-hint { display: none; }
+}

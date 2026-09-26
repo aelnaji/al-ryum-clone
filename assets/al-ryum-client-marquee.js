@@ -57,6 +57,46 @@
     cat:     { timeZone: "Africa/Maputo",        label: "CAT" }
   };
 
+  // ── CLIENT LOGOS ─────────────────────────────────────────────
+  // Replace each .ar-marquee-item text span with its client logo image.
+  // Runs BEFORE initMarqueeClones so the cloned items inherit the <img>.
+  // Clients without a logo (e.g. DMT) stay as text.
+  // `real: true` = render in ORIGINAL colors (government crests — not
+  // silhouetted). Add "is-real" class so CSS skips the white-invert filter.
+  var CLIENT_LOGOS = {
+    "MASDAR":                    { src: "/assets/clients/masdar_nobg.png" },
+    "ADNOC":                     { src: "/assets/clients/adnoc_nobg.png" },
+    "TDIC":                      { src: "/assets/clients/tdic_nobg.png" },
+    "ALDAR":                     { src: "/assets/clients/aldar_nobg.png" },
+    "MUBADALA":                  { src: "/assets/clients/mubadala_nobg.png" },
+    "ABU DHABI MUNICIPALITY":    { src: "/assets/clients/abudhabi-municipality_nobg.png", real: true },
+    "DAMAC":                     { src: "/assets/clients/damac_nobg.png" },
+    "MERAAS":                    { src: "/assets/clients/meraas_nobg.png" },
+    "EMAAR":                     { src: "/assets/clients/emaar_nobg.png" },
+    "NAKHEEL":                   { src: "/assets/clients/nakheel_nobg.png" },
+    "TECOM":                     { src: "/assets/clients/tecom_nobg.png" },
+    // FEWA: clean transparent wave mark (checkerboard removed). Government
+    // authority → `real` keeps its true colors, not the white silhouette.
+    "FEWA":                      { src: "/assets/clients/fewa_clean.png", real: true }
+  };
+  function applyClientLogos() {
+    document.querySelectorAll(".ar-marquee-item").forEach(function (item) {
+      if (item.getAttribute("aria-hidden") === "true") return;  // cloned — skip
+      var name = (item.textContent || "").trim();
+      var entry = CLIENT_LOGOS[name];
+      if (!entry) return;  // no logo → keep text
+      item.textContent = "";
+      item.classList.add("is-logo");
+      if (entry.real) item.classList.add("is-real");
+      var img = document.createElement("img");
+      img.className = "ar-marquee-logo";
+      img.src = entry.src;
+      img.alt = name;
+      img.loading = "lazy";
+      item.appendChild(img);
+    });
+  }
+
   // STEP 1: clone each item once for a seamless wrap.
   // The original walks every `.marquee_item_wrap`, but in the al-ryum
   // markup the track itself is the wrap (one track per marquee), so we
@@ -113,6 +153,7 @@
   // MutationObserver disconnects).
   function boot() {
     try {
+      applyClientLogos();
       initMarqueeClones();
       initMarquees();
       console.log("[client-marquee] " +

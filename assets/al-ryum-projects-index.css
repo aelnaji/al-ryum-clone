@@ -1,0 +1,271 @@
+/* ══ Al Ryum — /projects index restyle ═══════════════════════════════════════════
+   One uniform grid instead of six sector "category" blocks, and the filter dropdowns
+   restyled as gold pills on the ink background. Scoped to html.ar-proj-index so no
+   other route is touched. Beat Tailwind utilities with !important where they set
+   colours/sizes inline-ish (bg-white, text-[#122023]). */
+
+
+/* ══ hero: "Portfolio / All Projects" in the viewer's ink + gold language ══ */
+/* the image mosaic stops being a 30% ghost */
+html.ar-proj-index #root > div > div > section:nth-of-type(1) {
+  border-bottom: 1px solid rgba(200, 168, 110, .45) !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) > div:first-child {
+  opacity: .55 !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) > div:first-child img {
+  filter: saturate(.92) contrast(1.04);
+}
+/* deepen the scrim so the type sits on ink, like the viewer */
+html.ar-proj-index #root > div > div > section:nth-of-type(1)::after {
+  content: "";
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to top, rgba(7, 16, 15, .96) 0%, rgba(7, 16, 15, .55) 38%, rgba(7, 16, 15, .2) 100%);
+  z-index: 1;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) > div.relative { z-index: 2; }
+
+/* eyebrow: gold, letterspaced, with the gold rule the viewer uses */
+html.ar-proj-index #root > div > div > section:nth-of-type(1) p.text-\[\#9ef3ee\] {
+  color: #C8A86E !important;
+  font-size: .68rem !important;
+  font-weight: 800 !important;
+  letter-spacing: .22em !important;
+  display: inline-flex; align-items: center; gap: .6rem;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) p.text-\[\#9ef3ee\]::before {
+  content: ""; width: 2.2rem; height: 1px; background: #C8A86E; opacity: .85;
+}
+
+/* title: the viewer's serif */
+html.ar-proj-index #root > div > div > section:nth-of-type(1) h1 {
+  font-family: "DM Serif Display", Georgia, serif !important;
+  font-weight: 400 !important;
+  color: #f2fbfa !important;
+  font-size: clamp(2.8rem, 6.2vw, 5.2rem) !important;
+  letter-spacing: -.035em !important;
+  line-height: .98 !important;
+  text-shadow: 0 18px 50px rgba(0, 0, 0, .55);
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) p.text-white\/50 {
+  color: rgba(242, 251, 250, .7) !important;
+}
+
+/* stat tiles: ink glass with gold hairlines instead of mint */
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] > div {
+  background: rgba(18, 32, 35, .62) !important;
+  border: 1px solid rgba(200, 168, 110, .32) !important;
+  border-radius: 1rem !important;
+  -webkit-backdrop-filter: blur(12px) !important; backdrop-filter: blur(12px) !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] > div > div:first-child > div:first-child {
+  background: rgba(200, 168, 110, .15) !important;
+  border: 1px solid rgba(200, 168, 110, .28);
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] > div > div:first-child > span {
+  color: rgba(200, 168, 110, .85) !important;
+  letter-spacing: .14em !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] p.text-\[\#9ef3ee\] {
+  color: #C8A86E !important;
+  font-family: "DM Serif Display", Georgia, serif !important;
+  font-weight: 400 !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] p:last-child {
+  color: rgba(242, 251, 250, .6) !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase;
+}
+
+
+/* ── stat tile icons: emoji out, thin gold line icons in (the site's own language) ── */
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] > div > div:first-child > div:first-child {
+  font-size: 0 !important;                 /* hide the emoji glyph, keep the chip */
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 18px 18px !important;
+}
+/* 1 · EST. 1989 — landmark */
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] > div:nth-child(1) > div:first-child > div:first-child {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C8A86E' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21h18'/%3E%3Cpath d='M5 21V8l7-5 7 5v13'/%3E%3Cpath d='M10 21v-5h4v5'/%3E%3C/svg%3E") !important;
+}
+/* 2 · UAE to Saudi Arabia — globe */
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] > div:nth-child(2) > div:first-child > div:first-child {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C8A86E' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M3 12h18'/%3E%3Cpath d='M12 3c2.6 2.7 4 5.9 4 9s-1.4 6.3-4 9c-2.6-2.7-4-5.9-4-9s1.4-6.3 4-9z'/%3E%3C/svg%3E") !important;
+}
+/* 3 · delivered value — banknote */
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] > div:nth-child(3) > div:first-child > div:first-child {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C8A86E' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2.5' y='6' width='19' height='12' rx='2'/%3E%3Ccircle cx='12' cy='12' r='2.4'/%3E%3Cpath d='M6 12h.01M18 12h.01'/%3E%3C/svg%3E") !important;
+}
+/* 4 · years of excellence — medal */
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] > div:nth-child(4) > div:first-child > div:first-child {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C8A86E' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='9' r='5'/%3E%3Cpath d='M8.6 13.4 7 21l5-2.8L17 21l-1.6-7.6'/%3E%3C/svg%3E") !important;
+}
+
+/* ── hero stat boxes: full row width, roomier ── */
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] {
+  max-width: none !important;
+  width: 100% !important;
+  gap: .9rem !important;
+  margin-top: 2.4rem !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] > div {
+  min-height: 158px !important;
+  padding: 1.2rem 1.3rem !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] > div > div:first-child > div:first-child {
+  width: 2.75rem !important; height: 2.75rem !important;
+  background-size: 20px 20px !important;
+  font-size: 0 !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] p.text-\[\#9ef3ee\] {
+  font-size: clamp(1.6rem, 2.6vw, 2.4rem) !important;
+  line-height: 1 !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] > div > div:first-child > span {
+  font-size: .62rem !important;
+  max-width: none !important;
+}
+
+/* ── 1. the grid section leaves the white theme ── */
+html.ar-proj-index #root > div > div > section:nth-of-type(2) {
+  background: #0e1d1f !important;
+  padding-top: clamp(2rem, 4vw, 3.5rem) !important;
+  padding-bottom: clamp(3rem, 6vw, 5rem) !important;
+}
+
+/* ── 2. filter bar: dark pills with a gold edge ── */
+html.ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:first-child {
+  border-bottom: 1px solid rgba(200, 168, 110, .28) !important;
+  padding-bottom: 1.6rem !important;
+  margin-bottom: 2rem !important;
+  gap: .6rem !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(2) select {
+  background: rgba(255, 255, 255, .05) !important;
+  color: #f2fbfa !important;
+  border: 1px solid rgba(200, 168, 110, .45) !important;
+  border-radius: 999px !important;
+  padding: .72rem 2.6rem .72rem 1.25rem !important;
+  font-size: .8rem !important;
+  letter-spacing: .04em !important;
+  font-weight: 600 !important;
+  min-width: 12rem;
+  transition: border-color .25s, background .25s;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(2) select:hover,
+html.ar-proj-index #root > div > div > section:nth-of-type(2) select:focus {
+  border-color: #C8A86E !important;
+  background: rgba(200, 168, 110, .12) !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(2) select option {
+  background: #0e1d1f;
+  color: #f2fbfa;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(2) .relative > svg {
+  stroke: #C8A86E !important;
+  color: #C8A86E !important;
+}
+
+/* ── 3. sector groups KEPT — category heading + its own card grid ── */
+/* the groups wrapper is a vertical stack of sector blocks, not one merged grid */
+html.ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:nth-child(2) {
+  display: block !important;
+}
+/* each sector block stays a block and keeps its own grid */
+html.ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:nth-child(2) > div {
+  display: block !important;
+  margin-bottom: 3.5rem !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:nth-child(2) > div > div:last-child {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)) !important;
+  gap: 1.15rem !important;
+}
+/* category heading row — forced visible (!important beats framer-motion's inline
+   opacity/transform, which can stick at 0 because the in-view observer never fires
+   while the heading is display:none at mount) */
+html.ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:nth-child(2) > div > div:first-child {
+  display: flex !important;
+  opacity: 1 !important;
+  transform: none !important;
+  align-items: flex-end;
+  gap: 1.25rem;
+  padding-bottom: .95rem;
+  margin-bottom: 1.7rem;
+  border-bottom: 1px solid rgba(200, 168, 110, .30);
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:nth-child(2) > div > div:first-child h2 {
+  font-family: "DM Serif Display", Georgia, serif !important;
+  font-weight: 400 !important;
+  color: #f2fbfa !important;
+  font-size: clamp(24px, 2.4vw, 34px) !important;
+  letter-spacing: -.02em !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+/* "N projects" counter */
+html.ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:nth-child(2) > div > div:first-child span {
+  color: rgba(200, 168, 110, .85) !important;
+  font-size: .68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+  margin-bottom: .15rem !important;
+}
+
+/* ── 4. cards: uniform 4:3, gold hover, ink card body ── */
+html.ar-proj-index #root > div > div > section:nth-of-type(2) div.group.relative.overflow-hidden.cursor-pointer {
+  border-radius: 1.15rem !important;
+  border: 1px solid rgba(255, 255, 255, .09) !important;
+  background: #0b1719 !important;
+  overflow: hidden !important;
+  transition: border-color .3s ease, transform .35s cubic-bezier(.22, 1, .36, 1), box-shadow .35s ease;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(2) div.group.relative.overflow-hidden.cursor-pointer:hover {
+  border-color: #C8A86E !important;
+  transform: translateY(-4px);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, .5);
+}
+/* image block: fixed 300px inline height -> 4:3 */
+html.ar-proj-index #root > div > div > section:nth-of-type(2) div.group.relative.overflow-hidden.cursor-pointer > div:first-child {
+  height: auto !important;
+  aspect-ratio: 4 / 3;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(2) div.group.relative.overflow-hidden.cursor-pointer > div:first-child img {
+  transition: transform .9s cubic-bezier(.22, 1, .36, 1) !important;
+  filter: saturate(1.02);
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(2) div.group.relative.overflow-hidden.cursor-pointer:hover > div:first-child img {
+  transform: scale(1.07) !important;
+}
+/* status chip on the card: mint -> gold */
+html.ar-proj-index #root > div > div > section:nth-of-type(2) div.group.relative.overflow-hidden.cursor-pointer > div:first-child div.absolute span {
+  background: rgba(200, 168, 110, .16) !important;
+  color: #C8A86E !important;
+  border-color: rgba(200, 168, 110, .5) !important;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-size: .62rem !important;
+}
+/* caption block */
+html.ar-proj-index #root > div > div > section:nth-of-type(2) div.group.relative.overflow-hidden.cursor-pointer > div.absolute.bottom-0 {
+  padding: 1.35rem 1.4rem 1.15rem !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(2) div.group.relative.overflow-hidden.cursor-pointer div.absolute.bottom-0 h3 {
+  color: #ffffff !important;
+  font-size: 1.08rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -.01em !important;
+  line-height: 1.25 !important;
+}
+html.ar-proj-index #root > div > div > section:nth-of-type(2) div.group.relative.overflow-hidden.cursor-pointer div.absolute.bottom-0 span {
+  color: rgba(242, 251, 250, .72) !important;
+}
+
+/* ── 5. small screens ── */
+@media (max-width: 700px) {
+  html.ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:first-child > div { width: 100%; }
+  html.ar-proj-index #root > div > div > section:nth-of-type(2) select { min-width: 0; width: 100%; }
+  html.ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:nth-child(2) { gap: .85rem !important; }
+}

@@ -1,0 +1,117 @@
+/* ==== AL RYUM @astra ==== Header theme switcher — DARK variant only.
+   Nothing here applies unless <html> carries .ar-theme-dark, which the toggle sets and remembers.
+   Default site look (mint pill nav) is untouched.
+
+   The pill nav ships as mint #9ef3ee on some routes and #7dd6aa on others, with dark text and dark logo
+   artwork — so the dark variant restates background, text and the logo treatment together. */
+
+html.ar-theme-dark header nav {
+  background: linear-gradient(180deg, #0f2124 0%, #0b1618 100%) !important;
+  border: 1px solid rgba(200, 168, 110, 0.30);
+  /* the site paints a mint glow via shadow-2xl; on ink it reads as a green halo, so it is replaced */
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(200, 168, 110, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
+  backdrop-filter: saturate(120%) blur(10px);
+  -webkit-backdrop-filter: saturate(120%) blur(10px);
+}
+
+html.ar-theme-dark header nav a,
+html.ar-theme-dark header nav span,
+html.ar-theme-dark header nav button,
+html.ar-theme-dark header nav p,
+html.ar-theme-dark header nav div {
+  color: #F7F2E9 !important;
+}
+html.ar-theme-dark header nav a:hover,
+html.ar-theme-dark header nav button:hover,
+html.ar-theme-dark header nav a:hover span {
+  color: #C8A86E !important;
+}
+
+/* The logo is dark artwork: green-cyan (rgb 29,40,42 / 59,89,98 / 64,109,99) with a red element
+   (rgb 140,34,39), all at value 0.16–0.55 — invisible on ink. Lift its own colours rather than
+   flattening it to white, so it stays coloured in the dark theme. */
+html.ar-theme-dark header nav img[src*="arc-logo"] {
+  filter: brightness(2.05) saturate(3);
+  opacity: 1;
+}
+html.ar-theme-dark header nav a:hover img[src*="arc-logo"] { opacity: 1; }
+
+html.ar-theme-dark header nav svg { color: #F7F2E9 !important; stroke: currentColor; }
+
+/* active item: a gold wash reads better than a light chip on ink */
+html.ar-theme-dark header nav [class*="bg-"][class*="rounded-full"] {
+  background: rgba(200, 168, 110, 0.14) !important;
+}
+
+/* ---------- the toggle: an icon, pinned to the far right of the pill ---------- */
+.ar-theme-toggle {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(18, 32, 35, 0.35);
+  background: rgba(255, 255, 255, 0.5);
+  color: #122023;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  z-index: 2;
+}
+.ar-theme-toggle:hover { background: rgba(255, 255, 255, 0.85); }
+.ar-theme-toggle svg { width: 16px; height: 16px; display: block; stroke: currentColor; fill: none; stroke-width: 1.7; }
+.ar-theme-toggle .ar-tt-sun { display: none; }
+html.ar-theme-dark .ar-theme-toggle {
+  background: rgba(200, 168, 110, 0.16);
+  border-color: rgba(200, 168, 110, 0.5);
+  color: #F7F2E9;
+}
+html.ar-theme-dark .ar-theme-toggle:hover { background: rgba(200, 168, 110, 0.3); }
+/* in dark mode show the sun (the way back to light) */
+html.ar-theme-dark .ar-theme-toggle .ar-tt-sun { display: block; }
+html.ar-theme-dark .ar-theme-toggle .ar-tt-moon { display: none; }
+
+/* the header nav needs to anchor it */
+header nav { position: relative; }
+
+/* small screens: sit left of the menu button rather than over it */
+@media (max-width: 1279px) {
+  /* the menu button occupies right 32..72px, so the toggle sits clear of it */
+  .ar-theme-toggle { right: 82px; width: 30px; height: 30px; }
+  .ar-theme-toggle svg { width: 15px; height: 15px; }
+}
+
+/* ---------- search control: nudged 1cm (≈38px) to the left ---------- */
+header nav button[class*="w-12"][class*="h-12"][class*="rounded-full"]:not(.ar-theme-toggle) {
+  transform: translateX(-38px);
+}
+/* hover: the site scales this button, so keep the shift while it does */
+header nav button[class*="w-12"][class*="h-12"][class*="rounded-full"]:not(.ar-theme-toggle):hover {
+  transform: translateX(-38px) scale(1.05);
+}
+
+/* ---------- top bar typography: the nav links read too small at 15px ----------
+   The links carry inline font-size, so an override needs !important. Applies to the header in both
+   themes (it is the same bar), never to the footer or any other nav. */
+header nav a,
+header nav > div > div > a {
+  font-size: 17px !important;
+  letter-spacing: 0.01em !important;
+}
+/* the wordmark gets a matching step up from 30px */
+header nav a span[style*="font-weight: 700"],
+header nav a span.text-2xl,
+header nav a span.text-3xl {
+  font-size: 33px !important;
+}
+/* the round search button's icon scales with the type, so lift it a touch too */
+header nav button svg.w-5 { width: 21px !important; height: 21px !important; }
+
+/* keep the bar on one line — if the bigger type would wrap, tighten the gaps instead */
+@media (min-width: 1280px) and (max-width: 1600px) {
+  header nav > div { gap: 1.6rem !important; }
+}

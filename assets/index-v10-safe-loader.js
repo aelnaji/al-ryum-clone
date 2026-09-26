@@ -1,4 +1,4 @@
-const response = await fetch("/assets/index-v10-timeline.js?v=30");
+const response = await fetch("/assets/index-v10-timeline.js?v=93");
 if (!response.ok) throw new Error(`Preview bundle failed to load: ${response.status}`);
 
 const source = await response.text();

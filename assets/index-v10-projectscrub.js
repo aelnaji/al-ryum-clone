@@ -23,16 +23,12 @@
   if (!/\/projects(\/|$)/.test(location.pathname)) return;
 
   const SCENES = [
-    {
-      title: "Louvre Abu Dhabi",
-      sub: "External works & landscaping, Saadiyat Island",
-      base: "/assets/projects/louvre/frame_",
-    },
-    {
-      title: "Zayed National Museum",
-      sub: "Landscaping, Irrigation & Car Park — Abu Dhabi",
-      base: "/assets/projects/zayed/frame_",
-    },
+    // Louvre + Zayed were originally rendered here as WebP frame-sequence
+    // scenes. They have been moved to the new dedicated "Project Films"
+    // section (al-ryum-project-films.js) which uses the same full-bleed
+    // canvas frame-scrub pattern but with the new visual treatment
+    // and four project films total. The list is intentionally empty
+    // so this script is a no-op.
   ];
 
   const frameUrl = (base, n) => `${base}${String(n).padStart(4, "0")}.webp`;

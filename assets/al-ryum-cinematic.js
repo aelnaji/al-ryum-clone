@@ -23,47 +23,25 @@
   if (!window.gsap || !window.ScrollTrigger) return;
 
   var FILMS = [
-    { id: "film-louvre",   canvas: "canvas-louvre",   base: "assets/frames/louvre/",   n: 80,
-      eyebrow: "Cultural Heritage · Saadiyat Island", title: "Louvre Abu Dhabi",
-      body: "The dome approach — external works and landscaping." },
-    { id: "film-zayed",    canvas: "canvas-zayed",    base: "assets/frames/zayed/",    n: 80,
-      eyebrow: "Landscaping · Abu Dhabi", title: "Zayed National Museum",
-      body: "Architecture in the landscape — irrigation & car park." },
-    { id: "film-emirates", canvas: "canvas-emirates", base: "assets/frames/emirates/", n: 80,
-      eyebrow: "Hospitality · Abu Dhabi", title: "Emirates Palace",
-      body: "Grand gardens, palace grounds & beachfront landscaping." },
+    // Louvre + Zayed films have been moved into the dedicated
+    // "Project Films" section (al-ryum-project-films.js) which
+    // uses the new full-bleed canvas frame-scrub pattern. The
+    // existing in-cinematic Louvre / Zayed entries are removed
+    // to avoid duplication.
   ];
 
   function buildSections() {
-    var html = "";
-    // Intro bridge before the first film — quick, no eyebrow
-    html +=
-      '<section class="arc-bridge arc-bridge-intro" data-intro="true" style="position:relative;height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;background:#122023;">' +
-        '<div style="opacity:0;transform:translateY(30px);">' +
-          '<h2 style="font-size:clamp(2rem,6vw,3.6rem);font-weight:600;text-transform:uppercase;letter-spacing:.02em;color:#f8fafa;">Our signature projects,<br/>in motion.</h2>' +
-        '</div>' +
-      '</section>';
-    FILMS.forEach(function (f, i) {
-      html +=
-        '<section class="arc-film" id="' + f.id + '" style="position:relative;height:100vh;overflow:hidden;background:#0a1416;">' +
-          '<canvas id="' + f.canvas + '" style="position:absolute;inset:0;width:100%;height:100%;display:none;"></canvas>' +
-          '<div style="position:absolute;left:0;right:0;bottom:9%;text-align:center;z-index:3;pointer-events:none;padding:0 1.5rem;">' +
-            '<span style="display:block;font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:#C8A86E;">' + f.eyebrow + '</span>' +
-            '<h2 style="font-size:clamp(1.7rem,5vw,3.2rem);text-transform:uppercase;letter-spacing:.04em;font-weight:600;margin-top:.6rem;color:#f8fafa;">' + f.title + '</h2>' +
-            '<p style="margin-top:.5rem;opacity:.85;font-size:clamp(.9rem,2vw,1.05rem);color:#f8fafa;">' + f.body + '</p>' +
-          '</div>' +
-        '</section>';
-    });
-
-    // Finale — "Built to last." closing statement after the last film
-    html +=
-      '<section class="arc-finale" style="position:relative;height:85vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;gap:1.6rem;background:#122023;">' +
-        '<h2 style="font-size:clamp(2rem,6vw,3.4rem);font-weight:600;text-transform:uppercase;letter-spacing:.03em;color:#f8fafa;">Built to last.</h2>' +
-        '<div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;">' +
-          '<a href="#projects" style="color:#0a1416;background:#C8A86E;text-decoration:none;font-weight:600;font-size:.95rem;padding:.9rem 1.8rem;border-radius:999px;">View all projects</a>' +
-        '</div>' +
-      '</section>';
-    return html;
+    // The original Louvre + Zayed film sections and the "Built to last."
+    // finale have been moved into the new dedicated Project Films section
+    // (al-ryum-project-films.js). This script now only renders:
+    //   1. The intro bridge "Our signature projects, in motion."
+    //   2. An empty `arc-finale` placeholder that the new Project Films
+    //      section (al-ryum-project-films.js) replaces in place.
+    return ''
+      // Empty placeholder — the new Project Films section takes over
+      // this slot in-place on mount. Kept so the cinematic host
+      // structure and CSS still flow as before.
+      + '<section class="arc-finale" style="position:relative;height:85vh;background:#122023;"></section>';
   }
 
   function coverCrop(iw, ih, W, H) {
@@ -112,36 +90,27 @@
         var c = coverCrop(img.naturalWidth, img.naturalHeight, W, H);
         ctx.drawImage(img, c.dx, c.dy, c.dw, c.dh);
       }
-      var rafPending = false, pendingIndex = 0;
+      var rafPending = false;
       function scheduleDraw(index) {
         var i = Math.max(0, Math.min(good.length - 1, index));
-        pendingIndex = i;
-        if (i === current && !rafPending) return;
+        if (i === current) return;
         if (!rafPending) {
           rafPending = true;
-          requestAnimationFrame(function () {
-            rafPending = false;
-            current = pendingIndex;
-            draw(current);
-          });
+          requestAnimationFrame(function () { rafPending = false; current = i; draw(i); });
         }
       }
 
       ScrollTrigger.create({
         trigger: section, start: "top top", end: "+=900",
-        pin: true, scrub: true, anticipatePin: 1, invalidateOnRefresh: true,
+        pin: true, scrub: true, anticipatePin: 1,
         onUpdate: function (self) { scheduleDraw(Math.round(self.progress * (good.length - 1))); },
-        // ScrollTrigger can release the pin directly from a progress fraction
-        // below 1. Force the terminal frame so every film resolves on its shot.
-        onLeave: function () { scheduleDraw(good.length - 1); },
-        onLeaveBack: function () { scheduleDraw(0); },
       });
       window.addEventListener("resize", function () { sizeCanvas(); if (current >= 0) draw(current); });
 
       // caption reveal mid-scrub
       gsap.to(section.querySelectorAll("h2, p, span"), {
         opacity: 1, y: 0, stagger: 0.08, ease: "power2.out",
-        scrollTrigger: { trigger: section, start: "25% top", end: "55% top", scrub: true, invalidateOnRefresh: true },
+        scrollTrigger: { trigger: section, start: "25% top", end: "55% top", scrub: true },
       });
 
       canvas.style.display = "block";
@@ -153,10 +122,9 @@
       // Start at opacity 0 and fade to 1 as this film's pin begins.
       gsap.fromTo(canvas, { opacity: 0 }, {
         opacity: 1, ease: "none",
-        scrollTrigger: { trigger: section, start: "top bottom", end: "top top", scrub: true, invalidateOnRefresh: true },
+        scrollTrigger: { trigger: section, start: "top bottom", end: "top top", scrub: true },
       });
     });
-    return loaded;
   }
 
   /* ---------- boot: inject cinematic into the React root container ----------
@@ -187,28 +155,8 @@
     // The Projects section keeps ALL its cards — films are an intro, the grid
     // shows every project including Louvre/Zayed/Emirates.
 
-    // Bind film scroll triggers, then refresh ScrollTrigger once everything
-    // has actually loaded (fixes stale start/end offsets from layout shifts
-    // that happen while images are still downloading).
-    var filmLoads = FILMS.map(function (f) { return bindFilm(f.canvas, f.base, f.n); });
-    Promise.all(filmLoads).then(function () {
-      if (window.ScrollTrigger) ScrollTrigger.refresh();
-    });
-
-    // Intro bridge: fade in on scroll into view
-    var intro = document.querySelector(".arc-bridge-intro");
-    if (intro) {
-      var introContent = intro.firstElementChild;
-      ScrollTrigger.create({
-        trigger: intro, start: "top 80%", end: "top 30%", scrub: true,
-        onUpdate: function (self) {
-          if (introContent) {
-            introContent.style.opacity = Math.min(1, self.progress * 1.6);
-            introContent.style.transform = "translateY(" + (30 - 30 * Math.min(1, self.progress * 1.6)) + "px)";
-          }
-        },
-      });
-    }
+    // Bind film scroll triggers
+    FILMS.forEach(function (f) { bindFilm(f.canvas, f.base, f.n); });
 
     // MutationObserver: re-inject if anyone wipes the wrapper
     var obs = new MutationObserver(function () {

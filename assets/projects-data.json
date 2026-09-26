@@ -1,0 +1,1040 @@
+[
+ {
+  "id": 1,
+  "name": "Zayed National Museum",
+  "image": "/assets/concepts/zayed-national-museum-concept.jpg",
+  "location": "Abu Dhabi, UAE",
+  "industry": "Cultural",
+  "sector": "Heritage",
+  "status": "Completed",
+  "size": "large",
+  "description": "Landscaping and irrigation works and car park for the iconic Zayed National Museum on Saadiyat Island.",
+  "year": "2025",
+  "client": "Department of Culture and Tourism",
+  "value": "AED 96M",
+  "images": [
+   "/assets/concepts/zayed-national-museum-concept.jpg"
+  ],
+  "concepts": [
+   {
+    "src": "/assets/concepts/zayed-national-museum-concept.jpg",
+    "label": "Zayed National Museum - landscaping & irrigation",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true
+ },
+ {
+  "id": 2,
+  "name": "Pearl Jumeirah",
+  "image": "/assets/concepts/pearl-jumeirah-concept.webp",
+  "location": "Abu Dhabi, UAE",
+  "industry": "Hospitality",
+  "sector": "Commercial",
+  "status": "Completed",
+  "size": "large",
+  "description": "Construction of the landscape works at Pearl Jumeirah (MH-0034) for Meraas Development.",
+  "year": "2004",
+  "client": "Meraas Development LLC",
+  "value": "-",
+  "images": [
+   "/assets/concepts/pearl-jumeirah-concept.webp"
+  ],
+  "concepts": [
+   {
+    "src": "/assets/concepts/pearl-jumeirah-concept.webp",
+    "label": "Pearl Jumeirah - landscape works",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true
+ },
+ {
+  "id": 3,
+  "name": "Louvre Abu Dhabi",
+  "image": "/assets/concepts/louvre-abu-dhabi-concept.jpg",
+  "location": "Saadiyat Island - Abu Dhabi, UAE",
+  "industry": "Cultural",
+  "sector": "Heritage",
+  "status": "Completed",
+  "size": "large",
+  "description": "C02- Louvre Abu Dhabi External Works including hard and soft landscaping, MEP works, lighting and irrigation.",
+  "year": "2017",
+  "client": "Tourism Development and Investment Company",
+  "value": "AED 130M",
+  "images": [
+   "/assets/concepts/louvre-abu-dhabi-concept.jpg"
+  ],
+  "concepts": [
+   {
+    "src": "/assets/concepts/louvre-abu-dhabi-concept.jpg",
+    "label": "Louvre Abu Dhabi - external works",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true
+ },
+ {
+  "id": 6,
+  "name": "Trump International Golf Course",
+  "image": "/assets/concepts/trump-international-golf-concept.webp",
+  "location": "Dubai, UAE",
+  "industry": "Sports and Leisure",
+  "sector": "Recreation",
+  "status": "Completed",
+  "size": "large",
+  "description": "World-class golf course development with championship-level fairways and premium landscaping.",
+  "year": "-",
+  "client": "-",
+  "value": "-",
+  "images": [
+   "/assets/concepts/trump-international-golf-concept.webp"
+  ],
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/trump-international-golf-concept.webp",
+    "label": "Trump International Golf Course",
+    "wasPhotography": true
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "name": "Kempinski Hotel",
+  "image": "/assets/concepts/marsa-al-arab-kempinski-concept.webp",
+  "location": "Dubai, UAE",
+  "industry": "Hospitality",
+  "sector": "Commercial",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Soft and hard landscaping works for Kempinski Hotel & Residences at the Palm — Phase II.",
+  "year": "2009",
+  "client": "Emerald Palace Group Management FZ-LLC",
+  "value": "-",
+  "images": [
+   "/assets/concepts/marsa-al-arab-kempinski-concept.webp"
+  ],
+  "concepts": [
+   {
+    "src": "/assets/concepts/marsa-al-arab-kempinski-concept.webp",
+    "label": "Marsa Al Arab (Kempinski) - landscape & public realm",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true
+ },
+ {
+  "id": 8,
+  "name": "Meydan Race Track and Hotel",
+  "image": "/assets/concepts/meydan-racecourse-concept.webp",
+  "location": "Dubai, UAE",
+  "industry": "Sports and Leisure",
+  "sector": "Recreation",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Landscaping works for the Meydan Racecourse complex in Dubai.",
+  "year": "-",
+  "client": "-",
+  "value": "-",
+  "images": [
+   "/assets/concepts/meydan-racecourse-concept.webp"
+  ],
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/meydan-racecourse-concept.webp",
+    "label": "Meydan Race Track and Hotel",
+    "wasPhotography": true
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "name": "La Mer Water Park",
+  "image": "/assets/concepts/la-mer-water-park-concept.webp",
+  "location": "Dubai, UAE",
+  "industry": "Hospitality",
+  "sector": "Entertainment",
+  "status": "Completed",
+  "size": "large",
+  "description": "Design and Build of the On-Shore Works for La Mer Ring Show and Water Park.",
+  "year": "2018",
+  "client": "Meraas Development LLC",
+  "value": "-",
+  "images": [
+   "/assets/concepts/la-mer-water-park-concept.webp"
+  ],
+  "concepts": [
+   {
+    "src": "/assets/concepts/la-mer-water-park-concept.webp",
+    "label": "La Mer Ring Show & Water Park - on-shore works",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true
+ },
+ {
+  "id": 10,
+  "name": "Masdar Central Park",
+  "image": "/assets/concepts/masdar-central-park-concept.webp",
+  "location": "Abu Dhabi, UAE",
+  "industry": "Landscaping",
+  "sector": "Recreation",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Construction of Central Park — Phase 2 (Masdar). Commercial and public buildings, terrace event lawns and hard and soft landscaping across the park parcels.",
+  "year": "2020",
+  "client": "MASDAR",
+  "value": "-",
+  "images": [
+   "/assets/concepts/masdar-central-park-concept.webp"
+  ],
+  "concepts": [
+   {
+    "src": "/assets/concepts/masdar-central-park-concept.webp",
+    "label": "Masdar Central Park",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true
+ },
+ {
+  "id": 11,
+  "name": "Dubai Hills Communities",
+  "image": "/assets/concepts/dubai-hills-golf-grove-concept.webp",
+  "location": "Dubai, UAE",
+  "industry": "Community",
+  "sector": "Residential",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Community facilities for Golf Grove and Club Villas at Dubai Hills Estate.",
+  "year": "2023",
+  "client": "Dubai Hills Estate LLC",
+  "value": "AED 45M",
+  "images": [
+   "/assets/concepts/dubai-hills-golf-grove-concept.webp"
+  ],
+  "concepts": [
+   {
+    "src": "/assets/concepts/dubai-hills-golf-grove-concept.webp",
+    "label": "Golf Grove, Dubai Hills",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true
+ },
+ {
+  "id": 12,
+  "name": "Abu Dhabi Corniche",
+  "image": "/assets/concepts/abu-dhabi-corniche-concept.webp",
+  "location": "Abu Dhabi, UAE",
+  "industry": "Landscaping",
+  "sector": "Public Realm",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Construction, completion and maintenance of the Abu Dhabi Corniche Public Beach — irrigation works, soft and hard landscaping, kiosks, civil construction, and planting of trees, shrubs, grasses, bunkers and fairways including associated practice areas and access paths.",
+  "year": "2009",
+  "client": "Urban Planning Council",
+  "value": "-",
+  "images": [
+   "/assets/concepts/abu-dhabi-corniche-concept.webp"
+  ],
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/abu-dhabi-corniche-concept.webp",
+    "label": "Abu Dhabi Corniche Public Beach",
+    "wasPhotography": true
+   }
+  ]
+ },
+ {
+  "id": 13,
+  "name": "Treated Wastewater Pipeline & Pumping Stations",
+  "image": "/assets/concepts/pipeline-treated-wastewater-concept.webp",
+  "location": "Fujairah, UAE",
+  "industry": "Infrastructure",
+  "sector": "Utilities",
+  "status": "Completed",
+  "size": "large",
+  "description": "Design, construction and commissioning of pumping stations and a GRP transmission and distribution pipeline network for the reuse of treated waste water from the Tanqia plant, serving Fujairah.",
+  "year": "2023",
+  "client": "Federal Electricity & Water Authority (FEWA)",
+  "value": "On request",
+  "consultant": "",
+  "programme": "January 2020 – January 2023",
+  "scope": [
+   "Design, construct and commission suitable pumping stations",
+   "Bulk earthwork and rock cutting without blasting",
+   "Design and construction of the pumping station building",
+   "Design and installation of pump motors with a complete control system",
+   "Associated civil, mechanical, electrical and I&C works",
+   "Laying and commissioning of GRP transmission and distribution pipelines with FOC",
+   "Buried trench works, protection and road crossings (open cut and NDRC)",
+   "Inter-connection and external reinstatement works",
+   "Service connections and associated FOC works"
+  ],
+  "images": [
+   "/assets/concepts/pipeline-treated-wastewater-concept.webp"
+  ],
+  "concepts": [
+   {
+    "src": "/assets/concepts/pipeline-treated-wastewater-concept.webp",
+    "label": "Treated Wastewater Pipeline - reference-guided",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true
+ },
+ {
+  "id": 14,
+  "name": "Madinat Zayed Parks",
+  "image": "/assets/concepts/madinat-zayed-concept.webp",
+  "location": "Al Dhafrah Region, Abu Dhabi",
+  "industry": "Community",
+  "sector": "Recreation",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Design and Build of Madinat Zayed Parks in the Al Dhafrah Region, Construction Package 5. Public park delivery covering earthworks, drainage and irrigation, soft and hard landscaping, landscape lighting, storm water and sewer networks, and associated civil and MEP works.",
+  "year": "2024",
+  "client": "Department of Municipalities and Transport (DMT)",
+  "consultant": "DORSCH",
+  "programme": "July 2024 - December 2024",
+  "scope": [
+   "Design and build",
+   "Earthworks",
+   "Drainage & irrigation",
+   "Soft landscape & hard landscape",
+   "Landscape lighting works",
+   "Site works & civil works",
+   "Mechanical, electrical & plumbing services (utilities)",
+   "Storm water network",
+   "Sewer network",
+   "Establishment & maintenance works"
+  ],
+  "value": "-",
+  "concepts": [
+   {
+    "src": "/assets/concepts/madinat-zayed-concept.webp",
+    "label": "Madinat Zayed Parks",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true,
+  "images": [
+   "/assets/concepts/madinat-zayed-concept.webp"
+  ]
+ },
+ {
+  "id": 15,
+  "name": "Al Shamkah Parks",
+  "image": "/assets/concepts/al-shamkah-concept.webp",
+  "location": "Al Shamkha, Abu Dhabi",
+  "industry": "Community",
+  "sector": "Recreation",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Design and Construction of Al Shamkah Parks, Construction Packages 8 and 9. Landscaping and irrigation delivery including clearance, grading and preparation of planting areas, storm water and water connections.",
+  "year": "2024",
+  "client": "Department of Municipalities and Transport (DMT)",
+  "consultant": "OTAK Intl.",
+  "programme": "June 2024 - December 2024",
+  "scope": [
+   "Design, supply, installation & maintenance of landscaping works",
+   "Irrigation works",
+   "Clearance, grading and preparation for planting areas",
+   "Storm water",
+   "Water connections",
+   "Tie-in connection to TSE mains & existing irrigation system"
+  ],
+  "value": "-",
+  "concepts": [
+   {
+    "src": "/assets/concepts/al-shamkah-concept.webp",
+    "label": "Al Shamkah Parks",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true,
+  "images": [
+   "/assets/concepts/al-shamkah-concept.webp"
+  ]
+ },
+ {
+  "id": 16,
+  "name": "Al Falah Event Plaza",
+  "image": "/assets/concepts/al-falah-event-plaza-concept.webp",
+  "location": "Al Falah, Abu Dhabi",
+  "industry": "Community",
+  "sector": "Recreation",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Design and Build of Al Falah Event Plaza. Civic event venue delivering a central plaza and spine parks with jogging and cycling paths, play spaces and sports facilities, a large event lawn, designated market space, landscaping, signage and park lighting.",
+  "year": "2026",
+  "client": "Department of Municipalities and Transport (DMT)",
+  "consultant": "Hill International",
+  "programme": "October 2024 - September 2026",
+  "scope": [
+   "Design & build of Central Plaza and Spine Parks",
+   "Jogging and cycling paths",
+   "Play spaces and sports facilities",
+   "Large event lawn",
+   "Designated market space",
+   "Rest room facilities",
+   "Landscaping works",
+   "Signage & wayfinding",
+   "MEP & plumbing services",
+   "Park lighting"
+  ],
+  "value": "-",
+  "concepts": [
+   {
+    "src": "/assets/concepts/al-falah-event-plaza-concept.webp",
+    "label": "Al Falah Event Plaza",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true,
+  "images": [
+   "/assets/concepts/al-falah-event-plaza-concept.webp"
+  ]
+ },
+ {
+  "id": 17,
+  "name": "Al Falah Central Circle",
+  "image": "/assets/concepts/al-falah-central-circle-concept.webp",
+  "location": "Al Falah, Abu Dhabi",
+  "industry": "Community",
+  "sector": "Recreation",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Design and Build of new parks and playgrounds in Abu Dhabi (Al-Falah), Construction Package 12, Contract No. 2 DMT/CR/012/2024. Landscaping, irrigation, clearance and grading for new public parks.",
+  "year": "2024",
+  "client": "Department of Municipalities and Transport (DMT)",
+  "consultant": "PARSONS",
+  "programme": "February 2024 - December 2024",
+  "scope": [
+   "Design, supply, installation & maintenance of landscaping works",
+   "Irrigation works",
+   "Clearance, grading and preparation for planting areas",
+   "Storm water",
+   "Water connections",
+   "Tie-in connection to TSE mains & existing irrigation system"
+  ],
+  "value": "-",
+  "concepts": [
+   {
+    "src": "/assets/concepts/al-falah-central-circle-concept.webp",
+    "label": "Al Falah Central Circle",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true,
+  "images": [
+   "/assets/concepts/al-falah-central-circle-concept.webp"
+  ]
+ },
+ {
+  "id": 18,
+  "name": "MBZ Parks",
+  "image": "/assets/concepts/mbz-parks-concept.webp",
+  "location": "MBZ City, Abu Dhabi",
+  "industry": "Community",
+  "sector": "Recreation",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Parks delivery in MBZ City covering complete project execution from management, design, procurement and prefabrication through to construction, testing and commissioning.",
+  "year": "2024",
+  "client": "Department of Municipalities and Transport (DMT)",
+  "consultant": "DORSCH",
+  "programme": "November 2023 - June 2024",
+  "value": "-",
+  "images": [
+   "/assets/concepts/mbz-parks-concept.webp"
+  ],
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/mbz-parks-concept.webp",
+    "label": "MBZ Parks",
+    "wasPhotography": true
+   }
+  ]
+ },
+ {
+  "id": 19,
+  "name": "Legoland Water Park",
+  "image": "/assets/concepts/legoland-concept.webp",
+  "location": "Dubai",
+  "industry": "Entertainment",
+  "sector": "Theme Parks",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Complete design and construction of the Legoland Water Park at Dubai Parks and Resorts, including site works, area development, aquatic attractions, pools, filtration and pumping systems, models, ticketing and retail, changing and prayer rooms, FF&E and MEP sundries.",
+  "year": "2017",
+  "client": "LL Dubai Theme Park LLC (Dubai Parks and Resorts)",
+  "consultant": "SAMSUNG C&T",
+  "programme": "July 2015 - December 2017",
+  "scope": [
+   "Site works",
+   "Area development",
+   "Aquatic attractions",
+   "Pools",
+   "Filtration & pumping systems",
+   "Models",
+   "Ticketing office and retail",
+   "Changing rooms and prayer rooms",
+   "FF&E",
+   "Mechanical, electrical & plumbing sundries"
+  ],
+  "value": "-",
+  "concepts": [
+   {
+    "src": "/assets/concepts/legoland-concept.webp",
+    "label": "Legoland Water Park",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true,
+  "images": [
+   "/assets/concepts/legoland-concept.webp"
+  ]
+ },
+ {
+  "id": 20,
+  "name": "Motiongate Park - Area Development",
+  "image": "/assets/concepts/motiongate-concept.webp",
+  "location": "Dubai",
+  "industry": "Entertainment",
+  "sector": "Theme Parks",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Construction of the area development works for Motiongate Park (DPDP-4001/CW-MC-08). Site wide grading, hardscape and soft landscape, secondary irrigation, tree and palm installation, MEP works, fences, railings and gates, water features and specialist rockwork.",
+  "year": "2017",
+  "client": "MOTIONGATE LLC (Dubai Parks and Resorts)",
+  "consultant": "Dynamic Engr. Consultants",
+  "programme": "August 2015 - January 2017",
+  "scope": [
+   "Site wide grading",
+   "Hardscape & soft landscape",
+   "Secondary irrigation installation",
+   "Transportation & maintenance of trees, palms and ground covers",
+   "MEP works",
+   "Fences, railings and gates",
+   "Water features",
+   "Specialist rockwork including concrete & supporting walls"
+  ],
+  "value": "-",
+  "concepts": [
+   {
+    "src": "/assets/concepts/motiongate-concept.webp",
+    "label": "Motiongate Park - Area Development",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true,
+  "images": [
+   "/assets/concepts/motiongate-concept.webp"
+  ]
+ },
+ {
+  "id": 21,
+  "name": "Akoya by DAMAC - Public Realm",
+  "image": "/assets/concepts/akoya-concept.webp",
+  "location": "Dubai",
+  "industry": "Hospitality",
+  "sector": "Community",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Public realm landscaping at Akoya by DAMAC. Soft and hard landscaping, irrigation works, landscape furniture and accessories, feature lighting, signage and wayfinding, and ring road footpaths.",
+  "year": "2018",
+  "client": "DAMAC Crescent Properties LLC",
+  "consultant": "KEO International Consultants",
+  "programme": "May 2016 - June 2018",
+  "scope": [
+   "Soft landscaping works",
+   "Hard landscaping works",
+   "Landscape irrigation works",
+   "Landscape furniture & accessories",
+   "Landscape feature lighting",
+   "Signage & wayfinding",
+   "Ring road footpaths"
+  ],
+  "value": "-",
+  "concepts": [
+   {
+    "src": "/assets/concepts/akoya-concept.webp",
+    "label": "Akoya by DAMAC - Public Realm",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true,
+  "images": [
+   "/assets/concepts/akoya-concept.webp"
+  ]
+ },
+ {
+  "id": 22,
+  "name": "Dubai Production City - Landscaping",
+  "image": "/assets/concepts/dubai-production-city-concept.webp",
+  "location": "Dubai",
+  "industry": "Community",
+  "sector": "Public Realm",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Landscaping works package at Dubai Production City. Soft and hard landscaping including palms, trees, shrubs, groundcovers and root barriers, plus excavation, filling and associated works.",
+  "year": "2019",
+  "client": "TECOM Investment",
+  "consultant": "AECOM",
+  "programme": "December 2016 - May 2019",
+  "scope": [
+   "Soft landscape works (palms, trees, shrubs, groundcovers & root barriers)",
+   "Hard landscaping works (excavation, disposal of excavated materials, filling)"
+  ],
+  "value": "-",
+  "concepts": [
+   {
+    "src": "/assets/concepts/dubai-production-city-concept.webp",
+    "label": "Dubai Production City - Landscaping",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true,
+  "images": [
+   "/assets/concepts/dubai-production-city-concept.webp"
+  ]
+ },
+ {
+  "id": 23,
+  "name": "Akoya Golf Clubhouse",
+  "image": "/assets/concepts/akoya-golf-clubhouse-concept.webp",
+  "location": "Dubai",
+  "industry": "Sports and Leisure",
+  "sector": "Recreation",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Landscaping works to the Akoya golf clubhouse. Hard landscaping including concrete, formwork, steel reinforcement, pool deck and wooden deck, with soft landscaping and planting.",
+  "year": "2017",
+  "client": "DAMAC Crescent Properties",
+  "programme": "June 2016 - March 2017",
+  "scope": [
+   "Hard landscaping works (concrete, formworks, steel reinforcement, pool deck, wooden deck)",
+   "Soft landscaping works (ground covers, ornamental grasses & shrubs)"
+  ],
+  "value": "-",
+  "concepts": [
+   {
+    "src": "/assets/concepts/akoya-golf-clubhouse-concept.webp",
+    "label": "Akoya Golf Clubhouse",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true,
+  "images": [
+   "/assets/concepts/akoya-golf-clubhouse-concept.webp"
+  ]
+ },
+ {
+  "id": 24,
+  "name": "VIP Area, Al Qala ID Street",
+  "image": "/assets/concepts/al-qala-vvip-area-concept.webp",
+  "location": "Abu Dhabi",
+  "industry": "Hospitality",
+  "sector": "Public Realm",
+  "status": "Delivered",
+  "size": "medium",
+  "description": "Landscaping works to the VVIP area at Al Qala ID Street.",
+  "value": "-",
+  "concepts": [
+   {
+    "src": "/assets/concepts/al-qala-vvip-area-concept.webp",
+    "label": "VIP Area, Al Qala ID Street",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true,
+  "images": [
+   "/assets/concepts/al-qala-vvip-area-concept.webp"
+  ]
+ },
+ {
+  "id": 25,
+  "name": "Khalifa City Public Realm - Phase 2",
+  "image": "/assets/concepts/khalifa-city-public-realm-concept.webp",
+  "location": "Abu Dhabi",
+  "industry": "Community",
+  "sector": "Public Realm",
+  "status": "Delivered",
+  "size": "medium",
+  "description": "Public realm works at Khalifa City, Phase 2.",
+  "value": "-",
+  "concepts": [
+   {
+    "src": "/assets/concepts/khalifa-city-public-realm-concept.webp",
+    "label": "Khalifa City Public Realm - Phase 2",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true,
+  "images": [
+   "/assets/concepts/khalifa-city-public-realm-concept.webp"
+  ]
+ },
+ {
+  "id": 26,
+  "name": "Yas & Saadiyat Island Streetscapes",
+  "image": "/assets/concepts/yas-saadiyat-island-streetscapes-concept.webp",
+  "location": "Abu Dhabi",
+  "industry": "Community",
+  "sector": "Public Realm",
+  "status": "Delivered",
+  "size": "medium",
+  "description": "Streetscape and public realm landscaping across Yas and Saadiyat Islands - road-side planting, paving, irrigation and street furniture along the island corridors.",
+  "value": "-",
+  "concepts": [
+   {
+    "src": "/assets/concepts/yas-saadiyat-island-streetscapes-concept.webp",
+    "label": "Yas & Saadiyat Island Streetscapes",
+    "wasPhotography": true
+   }
+  ],
+  "imagesAreConcept": true,
+  "images": [
+   "/assets/concepts/yas-saadiyat-island-streetscapes-concept.webp"
+  ]
+ },
+ {
+  "id": 27,
+  "name": "Recreational Park & Landscaping Works",
+  "image": "/assets/concepts/recreational-park-landscaping-works-concept.webp",
+  "images": [
+   "/assets/concepts/recreational-park-landscaping-works-concept.webp"
+  ],
+  "location": "3 Abu Dhabi",
+  "industry": "Landscaping",
+  "sector": "Public Realm",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Recreational park which include jogging _ track, walkway, sports equipment, height fence, courts, Supply and Install Precast Concrete Paving Tiles, soft landscaping & irrigation works, supply & installation of palms, trees, shrubs, ground covers, succulents, & street lightings. www.alryum.com Re",
+  "value": "-",
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/recreational-park-landscaping-works-concept.webp",
+    "label": "Recreational Park & Landscaping Works",
+    "wasPhotography": false,
+    "generatedFromText": true
+   }
+  ],
+  "client": "Tawazun Holding Co. LLC",
+  "consultant": "-",
+  "scope": [
+   "Recreational park which include jogging _ track",
+   "sports equipment",
+   "height fence",
+   "Supply and Install Precast Concrete Paving Tiles",
+   "soft landscaping & irrigation works",
+   "supply & installation of palms",
+   "ground covers",
+   "succulents",
+   "& street lightings. www.alryum.com Re"
+  ]
+ },
+ {
+  "id": 28,
+  "name": "20 Playgrounds, Abu Dhabi Main Land - Phase 1",
+  "image": "/assets/concepts/20-playgrounds-abu-dhabi-main-land-phase-1-concept.webp",
+  "images": [
+   "/assets/concepts/20-playgrounds-abu-dhabi-main-land-phase-1-concept.webp"
+  ],
+  "location": "z Abu Dhabi",
+  "industry": "Landscaping",
+  "sector": "Public Realm",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Works includes planting of trees, ground covers, supply and installation of precast concrete, paving blocks, surface finishes, resilient flooring, play and seating wall, shade structures, supply & installation of steel poles, const. of mounds for mosaic pebble, play equipment and electrical landscap",
+  "value": "-",
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/20-playgrounds-abu-dhabi-main-land-phase-1-concept.webp",
+    "label": "20 Playgrounds, Abu Dhabi Main Land - Phase 1",
+    "wasPhotography": false,
+    "generatedFromText": true
+   }
+  ],
+  "client": "Abu Dhabi Municipality",
+  "consultant": "KEO International",
+  "scope": [
+   "Works includes planting of trees",
+   "ground covers",
+   "supply and installation of precast concrete",
+   "paving blocks",
+   "surface finishes",
+   "resilient flooring",
+   "play and seating wall",
+   "shade structures",
+   "supply & installation of steel poles",
+   "const. of mounds for mosaic pebble"
+  ]
+ },
+ {
+  "id": 29,
+  "name": "New Corniche Road",
+  "image": "/assets/concepts/new-corniche-road-concept.webp",
+  "images": [
+   "/assets/concepts/new-corniche-road-concept.webp"
+  ],
+  "location": "5 Abu Dhabi",
+  "industry": "Landscaping",
+  "sector": "Public Realm",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Soft landscaping works, hard landscape, supply and installation of different type of trees, shrubs, grasses, etc, irrigation networks and storage reservoirs and water features. www.alryum.com Gor er",
+  "value": "-",
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/new-corniche-road-concept.webp",
+    "label": "New Corniche Road",
+    "wasPhotography": false,
+    "generatedFromText": true
+   }
+  ],
+  "client": "Abu Dhabi Municipality",
+  "consultant": "De Leuw Cather",
+  "scope": [
+   "Soft landscaping works",
+   "hard landscape",
+   "supply and installation of different type of trees",
+   "irrigation networks and storage reservoirs and water features. www.alryum.com Gor er"
+  ]
+ },
+ {
+  "id": 30,
+  "name": "Saadiyat Expressway Early Landscape Works C40",
+  "image": "/assets/concepts/saadiyat-expressway-early-landscape-works-c40-concept.webp",
+  "images": [
+   "/assets/concepts/saadiyat-expressway-early-landscape-works-c40-concept.webp"
+  ],
+  "location": "Abu Dhabi",
+  "industry": "Landscaping",
+  "sector": "Public Realm",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Complete irrigation of automatic irrigation system, soft/hard landscape (supply of various plants e.g. palms, trees, shrubs, supply of sweet soil, heel kerb, and pvc edger), supply & installation of pumps & pumps station. Y i i ws a. ZW“ | www.alryum.com",
+  "value": "-",
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/saadiyat-expressway-early-landscape-works-c40-concept.webp",
+    "label": "Saadiyat Expressway Early Landscape Works C40",
+    "wasPhotography": false,
+    "generatedFromText": true
+   }
+  ],
+  "client": "TDIC",
+  "consultant": "Parsons Int'l",
+  "scope": [
+   "Complete irrigation of automatic irrigation system",
+   "soft/hard landscape (supply of various plants e.g. palms",
+   "supply of sweet soil",
+   "heel kerb",
+   "and pvc edger)",
+   "supply & installation of pumps & pumps station. Y i i ws a. ZW“ | www.alryum.com"
+  ]
+ },
+ {
+  "id": 31,
+  "name": "Central Park / F1 Car Park",
+  "image": "/assets/concepts/central-park-f1-car-park-concept.webp",
+  "images": [
+   "/assets/concepts/central-park-f1-car-park-concept.webp"
+  ],
+  "location": "United Arab Emirates",
+  "industry": "Landscaping",
+  "sector": "Public Realm",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Central Park / F1 Car Park - landscaping and construction works delivered by Al Ryum Group.",
+  "value": "-",
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/central-park-f1-car-park-concept.webp",
+    "label": "Central Park / F1 Car Park",
+    "wasPhotography": false,
+    "generatedFromText": true
+   }
+  ],
+  "consultant": "Halcrow"
+ },
+ {
+  "id": 32,
+  "name": "Emirates Palace",
+  "image": "/assets/concepts/emirates-palace-concept.webp",
+  "images": [
+   "/assets/concepts/emirates-palace-concept.webp"
+  ],
+  "location": "Abu Dhabi",
+  "industry": "Landscaping",
+  "sector": "Public Realm",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Civil Works on all landscape areas, soft landscaping works, hardscape landscape, supply and installation of different type of trees, shrubs, grasses, PVC edger, heel herbs, irrigation networks and storage reservoirs, water proofing and water features works. www.alryum.com Re",
+  "value": "-",
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/emirates-palace-concept.webp",
+    "label": "Emirates Palace",
+    "wasPhotography": false,
+    "generatedFromText": true
+   }
+  ],
+  "client": "Conference Palace Hotel Executive Committee",
+  "consultant": "KEO International",
+  "scope": [
+   "Civil Works on all landscape areas",
+   "soft landscaping works",
+   "hardscape landscape",
+   "supply and installation of different type of trees",
+   "PVC edger",
+   "heel herbs",
+   "irrigation networks and storage reservoirs",
+   "water proofing and water features works. www.alryum.com Re"
+  ]
+ },
+ {
+  "id": 33,
+  "name": "Al Wathba Park",
+  "image": "/assets/concepts/al-wathba-park-concept.webp",
+  "images": [
+   "/assets/concepts/al-wathba-park-concept.webp"
+  ],
+  "location": "Abu Dhabi",
+  "industry": "Landscaping",
+  "sector": "Public Realm",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Construction, completion and maintenance of irrigation networks, soft landscape and hard landscape, installation of playground equipment, wood works and water features, lighting features, playground equipment, pumping station and associated MEP Works. www.alryum.com",
+  "value": "-",
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/al-wathba-park-concept.webp",
+    "label": "Al Wathba Park",
+    "wasPhotography": false,
+    "generatedFromText": true
+   }
+  ],
+  "client": "Abu Dhabi Municipality",
+  "consultant": "Derby Design",
+  "scope": [
+   "Construction",
+   "completion and maintenance of irrigation networks",
+   "soft landscape and hard landscape",
+   "installation of playground equipment",
+   "wood works and water features",
+   "lighting features",
+   "playground equipment",
+   "pumping station and associated MEP Works. www.alryum.com"
+  ]
+ },
+ {
+  "id": 34,
+  "name": "The Palm Jumeirah",
+  "image": "/assets/concepts/the-palm-jumeirah-concept.webp",
+  "images": [
+   "/assets/concepts/the-palm-jumeirah-concept.webp"
+  ],
+  "location": "z Dubai",
+  "industry": "Landscaping",
+  "sector": "Public Realm",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Concrete works for chiller plants, landscaping works includes plantation of trees, greens, shrubs, flowers, irrigation system and natural beautification works. www.alryum.com",
+  "value": "-",
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/the-palm-jumeirah-concept.webp",
+    "label": "The Palm Jumeirah",
+    "wasPhotography": false,
+    "generatedFromText": true
+   }
+  ],
+  "client": "Nakheel",
+  "consultant": "Parsons Int'l Engr.",
+  "scope": [
+   "Concrete works for chiller plants",
+   "landscaping works includes plantation of trees",
+   "irrigation system and natural beautification works. www.alryum.com"
+  ]
+ },
+ {
+  "id": 35,
+  "name": "CW/630/2007",
+  "image": "/assets/concepts/cw-630-2007-concept.webp",
+  "images": [
+   "/assets/concepts/cw-630-2007-concept.webp"
+  ],
+  "location": "g Dubai",
+  "industry": "Landscaping",
+  "sector": "Public Realm",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Design, supply, installation, testing & commissioning of pumping stations and related 1200mm dia transmission pipeline tie in connection with DEWA transmission rains at Jebel Ali Habib Road. Panels, control rooms, SCADArequirements. GRE Pipework, Instrumentation Control System, Distribution Transfor",
+  "value": "-",
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/cw-630-2007-concept.webp",
+    "label": "CW/630/2007",
+    "wasPhotography": false,
+    "generatedFromText": true
+   }
+  ],
+  "client": "Dubai Electricity & Water Authority",
+  "scope": [
+   "installation",
+   "testing & commissioning of pumping stations and related 1200mm dia transmission pipeline tie in connection with DEWA transmission rains at Jebel Ali Habib Road. Panels",
+   "control rooms",
+   "SCADArequirements. GRE Pipework",
+   "Instrumentation Control System",
+   "Distribution Transformer etc. a www.alryum.com Re"
+  ]
+ },
+ {
+  "id": 36,
+  "name": "Al Dhabiya Maritime Residential Complex",
+  "image": "/assets/concepts/al-dhabiya-maritime-residential-complex-concept.webp",
+  "images": [
+   "/assets/concepts/al-dhabiya-maritime-residential-complex-concept.webp"
+  ],
+  "location": "United Arab Emirates",
+  "industry": "Landscaping",
+  "sector": "Public Realm",
+  "status": "Completed",
+  "size": "medium",
+  "description": "Execution of water & electricity supply at al dhabiya maritime residential complex, it consists of the construction of asphalt roads, electrical power supply & main connections. Substation & all associated Electrical works toADDC specifications. www.alryum.com",
+  "value": "-",
+  "imagesAreConcept": true,
+  "concepts": [
+   {
+    "src": "/assets/concepts/al-dhabiya-maritime-residential-complex-concept.webp",
+    "label": "Al Dhabiya Maritime Residential Complex",
+    "wasPhotography": false,
+    "generatedFromText": true
+   }
+  ],
+  "client": "Crown Prince Court",
+  "consultant": "Dorsch Holding GmBH",
+  "scope": [
+   "Execution of water & electricity supply at al dhabiya maritime residential complex",
+   "it consists of the construction of asphalt roads",
+   "electrical power supply & main connections. Substation & all associated Electrical works toADDC specifications. www.alryum.com"
+  ]
+ }
+]

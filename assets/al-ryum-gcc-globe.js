@@ -33750,6 +33750,7 @@ void main() {
       const resizeObserver = new ResizeObserver(resize);
       resizeObserver.observe(stage);
       resize();
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       const showHoverLabel = (event) => {
         if (event.pointerType === "touch" || !hoverLabelRef.current) return;
         const bounds = canvas.getBoundingClientRect();

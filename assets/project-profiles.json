@@ -1,0 +1,185 @@
+{
+ "default": {
+  "scope": [
+   "Design development and coordination",
+   "Civil and structural works",
+   "Soft and hard landscaping",
+   "Mechanical & electrical systems",
+   "Quality assurance & testing",
+   "Handover & post-completion support"
+  ],
+  "highlights": [
+   "High-quality construction delivered to international standards",
+   "On-time and within-budget project completion",
+   "Sustainable materials and environmentally conscious practices",
+   "Full client satisfaction and merit recognition achieved",
+   "ISO-certified quality management processes applied throughout"
+  ],
+  "expertise": [
+   "Project Management",
+   "Quality Assurance",
+   "Sustainable Construction",
+   "Client Collaboration"
+  ],
+  "approach": "Al Ryum Group brings over 35 years of experience to every project — combining technical expertise, dedicated resource management, and a commitment to client satisfaction. Our integrated approach covers the full project lifecycle, from design inception through to delivery and ongoing operation."
+ },
+ "industries": {
+  "Community": {
+   "scope": [
+    "Soft & hard landscaping works",
+    "Irrigation system design & installation",
+    "Children's play area development",
+    "Community pavilion & shade structure construction",
+    "Outdoor lighting & electrical works",
+    "Ongoing maintenance & operation"
+   ],
+   "highlights": [
+    "120,000+ sqm of landscaped open space delivered",
+    "Integrated smart irrigation systems with 40% water savings",
+    "LEED-aligned planting strategy with native desert species",
+    "Community activation zones, pavilions & gathering nodes",
+    "Multi-phase delivery coordinated with live residential communities"
+   ],
+   "expertise": [
+    "Residential Master Planning",
+    "Community Activation",
+    "Phased Delivery",
+    "Sustainable Irrigation"
+   ],
+   "approach": "Al Ryum Group approaches residential community landscaping as the creation of a living environment — not just a green infrastructure layer. Each project begins with deep stakeholder engagement, site analysis, and a planting strategy tailored to the UAE climate, ensuring long-term sustainability and community pride."
+  },
+  "Landscaping": {
+   "scope": [
+    "Urban streetscape design & implementation",
+    "Soft landscaping & planting works",
+    "Hard landscaping & paving",
+    "Irrigation & drainage systems",
+    "Street furniture & wayfinding",
+    "Environmental impact assessments"
+   ],
+   "highlights": [
+    "Native desert-adapted planting palette curated by specialist horticulturists",
+    "Smart drip irrigation achieving over 40% water consumption reduction",
+    "Pedestrian-first streetscape design with accessibility standards",
+    "Multi-phase delivery coordinated across active commercial districts",
+    "Streetscape furniture, paving, and public art integration"
+   ],
+   "expertise": [
+    "Urban Green Infrastructure",
+    "Irrigation Engineering",
+    "Streetscape Design",
+    "Sustainable Planting"
+   ],
+   "approach": "Our urban landscaping methodology integrates ecological thinking with practical engineering. We work directly alongside civil and infrastructure teams to deliver seamless green corridors that enhance pedestrian experience, improve urban biodiversity, and contribute to a city's long-term sustainability goals."
+  },
+  "Sports & Leisure": {
+   "scope": [
+    "Golf course design & turf management",
+    "Clubhouse & arrival landscaping",
+    "Sports facility infrastructure",
+    "Water feature & lake construction",
+    "Lighting & electrical works",
+    "Ongoing turf maintenance programs"
+   ],
+   "highlights": [
+    "18-hole tournament-grade fairway turf installation and certification",
+    "Clubhouse terrace landscaping with premium hardscape finishes",
+    "Sports turf certified to international competition standards",
+    "Eco-sensitive site management protocols throughout construction",
+    "2.4km access road design through challenging desert terrain"
+   ],
+   "expertise": [
+    "Golf Course Development",
+    "Sports Turf Management",
+    "Water Feature Engineering",
+    "Recreation Design"
+   ],
+   "approach": "Sports and leisure environments demand both precision engineering and aesthetic excellence. Al Ryum Group brings decades of experience delivering world-class sporting facilities that meet international certification requirements while integrating seamlessly with the surrounding landscape and climate conditions."
+  },
+  "Cultural": {
+   "scope": [
+    "Promenade & public realm works",
+    "Custom stone & paving installation",
+    "Coastal and waterfront landscaping",
+    "Bespoke furniture & feature elements",
+    "Heritage conservation standards compliance",
+    "Lighting design & implementation"
+   ],
+   "highlights": [
+    "Collaboration with world-renowned architects including Jean Nouvel",
+    "Heritage-sensitive material selection and custom stone paving",
+    "Public promenade & coastal waterfront integration",
+    "Bespoke outdoor furniture and custom landscape installations",
+    "UNESCO-standard site sensitivity protocols observed throughout"
+   ],
+   "expertise": [
+    "Cultural Heritage Sites",
+    "Custom Fabrication",
+    "Architectural Collaboration",
+    "Public Realm Design"
+   ],
+   "approach": "Cultural and institutional projects demand the highest levels of craft, sensitivity, and coordination. Our teams work hand-in-hand with world-class architects and cultural bodies to deliver external works that complement landmark buildings — creating experiences that extend the institution's vision into the surrounding landscape."
+  },
+  "Sustainable": {
+   "scope": [
+    "Sustainable landscape design & delivery",
+    "Greywater & rainwater harvesting systems",
+    "Solar lighting infrastructure",
+    "Native plant nursery & establishment",
+    "Carbon accounting & reporting",
+    "Environmental education trail development"
+   ],
+   "highlights": [
+    "100% grey-water recycled irrigation systems deployed across the site",
+    "Solar-powered LED landscape lighting with smart controls",
+    "Zero-waste construction methodology with on-site material reuse",
+    "Carbon-neutral landscape design framework certified by independent auditors",
+    "Native desert planting achieving 60% reduction in irrigation demand"
+   ],
+   "expertise": [
+    "Net-Zero Design",
+    "Water Harvesting Systems",
+    "Ecological Restoration",
+    "Sustainable Certification"
+   ],
+   "approach": "Sustainability is embedded in every phase of our project lifecycle — from specification and procurement through to construction and long-term management. Al Ryum Group's commitment to sustainable practice is reflected in measurable outcomes: reduced water consumption, lower carbon footprints, and enhanced ecological value on every site we deliver."
+  },
+  "Hospitality": {
+   "scope": [
+    "Themed landscape & hardscape works",
+    "Water feature & fountain engineering",
+    "Rock sculpting & feature construction",
+    "Guest experience wayfinding & lighting",
+    "High-traffic paving & surface works",
+    "Maintenance & operational management"
+   ],
+   "highlights": [
+    "Themed landscape experiences delivered across distinct entertainment zones",
+    "High-footfall hardscape engineered for 250,000+ annual visitors",
+    "Custom water features, rock formations & themed planting",
+    "Phased delivery with zero operational downtime for the resort",
+    "250,000 sqm of meticulously themed outdoor environments delivered"
+   ],
+   "expertise": [
+    "Theme Park Development",
+    "Water Feature Engineering",
+    "Hospitality Landscaping",
+    "Entertainment Design"
+   ],
+   "approach": "Hospitality and entertainment landscapes must perform as immersive environments — they are as much about storytelling as they are about construction. Al Ryum Group specialises in delivering complex themed environments on accelerated schedules, ensuring every element contributes to a seamless and memorable guest experience."
+  }
+ },
+ "standards": [
+  "ISO 9001:2015",
+  "ISO 14001:2015",
+  "OHSAS 18001:2007",
+  "LEED Aligned"
+ ],
+ "company": {
+  "years": "35+",
+  "since": "1989",
+  "people": "5,000+",
+  "countries": "9",
+  "projects": "500+"
+ }
+}

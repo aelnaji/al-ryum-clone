@@ -1,0 +1,715 @@
+/* ==== AL RYUM @astra ==== Rebuilt via GPT-6 Astra (experientiallabs). CANDIDATE - disconnect: remove file + revert index.html src. */
+
+/* Project listing and detail overlay. Existing class and state contracts retained. */
+.icreon-projects-host {
+  width: 100%;
+  min-width: 0;
+}
+
+.icreon-projects,
+.icreon-projects *,
+.icreon-projects *::before,
+.icreon-projects *::after,
+.ar-pd-overlay,
+.ar-pd-overlay *,
+.ar-pd-overlay *::before,
+.ar-pd-overlay *::after {
+  box-sizing: border-box;
+}
+
+.icreon-projects {
+  --projects-gutter: clamp(1.25rem, 5vw, 5rem);
+  --projects-gap: clamp(1.25rem, 2.5vw, 2rem);
+  --projects-border: rgba(242, 251, 250, .14);
+  width: 100%;
+  min-width: 0;
+  padding: clamp(4rem, 9vw, 8rem) 0;
+  background: #0b1416;
+  color: #f2fbfa;
+}
+
+/* Honor filtering and overlay visibility regardless of component display rules. */
+.icreon-projects [hidden],
+.ar-pd-overlay[hidden],
+.ar-pd-overlay [hidden] {
+  display: none !important;
+}
+
+.icreon-projects__head,
+.icreon-projects__filters,
+.icreon-projects__rail-wrap,
+.icreon-projects__hint,
+.icreon-projects__empty {
+  width: 100%;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--projects-gutter);
+  padding-left: var(--projects-gutter);
+}
+
+.icreon-projects__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.icreon-projects__head > * {
+  min-width: 0;
+}
+
+.icreon-projects__kicker {
+  display: block;
+  margin-bottom: 1rem;
+  color: #9ef3ee;
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .2em;
+}
+
+.icreon-projects__title {
+  max-width: 14ch;
+  margin: 0;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(2.4rem, 6vw, 6rem);
+  font-weight: 400;
+  letter-spacing: -.06em;
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+
+.icreon-projects__count {
+  flex-shrink: 0;
+  color: rgba(242, 251, 250, .5);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  white-space: nowrap;
+}
+
+.icreon-projects__filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .8rem;
+  margin-bottom: 2.6rem;
+}
+
+.icreon-projects__search,
+.icreon-projects__select {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 2.875rem;
+  border: 1px solid rgba(242, 251, 250, .16);
+  border-radius: .5rem;
+  background-color: rgba(9, 20, 22, .55);
+  color: #f2fbfa;
+  font: inherit;
+  transition: border-color .2s ease;
+  color-scheme: dark;
+}
+
+.icreon-projects__search {
+  flex: 1 1 220px;
+  padding: .75rem 1rem;
+  font-size: .85rem;
+}
+
+.icreon-projects__search::placeholder {
+  color: rgba(242, 251, 250, .5);
+  opacity: 1;
+}
+
+.icreon-projects__select {
+  flex: 0 1 auto;
+  padding: .75rem 2.2rem .75rem 1rem;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%239ef3ee' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right .9rem center;
+}
+
+.icreon-projects__search:focus,
+.icreon-projects__select:focus {
+  border-color: #9ef3ee;
+}
+
+.icreon-projects__select option {
+  background: #0b1416;
+  color: #f2fbfa;
+}
+
+/*
+ * Each rail is an independent grid. Non-card direct children (area headings
+ * or group containers) occupy a complete row rather than a card-sized cell.
+ * Nested rails inherit the available width without adding another gutter.
+ */
+.icreon-projects__rail-wrap {
+  position: relative;
+  min-width: 0;
+}
+
+.icreon-projects__rail {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: row;
+  align-items: stretch;
+  gap: var(--projects-gap);
+  width: 100%;
+  min-width: 0;
+  overflow: visible;
+  scroll-behavior: auto;
+}
+
+.icreon-projects__rail > :not(.icreon-card) {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+
+.icreon-projects__rail > :is(h2, h3, h4, header) {
+  margin: 0;
+}
+
+.icreon-projects__rail-wrap .icreon-projects__rail-wrap {
+  max-width: none;
+  padding: 0;
+}
+
+.icreon-projects__rail-wrap + .icreon-projects__rail-wrap {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+/* Retain legacy carousel hooks; a wrapping grid has no horizontal controls. */
+.icreon-projects__arrow,
+.icreon-projects__hint {
+  display: none;
+}
+
+.icreon-projects__arrow--left {
+  left: clamp(.75rem, 2vw, 2rem);
+}
+
+.icreon-projects__arrow--right {
+  right: clamp(.75rem, 2vw, 2rem);
+}
+
+.icreon-projects__empty {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: rgba(242, 251, 250, .6);
+  font-size: .9rem;
+  text-align: center;
+}
+
+.icreon-projects__empty button {
+  border: 0;
+  background: none;
+  color: #9ef3ee;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  cursor: pointer;
+}
+
+/* Cards stay in normal grid flow; media cannot overlap following rows. */
+.icreon-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 1fr auto;
+  align-self: stretch;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  border: 1px solid var(--projects-border, rgba(242, 251, 250, .14));
+  background: #0e1b1d;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background .3s ease, border-color .3s ease;
+}
+
+.icreon-card:hover,
+.icreon-card:focus-within {
+  border-color: rgba(158, 243, 238, .4);
+  background: #122326;
+}
+
+.icreon-card__body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(1.25rem, 2.4vw, 2.1rem);
+  overflow-wrap: anywhere;
+}
+
+.icreon-card__eyebrow {
+  margin-bottom: 1.1rem;
+  color: #9ef3ee;
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .18em;
+  line-height: 1.5;
+}
+
+.icreon-card__title {
+  margin: 0 0 1rem;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(1.7rem, 2.6vw, 2.6rem);
+  font-weight: 400;
+  letter-spacing: -.04em;
+  line-height: 1.05;
+}
+
+.icreon-card__infos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--projects-border);
+  border-bottom: 1px solid var(--projects-border);
+}
+
+.icreon-card__infos > * {
+  min-width: 0;
+}
+
+.icreon-card__label,
+.icreon-card__sumlabel {
+  display: block;
+  color: rgba(242, 251, 250, .55);
+  font-size: .56rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  line-height: 1.5;
+}
+
+.icreon-card__label {
+  margin-bottom: .5rem;
+}
+
+.icreon-card__value {
+  display: block;
+  color: #f2fbfa;
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.icreon-card__value--accent {
+  color: #9ef3ee;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 500;
+  letter-spacing: -.02em;
+}
+
+.icreon-card__summary {
+  margin-bottom: 1rem;
+}
+
+.icreon-card__sumlabel {
+  margin-bottom: .7rem;
+}
+
+.icreon-card__desc {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: rgba(242, 251, 250, .66);
+  font-size: .82rem;
+  line-height: 1.62;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.icreon-card__cta {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: .6rem;
+  margin-top: auto;
+  color: #9ef3ee;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icreon-card__cta span {
+  transition: transform .25s ease;
+}
+
+.icreon-card__cta:hover span {
+  transform: translateX(4px);
+}
+
+.icreon-card__asset {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  margin: 0;
+  overflow: hidden;
+  background: #0a1416;
+}
+
+.icreon-card__asset img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+}
+
+/* Project detail overlay: the shell, not the overlay, owns the two columns. */
+.ar-pd-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: none;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.ar-pd-overlay.is-open {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+
+.ar-pd-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 17, 18, .9);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.ar-pd-shell {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  width: 100%;
+  max-width: 1500px;
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 3vw, 3rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+
+.ar-pd-media {
+  position: relative;
+  min-width: 0;
+  height: min(78vh, 48rem);
+  height: min(78dvh, 48rem);
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #0a1416;
+  overscroll-behavior: contain;
+}
+
+.ar-pd-gallery {
+  position: absolute;
+  inset: 0;
+}
+
+.ar-pd-hero {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity .3s ease;
+}
+
+.ar-pd-thumbs {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: .5rem;
+  padding: .75rem;
+  overflow-x: auto;
+  background: linear-gradient(0deg, rgba(0, 0, 0, .55), transparent);
+  overscroll-behavior: contain;
+  touch-action: pan-x;
+}
+
+.ar-pd-thumb {
+  flex: 0 0 auto;
+  width: 4.4rem;
+  height: 3rem;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: .4rem;
+  background: none;
+  opacity: .75;
+  cursor: pointer;
+  transition: opacity .2s ease, border-color .2s ease;
+}
+
+.ar-pd-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ar-pd-thumb.is-active {
+  border-color: #9ef3ee;
+  opacity: 1;
+}
+
+.ar-pd-content {
+  min-width: 0;
+  max-height: 86vh;
+  max-height: 86dvh;
+  padding: 1rem 0;
+  overflow-y: auto;
+  color: #f8fafa;
+  overflow-wrap: anywhere;
+  overscroll-behavior: contain;
+}
+
+.ar-pd-eyebrow {
+  color: #9ef3ee;
+  font-size: .64rem;
+  font-weight: 800;
+  letter-spacing: .18em;
+}
+
+.ar-pd-title {
+  margin: .8rem 0 1.4rem;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(2.2rem, 4.4vw, 4rem);
+  font-weight: 400;
+  letter-spacing: -.04em;
+  line-height: 1.05;
+}
+
+.ar-pd-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem 2rem;
+  margin-bottom: 1.4rem;
+  padding: 1.4rem 0;
+  border-top: 1px solid rgba(242, 251, 250, .14);
+  border-bottom: 1px solid rgba(242, 251, 250, .14);
+}
+
+.ar-pd-meta > * {
+  min-width: 0;
+}
+
+.ar-pd-label {
+  display: block;
+  margin-bottom: .45rem;
+  color: rgba(242, 251, 250, .55);
+  font-size: .56rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  line-height: 1.5;
+}
+
+.ar-pd-content strong {
+  display: block;
+  color: #f2fbfa;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.ar-pd-accent,
+.ar-pd-content strong.ar-pd-accent {
+  color: #9ef3ee;
+}
+
+.ar-pd-desc {
+  margin: 0 0 1.6rem;
+  color: rgba(242, 251, 250, .72);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.ar-pd-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.ar-pd-nav button {
+  min-height: 2.75rem;
+  padding: .6rem 1.2rem;
+  border: 1px solid rgba(242, 251, 250, .25);
+  border-radius: 999px;
+  background: none;
+  color: #f2fbfa;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.ar-pd-nav button:hover:not(:disabled) {
+  border-color: #9ef3ee;
+  background: rgba(158, 243, 238, .12);
+}
+
+.ar-pd-nav button:disabled {
+  opacity: .4;
+  cursor: default;
+}
+
+.ar-pd-count {
+  color: rgba(242, 251, 250, .5);
+  font-size: .8rem;
+  letter-spacing: .1em;
+}
+
+.ar-pd-close {
+  position: fixed;
+  top: max(1rem, env(safe-area-inset-top));
+  right: max(1rem, env(safe-area-inset-right));
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid rgba(242, 251, 250, .3);
+  border-radius: 50%;
+  background: rgba(6, 17, 18, .8);
+  color: #f2fbfa;
+  font: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ar-pd-close:hover {
+  border-color: #9ef3ee;
+}
+
+.icreon-projects :is(a, button, input, select, [tabindex]):focus-visible,
+.ar-pd-overlay :is(a, button, input, select, [tabindex]):focus-visible {
+  outline: 2px solid #9ef3ee;
+  outline-offset: 3px;
+}
+
+html.ar-pd-html-locked {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body.ar-pd-locked {
+  position: fixed;
+  right: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+@media (max-width: 1100px) {
+  .icreon-projects__rail {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .ar-pd-shell {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    align-content: start;
+    padding-top: 4.75rem;
+    padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+  }
+
+  .ar-pd-media {
+    order: -1;
+    height: 42vh;
+    height: 42dvh;
+  }
+
+  .ar-pd-content {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 760px) {
+  .icreon-projects__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .icreon-projects__title {
+    font-size: clamp(2.2rem, 11vw, 3.4rem);
+  }
+
+  .icreon-projects__count {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .icreon-projects__rail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .icreon-projects__select {
+    flex: 1 1 180px;
+  }
+
+  .icreon-card__title {
+    font-size: clamp(1.8rem, 7vw, 2.6rem);
+  }
+}
+
+@media (max-width: 360px) {
+  .icreon-card__infos,
+  .ar-pd-meta {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icreon-projects *,
+  .icreon-projects *::before,
+  .icreon-projects *::after,
+  .ar-pd-overlay *,
+  .ar-pd-overlay *::before,
+  .ar-pd-overlay *::after {
+    transition: none;
+    scroll-behavior: auto;
+  }
+
+  .icreon-card__cta:hover span {
+    transform: none;
+  }
+}

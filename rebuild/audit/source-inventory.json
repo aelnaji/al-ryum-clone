@@ -1,0 +1,5290 @@
+{
+  "baseline": "7af5f16",
+  "count": 915,
+  "totalBytes": 934341167,
+  "extensions": {
+    "": 1,
+    ".js": 41,
+    ".css": 12,
+    ".png": 20,
+    ".mp4": 8,
+    ".jpg": 430,
+    ".webp": 388,
+    ".woff2": 11,
+    ".json": 2,
+    ".html": 2
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 64,
+      "sha256": "0ce6cee861b6fd63f532f87353fcdc1c3db8a00d3fa470fc47d68ca52def6e17"
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll-astra.js",
+      "bytes": 23727,
+      "sha256": "d7a92bfb9c79919f6cc6d2428f70e9303e7e40868c0500f355c4dfa3516347da"
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll-hero-astra-v2.js",
+      "bytes": 36057,
+      "sha256": "7596859f054feb54e155d7817eb2ea815bcf53d7ce9b3923dce9ce6e79b7fe0e"
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll-hero-astra-v3.js",
+      "bytes": 42939,
+      "sha256": "e61e6fc87a5522e1f93cb63f3fef257a95a71d4e6dd106de432683f416736514"
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll-hero-astra-v4.js",
+      "bytes": 44873,
+      "sha256": "fd1248a71d6e90b87866b4c0424d8c165b4c1f4408d653f6ac14d5122dfc54c8"
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll-hero-astra.js",
+      "bytes": 38929,
+      "sha256": "6cec2b4ea4e4ab36a9c42ef7a42e5522bb10c0e943892568995ea42767ce975e"
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll-minimax.js",
+      "bytes": 24065,
+      "sha256": "9539c28514d8555e559a9d515361c4b048ecc63c3576066a20bd7921aa316963"
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll.js",
+      "bytes": 17532,
+      "sha256": "31d19e3d8ad3cc06a45c7ecf62ef1bfa55670eec9a8fb17e3fbdc0f3e64d6090"
+    },
+    {
+      "path": "assets/al-ryum-cinematic-astra.js",
+      "bytes": 13992,
+      "sha256": "49b1815cdede61b5f2aad43e5e8097707edd8b58993b28c62b16c09254ba5f8e"
+    },
+    {
+      "path": "assets/al-ryum-cinematic.js",
+      "bytes": 7828,
+      "sha256": "63ce96fd29fea0a229c8687557d97a1edfea4f7f93371b387d85fdd1cdfabe6c"
+    },
+    {
+      "path": "assets/al-ryum-client-marquee-astra.js",
+      "bytes": 14481,
+      "sha256": "e58dbab5dcb4c00bf5941bc169ea0299c7fd137c80f1cfd7cb10fd72ede3ffe5"
+    },
+    {
+      "path": "assets/al-ryum-client-marquee.js",
+      "bytes": 9029,
+      "sha256": "29cc4b4b3e8d44c958a39f75291af7578d914a1b8beb4f1f3de2801478e45f14"
+    },
+    {
+      "path": "assets/al-ryum-earth-module-astra.js",
+      "bytes": 18499,
+      "sha256": "4ee433c9f59e81d324a9b98ffc135d6ba05754d8fc88d56a129e8b6f7a46d550"
+    },
+    {
+      "path": "assets/al-ryum-earth-module.js",
+      "bytes": 8034,
+      "sha256": "f529f1bb24ed853d381f813fef75a34c22ae7038ac5ffd0d6da6f36aaa14614c"
+    },
+    {
+      "path": "assets/al-ryum-final-cinematic-astra.js",
+      "bytes": 7451,
+      "sha256": "f54d8edb77ff5d11f03c1686a2708f9440440ed518f16defaf54c6d28a54aa4b"
+    },
+    {
+      "path": "assets/al-ryum-gcc-globe.js",
+      "bytes": 1550560,
+      "sha256": "20e2c84e5710f4ba619a0ade24d203ea28ccd03bc97e123f5c248569f0ca99bb"
+    },
+    {
+      "path": "assets/al-ryum-header-dark.css",
+      "bytes": 4902,
+      "sha256": "0e9d86ea3b7645f1cb9498dbe9b865291c7e3fa651094db8d36847a0e6bc6bba"
+    },
+    {
+      "path": "assets/al-ryum-hero-mist-astra.js",
+      "bytes": 2384,
+      "sha256": "98a84b7b2f7db0cf9f6ecef52e394ba48d8b650023e433669832ea623c7d728a"
+    },
+    {
+      "path": "assets/al-ryum-icreon-projects.js",
+      "bytes": 626145,
+      "sha256": "3c1b0f352cc895ec555d52aa4925306eb960c9ce7eeacedf2a33202274db0618"
+    },
+    {
+      "path": "assets/al-ryum-mist-open-astra.js",
+      "bytes": 6114,
+      "sha256": "34d5bd59f65d57eb68f447362c5f611ac7bd1e401ad566a360a643f728ec9a39"
+    },
+    {
+      "path": "assets/al-ryum-mist-screen-astra.js",
+      "bytes": 4774,
+      "sha256": "5b36b1d513fa89fa066cae46d0492168f9653eb9cc4cb661506c516837e55614"
+    },
+    {
+      "path": "assets/al-ryum-motion-astra.js",
+      "bytes": 17142,
+      "sha256": "b6393ae47f2349cd09e2c824bb872601c0cc3d7c20ef682651a699bc7debc1d2"
+    },
+    {
+      "path": "assets/al-ryum-motion.js",
+      "bytes": 9165,
+      "sha256": "24e51e2cd513ec3f4303b90316c93a89eec5a5efd4e6fa893e40625f653dadb3"
+    },
+    {
+      "path": "assets/al-ryum-project-detail-astra.js",
+      "bytes": 38435,
+      "sha256": "d66836c86deeb476cbb64cba8b596dc7fbbd3183e5bf91a2434c14d043142a7c"
+    },
+    {
+      "path": "assets/al-ryum-project-detail.js",
+      "bytes": 9358,
+      "sha256": "8650fd13c76be1174ed1f862ec998184c6aad3188d1efa3a8c2f130a89255db8"
+    },
+    {
+      "path": "assets/al-ryum-project-films-astra.css",
+      "bytes": 11523,
+      "sha256": "60ea89f6ab87792e8f48f4109dc9b70562d131eea0cc06362384623c44f7520e"
+    },
+    {
+      "path": "assets/al-ryum-project-films-astra.js",
+      "bytes": 30796,
+      "sha256": "8d256a8f5d51f3b5ee5a566e99cfc90015f2fab71d49fea86cd4eb0cc66e0741"
+    },
+    {
+      "path": "assets/al-ryum-project-films.css",
+      "bytes": 8452,
+      "sha256": "d0ffd86dd35df0cc880d3525ad48233ee038a016c34e1739eb8263fe1cb8d14d"
+    },
+    {
+      "path": "assets/al-ryum-project-films.js",
+      "bytes": 25486,
+      "sha256": "45674691dd77e31a9e8793771c84d291d81ff5131f38c5f957c6e31bd713243e"
+    },
+    {
+      "path": "assets/al-ryum-projects-index.css",
+      "bytes": 13875,
+      "sha256": "899d66ff8579fa4e187069722a3d707a40d9c9693463c1348c984c799dce765a"
+    },
+    {
+      "path": "assets/al-ryum-projects-index.js",
+      "bytes": 1760,
+      "sha256": "90f09dcdd419ce7b60102aa957fadfa40d649516401d644794016a02cab88fdd"
+    },
+    {
+      "path": "assets/al-ryum-scroll-spy-astra.js",
+      "bytes": 17390,
+      "sha256": "2e6b4c2d319fa384f838e57728893209427a3f3d36b8680349348a6d07d97931"
+    },
+    {
+      "path": "assets/al-ryum-scroll-spy.css",
+      "bytes": 6390,
+      "sha256": "7b1385eecc50916209fdbfdcda5cdc8c04fa57d6bf283b9f7495fc149fd8d15e"
+    },
+    {
+      "path": "assets/al-ryum-scroll-spy.js",
+      "bytes": 8293,
+      "sha256": "6487632a83e5f94f3f4c086499665fdea49708515b363a4b45cf3306a64bb8fa"
+    },
+    {
+      "path": "assets/al-ryum-services-3d.css",
+      "bytes": 8082,
+      "sha256": "0c311b0228648a4577d18fb1751b7607dd56ee0cc72890bbebb1523cc3692f37"
+    },
+    {
+      "path": "assets/al-ryum-services-3d.js",
+      "bytes": 19840,
+      "sha256": "41d714c0d75e6aef67cb98922eff851d388d659171161891ddf74ba29be1f5d0"
+    },
+    {
+      "path": "assets/al-ryum-theme-toggle.js",
+      "bytes": 3462,
+      "sha256": "c0dda982da79b67e0790f4fc94c406f538d15f72878dc73f0d964ecf9f952083"
+    },
+    {
+      "path": "assets/al-ryum-topmist-astra.js",
+      "bytes": 14397,
+      "sha256": "1c292f5ea57f5419f20b417aba4fc5bfea1bb3fe5e2a9354e3c84ae4de76d15c"
+    },
+    {
+      "path": "assets/arc-logo.png",
+      "bytes": 1114512,
+      "sha256": "6550a7297a7fa7813ee2ecfc220d0d893f4d104a1fed25e7f1619028cc27b9d2"
+    },
+    {
+      "path": "assets/cinematic-source/emirates-palace.mp4",
+      "bytes": 8707751,
+      "sha256": "bf8f12049835964b8acf8d7c4d82e2ce52db3f54fb143c32b8c2e9a6a1cdec66"
+    },
+    {
+      "path": "assets/cinematic-source/louvre-abu-dhabi.mp4",
+      "bytes": 5688553,
+      "sha256": "49f7f723861424a92c643d8a410a430f7411ad698ef9d3b645ff456115c76a72"
+    },
+    {
+      "path": "assets/cinematic-source/warner-bros.mp4",
+      "bytes": 6844880,
+      "sha256": "53cf050243d62ffcc2ac662cf5974e1d276cd31d29c4e3229030fa190d92f37e"
+    },
+    {
+      "path": "assets/cinematic-source/zayed-national-museum.mp4",
+      "bytes": 6797606,
+      "sha256": "699e0028d460b2a53d596cee781de52f4d8189f43349c61b7dcfacec924ced30"
+    },
+    {
+      "path": "assets/clients/abudhabi-municipality.jpg",
+      "bytes": 100525,
+      "sha256": "65e5b5ef95de5f1fe6fd664095d7919460fed11d02395c14ce142f5ed9dfd8a2"
+    },
+    {
+      "path": "assets/clients/abudhabi-municipality_nobg.png",
+      "bytes": 99625,
+      "sha256": "95473611a18f25a6d0f4cb655df64d3ee1664e9d55f8810065c73c5aecdd9bc2"
+    },
+    {
+      "path": "assets/clients/adnoc.jpg",
+      "bytes": 45186,
+      "sha256": "8475daf7471ae4625f261f8de6624f1ec987e4e04ace63015b7dba1ea141de19"
+    },
+    {
+      "path": "assets/clients/adnoc_nobg.png",
+      "bytes": 13250,
+      "sha256": "b882658875a93011a661642809b19a9a738607507ed9179ad768be0ce3804fdd"
+    },
+    {
+      "path": "assets/clients/aldar.jpg",
+      "bytes": 86959,
+      "sha256": "d427583a22ab451666c81101f44f7d89837f7661b4b3d4aa99d9933e1492c634"
+    },
+    {
+      "path": "assets/clients/aldar_nobg.png",
+      "bytes": 55205,
+      "sha256": "fe25457c74294f080216b996feac7767f7cba7da438707112e6195bbd18701dc"
+    },
+    {
+      "path": "assets/clients/crown-prince-courts.jpg",
+      "bytes": 123579,
+      "sha256": "3d9e9fe985eae7286a37e01de19def4373d28f05163a7206c87d2ebf283d67b4"
+    },
+    {
+      "path": "assets/clients/crown-prince-courts_nobg.png",
+      "bytes": 152703,
+      "sha256": "59979768e71b09c28d9c209c5db7be9efb3769318a02edf7288566559630d7c6"
+    },
+    {
+      "path": "assets/clients/damac.jpg",
+      "bytes": 31729,
+      "sha256": "cdf854de4becc222cded1573dfb589db2c00fba4cc9b1137ca28504971ea4291"
+    },
+    {
+      "path": "assets/clients/damac_nobg.png",
+      "bytes": 23557,
+      "sha256": "18d4f153dbdf627f14eb72cefb0d1d4ea666885afedb0a254a98ed9c24165780"
+    },
+    {
+      "path": "assets/clients/emaar.png",
+      "bytes": 13697,
+      "sha256": "2653cc06decdf2e66b337beb31850dd9e2cc1ed0aa8c4ab3d07174e1c1aee28e"
+    },
+    {
+      "path": "assets/clients/emaar_nobg.png",
+      "bytes": 36614,
+      "sha256": "d1e6d4acba6838d6719262c26aa77badf0c691753afaa73e0fe6f413ee6ac917"
+    },
+    {
+      "path": "assets/clients/fewa.jpg",
+      "bytes": 51091,
+      "sha256": "813a965ce72d30325ce4d130b875a96705246782041626c0242b7af23c3a9e1b"
+    },
+    {
+      "path": "assets/clients/fewa_clean.png",
+      "bytes": 80173,
+      "sha256": "89a0bc141a2c84b009afa7e366d7dd8a25018568d27fc266447cf1ce46c67428"
+    },
+    {
+      "path": "assets/clients/fewa_nobg.png",
+      "bytes": 38883,
+      "sha256": "8eb8dbaa51ee8749bddbc96f3c09b7f0a908840a9c94b6583144a906343e89a4"
+    },
+    {
+      "path": "assets/clients/masdar.jpg",
+      "bytes": 63372,
+      "sha256": "19bf36ab97f9ba56fbc29dc9efec08dac04d3d88cb8e350f037f46a8573818c7"
+    },
+    {
+      "path": "assets/clients/masdar_nobg.png",
+      "bytes": 54070,
+      "sha256": "b0667e0c657314fed86b72cf2ef6c025b4ebffbc8fa691083d2fa80881b3b584"
+    },
+    {
+      "path": "assets/clients/meraas-dark.jpg",
+      "bytes": 23430,
+      "sha256": "3e4061083f3161e7678435140ede1392ff0077f456a3d0495b3fc789068e26fe"
+    },
+    {
+      "path": "assets/clients/meraas.jpg",
+      "bytes": 36054,
+      "sha256": "ff5ca6dbb3f42fbbcb3a67f5b94c27cf546fb0b8cc9a263f9d3d0320e5fdac3d"
+    },
+    {
+      "path": "assets/clients/meraas_nobg.png",
+      "bytes": 24946,
+      "sha256": "a05c11c562db428cff6042bf0b35834fce10f522d8360d0946fe163507a06ddd"
+    },
+    {
+      "path": "assets/clients/mubadala.jpg",
+      "bytes": 18290,
+      "sha256": "7409c741520076a257acad85ef53e85c691db7fe2bb0517dc5f8a3b6c5cb8c4e"
+    },
+    {
+      "path": "assets/clients/mubadala_nobg.png",
+      "bytes": 23262,
+      "sha256": "42a30a0137473b763106b2942613061380a66820ee6feed6bb6f282450cbca7c"
+    },
+    {
+      "path": "assets/clients/nakheel.jpg",
+      "bytes": 50065,
+      "sha256": "7eafeff5c36547d9fd6b6c529f767844000d426416a67ad6383d322ae85097ca"
+    },
+    {
+      "path": "assets/clients/nakheel_nobg.png",
+      "bytes": 18322,
+      "sha256": "00e8399ee2aaa529361be4dc51d9a4b8cb012eb267e73ecbeb3620edab9f13cd"
+    },
+    {
+      "path": "assets/clients/tdic.jpg",
+      "bytes": 8255,
+      "sha256": "24a45dcb85a1ac0c48b27f2ad6199c1ab298139084981d6fce0b755894850439"
+    },
+    {
+      "path": "assets/clients/tdic_nobg.png",
+      "bytes": 65928,
+      "sha256": "2530a74090f18997b09c349b2e8cd6cd00bffc126df26b54deb9bdee2084a4fd"
+    },
+    {
+      "path": "assets/clients/tecom.png",
+      "bytes": 13014,
+      "sha256": "111aa0eec39ae726684e7fdb83d3134f8832b0fe92141b878a3f28d093e6dfec"
+    },
+    {
+      "path": "assets/clients/tecom_nobg.png",
+      "bytes": 35631,
+      "sha256": "10a96b563bb7183ca10c342b045d1368b1d427666928ca76321b4fc7e5bd6d29"
+    },
+    {
+      "path": "assets/concepts/20-playgrounds-abu-dhabi-main-land-phase-1-concept.webp",
+      "bytes": 507936,
+      "sha256": "853e2b638541cf00669e1d84b7530fa36a75fd0ddba33deab988e5774256c55b"
+    },
+    {
+      "path": "assets/concepts/DMT_Parks_-_MBZ_Parks_5.jpg",
+      "bytes": 138596,
+      "sha256": "6e9989201f2fcf607b5600bb465b361591b894c14b330935d39cd7d5aa30fb9d"
+    },
+    {
+      "path": "assets/concepts/abu-dhabi-corniche-concept.webp",
+      "bytes": 383732,
+      "sha256": "9036bb4469fe70beef1d20a81dc3a10154b5511b5dd2687ec9017a7f1702af11"
+    },
+    {
+      "path": "assets/concepts/akoya-concept.webp",
+      "bytes": 593192,
+      "sha256": "9a8c49038dd6776f577d8ca0d80bffcbd44c9ef7fba89c1a35c9cc136d19b5c5"
+    },
+    {
+      "path": "assets/concepts/akoya-golf-clubhouse-concept.webp",
+      "bytes": 873738,
+      "sha256": "81248ccb4213139429c9fc48a68dab2e254c6c57c221e754db6f5f8c5cbcc344"
+    },
+    {
+      "path": "assets/concepts/al-dhabiya-maritime-residential-complex-concept.webp",
+      "bytes": 421884,
+      "sha256": "839ca6eb1b6ed4440564b76231f641e937458d465bf0d11ba830278b008bb2af"
+    },
+    {
+      "path": "assets/concepts/al-falah-central-circle-concept.webp",
+      "bytes": 1279210,
+      "sha256": "c3108e62269f235839e7df84b561327f0d5d1141b7260181052cf68c3f79186c"
+    },
+    {
+      "path": "assets/concepts/al-falah-event-plaza-concept.webp",
+      "bytes": 900330,
+      "sha256": "85ee08d795e58a8dc088c69a25465fa6f0f5e74834bb4368c343902dbb20d56f"
+    },
+    {
+      "path": "assets/concepts/al-qala-vvip-area-concept.webp",
+      "bytes": 912970,
+      "sha256": "879ee2fbccca2934443c43db862f42246e5ba6bc67bccd2da3af462425a95763"
+    },
+    {
+      "path": "assets/concepts/al-shamkah-concept.webp",
+      "bytes": 833612,
+      "sha256": "e897b17a5b073d7d5f9084879bdbaea76378d65d986bfb0894523b313bf30cb2"
+    },
+    {
+      "path": "assets/concepts/al-wathba-park-concept.webp",
+      "bytes": 380892,
+      "sha256": "251c4ae3878979b2e99d4ba62dd10c4735589d0a0e3b63db9cae6dd01c0f8edc"
+    },
+    {
+      "path": "assets/concepts/central-park-f1-car-park-concept.webp",
+      "bytes": 545706,
+      "sha256": "fb995420bccd8b540738b5df995cef2718f8f80b394a4d5f36b849b8b75286c8"
+    },
+    {
+      "path": "assets/concepts/cw-630-2007-concept.webp",
+      "bytes": 392702,
+      "sha256": "73bbc6746dca560fb4ef3cac1b9c9bd2efd542536b672c1140e2fcf369772f9c"
+    },
+    {
+      "path": "assets/concepts/dmt-al-falah-event-plaza-concept.webp",
+      "bytes": 900330,
+      "sha256": "85ee08d795e58a8dc088c69a25465fa6f0f5e74834bb4368c343902dbb20d56f"
+    },
+    {
+      "path": "assets/concepts/dmt-al-shamkah-concept.webp",
+      "bytes": 833612,
+      "sha256": "e897b17a5b073d7d5f9084879bdbaea76378d65d986bfb0894523b313bf30cb2"
+    },
+    {
+      "path": "assets/concepts/dmt-madinat-zayed-concept.webp",
+      "bytes": 734958,
+      "sha256": "765a47e6dabd6aeba8754c8cb273cf3e18338c8a57f97203d79256233387e1c4"
+    },
+    {
+      "path": "assets/concepts/dubai-hills-golf-grove-concept.webp",
+      "bytes": 1037260,
+      "sha256": "065257f9e07e88cee0f3cf0efe47a28727d9885bda6e492ffbd81cf3e81cead9"
+    },
+    {
+      "path": "assets/concepts/dubai-production-city-concept.webp",
+      "bytes": 1190724,
+      "sha256": "f8bc546839e40e643c6675475061928c96c3e8724f779b7e4769a8a58068b857"
+    },
+    {
+      "path": "assets/concepts/emirates-palace-concept.webp",
+      "bytes": 380232,
+      "sha256": "bc9f5e64061bf862dcd0b683ac028322a0ff12daf035c0bb270f787e1cf9619d"
+    },
+    {
+      "path": "assets/concepts/khalifa-city-public-realm-concept.webp",
+      "bytes": 977752,
+      "sha256": "b821e045e55079165cb7a5c96599a34c1fe457a2d5dfa71a4116f29284497b6a"
+    },
+    {
+      "path": "assets/concepts/la-mer-water-park-concept.webp",
+      "bytes": 777058,
+      "sha256": "b4ee2926a7b68cb0a7734e40a3a3f8f5ac7fd3744ba464e92f2e39349bb57e83"
+    },
+    {
+      "path": "assets/concepts/legoland-concept.webp",
+      "bytes": 852832,
+      "sha256": "63f983faecc19f9da067ab9a237c8bbe441f8f39beb922f17a7be2670dc603e7"
+    },
+    {
+      "path": "assets/concepts/louvre-abu-dhabi-concept.jpg",
+      "bytes": 3604948,
+      "sha256": "21559fb7f3ecebf4b467252061c31eb41a149432b7a3e64c0d2ef917dc20d50a"
+    },
+    {
+      "path": "assets/concepts/madinat-zayed-concept.webp",
+      "bytes": 734958,
+      "sha256": "765a47e6dabd6aeba8754c8cb273cf3e18338c8a57f97203d79256233387e1c4"
+    },
+    {
+      "path": "assets/concepts/marsa-al-arab-kempinski-concept.webp",
+      "bytes": 956286,
+      "sha256": "934948cb992789544b34cb267fe9c9934fde41a3b4227b51b74db15e81b99a7a"
+    },
+    {
+      "path": "assets/concepts/masdar-central-park-concept.webp",
+      "bytes": 983728,
+      "sha256": "fc2dcfe127f516a086aa2666bdd95d480a040fa149bab7f6094ff8c01bac04b7"
+    },
+    {
+      "path": "assets/concepts/mbz-parks-concept.webp",
+      "bytes": 468522,
+      "sha256": "3785d970f147ee508549dc7333ef6a6d9ba13f82589ee112482c72aadb0d924b"
+    },
+    {
+      "path": "assets/concepts/meydan-racecourse-concept.webp",
+      "bytes": 440042,
+      "sha256": "f51c10d744dd19464ee03ba4a1099e718fd5cbf60d9631da4504dff66444580a"
+    },
+    {
+      "path": "assets/concepts/motiongate-concept.webp",
+      "bytes": 913704,
+      "sha256": "c2b13f99dabb43b9d51026d01ab3a9cf0de5e59313651f81e9e484aad7c850a9"
+    },
+    {
+      "path": "assets/concepts/new-corniche-road-concept.webp",
+      "bytes": 435702,
+      "sha256": "8749bae7e3aff6d6ad26dc408851e8df2360458ce24b8df865d72dcdf94d9923"
+    },
+    {
+      "path": "assets/concepts/pearl-jumeirah-concept.webp",
+      "bytes": 840930,
+      "sha256": "89c1af292f10075efdbd84dca65c7579c5dcf7d5691ca5550308327f5278bd49"
+    },
+    {
+      "path": "assets/concepts/pipeline-treated-wastewater-concept.webp",
+      "bytes": 715246,
+      "sha256": "9813fc2a31aa97b61dafaa6c3f4a7e5a0e6afadd3fab10ed97ca200ff700a65b"
+    },
+    {
+      "path": "assets/concepts/recreational-park-landscaping-works-concept.webp",
+      "bytes": 423546,
+      "sha256": "acdc611ea52e8956e2af483d21ed02b9545ad1532a76dc6f24e3b72e91ddb278"
+    },
+    {
+      "path": "assets/concepts/saadiyat-expressway-early-landscape-works-c40-concept.webp",
+      "bytes": 386284,
+      "sha256": "bc31cc638e87e5449a2ef76e0ed44470c4d6aa501ef83da5182d253f12731f73"
+    },
+    {
+      "path": "assets/concepts/the-palm-jumeirah-concept.webp",
+      "bytes": 443566,
+      "sha256": "e22418814e67253fa10f17fc894689e0cc827d11585526be2146687cb7bf7ee0"
+    },
+    {
+      "path": "assets/concepts/trump-international-golf-concept.webp",
+      "bytes": 281882,
+      "sha256": "cbeafe0265845c547fce967784de7a813ac171831ddf3a3d9e18acc6d3d6c88b"
+    },
+    {
+      "path": "assets/concepts/yas-saadiyat-island-streetscapes-concept.webp",
+      "bytes": 988638,
+      "sha256": "d0a459c106f729934d7a93ef947b294e9443431ae9f24c966bc3518d9e53083b"
+    },
+    {
+      "path": "assets/concepts/zayed-national-museum-concept.jpg",
+      "bytes": 1436878,
+      "sha256": "42d88a7fd034ff8a397c731a033da27d98eef0968c78f08fec910b8d4d96e582"
+    },
+    {
+      "path": "assets/fonts/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2",
+      "bytes": 21492,
+      "sha256": "0b00fbd6edcc84cd5f77364bbeb06b75ed263c740061eba34511f1e2ac1a82d3"
+    },
+    {
+      "path": "assets/fonts/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2",
+      "bytes": 24072,
+      "sha256": "744830a0e77dd14dd543a4230d6e3ce67ca961634074b5d536ebafc66c732301"
+    },
+    {
+      "path": "assets/fonts/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2",
+      "bytes": 10620,
+      "sha256": "9e2672d100bc36a37073fb250abfaa7394f5151bf5dda3f4d5fc281345eb391b"
+    },
+    {
+      "path": "assets/fonts/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2",
+      "bytes": 68224,
+      "sha256": "920711de9ae96c18970fa4faca73cd302b93ac5ed57ebeb6bfec2ddeff930082"
+    },
+    {
+      "path": "assets/fonts/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2",
+      "bytes": 35508,
+      "sha256": "6438d7b8ea9c7c3992d5e2fd2afdb1ff948570a3ef0bedae76247b51632960ba"
+    },
+    {
+      "path": "assets/fonts/manrope.css",
+      "bytes": 11634,
+      "sha256": "52c6a62eae126234534408ee910ba26b581540c78be14754386b42d1dff2a199"
+    },
+    {
+      "path": "assets/fonts/montserrat.css",
+      "bytes": 10206,
+      "sha256": "e79ee435ec4256bae417a2aa560cf1bca8cf4d417d2dda460826d40c66d85894"
+    },
+    {
+      "path": "assets/fonts/xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2",
+      "bytes": 14544,
+      "sha256": "95a493061fe0a8d0d027c2892747134ba747141112d3be4d5022e70ab7d3a1a6"
+    },
+    {
+      "path": "assets/fonts/xn7gYHE41ni1AdIRggSxSvfedN62Zw.woff2",
+      "bytes": 9360,
+      "sha256": "40af11327fe5308166c6cb5787808b042db6da889abf602f0a4876c49675d87e"
+    },
+    {
+      "path": "assets/fonts/xn7gYHE41ni1AdIRggexSvfedN4.woff2",
+      "bytes": 24576,
+      "sha256": "e310b55a7fd9677f5e3555e6c6c4d064fa1f1d24393f0ddbe217cea12a8c432f"
+    },
+    {
+      "path": "assets/fonts/xn7gYHE41ni1AdIRggixSvfedN62Zw.woff2",
+      "bytes": 8492,
+      "sha256": "bab757f8a0a1bc04055ee98cb5777f3254aab11f6d222366e1f40a36f390506a"
+    },
+    {
+      "path": "assets/fonts/xn7gYHE41ni1AdIRggmxSvfedN62Zw.woff2",
+      "bytes": 15240,
+      "sha256": "ce093b341d9c10658ee1eaa85c5f8042ff3307bc6ccfc5f405616eb437f0009e"
+    },
+    {
+      "path": "assets/fonts/xn7gYHE41ni1AdIRggqxSvfedN62Zw.woff2",
+      "bytes": 2592,
+      "sha256": "e8c0b39992f06b3dc9a9834494088014859f363bf6ca8792b6bb07e17c7965f3"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0001.webp",
+      "bytes": 78620,
+      "sha256": "582c5217682f2af95432de7ce84ae49500d9a971747fe3db35836e6b0c7526e9"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0002.webp",
+      "bytes": 78690,
+      "sha256": "d77f92d9cb3dad0788b4657dec50a714a66616560d69d99748579d2ce3bba020"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0003.webp",
+      "bytes": 78692,
+      "sha256": "8ce6757316d786483a167a07a7b242e8a06a464ce18b01eca4621bc20a1ad834"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0004.webp",
+      "bytes": 79094,
+      "sha256": "3a9072eb11260886156ca51ecea09caee168577c4cac928cbc2ca311187b4706"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0005.webp",
+      "bytes": 78646,
+      "sha256": "4f86cbbd17785aac3dd30c9ac26c3ad82ca0217dd78092616f6c0166aeb2292c"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0006.webp",
+      "bytes": 77946,
+      "sha256": "27d498e5cffdd28c45b4819d069e60f39b6de72ae74d9f4d4d3e5583be6494b8"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0007.webp",
+      "bytes": 78744,
+      "sha256": "a4568f8776414059a49b677d82454ddbc456234bd2da2525e6896b0fbefcc8bc"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0008.webp",
+      "bytes": 78940,
+      "sha256": "c9c92b52c3b99d283947af5d6dba785dbf6ac024f56465f44cbc91a303777b96"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0009.webp",
+      "bytes": 79494,
+      "sha256": "1189ad5e47dc12aeae4be47e48d947fe5e3795cfbfc29c4dae645904d82a8934"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0010.webp",
+      "bytes": 79712,
+      "sha256": "7e55afd54944201a860e4f99e31f9ec7d3c1996e946d9c27120d5a8aa673e7f9"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0011.webp",
+      "bytes": 80218,
+      "sha256": "453befdb28214b73ef3124b2da1aebdea0e91f733f22f40a97206422090543dd"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0012.webp",
+      "bytes": 80418,
+      "sha256": "7f8d2adb26a877dcf31bfbe62577a052846cc27f20ab741d8ad003d6384c556f"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0013.webp",
+      "bytes": 80522,
+      "sha256": "1181b81c44833e74a000660820a1e37ab551215b9196cba444dc3e53947f9296"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0014.webp",
+      "bytes": 81310,
+      "sha256": "d8cd7fb15dee56e9ff4a99054571779c51ba046f0dbfc110e633aad9d8775b66"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0015.webp",
+      "bytes": 84022,
+      "sha256": "22fd314085e689f938ebc6594189c1ce76199133d4406e568a6797a855ea50d2"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0016.webp",
+      "bytes": 87370,
+      "sha256": "10520414539ce82e29a6e28448d752f4df519aa775012329c78c0615c59d0329"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0017.webp",
+      "bytes": 87512,
+      "sha256": "4321eaca9347dc813ecd78b95b28757d291a3884371ab34633839614be488995"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0018.webp",
+      "bytes": 90182,
+      "sha256": "ee5a5300fe295ab509c5ea6c8a351a2c82f8d5f383be54687340a449728daa25"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0019.webp",
+      "bytes": 90494,
+      "sha256": "b0bb115ab3007646e05083d81b05557dfd666f1a858558038f2f503ff17d5244"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0020.webp",
+      "bytes": 95142,
+      "sha256": "63868c3617f9beb0b9d9545118f85282c5d51e8179e098a4c3d001052925db15"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0021.webp",
+      "bytes": 92802,
+      "sha256": "1e357436e4a89ccf2c4d95991974fb639dfa60d2ff98ae29df7f0e2947b3a695"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0022.webp",
+      "bytes": 96484,
+      "sha256": "d1f06074e1e0d5f2fa86a8a603edf5e156cdd45693de85f72bf55094bb5c6849"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0023.webp",
+      "bytes": 98356,
+      "sha256": "1e694451872df42995701b098a932cf922686693e6376e3aecbf0c6a4acc22ea"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0024.webp",
+      "bytes": 99824,
+      "sha256": "54026907ec76d3d40755381ca3960ac13c5027cdd04f79d00d02420ac1a2eb92"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0025.webp",
+      "bytes": 101812,
+      "sha256": "bbbe15612d5d363987fceaaa26475c63ea6274574a12d7738ef570de43b334cc"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0026.webp",
+      "bytes": 103364,
+      "sha256": "87f9049a0ea72b464f2b07e41ecd4444f131ca460286bce3b3e0850e40f90a17"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0027.webp",
+      "bytes": 106266,
+      "sha256": "f3e5e1386cffb2b006889b4b9a5643030778dba78622549df70e39e4f6dc56c3"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0028.webp",
+      "bytes": 105036,
+      "sha256": "b426d8a95d838d99b2a607ea2085bfc598fc924613ff269ad5d43eed8e967c48"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0029.webp",
+      "bytes": 107820,
+      "sha256": "c580c028ccb1e0e93486c2996a63d0186be31c1b04c83246e010932278d9b8cd"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0030.webp",
+      "bytes": 107778,
+      "sha256": "ed512b16a3efe17e051114b962639e94c8ad61b503110614d51f9b1841946c99"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0031.webp",
+      "bytes": 109746,
+      "sha256": "654f3e09fd6e28ec4af90b340e35a797047c8e112eda30bace003ee826bad77f"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0032.webp",
+      "bytes": 107410,
+      "sha256": "cf0f53c78c821941116016e6311e57df95970af53eebe7c450d87d06db94e50d"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0033.webp",
+      "bytes": 106996,
+      "sha256": "8a5ca549db1f7d3064377cd51a49a898b85d9bbc0d5255f4ed462df1dbc6578c"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0034.webp",
+      "bytes": 106088,
+      "sha256": "a7f18e606fca04122437a720e0af8c7a5ddd712607d485927a20fa28685179ac"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0035.webp",
+      "bytes": 103698,
+      "sha256": "5417428f3de1fe6036bfd69eaad40f3e8f771275aa607774671b751ef11051e2"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0036.webp",
+      "bytes": 101358,
+      "sha256": "68f44dfdb6512bd168439cb1e019384d71eb41096bd7e19ac46fae4972a83afd"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0037.webp",
+      "bytes": 102414,
+      "sha256": "ee7f6bc23a7cb0277b54409a4f61ee1a68c8ed31898721ec068be4a14d350e53"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0038.webp",
+      "bytes": 101766,
+      "sha256": "f8febbb5a1b742b77b403b06126328708003b1eafe5899d9897563d3e2e924f5"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0039.webp",
+      "bytes": 99020,
+      "sha256": "668d93efca6b60071f9bf8ce21424b2c6de625d4413b93a7eaf784fb8d92223a"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0040.webp",
+      "bytes": 99276,
+      "sha256": "e2591472908c579e2632addb001d30033cae6a097f1f30ee37af9ae5e385c885"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0041.webp",
+      "bytes": 97256,
+      "sha256": "433df46550de75b2eec3a634049e3d9f1b0444b1cc128e0338505968558070af"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0042.webp",
+      "bytes": 98942,
+      "sha256": "be110b3d2026e9192e692d25a6030ec64fa55dc10c6710a1a7ad9170ee084007"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0043.webp",
+      "bytes": 95408,
+      "sha256": "98dc0b31cb3b75a6b8cdbaa650231d904367409bacc4e05c50428648b7cae6c1"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0044.webp",
+      "bytes": 96894,
+      "sha256": "16fd03abb47268f9c8129e5e25d9df9cf59a23d84388288ba02bd78ef033ba5d"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0045.webp",
+      "bytes": 96624,
+      "sha256": "428f70fbeaa7328af275d7cc3976103c2cd34e80de1539d520dafda2bfaa973f"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0046.webp",
+      "bytes": 96880,
+      "sha256": "259e546f5f110d54e0b69b2aa6f8653307faa86c57a7c0ce52dcdc5fcc3cf70a"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0047.webp",
+      "bytes": 95958,
+      "sha256": "b4101962861f53540a651a8b9e10a5794b4071484f0e5b17c904b13cb1a35c5c"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0048.webp",
+      "bytes": 96208,
+      "sha256": "38a73b786882b2b5e742dfe72d869d7e8c3ce9d0a4cf73451abf34241c9d8446"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0049.webp",
+      "bytes": 96690,
+      "sha256": "1481be094047bc529cc15307116fb8e79d000ce7f9d363543027f4559ec4bbe1"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0050.webp",
+      "bytes": 94956,
+      "sha256": "63b6d1a3b44eead914cac5afad9fbc201191d64ec26ce2f1258ac7f69479850a"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0051.webp",
+      "bytes": 94974,
+      "sha256": "cce28962a69064f7c484e1cb663b690ec5fb22403b2a2d1f8688f575f010c521"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0052.webp",
+      "bytes": 96256,
+      "sha256": "369a528708af83477028076c7fb304d8da4141b231a3ce9098b15e6100287d47"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0053.webp",
+      "bytes": 96422,
+      "sha256": "d73b93fc1e9d976d0965a482c95a6915821a68424a90fce5b82c3db0708dc8b1"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0054.webp",
+      "bytes": 97210,
+      "sha256": "cbf2afd143766fa8931b3b75d647185148cecf264d363dc2608fcd0ec11f5184"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0055.webp",
+      "bytes": 96676,
+      "sha256": "4edbefd14160cf2acee02d054fcdd74eb3f7d1ec7c5e73634b5a12176ce68a48"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0056.webp",
+      "bytes": 97912,
+      "sha256": "00efc66615c20ba10fd3a276adb19d45cdd8dccb1918107203b6d98d7dd6ccd4"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0057.webp",
+      "bytes": 96322,
+      "sha256": "f091fa7ca4cbae949b84b2238e71e3c180e72850020e68f61136585b1ccecb88"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0058.webp",
+      "bytes": 96436,
+      "sha256": "071421b158107a4567ed6948895ae68589ffa8e47781f6ece7d646e5a6e0052f"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0059.webp",
+      "bytes": 98700,
+      "sha256": "d8f48df718e24558d2a8c654d1812d0ded2b16bb504c6fe1d21d07a999f8201f"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0060.webp",
+      "bytes": 98824,
+      "sha256": "f9fc05cb94c9a3d059a8e39f4dd35b33449e653670017ef404e381f66243164e"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0061.webp",
+      "bytes": 99764,
+      "sha256": "b9e1d45b934892628f58a2dc0bae02b48cd45274a380d3b7415b2ce928b2f107"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0062.webp",
+      "bytes": 99386,
+      "sha256": "aa6d1b2420a576e23889fec4588d4800d8a45c87025c1798197530deb9c3260a"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0063.webp",
+      "bytes": 100006,
+      "sha256": "1b0dc23d2d3e0b6f79adcafa76be0866dd75dd65f2b12cfcc74cf033c9069df7"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0064.webp",
+      "bytes": 98530,
+      "sha256": "5a5ab2afd814bdc5b3fc2340d2c5681bc14d617b49e8fe9e57c5d30826792b98"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0065.webp",
+      "bytes": 98194,
+      "sha256": "e21e5426e1fefd5bb23be2a155f1be75d05049b587f50765e596642847daa8f2"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0066.webp",
+      "bytes": 98014,
+      "sha256": "837123c9b2a9bc12398c746c57a45f31dbc32529d80d6e7389fc12f16d3fee55"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0067.webp",
+      "bytes": 101756,
+      "sha256": "263ef38d4feaefb317901adc08d0f25a347b2e56d06b12a1ad5bc9df9b8f23ef"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0068.webp",
+      "bytes": 102932,
+      "sha256": "3a5dd41fd69de4cc74e05e5d35ddefb6a1df1fe07cac59ed7cc063a69f07bc2c"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0069.webp",
+      "bytes": 102820,
+      "sha256": "df14c770f1c770978d12be8f8415b981cf0f24a38e17c325699197fe380b8e05"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0070.webp",
+      "bytes": 103992,
+      "sha256": "9246be41967731fb3d6fbe08049862e3b8f85b19d44e982a296aa5833d5129ed"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0071.webp",
+      "bytes": 103322,
+      "sha256": "01e97fb23a65141a4e3040be26f5d5c97c0ad31809e70163cdbb90428ed027b0"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0072.webp",
+      "bytes": 103454,
+      "sha256": "ba11b69241d2f30351d9a673766680af13fa3b99a7a6afcc2803c5be4f76fd63"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0073.webp",
+      "bytes": 103812,
+      "sha256": "fe9e028dfe3fe50f01509c899247f6254fce357b1e86ee13c14f10a5c23c003d"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0074.webp",
+      "bytes": 108522,
+      "sha256": "419c0bc8842d7dff5e17f5a259daf15f7cf8ee6d8d92007500318851883cef4b"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0075.webp",
+      "bytes": 108698,
+      "sha256": "cf375e64965726cd5a81c20706f33e0f7b3a9671f811acf6dad4888541d046e8"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0076.webp",
+      "bytes": 109370,
+      "sha256": "42077430a308d5ce21b6e1720c3717564a4121c0eef43f28d0f6ded98f19338a"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0077.webp",
+      "bytes": 109566,
+      "sha256": "41316f5519aef7927ad5d024e5d1bed16abbea3bc373ff942a0a18b2d54144ea"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0078.webp",
+      "bytes": 109432,
+      "sha256": "92bf35c4a77c784329b4ed79c5315944d9833d1a5e708837aff3a15bc8c2c1aa"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0079.webp",
+      "bytes": 109686,
+      "sha256": "2fc7a053680f7b319a9bf0284bb4034477a0887c1d356683423099d8651bdcb4"
+    },
+    {
+      "path": "assets/frames/zayed/frame_0080.webp",
+      "bytes": 109378,
+      "sha256": "eeda4fdf4a3c808c83cb05bc498759a9235d30d37efa6b3cc21d5f58c6f101ff"
+    },
+    {
+      "path": "assets/global-reach.css",
+      "bytes": 12446,
+      "sha256": "f982501b3d6078eba37e38ee9df32f7464194c54b3ac8525743e76979ccc8352"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0001.webp",
+      "bytes": 45800,
+      "sha256": "d3555ba9a31915f11d2f4a6b57379ada06ddb7037b7a0967267a64bb03185f29"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0002.webp",
+      "bytes": 44174,
+      "sha256": "5c4435f7cf99031b6508125a9638d28e5ab031d734e371a0c1499a4f4d81fd9a"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0003.webp",
+      "bytes": 41402,
+      "sha256": "525bcb7343d2cb1a4dd3dc02edfc569ad5a703cec9985fe00252811c55584612"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0004.webp",
+      "bytes": 37720,
+      "sha256": "df009935f306b46564eda6469bcb71812c46388904e5cf949d112b1c536fb834"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0005.webp",
+      "bytes": 36028,
+      "sha256": "22d22356fa2c560083b73b8997db6f8ad3561abaf26f8331d55294c86a748586"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0006.webp",
+      "bytes": 34192,
+      "sha256": "9b43314f0f8ac6f7b98b7e92e9e706e08002e5125c17a88ba79d09f5d2dfb51a"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0007.webp",
+      "bytes": 32654,
+      "sha256": "1d7936812fb5a6e5463502861208b771c30d659ad1906a1fbca3cebadaff5630"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0008.webp",
+      "bytes": 31046,
+      "sha256": "b413865c02ddf075f60906ada3897442dc2c97e3340e0cf4b5174ec66fd65c5f"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0009.webp",
+      "bytes": 29910,
+      "sha256": "b905098a0dc317d0ea2b29bec6a41c9888720bf87eb15efa2873eb3d5258b4bb"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0010.webp",
+      "bytes": 28176,
+      "sha256": "a2cfadf44c22885757428ef4e6ec3d59c489d943274434551f3fb1742261420f"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0011.webp",
+      "bytes": 26992,
+      "sha256": "72019e9041cb0814feb4446805b535a37d61b40937350e083467b6a663e5cd18"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0012.webp",
+      "bytes": 25580,
+      "sha256": "a27731a17d47928fc2e043bcb739081b14f316c8506496cd334c0a17f2e38d5d"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0013.webp",
+      "bytes": 24746,
+      "sha256": "43beff719eedce212a7541f8661270e313dd32187ec8db0cefc2aa6ae50ce0f9"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0014.webp",
+      "bytes": 23900,
+      "sha256": "ffc43f5083ae4dda79e22e6e01476593b3e6f4c6083d4edb375ae7fcdc0120f4"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0015.webp",
+      "bytes": 22812,
+      "sha256": "5add186c89cf907cdcc8f7403244a1090a33de447af3f6fe204996fda512e5b9"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0016.webp",
+      "bytes": 22028,
+      "sha256": "251d3cdfdc14f536d51d15038261736fc56dd8879001dacadbbce39125caff51"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0017.webp",
+      "bytes": 21760,
+      "sha256": "6edef31cee3499998cc20f39b7b58a059eb252082cb4546db8f27925e589b5a4"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0018.webp",
+      "bytes": 21664,
+      "sha256": "68cfae34eb6a1197accb88efe2f15f5b5f924f5fea755e635407e2f97a2c3aa2"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0019.webp",
+      "bytes": 21350,
+      "sha256": "28c126bf9f0817b41ce6891dce86e9b2278249f76c57cb0d180123202b29c496"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0020.webp",
+      "bytes": 21346,
+      "sha256": "a16ce72ed380da4bcda88dd60b9bb0d43aa45c9eca2e0d5a583b09f93fc97860"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0021.webp",
+      "bytes": 21266,
+      "sha256": "65b6c548bc315e261deb1a7b9786d4b3bbfeceeffbb34cfc94599429829a8199"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0022.webp",
+      "bytes": 21190,
+      "sha256": "e0c3ab07ec8e7f95c877d86fc9ea2e9151774e37e75e7fbafbbca4c05687b168"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0023.webp",
+      "bytes": 20266,
+      "sha256": "5312a1441e910938ad3953b91750180cf43f7985f048335dc60ef89142366be4"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0024.webp",
+      "bytes": 20104,
+      "sha256": "a6f42fa1e7d7d36c68f9e01ce6d933314a151ca3a40473a1f04283c8a52ff419"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0025.webp",
+      "bytes": 20010,
+      "sha256": "ab88770c7b22e7510582b1d6290256ded58f903f80b82739bec0661367a42a82"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0026.webp",
+      "bytes": 19932,
+      "sha256": "d12fc8cb96cfbe15c67dcb8dc2fccc0bdbf40364f1ab20d02ccf038624702ba3"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0027.webp",
+      "bytes": 19326,
+      "sha256": "16729fe28934433119655fe1cb038b8875d9f764b165d91e853553911c31dce8"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0028.webp",
+      "bytes": 19126,
+      "sha256": "ab7948b6169bbf319c9e40c29fa058d818904fa0361d0dcd52a91f218df5317c"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0029.webp",
+      "bytes": 19248,
+      "sha256": "61ae6140abf1b4c57dc8603a7c6abfe3a3e933f96b95ce8f585c8ba5cab67268"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0030.webp",
+      "bytes": 19062,
+      "sha256": "8e16dbfcadd8bb035d983129e8de2c45b7462d5783675b190255cbc2b3c75bc2"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0031.webp",
+      "bytes": 18746,
+      "sha256": "61a4126e6ee326995d9488bfaeee001591877df47ea56e454a4d680af4bcf773"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0032.webp",
+      "bytes": 18238,
+      "sha256": "63e6561646c28cb12258351b81d4323bb83f41a76ea460f8665bc511c4516164"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0033.webp",
+      "bytes": 18256,
+      "sha256": "7240481a02f122ee8a7149c56afd940d4775b3a1588514a7c042f868e2ce31ab"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0034.webp",
+      "bytes": 18084,
+      "sha256": "72ce329bfcf82df0320e651d85a6bed5fa59a2df01d2f9d6708b36deee393531"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0035.webp",
+      "bytes": 17896,
+      "sha256": "6b000941e1b79653600ff87faf73a39592a381fbdc53eb76d325fbe4984a58d7"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0036.webp",
+      "bytes": 17676,
+      "sha256": "9e87e9d83a67da3062591dafcb0592d3b29da3b6abaf9a6615a5e9fc351ee0d9"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0037.webp",
+      "bytes": 17496,
+      "sha256": "a6c0cc5f099fc470c1b4851f58f136ce312120dde277a16b8258350c0888e3e8"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0038.webp",
+      "bytes": 17244,
+      "sha256": "957536ff05229e92e9d04643bac9089fe1a0fb0e09e0c7d185a96e40b6761669"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0039.webp",
+      "bytes": 17066,
+      "sha256": "d3e3a3938100a9ff2de26e621559ec98d8338809d1056f00dde617a4a5572137"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0040.webp",
+      "bytes": 16782,
+      "sha256": "c9d071330c2aa707768f2d6e92165742beb5480e905a89b22558851adb44d597"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0041.webp",
+      "bytes": 16416,
+      "sha256": "fa690b64b9b75047db3510d05438af1e2bc0f08c61fbcf044288f9924b0bc3e8"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0042.webp",
+      "bytes": 16330,
+      "sha256": "3ebd18400a010cf9656ecb763cc57b1bd5cab649452b9816f975eee366c2a003"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0043.webp",
+      "bytes": 15802,
+      "sha256": "b11d1da8901e088088913a576ea41f64648d2d1fa735e4e0c6f7ac5db363665d"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0044.webp",
+      "bytes": 15502,
+      "sha256": "b2d854d9755232786f0840f9338b68f754a1faaebc193638f6f04d7cf1df3e41"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0045.webp",
+      "bytes": 15298,
+      "sha256": "975074ff3cf43215bb22eafd2682b359238059f866a07ad7c6c8d4e83de73a77"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0046.webp",
+      "bytes": 14914,
+      "sha256": "a1921479cccbce37e448b9e91503b4f8061d0000fcfb1cf4c4601ea149e59c86"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0047.webp",
+      "bytes": 14376,
+      "sha256": "3feb2b6bc3c473034c24b626155838cd489137e8e25db28bbd090c90ac1bedb7"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0048.webp",
+      "bytes": 14102,
+      "sha256": "42201bd88992566bedf6a10d6183b8e06e243d0ef8527a07acf066198d0566f6"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0049.webp",
+      "bytes": 13510,
+      "sha256": "eef6da5494abcb152c52c9fb52737878664aa4a076af55e0e365bc7c31a35c23"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0050.webp",
+      "bytes": 13542,
+      "sha256": "83435bbaac554bc5267ea4e5f4120d114c53c4acb6c7cc485b943409456a2f1c"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0051.webp",
+      "bytes": 13344,
+      "sha256": "f901a185cee2f27e4e5d5ecc3596d38e9e7ad4e4d6a54a4a16cfd0503f960931"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0052.webp",
+      "bytes": 13204,
+      "sha256": "fd7399ee1fdbc3efe3a7d76a6377e3bf74e5a4bed784be70a716baaef8b922ce"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0053.webp",
+      "bytes": 12614,
+      "sha256": "f9ff277f38562dabbdc923a98f490294cfb88786c2b5d5620c9f64849583f368"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0054.webp",
+      "bytes": 12632,
+      "sha256": "44d761e8220a18e44b68779cf448d34d08c0c49cfeaf4dea9bab941c1c67e626"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0055.webp",
+      "bytes": 10830,
+      "sha256": "d04bfe46f0601e747ae9f895fe9f9e0b9512ae4e5ee421dc841a7214d097c120"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0056.webp",
+      "bytes": 7782,
+      "sha256": "da9d11b4c1ed9af5cc92368f4ffd242b52c80db6d320a9dbd4ed000e3da05e63"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0057.webp",
+      "bytes": 7250,
+      "sha256": "37a0b95f96e8d249764e249f6d73e8707052be6fc058d88abdfabcb92d8f7f61"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0058.webp",
+      "bytes": 6600,
+      "sha256": "4c6b2e1ead1cca09ef8cdebb25ec0f965d9cc4ef1d01717ddfa621da71fad7a3"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0059.webp",
+      "bytes": 6362,
+      "sha256": "c68511c9910437c62eb0d984a1cd54a3b5591dbf1cf4358b2a5d360c566b241e"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0060.webp",
+      "bytes": 6426,
+      "sha256": "a710b95a53fc829aa8956a9edadbbe5a226979ef869dd0a35f05a40e4d5c5b7f"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0061.webp",
+      "bytes": 5806,
+      "sha256": "c977db4f0d9d73e902e6ac6aba16ba017d0b73f24897264b722f628fd451ba6e"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0062.webp",
+      "bytes": 6464,
+      "sha256": "275e6d3d50719108b917dbe7b2f4127084085199b5b1eda98b642a244f95a199"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0063.webp",
+      "bytes": 6932,
+      "sha256": "86ba71c73b83aa782d59d86c0e2011586c98f24ee739a7e9c64b5ca08087f6d9"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0064.webp",
+      "bytes": 7288,
+      "sha256": "6076ffed0a3c75306101909c04f32d56a2e97167bd185a4b073b598262cf7a9a"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0065.webp",
+      "bytes": 7456,
+      "sha256": "63321c191118a43520d13166091e0ad98fac8c6223edf381694d0ab57d3da2ea"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0066.webp",
+      "bytes": 7840,
+      "sha256": "79a5bd41610dcc61a1b6df35674c2738c31b1e0057f51874f0da05eba9416e05"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0067.webp",
+      "bytes": 8256,
+      "sha256": "3899e2f466e49b90fc3c3eb7ff019f3429a4bfb32dcc0fd88ca3cd77436687dc"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0068.webp",
+      "bytes": 8440,
+      "sha256": "7b5692e7b17a4b7029b24d10fb5b116f84da90dcb65dba6ca3eee70134c1140f"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0069.webp",
+      "bytes": 8740,
+      "sha256": "54fe2e499b90b1b02c2bd4387b9b6cb007445940bebde1b9f0724fda4739be34"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0070.webp",
+      "bytes": 8924,
+      "sha256": "9a5ef0e516984666a1dad4027824af2932ee390daa20e7e64646447a976f07fb"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0071.webp",
+      "bytes": 9286,
+      "sha256": "5435e37f63e3d9664944e3f149f9a9ba52e949dbced8eb1794de60fa072c5af7"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0072.webp",
+      "bytes": 9582,
+      "sha256": "1181b5908d4b93a9a0ee2509412770769a6cf8ecf1fa934d4dcc0ecdce6a0afe"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0073.webp",
+      "bytes": 10202,
+      "sha256": "0b9948446f436fdf9543f3736c3173fff3c0db8fa181474d43887bd8d022c71e"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0074.webp",
+      "bytes": 10404,
+      "sha256": "921eecac9bfbed593d2a9e5471e1ccc04fe28ebb22960bf98c1b0e35a1432689"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0075.webp",
+      "bytes": 11218,
+      "sha256": "3876bbb9ce951b06ee2313e51c1e74de3856f1056f532f7346fa67b6d6e30178"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0076.webp",
+      "bytes": 11358,
+      "sha256": "ff222f0e6f49fd7cdcc74fdee55ad1fbc0ed783f5021f37593225d7425958792"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0077.webp",
+      "bytes": 11786,
+      "sha256": "cf53f449838510aba543434821994f4248efb0473d4fa652df09fc6a11b56bb9"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0078.webp",
+      "bytes": 11872,
+      "sha256": "0c15d64b6bdcc1ccd0ffa5ee00a557d9d39cfd4df15ef7296eb9fa03c3b9d52f"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0079.webp",
+      "bytes": 12286,
+      "sha256": "826bdda770cc2e83a7b3188de9d9354d35c7a471c081320d3af5cc4201e67075"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0080.webp",
+      "bytes": 12326,
+      "sha256": "face16aeaa4117e081318e21abbadb13411387482b8fa401dd0bee8854924ea3"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0081.webp",
+      "bytes": 12736,
+      "sha256": "ffa9bdab83e991b490ef6f8b21813e8f754b8339da1f66365271d155af28af6a"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0082.webp",
+      "bytes": 13192,
+      "sha256": "0d3aa275ebff18a69cab4df0b5bff2709b73f2b5a31e8a1a3de4ff9758fbabf9"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0083.webp",
+      "bytes": 13870,
+      "sha256": "48312bda8d2d8e5fcbe21f04f2cf5f181ad9e845a2ad432fd417aa850cf73548"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0084.webp",
+      "bytes": 15526,
+      "sha256": "2cb014b4564d841757539db61dfb291f9703114ea249787962102c17f2893ea6"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0085.webp",
+      "bytes": 16792,
+      "sha256": "85f93253ff54852c45323af2426f58867b3928e79516074930e9c7c5d329684f"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0086.webp",
+      "bytes": 17504,
+      "sha256": "47762c96a785deae63cd06038681cb0e1300d329957a91dfeda8e5939f442c8d"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0087.webp",
+      "bytes": 18746,
+      "sha256": "9b82b5f439d64726ae1fcc60189cc868117e4288dbbf38782c4d191cabaf74aa"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0088.webp",
+      "bytes": 19148,
+      "sha256": "975f4f07a580c798163f74678e36bb1f441b0d508abbabfe945793518f362b50"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0089.webp",
+      "bytes": 19818,
+      "sha256": "b4f9f6b3f70fd93ac0aafb95c3be633e0bb66f6b14573b46a9f377ef797e9ec3"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0090.webp",
+      "bytes": 20662,
+      "sha256": "22f4491f00920ab03e146c23a5184730ed8bb6a073aca2cc59c54f5c19df2095"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0091.webp",
+      "bytes": 21306,
+      "sha256": "d27302acb0920be0a2dd83ea2badaa073c15e8b260c872be22804a05c5053e7a"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0092.webp",
+      "bytes": 22144,
+      "sha256": "7482d935eb51bd75885acd4a3f6acc473492b2d1d33255be0abbdf7785414fbd"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0093.webp",
+      "bytes": 22878,
+      "sha256": "fff4540e051079600e245bf78aad2b99f5ae7ef24e0f6e8e6dccb14686415d1c"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0094.webp",
+      "bytes": 23456,
+      "sha256": "f1474d84fd8c8c3dd6d24551d0ba9b62a47870e2f3743a22e4d190acc0e83b28"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0095.webp",
+      "bytes": 24722,
+      "sha256": "924d02a8c6cce06d28fc853021e3993f10da488c32ddcff7923270a97256a19b"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0096.webp",
+      "bytes": 25896,
+      "sha256": "1658417ee55502253a1ab1014529c36538a5d44043b513554778fbdc238d7268"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0097.webp",
+      "bytes": 26446,
+      "sha256": "c950e179d36fdb07852edf96b76767b54925b97e34a8b1ba5cc71a6d5106258b"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0098.webp",
+      "bytes": 26704,
+      "sha256": "e0c9e7af7fdebaa5f2734492994c4c18ee88c85388f15d70ec511f6ed6808501"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0099.webp",
+      "bytes": 26646,
+      "sha256": "42e572688a1a8d77878696009f1ddcf9b54d0534a87d641747f66a1214e4afe2"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0100.webp",
+      "bytes": 26972,
+      "sha256": "45680ae0ee0a8f49ce435560f10e6080be4f61e688500080424fc845b0935872"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0101.webp",
+      "bytes": 28192,
+      "sha256": "1b3d07e940a540f48e76be63c2f8bd637599d3cb52f3658ab065f7ce269cd9b9"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0102.webp",
+      "bytes": 28920,
+      "sha256": "5a784b01161b35423f2445bf6a9ff0ee066b792ef47214f4fbb7d1136461d0a2"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0103.webp",
+      "bytes": 30760,
+      "sha256": "56847957a7e5b892994e5e201144f42484acaf12597998319f82d4e01331721a"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0104.webp",
+      "bytes": 31560,
+      "sha256": "275856ce01daccaaa6883e3ecbd7934ea186a41fec1fd385cee772630b0c7c23"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0105.webp",
+      "bytes": 33492,
+      "sha256": "5bd1cc66601583a40bb96836048eebf0c360a0c9bfdf65e8437f87045995d352"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0106.webp",
+      "bytes": 33930,
+      "sha256": "2a7840677dd609eaf0cde7cca8ba49ee38ba25132574e39bcdc724caa1ad870c"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0107.webp",
+      "bytes": 35392,
+      "sha256": "43927a77e82a582a23111faa704421276f53c722c35c6334e4603948ee83e789"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0108.webp",
+      "bytes": 36528,
+      "sha256": "e7a7025ee6117bf49520c7f3a83a5b5fe6febaef7f452ce165cd98fd66972fcc"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0109.webp",
+      "bytes": 39258,
+      "sha256": "265cdaa6db14e4c8dceea132f2c5822cd216b5a58e6b67be520f449d6ae92638"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0110.webp",
+      "bytes": 39900,
+      "sha256": "0ed3c7968f40f00f5c2962c9267a6f18134915b4a4be95e6379074e4f779bed8"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0111.webp",
+      "bytes": 43312,
+      "sha256": "3e389d1773f863803b64fd8b80c33b3fba39780e68d9646ffe6180c6c3a1850d"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0112.webp",
+      "bytes": 44582,
+      "sha256": "4176ebef0b44cdb7f76e54a36d295b1fb439a7073cdc40c29ac914d79194e8e1"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0113.webp",
+      "bytes": 46696,
+      "sha256": "79c48450051737261d34752f0c5a8a9a77e04b48ee9169609d52425c702ada63"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0114.webp",
+      "bytes": 47712,
+      "sha256": "ac413a52855b4a9ced9b26f617aadd67c55bdc7b8c581701da498b9da354f092"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0115.webp",
+      "bytes": 50698,
+      "sha256": "a61eedf39f6465f4c3e87c63b84a651aaef3e7c6e88c55e2bffa0e44cf8147cf"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0116.webp",
+      "bytes": 51760,
+      "sha256": "c23d5a5e7d610ecb871a63fa48e9416cb7991ac8a19b48a9bb79a244b1242b48"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0117.webp",
+      "bytes": 55580,
+      "sha256": "079017076257cd3c01ed905f092008de2d727de016263871302424abc7cdfc12"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0118.webp",
+      "bytes": 56870,
+      "sha256": "44d4d7f27ca0e819ba4dcd1fa28a82e456d91f5c0839d0cceb5db4e0f5af4cd3"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0119.webp",
+      "bytes": 59738,
+      "sha256": "d18559c055d44239796b4f6121790c63363a6e634b8b456eac5b8aff2df82a9e"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0120.webp",
+      "bytes": 63568,
+      "sha256": "2144e6ee60e4bca02e04d3891acc503f3029f2752c0b9f44a3564c9a338154b0"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0121.webp",
+      "bytes": 71142,
+      "sha256": "abe8d42ce3273eb3e72825984f7a22ab7a7520026fcb8752010b4fb25a3a693a"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0122.webp",
+      "bytes": 72804,
+      "sha256": "441afa1e32c61bca82ae0ea1c58e280055dd3e95bc474442b49557d4f7e04279"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0123.webp",
+      "bytes": 83008,
+      "sha256": "71c537f8193bc56f2af8781caa466c1ef2fcd6c4577c5271b56404fe262cd0e3"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0124.webp",
+      "bytes": 82784,
+      "sha256": "b453c156c3720f04ed76cf70702a8004916e62c333ad7eeda4b32f845ddae820"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0125.webp",
+      "bytes": 87230,
+      "sha256": "43526dabac3961764afcd9c32ebdc73fa8bab13571e818b63bf5260f7ba51d14"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0126.webp",
+      "bytes": 93682,
+      "sha256": "46ec6319bae3c3d7a590808f906dd1cc55f2d5efcf4641ea655fc4cf86b1852e"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0127.webp",
+      "bytes": 105270,
+      "sha256": "69a59528374c3dc0b146234df84cf419c5f9884e4ea48c810777ec893ebed39d"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0128.webp",
+      "bytes": 106294,
+      "sha256": "f165fc985201e39684ba1e28af2dce9dedee22a48a2f9ee44099d4334312f455"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0129.webp",
+      "bytes": 112168,
+      "sha256": "5c149d4fbd603ac6c233d797077be049f9a73d75af6a34d05d102ce7dccbd83d"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0130.webp",
+      "bytes": 112996,
+      "sha256": "00118bdd9ef88e003930f6b70dece45fcfadec8d4436774add2324d17edc2e88"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0131.webp",
+      "bytes": 115892,
+      "sha256": "5ac5e8e8dd35d572ab08dcea576495dd4319de9a6808f791837faccc44888e19"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0132.webp",
+      "bytes": 113342,
+      "sha256": "8bfcc8f3a66dd65c04b1ae1d508d8c4f982136fa07ba72a10edda98bb7a54c0a"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0133.webp",
+      "bytes": 115548,
+      "sha256": "3ef0c13c7a1e27dafe4ef367d6fec0e2639bc37f49a2851829eef6bb8cbfeb8b"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0134.webp",
+      "bytes": 112412,
+      "sha256": "e7e6890b2f7445eb9ccd1797775d45f02c609e2d2af0f3fc3ad7b420b2c5afed"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0135.webp",
+      "bytes": 115170,
+      "sha256": "0637094517f3d4ed81e3b71edfaa7c01643e5aad460a693efce80648bd8983b2"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0136.webp",
+      "bytes": 114948,
+      "sha256": "a063986b479d3bf17a401657cba96d9775bc13e2f69e275339a54a34fc00ec78"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0137.webp",
+      "bytes": 115946,
+      "sha256": "e5cfb52f5bf4e7ad0f4aa9edc4c4170b3b44d6bff50352c175b737167221e4e4"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0138.webp",
+      "bytes": 113776,
+      "sha256": "2f835ef5c3d66368c44495a097fd0a5c7ef8c75d21af438a5712580359ffdbfd"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0139.webp",
+      "bytes": 114634,
+      "sha256": "73dff80599bb94545fae94941574117ec0929f9ff86908e48459911a0b477c9e"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0140.webp",
+      "bytes": 114858,
+      "sha256": "f88575ee81b9acf5986ecb4be1a3828f300be426eb2c6d650f67a5ef11e651a8"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0141.webp",
+      "bytes": 115072,
+      "sha256": "205288e8d696d47baec7ae06bbc1e4445d095d504d685792b84ce98740cb904b"
+    },
+    {
+      "path": "assets/hero-0817-astra/frame_0142.webp",
+      "bytes": 114216,
+      "sha256": "a240fe2ab758f2fcfbacb94f8b91cc1d0aeeedbb912843d25be1fa668e6adc6c"
+    },
+    {
+      "path": "assets/hero-garden-full.mp4",
+      "bytes": 435950374,
+      "sha256": "19d6eaeb9ef5c0a2674e301a4cd16ce64b5dd213cd4f8bf0988f90bb41ec78ac"
+    },
+    {
+      "path": "assets/hero-garden.mp4",
+      "bytes": 4394131,
+      "sha256": "43205cbd83902add09f337978b583f0ccdc39c195f82342aaeaaa55a48dbeb7a"
+    },
+    {
+      "path": "assets/hero-mist.mp4",
+      "bytes": 39807195,
+      "sha256": "cbb55562ce205db8b4b68e312c07b39084ab25ffa4886ba4b062d5b0a1f16d0b"
+    },
+    {
+      "path": "assets/icreon-projects-astra.css",
+      "bytes": 14087,
+      "sha256": "00c89c2228a98e0fff76adce10a38e0a88523297de22f641dfcfb32f8f9810eb"
+    },
+    {
+      "path": "assets/icreon-projects.css",
+      "bytes": 27205,
+      "sha256": "8f986c9f4c1cabba650b65222d3fc3638f2cd3fec0ec025dd30edb649fc197e5"
+    },
+    {
+      "path": "assets/index-DKJEREcW.css",
+      "bytes": 100953,
+      "sha256": "83135d560b3f6256283e598fb26f6ca5eefb6e254ea2a3fd46a7f948a37c763a"
+    },
+    {
+      "path": "assets/index-v10-projectscrub-astra.js",
+      "bytes": 13052,
+      "sha256": "32c5c6a938ae330fa3253921c69c604af7ffa02cb0cd98af0db7dbd4f787d3ec"
+    },
+    {
+      "path": "assets/index-v10-projectscrub.js",
+      "bytes": 7670,
+      "sha256": "6366935235a3a454be2510c97ef5079c332db191ff7c765f114b5a94af5661b3"
+    },
+    {
+      "path": "assets/index-v10-safe-loader-astra.js",
+      "bytes": 4939,
+      "sha256": "1e189aa78a394808df918e2b46cfbc8ffc02c5f7643e6f1f7f7e8080d68c9fc3"
+    },
+    {
+      "path": "assets/index-v10-safe-loader.js",
+      "bytes": 441,
+      "sha256": "aa44e96fdcd9077890add5123d1c6e48dc40339cdb3391faa32d6de8da9a0e4e"
+    },
+    {
+      "path": "assets/index-v10-scrub-astra.js",
+      "bytes": 14915,
+      "sha256": "a563a9e7c03c517e6747478e7c764d613aabd83e7439a8f5e05ae7aa2653e5ec"
+    },
+    {
+      "path": "assets/index-v10-scrub.js",
+      "bytes": 6480,
+      "sha256": "88cd21b13e965b29e2a1d64cd6359ae50a8115a51015a4b1b98ff0476efaf346"
+    },
+    {
+      "path": "assets/index-v10-timeline.js",
+      "bytes": 611603,
+      "sha256": "1848bed9fde9ae061594a3dc96d0aa4c66b2df937ba238be846bf67342960d69"
+    },
+    {
+      "path": "assets/project-profiles.json",
+      "bytes": 8215,
+      "sha256": "9c89bb5fc8c43f4929536cec9ed3e6af268c75b852e1e8f8859e65428d454f2a"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0001.jpg",
+      "bytes": 1314947,
+      "sha256": "90a360dc0a4c67fdd433273fc735cb56941a923c23c7e63bd484e63b1a813315"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0002.jpg",
+      "bytes": 1324097,
+      "sha256": "d2a48bbce8c94b957ce29e2d89380bd03c869442a199b22564250dc4a113169b"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0003.jpg",
+      "bytes": 1325558,
+      "sha256": "57541c805fb62d8a7b95491ca3fba8aaaebbc2ee6f351e47401f3e968018a1ac"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0004.jpg",
+      "bytes": 1375520,
+      "sha256": "94c2496cc53d9d9d478cbeb4b40303698be615f135272e3db8c479c7d817dfe4"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0005.jpg",
+      "bytes": 1342598,
+      "sha256": "8b582b4ea1cc15156cfa4b242fecc19a9bb7f7e30a345dccabe4bc59c3a3d1e8"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0006.jpg",
+      "bytes": 1336938,
+      "sha256": "d8cbd7996aef2df9094b0bc24c370cbdcf17dea23c444eda5becddaadd71444b"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0007.jpg",
+      "bytes": 1332363,
+      "sha256": "e967366b76638244cb4a482cc622f4f242dfb045cd494097609b26088f48b9d2"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0008.jpg",
+      "bytes": 1323572,
+      "sha256": "08fd20732770f8029abe4d97495f556ba9f0f59ad2d6c2568c9cec8c26763195"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0009.jpg",
+      "bytes": 1391332,
+      "sha256": "94f74382f666fefb91c4906b4cccaca8c7bdbff52a09fb2193fd4ff56f04957b"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0010.jpg",
+      "bytes": 1346059,
+      "sha256": "8c792ef2189394e19398b5248e328597de12f98ecd2d335311aeae0de77f270b"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0011.jpg",
+      "bytes": 1323928,
+      "sha256": "08ea0a7582bad920d70aa2aac949e455947d62b96ee5c2c35c70faf5329ded2c"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0012.jpg",
+      "bytes": 1338178,
+      "sha256": "65b7046a34cfc333cae7b65625ae3994d7bf5325685d1d07879147f197ce4625"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0013.jpg",
+      "bytes": 1338534,
+      "sha256": "e75b2ee4623f49758f772bff0dd7668d1da647433907b692558b6da415bbaa35"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0014.jpg",
+      "bytes": 1374361,
+      "sha256": "e983671fb5496e3f37306ed41825959c4440e25f0f0a3104315b07dc5ba12f3e"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0015.jpg",
+      "bytes": 1331514,
+      "sha256": "0989c0717016003d577b3c098997016aaa3624433ad3c730ca22dcd92e8ced5e"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0016.jpg",
+      "bytes": 1329782,
+      "sha256": "39f65571a2384c3011f2050ca97ea97c2902bfa8801addfaa7f7ddf093d8fc7b"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0017.jpg",
+      "bytes": 1310446,
+      "sha256": "29ac0ce5cb15b5d07993e0e457e87eed8a511a79c21416ec3a78130c4fa8fd1e"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0018.jpg",
+      "bytes": 1262860,
+      "sha256": "031d614cb2f02dabfe6335bffe05d24c6051ff806882f7439e0343f908f86096"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0019.jpg",
+      "bytes": 758573,
+      "sha256": "5fe1d1f6657d6cc434acfd7f4e626cca7354b395ca5962f6038eb2212d4f7c1f"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0020.jpg",
+      "bytes": 714482,
+      "sha256": "595f8c17ff748dff82211e1de5b08cc7a76069821d92fea31cd09d6f197b8240"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0021.jpg",
+      "bytes": 654241,
+      "sha256": "cf102961885ba4e230e20e52a4f8afa0d5fb4a1d0b76b3e9b700053c482f81e4"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0022.jpg",
+      "bytes": 639664,
+      "sha256": "05f338a882d2b827cf64916f6eddda1635c6758c33a82637b62295b8d8290429"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0023.jpg",
+      "bytes": 620347,
+      "sha256": "56d63a60c354bdbbfcd24f3fa8239e9adb32aed2a9d021e0edf1ab3b3bc2b7e4"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0024.jpg",
+      "bytes": 592534,
+      "sha256": "2541299b9982b9e180933bf4419da809519a277a0eb848f613cbbe689a161946"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0025.jpg",
+      "bytes": 565371,
+      "sha256": "50f55ffb68bdd5a50883a28616497d041dc62e7d421023149ac9cc0ac9f9d0cd"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0026.jpg",
+      "bytes": 531862,
+      "sha256": "0ab28aa219c6163db20aa693820afd155ac489b495de7d0143983085a96ba793"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0027.jpg",
+      "bytes": 531935,
+      "sha256": "355742647c834eea60174613c75f24b8868118084e9d78fc48eaf90758569906"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0028.jpg",
+      "bytes": 487129,
+      "sha256": "34485efce2846802662ce1ae6655ad04ca7ed0c153c48dcec9df90b56236707e"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0029.jpg",
+      "bytes": 492795,
+      "sha256": "2e0afdcdc4861bb3667b2e7540f7db4dc8361d1a4df688386be918cba34a409a"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0030.jpg",
+      "bytes": 452285,
+      "sha256": "cacbf341bc556cd0308920777b89aa85781f27e51e49ef5a3165472d548958e8"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0031.jpg",
+      "bytes": 434556,
+      "sha256": "46d0d2fc7ef7b375c4bd855e94c9ab9872d0e1c0e9bc8639a5b3cf62888dabe1"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0032.jpg",
+      "bytes": 446519,
+      "sha256": "f4cb55dead290a9e2b3795cfaf0fb1a1ff2b5d9d0bd047eb75111b351f7addb8"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0033.jpg",
+      "bytes": 441014,
+      "sha256": "42f02b3e3d35625d084be33ecf76bc6c3c38487500a30d828ad16b6f7f21e566"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0034.jpg",
+      "bytes": 449969,
+      "sha256": "75af5cb38d11fbece9533295050c1291bafe9a4e2501e00894b83a5b017534ad"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0035.jpg",
+      "bytes": 458925,
+      "sha256": "0b7a63a9235924129f6c538c892a3bd583b9f1d76371ff5eb6ce08ed6c13b62e"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0036.jpg",
+      "bytes": 457769,
+      "sha256": "a66e4a8a521d18a14bfb8f42ffde6edba4c85609ddea1d2d91a08fe2285aaf4a"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0037.jpg",
+      "bytes": 462190,
+      "sha256": "ded8ca729e71232f56551fcbe578a42c24e3cb759338fa216356011a1daf3db6"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0038.jpg",
+      "bytes": 456001,
+      "sha256": "e9447482e6050afeaa6f02012a50c4a0e896c6f8791e24e439b79d48a72eb14c"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0039.jpg",
+      "bytes": 454111,
+      "sha256": "235c965dd91f266fb983b9dce9edc866f59db3621988ccc76dbf5c0dfbb57d24"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0040.jpg",
+      "bytes": 458183,
+      "sha256": "0655dbd372cf11493459831721bed41b314e7e95c732e2fc6b419d55506cc0d1"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0041.jpg",
+      "bytes": 458060,
+      "sha256": "71d213b2affae94e32cc3d59b1d910e1241bef55eb0b3a9281ed971d0db5d913"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0042.jpg",
+      "bytes": 464619,
+      "sha256": "a21985f976c47a63c9c0ce68e54b93a1ff67d5c001d46f0d3538e24f8156a39d"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0043.jpg",
+      "bytes": 453462,
+      "sha256": "3da996001e04eaef880fe8a425ba2be755f41fab3348de5631f511cc10f9562a"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0044.jpg",
+      "bytes": 448116,
+      "sha256": "f9ce39bb964dcdc5bb7ed20f9ad9e8fdc08f6d1868de88d081609abafac96a89"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0045.jpg",
+      "bytes": 457443,
+      "sha256": "f6a872b285e6acc6ecbd24675d4e356e8328b684d5164bff2f7a9d56f1e5da39"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0046.jpg",
+      "bytes": 452725,
+      "sha256": "defeb442ab55b0dee67f461b753201b7e399e3c246f4acf4e1c9ff4140406f4c"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0047.jpg",
+      "bytes": 461832,
+      "sha256": "ecea3286a0a7e02b2b0ae3009761208df77cfb3417f0b7da754c8d9b7c9c1816"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0048.jpg",
+      "bytes": 465293,
+      "sha256": "7c3a8644c5d5e693160500b8ce2c4a3911c6b5ea7f152ac42986c1f0013d1256"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0049.jpg",
+      "bytes": 471592,
+      "sha256": "6966abf2d31dd4d13c43790d8864113f9d590d8054c3b06d472735d495110f11"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0050.jpg",
+      "bytes": 473976,
+      "sha256": "1d36ee95f15cf899ac82b97eaa656e3781ac2edf4dc24e286b8f115e0e484941"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0051.jpg",
+      "bytes": 477921,
+      "sha256": "306bbe5ee07c439e6ac6fa0b67cd8f7c48bd4ff385990d11da935fa0dfb5980d"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0052.jpg",
+      "bytes": 486804,
+      "sha256": "8f303c4fceae72e32f0453c5222211a0e1fc30625cbfe7661826e56d5c2764c6"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0053.jpg",
+      "bytes": 477863,
+      "sha256": "c4d316f794e9744585b97f759fe7ab6033f93f8de4463568e2171e4db53d2ea9"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0054.jpg",
+      "bytes": 493526,
+      "sha256": "e1a2ce463c39b4b696121db57b6d0bd8b2145a1ebde7740680475ff21723ed7d"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0055.jpg",
+      "bytes": 504967,
+      "sha256": "7cf08627e0e53f0407979e7c827cd9aa99b37fa3a30e679b18311b781e5b016b"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0056.jpg",
+      "bytes": 509591,
+      "sha256": "c2257dff8a6b7f336d6af44ceb13d1d65f838bb778c474b78a549352489f4198"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0057.jpg",
+      "bytes": 521204,
+      "sha256": "e6794b6d6d6145446a0b13395300c460b06216d0e7a12d83e5a05003ae2f81f3"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0058.jpg",
+      "bytes": 524142,
+      "sha256": "e8473fec28ca17231f85c7890320c0f5d6d6aecb331d8766e72359d03085bed2"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0059.jpg",
+      "bytes": 529373,
+      "sha256": "9921955fb9fcba618062beb6fc7feaaa40960c6e21e139f275c9609d273c3cd5"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0060.jpg",
+      "bytes": 534866,
+      "sha256": "19d6c4e5744cf75251d68a286fd1e6a34633cd6b1595929e02c30688c4db16d9"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0061.jpg",
+      "bytes": 561199,
+      "sha256": "9ab200a0591ba8c4987b9374d1f83b7303f5599c333f5aa455c752fae8954758"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0062.jpg",
+      "bytes": 574005,
+      "sha256": "7d92c3d28a744ca342a9ae4d1747173b567c74c6e1f4127c109c0cf207674488"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0063.jpg",
+      "bytes": 565922,
+      "sha256": "2137a1136b6ddb8c3c4221abac4d7fc01c0f8e87bf9e7cf52a5f31771add5050"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0064.jpg",
+      "bytes": 567076,
+      "sha256": "69270540a3ae42090af11d077756af0022c08598d326baac77314944d50f45e8"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0065.jpg",
+      "bytes": 575960,
+      "sha256": "94fa01c3e12b6fb6a1e3e7d9dbb108d5cde28408d311c3650a9f843a7006e0b1"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0066.jpg",
+      "bytes": 576959,
+      "sha256": "91f4a583df2ca8671a1fe138de150a1645e3eb628671afb25101764854adf344"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0067.jpg",
+      "bytes": 586522,
+      "sha256": "1f4e55bf808f89a14364cbeaacdc4541ff78addf2ddb6e27e9a4a945b06bc789"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0068.jpg",
+      "bytes": 585082,
+      "sha256": "03d021a7c735941c7d1c085762bf24c2c12406d08bd47123e05c2aad7a9cc4fc"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0069.jpg",
+      "bytes": 588927,
+      "sha256": "4ecb982dd0a4bbaad2a5f4e679c53bdf066b7e4ceed97e856e18e3a92ef27211"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0070.jpg",
+      "bytes": 590214,
+      "sha256": "362a58b82b4ef63476190136f5121393546862d6a19bc672b81e5fd088d037d2"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0071.jpg",
+      "bytes": 597514,
+      "sha256": "48d918d15cf6a05edcfaece0911b888d41e8bc1b6ecf4868561a45e8930e10ad"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0072.jpg",
+      "bytes": 606315,
+      "sha256": "c8f28e1fbb5cca77fc6f64e0453de748b4a538cc5177ee6540ec2795494baea7"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0073.jpg",
+      "bytes": 597185,
+      "sha256": "80e55578675a918d567eee08a3ff580b1acd6076b35430948ab569932376d950"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0074.jpg",
+      "bytes": 599290,
+      "sha256": "20e4daf6fc7604164ec2ce79a7375607f7566fd1226e95d29620f0af6b15d4cd"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0075.jpg",
+      "bytes": 608419,
+      "sha256": "6b586cbba4209628d78d29f4b4055808fe59f202a4425cf216f0c56dc1d5168e"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0076.jpg",
+      "bytes": 606645,
+      "sha256": "a306023157ad0dc3c995e1847c508650a9225f1b498701fca34ddf4e4bd66099"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0077.jpg",
+      "bytes": 615723,
+      "sha256": "c6c06d405d80b401fe7d7976a42ca3ca5d4ecf20dbead58a83c2ee2d7c0470d2"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0078.jpg",
+      "bytes": 617982,
+      "sha256": "1840f76a42757de8bfa72a9bada673f0aba61c2900b1c7252bb14cb7cdbcce03"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0079.jpg",
+      "bytes": 619098,
+      "sha256": "61740d9d40791f14974d510fdf6897e50dd0b3767ef4e4b29046657572134270"
+    },
+    {
+      "path": "assets/projects/emirates/frames/frame_0080.jpg",
+      "bytes": 623960,
+      "sha256": "8c4463623449eff90a931044da5e58c840d0ad074b65b1f6c092e80a5055454a"
+    },
+    {
+      "path": "assets/projects/louvre/frame_0001.webp",
+      "bytes": 186638,
+      "sha256": "30abdfc33b66daf9f39adc66679b48a9e9e9b2393fd46c16f59178fdd40b226a"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0001.jpg",
+      "bytes": 90099,
+      "sha256": "a0b8edd0363088e8663c8737f971576aed1bb6793b02c5fa217958b018c644d6"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0002.jpg",
+      "bytes": 91200,
+      "sha256": "26f5aec60e01d4e6a4676617fd3d886d5012240d5c2895cf82208a9dfeedbd74"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0003.jpg",
+      "bytes": 91115,
+      "sha256": "f0014dd801f898655f89158e8296558a6acf071175b1b6d71d82b2722875ec24"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0004.jpg",
+      "bytes": 93279,
+      "sha256": "3284e0d085cdae3954f6afd187eee45f9d784799526d7d12b3f2ff1692c85d02"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0005.jpg",
+      "bytes": 91730,
+      "sha256": "e3abb88d98e84187f743215d6b3525b63af758d116d108e139c28b6e8a2b8aa7"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0006.jpg",
+      "bytes": 91716,
+      "sha256": "32b44904f947d19ee05b0e3bc1ef7c5bd7440de8278c3303a5013a01a6691938"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0007.jpg",
+      "bytes": 90669,
+      "sha256": "6a83b3df95e9a427f3c5b92f6d638d285c14c7fba485f0936a2b9b3742f78016"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0008.jpg",
+      "bytes": 90688,
+      "sha256": "70c5038668f1b7fc152ec8edb6c947039c6a67a76e7dff43908cedcbf8eb8ff6"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0009.jpg",
+      "bytes": 94428,
+      "sha256": "2cdbe9d81aecfd8bd765f47fc0ca2d2a3f4ef6bd8e798b84c062f7df6adedc99"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0010.jpg",
+      "bytes": 91931,
+      "sha256": "cea29b2b58e4697ff21d8a003f6df8c8a89ddda1aea103a4fc92b06474ddecf1"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0011.jpg",
+      "bytes": 90985,
+      "sha256": "222992922db90d067f513d7cb09dbacfb64cd97f9f450594933da346f57d77c5"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0012.jpg",
+      "bytes": 91223,
+      "sha256": "c2cba6b895eb1c1a46b02e48dfe35f8c545ef1fbdf5bd85d6abe81df33569548"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0013.jpg",
+      "bytes": 91121,
+      "sha256": "ef34addd5a927f23da9b6841457275c450d6be50831cfd12d7a37788d7028a58"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0014.jpg",
+      "bytes": 92573,
+      "sha256": "41b1223848b4ef28a9db859c0a19d3a05944ca8ebf5744c862a3859611c1fd3d"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0015.jpg",
+      "bytes": 90998,
+      "sha256": "b1b5d54189ea06358056b4ff71a8107579f1059dde826ae05309e75c5e844fab"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0016.jpg",
+      "bytes": 90842,
+      "sha256": "4eec1c5675b32e21b7c674fc8e8b1b0e95e08802bd40d15988a2f4afeba5cd5e"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0017.jpg",
+      "bytes": 90327,
+      "sha256": "4099aa70bbe530887e3d726f5cd603e0358ea0e437fdc007b8148bca3766fdf2"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0018.jpg",
+      "bytes": 90301,
+      "sha256": "e1e1dcf04f9cb6db6d347351e97adde7c6a71125a9d509455ae9dbcf0040dc51"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0019.jpg",
+      "bytes": 93376,
+      "sha256": "04170a3d92b6c733838e70c019a9fe7a39209c5afc67e5e460bd8777998b3538"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0020.jpg",
+      "bytes": 90388,
+      "sha256": "dfc91330316b4b9e7439c9d3bc3e39353ded192a865bf46381e03b2f649e6cbd"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0021.jpg",
+      "bytes": 88895,
+      "sha256": "3bb28059627b7aa50c57658d665baaf85363ef8cdce7d50807c1318d2b56918c"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0022.jpg",
+      "bytes": 89297,
+      "sha256": "639e262c2dbe88088b17d0d0d05f05b71fa26851a94f45ae6b5ac06bd17861ce"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0023.jpg",
+      "bytes": 89148,
+      "sha256": "3b831b33a60705031167560c86fd8ce7a01947138bbf83af6720020329946917"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0024.jpg",
+      "bytes": 90456,
+      "sha256": "fac675492cbc954796b2f8eb6e01b7f8f2a6b912a2077e99f90093be2c33d218"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0025.jpg",
+      "bytes": 88847,
+      "sha256": "c453bc857712c20adae145bb56f43356c4f3214b6f0ac0c279abc0a909bc8f88"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0026.jpg",
+      "bytes": 88357,
+      "sha256": "a2daf8a305e74096f6e2eae2af1e239dde8c1ccb2870d17600e835f0e8401908"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0027.jpg",
+      "bytes": 87532,
+      "sha256": "dc20d6d56ee12ac1806d019102105a02d51b1f301179fb9be4b54a8f8bde3d8b"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0028.jpg",
+      "bytes": 86982,
+      "sha256": "37c050d36c763bfbdacac85b19fd18b6ee5e5ea79dc5ee34d9a9b5a72b8bcb88"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0029.jpg",
+      "bytes": 89089,
+      "sha256": "a3e633f95fa50cd53c4565d16081c6f4d5fd74cb9753d7eb56939cda4d3e6b3f"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0030.jpg",
+      "bytes": 84579,
+      "sha256": "835938f1fe55da2fab3c7bbf3cf869708ff5265cd21e95c22b13415a42aa7eb6"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0031.jpg",
+      "bytes": 79318,
+      "sha256": "49d0878853ef7353fecc201a1a1ee878969ce0f39267601017c1f906c4839da2"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0032.jpg",
+      "bytes": 77402,
+      "sha256": "465cee9649a90aed92680b9a159dfae4b0b5888a364ec55c14b068b1a15a3d36"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0033.jpg",
+      "bytes": 75505,
+      "sha256": "6f8c37b51625a85b01aa39ad75385e5c2957dadd494c3db8e80ecebc40240ce7"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0034.jpg",
+      "bytes": 74742,
+      "sha256": "40d9acceeae96754dffbbedb134721c529a9f569b6749900dae1cb8c3857cf33"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0035.jpg",
+      "bytes": 70835,
+      "sha256": "e5e0402e7ec430a1c9cc1bf45920f42d200fa6f871d917eb24795fcc074c0a8a"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0036.jpg",
+      "bytes": 70735,
+      "sha256": "d69898598cca2d53d7f917a708f92addfecc2c00cc98ce9f5a51c86e9d2bafa8"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0037.jpg",
+      "bytes": 70731,
+      "sha256": "c95e0e8e4a44fd5dee1b57f1c549a05405f25e271e5be0a2abd914d6fca4c5c3"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0038.jpg",
+      "bytes": 71978,
+      "sha256": "3b5923d27a0d52647f3cd18958c110a154bede74ae4ab0d29eb2e1c8c13a5f95"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0039.jpg",
+      "bytes": 80457,
+      "sha256": "b61b1ac1fa6df3a316ac0fd7bcde2b00184348508eacf555622b03bbeefbdc4b"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0040.jpg",
+      "bytes": 81297,
+      "sha256": "3e69e8351e4bf28836926c43242fa383bc58f0150f9051ef5299cc059cdafc71"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0041.jpg",
+      "bytes": 89680,
+      "sha256": "0aa3ced1b8f0acda6177535c7014b9378b803fcf000fd63c0af5d17f31786b95"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0042.jpg",
+      "bytes": 96242,
+      "sha256": "351cf8c7486a4aaeb0d131d39b605ac7ebc6de47b5eb983242f947e31f688291"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0043.jpg",
+      "bytes": 99393,
+      "sha256": "8231f38bde90f58f44ef48243b23d69ad1920c92e97aa7b00b04db86f3354ae2"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0044.jpg",
+      "bytes": 107321,
+      "sha256": "59b0a6d8b9e10c8d63ef4272fbe06d47dbb443e869f49e7d7671f16e0d9bab1c"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0045.jpg",
+      "bytes": 108312,
+      "sha256": "621cd7e3d0aa7f837941b9ad58886e9da820611cd70317d084b67f2fb7e85d1e"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0046.jpg",
+      "bytes": 113079,
+      "sha256": "81e76bc8577568bdb11ad79d55ca438e30846ba1accb30950f0edf158f783da2"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0047.jpg",
+      "bytes": 115083,
+      "sha256": "21dc7226efe2e44964f71fd2656b29ae8620676a367d030c47392000c76043a4"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0048.jpg",
+      "bytes": 117998,
+      "sha256": "707194b91bcf4fc733ba83557696ece8a9033d02d2cb7373a6c8ac41d0e81ef6"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0049.jpg",
+      "bytes": 129168,
+      "sha256": "e52ceb609e1bc1bc8abd36439a3d6a01f26c4b6202df32e880f8c1bd0880b887"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0050.jpg",
+      "bytes": 124854,
+      "sha256": "c8f7af0e0e5ed589e1e3cdef82d5b4c267314b97031925788d73f9f5e2a8de3e"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0051.jpg",
+      "bytes": 125219,
+      "sha256": "49e2bec49e32621771a8fa1b1fcf302cd2fa1772e940173e6943d457e023944c"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0052.jpg",
+      "bytes": 127956,
+      "sha256": "c2cb8285565cb5f40f13f3aba5846f839719f29faa9b8f9bb62bb7b42b43e726"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0053.jpg",
+      "bytes": 129205,
+      "sha256": "4a779294cb49914faf5c8bd0361a3035af05e8bbcd3d28adce134510e9899e82"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0054.jpg",
+      "bytes": 136626,
+      "sha256": "d1f162193ef7d5216ae7a603e0a708236030fb8e23d3725572f91d686a7aee1a"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0055.jpg",
+      "bytes": 134510,
+      "sha256": "ff63934faa13c7ba02bdc3ec9588df8470713c64f2963799ee4e20910759e17d"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0056.jpg",
+      "bytes": 137063,
+      "sha256": "da26dddf4b7c5e08ec7e1c47c5d3e9a949e55d7b94e9d0a189aef85819405621"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0057.jpg",
+      "bytes": 135138,
+      "sha256": "1dad2062513bf80a50c62d85ac192a08cd94d161579351a1061eeea29e944b56"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0058.jpg",
+      "bytes": 135766,
+      "sha256": "be61338d45a55f40261b4fe2948b6a0dcb7cfaa7c6aff3bbef83c5f1be3a615e"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0059.jpg",
+      "bytes": 144757,
+      "sha256": "2fcb5e110262c11868fdc0d56201ef9b439928869959357ea6a28561c8f3102d"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0060.jpg",
+      "bytes": 139347,
+      "sha256": "7c1625e6f8198cc5930aa747445e3104dc6cd94ba0b0c3c5acd3c3e36bfb9f78"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0061.jpg",
+      "bytes": 141118,
+      "sha256": "0d1066aac0264ce65158ffea37883996aece085d38e6ada88956b0f0d3d54553"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0062.jpg",
+      "bytes": 144356,
+      "sha256": "6d00505a500863677c42bba8a7ecf8126958485a10fa199efc36772454274ef1"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0063.jpg",
+      "bytes": 144391,
+      "sha256": "91ac5c2c63e624fa76d638b3d44527e09af63f289f7af86f1c1d33f5579af297"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0064.jpg",
+      "bytes": 149577,
+      "sha256": "8424f523091033441d690ab005eb459c9cfcefb3c6d5cc500b8e2e70a15e61a0"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0065.jpg",
+      "bytes": 146475,
+      "sha256": "6d9402578745d0d2c9321ffb1aaf53a23d5a694306026ac79ba8267d26d3ddfb"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0066.jpg",
+      "bytes": 147757,
+      "sha256": "f85e0a983d3aeecadf3a13cffd24687d2ad8a001572b806a75844f2acf5acfa6"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0067.jpg",
+      "bytes": 148107,
+      "sha256": "221cbaacd7bdde9b9d0dd9cafbf829d8c4e05d14544c21188506c47160e4fc2b"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0068.jpg",
+      "bytes": 149614,
+      "sha256": "9f0894ecdfbecf312f23993d08b67067baec9765d338ab2c7ffc75111fe8a071"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0069.jpg",
+      "bytes": 158779,
+      "sha256": "d72bc67258d6f5e45087cc1a6b48a65cc04a0ad409250b594ea4ecd164627544"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0070.jpg",
+      "bytes": 153424,
+      "sha256": "77d7a1925a7b168a5ef53c907c9620c80a0a9ddf63e4176f27ef07a3599c44f3"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0071.jpg",
+      "bytes": 152376,
+      "sha256": "0a75be8cc21a8f161059496bbd7f31c174000d090fd59206cf04bc8adeb0dfea"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0072.jpg",
+      "bytes": 154310,
+      "sha256": "de977d7483c259af735a298cc5706ca49126bc485cceb38acfcd48c8bc4cdf62"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0073.jpg",
+      "bytes": 154020,
+      "sha256": "b048be7a5f0a13df5cc8aaad64dfcb6124d748f961356e7584619c97da1f7d84"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0074.jpg",
+      "bytes": 157930,
+      "sha256": "f1227a442f8543515cf486b7efda8f691104901c9a276e7fd51fe0b5fc15bb18"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0075.jpg",
+      "bytes": 154619,
+      "sha256": "17f646dd4b535698eb8b1609408f034bea59afe69cd0dbaf43fa9f4d9634d939"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0076.jpg",
+      "bytes": 153731,
+      "sha256": "606a7c5f790d78a40debb76603e7965aae2c1c26fcb4af1346021d84fb3096cf"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0077.jpg",
+      "bytes": 152414,
+      "sha256": "1125261295fb0c0f3e179a6dbd49ac845e2f412cb87b86c5cf6ddccb16125103"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0078.jpg",
+      "bytes": 152134,
+      "sha256": "dd7c8767026a1b01ec4765a8861cdc71bf7d2f6b356e44901fd3fb43ba706c30"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0079.jpg",
+      "bytes": 158919,
+      "sha256": "ea9f68248d2ce7d31cbab4c68856c245959fa5256c1f80617a377cf46f8a978b"
+    },
+    {
+      "path": "assets/projects/louvre/frames/frame_0080.jpg",
+      "bytes": 151982,
+      "sha256": "01a23011ede129f1a471b2d4ac023f08648715aa7067d626998abfc4e016a2b0"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0001.jpg",
+      "bytes": 633472,
+      "sha256": "0caeafca873d295368ece4a3d50b1c0d5d90365f3a0c0aa631651873a3b19287"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0002.jpg",
+      "bytes": 641369,
+      "sha256": "fb88294a8fd71cafc220cc95edbd00a1ccc5bda3d44e15194f031e988078c52a"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0003.jpg",
+      "bytes": 641504,
+      "sha256": "07aa0d9390ba8cb0b25f79cf7a01191eb563820eb6477da2c52ff13663eb77d8"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0004.jpg",
+      "bytes": 658294,
+      "sha256": "1946148cf009005fe3057a42dab2d65496579ee7bbd96fa4224c4a1f5b2513c6"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0005.jpg",
+      "bytes": 642496,
+      "sha256": "df299807b8a3df1564dc5ab5c979c2856ad52c042dae9236dfa0bd652c605fdd"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0006.jpg",
+      "bytes": 637947,
+      "sha256": "6a514560128b9f4df08bbaab4e707d38324f047118394b3b5482e1c2c785148e"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0007.jpg",
+      "bytes": 634832,
+      "sha256": "6824ed45ddbc527d58d5f01d9af317222609ae05745bb362c2e352fac03294ba"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0008.jpg",
+      "bytes": 623817,
+      "sha256": "95d9c3656d8acb3b8deadfff0489c42abc3f861ac6d93b18c38c0b833fa16ad5"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0009.jpg",
+      "bytes": 660698,
+      "sha256": "070eb151305d90c36c0d44571aa31332cfe30f25e95617cbfd9afd1cc4b77e92"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0010.jpg",
+      "bytes": 631591,
+      "sha256": "5c2b3a26ea5c9eef721031bd89ce8cc15decdcdddb4754be311757bd7a13b56e"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0011.jpg",
+      "bytes": 614938,
+      "sha256": "527babff2ac6603d2dd4aa55e9da05c836e36e54ed6fff7c7f95d03794fef8cf"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0012.jpg",
+      "bytes": 623550,
+      "sha256": "1b9b9a4150391eb9e4f9c86f7df8bef557c4d25d712bd36371c1ba2cdba68177"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0013.jpg",
+      "bytes": 618873,
+      "sha256": "3360baf985e353b55104e8b19fba81cded38da4b9725c47f35524b6f081a6ece"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0014.jpg",
+      "bytes": 630688,
+      "sha256": "c437cb9281951daf39a68c97e6b29f518bdd10a1e89ac30bc73bdc654721cb26"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0015.jpg",
+      "bytes": 610976,
+      "sha256": "329560edb31f033bc2b02a30c281494b5fb1dfa6b39248ed1673a5fb0427c8b2"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0016.jpg",
+      "bytes": 607636,
+      "sha256": "5869ba407e462b5d343960b6950cde67a32c9435e17c17291e2510da2b15d478"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0017.jpg",
+      "bytes": 603184,
+      "sha256": "2201d5b4ce17ccc6eeef2aabeb14ff65499af3526292991c67158525582b0790"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0018.jpg",
+      "bytes": 597394,
+      "sha256": "41c1fe370fabeb30547fcd929d240dd7179cf14c62f131929c3a51d60f270396"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0019.jpg",
+      "bytes": 630692,
+      "sha256": "b993f3266a82c105358d7cc8cf239bb989a984e7d469417e3ea08d5ba6d6654a"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0020.jpg",
+      "bytes": 600638,
+      "sha256": "b091236b64c72d5b84ad2cdadd89e82eab096d7090e103cee6d7d1bb652c48ca"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0021.jpg",
+      "bytes": 584173,
+      "sha256": "75b52916fa72a5cd242bd09679c799066d92081d72c6c3b8cb23d31d02a4f30c"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0022.jpg",
+      "bytes": 591099,
+      "sha256": "3963e5efa957a3a0dde1c5146331351a0fd7f50a8094a0490ef50a4c17a9178f"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0023.jpg",
+      "bytes": 585706,
+      "sha256": "3d8ff7f98c863480c1f3f64dee642eefaca4f99f40b245f438e2b847ed9130d2"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0024.jpg",
+      "bytes": 602433,
+      "sha256": "c53a010418c87d0549f7f363582dc8798e3074145410ca85aa7bea8ef550f0d2"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0025.jpg",
+      "bytes": 581982,
+      "sha256": "8b65212a7182c330b6dd325dbdc37548486bee42815aaeeedb64fe852592d9e8"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0026.jpg",
+      "bytes": 578637,
+      "sha256": "696905a00156e97ecf663f127f7bf968a89326e76881d947879d197b89314f2e"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0027.jpg",
+      "bytes": 573078,
+      "sha256": "a9e9e2214795f5be1ad4caa8805d5c110e6fc94f6f396a0a238525a542fe5e2d"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0028.jpg",
+      "bytes": 565603,
+      "sha256": "11ac4e67ff6d3cac6ae4b8626deeed925e2e8d466a1871488473e236f2c9fb8e"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0029.jpg",
+      "bytes": 602348,
+      "sha256": "b399f815717cad219e8011870bf12a3e4182adb9547b2c2cf14bb6fe459f46e7"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0030.jpg",
+      "bytes": 574382,
+      "sha256": "fbf6eecf607d37c6401aff2ede9fbea767d547e4f4e0d58b78711d8586527d2a"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0031.jpg",
+      "bytes": 559344,
+      "sha256": "0e83c3ff3b3eb9d153557edb8176317d556080d2221848a9c2a92ffbc8a8b3cc"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0032.jpg",
+      "bytes": 569191,
+      "sha256": "3edc5a62c57c11777b28f28ba56bd5761e6aec992d430c2c12d99edc71a8c4d9"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0033.jpg",
+      "bytes": 565888,
+      "sha256": "6afef1b4f1c581b5a977dc5830b3e96b9c96984119c3961292d3921938620c97"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0034.jpg",
+      "bytes": 584149,
+      "sha256": "7177ed502548139a3e8f3a5b6e4486efba1ec0f90e4b2cc1a2cc5d65c7905703"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0035.jpg",
+      "bytes": 565686,
+      "sha256": "073b63fd1a6f78302c442da79388eeee46e41753a073431334ff9f8e86bd3616"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0036.jpg",
+      "bytes": 566313,
+      "sha256": "2937ad8a7b00ac0cd3a576b13df3279453eb26a35f59b8d8a701b2af3a71eb32"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0037.jpg",
+      "bytes": 561741,
+      "sha256": "1b8b322e9edb855131aec5d365619970a86d31ef70447d3f124364e2820dbeb0"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0038.jpg",
+      "bytes": 553133,
+      "sha256": "efb066168f43a43dc41cca535443d77eb2ce1a53f240c175081ba2bd26f82ba7"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0039.jpg",
+      "bytes": 585713,
+      "sha256": "a6524879009c0db73568a3b91b10dcb42625119a1ce33be94048b693520b52f6"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0040.jpg",
+      "bytes": 558872,
+      "sha256": "3eb1f4420e9d3300d88b41427930b9c8a2b7fd092db51a28ae81949e709ab7dd"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0041.jpg",
+      "bytes": 522745,
+      "sha256": "c7faf009a38aa000dcb01be78dda7d3f09645f37b9d5539e12318c398f374eec"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0042.jpg",
+      "bytes": 524879,
+      "sha256": "0b573cfda95e625e92f2b0c85c00e6257cf286d3c5eb281a582c16b1e2a1cf5a"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0043.jpg",
+      "bytes": 522532,
+      "sha256": "89cd47d0c55318bd60e1df1df241ea200a523878d3893edf8c85e7d5f30d184f"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0044.jpg",
+      "bytes": 494763,
+      "sha256": "2da92ea0824cb5da72d666c5580848f70eb04504b17609efe427259bea786a07"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0045.jpg",
+      "bytes": 500776,
+      "sha256": "d8c3177a4ab0c1d5fb147bd4e9f902dd30a49c46b4aa51aee7ffef043ae4697f"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0046.jpg",
+      "bytes": 502561,
+      "sha256": "825fa0ba5bfc7aa9cd4b1b1169f3660371fb353310a04c7751fb5181bd58d1e7"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0047.jpg",
+      "bytes": 519407,
+      "sha256": "6b2c5fdd67ce54b25b67fe9dca0005f9ae1a0069e1c69c9712e228c74727afdf"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0048.jpg",
+      "bytes": 531874,
+      "sha256": "9c0866706c1a7b2740310aef157ae1a47c8a1090b69b96cb899ed110cf9de1df"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0049.jpg",
+      "bytes": 552100,
+      "sha256": "a205929983d4481bd9226246a3801c26fad11c629db53548e4b61afde38f3948"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0050.jpg",
+      "bytes": 557175,
+      "sha256": "13a4fa182d0c3f68b0a7ca631a240679d7890a10fe2feced95cf98861f2373a7"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0051.jpg",
+      "bytes": 573444,
+      "sha256": "0493d4b6898b41d48605e12fd91c53442aa77098bca4616fb9319d8214bdf78f"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0052.jpg",
+      "bytes": 596546,
+      "sha256": "f54ab3af45feeb3bf64c152a7a68c45094238cea67837c2c6a24e6314357ba47"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0053.jpg",
+      "bytes": 615767,
+      "sha256": "1f2a17950fd6caa2c97d2bbee431a13461bbb7d9d2bd0ea29cab180f09b07399"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0054.jpg",
+      "bytes": 659021,
+      "sha256": "adeca4b7869bbc9d38991091747dd1ad583cd9a793669b02b1d2d8aad942e77c"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0055.jpg",
+      "bytes": 666526,
+      "sha256": "328f79dc39054ceb9d52a766468e732d19e436cb3b28f8f5844cf5b7b9f25f9a"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0056.jpg",
+      "bytes": 686248,
+      "sha256": "3baa3f02ecebb02b165d184b6b1ce31f904d216a55c07ec4fdea2103207865c6"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0057.jpg",
+      "bytes": 676602,
+      "sha256": "455032fb26fae49265af003abbcd43310fd789aada7c67b1d45f47dca0a5730f"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0058.jpg",
+      "bytes": 665901,
+      "sha256": "a949763a0f862573620afc3ffd56ffe9af97859804d81d5c6a9fefdbcd4afb2c"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0059.jpg",
+      "bytes": 675994,
+      "sha256": "06505b6f2e32001186f91a696b550dbd592a436784537fe1dffe4b29e708eb81"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0060.jpg",
+      "bytes": 665006,
+      "sha256": "fa545ad316f225e7891fac213fc098da57e66424d7e872efccd343a6ba3d4f50"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0061.jpg",
+      "bytes": 657747,
+      "sha256": "0b79d12ad81496d93d2f6efa962a54713dd5001f539d532547f3f154aa3370b9"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0062.jpg",
+      "bytes": 661022,
+      "sha256": "cb758cc7b73561e194b0f31d1641e1196dbe8a2bf3efa2864fec3ce76739c3f4"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0063.jpg",
+      "bytes": 670665,
+      "sha256": "d5b4db6edc86b28dbd5dd88da108a41d0cc2e511ad1fbb09bc529e038a16463c"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0064.jpg",
+      "bytes": 658306,
+      "sha256": "2c84c12e86da71fa3ab7a9512abd379a79af8c15b2e1f9678dead47b4bd3085f"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0065.jpg",
+      "bytes": 669883,
+      "sha256": "1201de55b879c051249edfbc4959210b29db1d0f3eeed7eb99ebfa6e4f800a99"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0066.jpg",
+      "bytes": 678737,
+      "sha256": "2218a7a2f7da134ea46c72d9523ce7d3f891fc739ee9e698dc3b9c720e372bfd"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0067.jpg",
+      "bytes": 703079,
+      "sha256": "7d3f064951edd4f97d36dcb2a1cdab1a6c86dc18dc26b0332c902158ab12b633"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0068.jpg",
+      "bytes": 710345,
+      "sha256": "176dff11f266d119720a0b2b4515ae1163df636d2f765f2e8a6ae0705eb77eda"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0069.jpg",
+      "bytes": 719617,
+      "sha256": "5f2f65e9bfc6e0efd54af7ec8e5d9f52c8dc92866111548a8c849d1fe0280623"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0070.jpg",
+      "bytes": 733255,
+      "sha256": "6f5d002817e9dfe93b72c33db2388761d589fd5e616e1091c3d7d754f0322a44"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0071.jpg",
+      "bytes": 753019,
+      "sha256": "4b25bd3cd837b6ecf5a0389eb9e439e84a55fc8466cfe3af0b4272483ef1b3a0"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0072.jpg",
+      "bytes": 794902,
+      "sha256": "c65eacdef1f2fc398d6bf70d7eeed87e6ad24d6dc060c27ba739d0b92ad3db78"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0073.jpg",
+      "bytes": 821354,
+      "sha256": "a08f5a38b59ce6ce013c0769de2b1d7ff7001e26fc7194829a845225bcbc0e9d"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0074.jpg",
+      "bytes": 866553,
+      "sha256": "0f7dfa0f3aad8333b31e6294008813d104d522585d519712ad05c89549e7bd71"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0075.jpg",
+      "bytes": 887283,
+      "sha256": "5a208887f850bf8b59e33e7a3d2ad604628519ecc39754076b5c73946c984e93"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0076.jpg",
+      "bytes": 906349,
+      "sha256": "64e2c49206c764d5fe45e1ac47050626b1ab841c1693aea1af65bf2b86306e16"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0077.jpg",
+      "bytes": 916565,
+      "sha256": "abadae8e360206de60779474934404cb28a2a66facb30cd0712935c66f847e72"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0078.jpg",
+      "bytes": 924287,
+      "sha256": "077221ee6d58e4ed90d380ad6771d7e19347dbe4ac62993b9033519cc60924f3"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0079.jpg",
+      "bytes": 909254,
+      "sha256": "d80fec54a1352ce71c8a9483188af2a0e7702eca027354ddc62616d987ef6aeb"
+    },
+    {
+      "path": "assets/projects/warner-bros/frames/frame_0080.jpg",
+      "bytes": 914804,
+      "sha256": "09e7a69faa640fc4dda8c3805a1a347d0b3c17efab2a55fd7df85eebd87cff4f"
+    },
+    {
+      "path": "assets/projects/zayed/frame_0001.webp",
+      "bytes": 122396,
+      "sha256": "8dada96f6092657f6f36a201c05e988669c2d3a961ce7f61b4244cfd7d3fce4e"
+    },
+    {
+      "path": "assets/projects-data.json",
+      "bytes": 34092,
+      "sha256": "5f4e249a24769990b7075e46e7b2a452013447edde6fa74b79a2465d8693f2c6"
+    },
+    {
+      "path": "assets/real/Abu_Dhabi_Corniche/Abu_Dhabi_Corniche_1.jpg",
+      "bytes": 781373,
+      "sha256": "e4bbd2803911c263295d2b95c30cfbcb81b5b7b97b6e58ae18554ba40241d116"
+    },
+    {
+      "path": "assets/real/Abu_Dhabi_Corniche/Abu_Dhabi_Corniche_2.jpg",
+      "bytes": 982383,
+      "sha256": "f37d7646b794f6a2d7e49919ee3d2691774e43f18cde4452e74ae13fcdc717da"
+    },
+    {
+      "path": "assets/real/Abu_Dhabi_Corniche/Abu_Dhabi_Corniche_3.jpg",
+      "bytes": 829095,
+      "sha256": "05764cc33c0615561ac7e29ade6fff3098933c79e4783a8e14d4cf7d39c26512"
+    },
+    {
+      "path": "assets/real/DMT_Parks_-_Al_Falah_Event_Plaza/DMT_Parks_-_Al_Falah_Event_Plaza_1.jpg",
+      "bytes": 199495,
+      "sha256": "e48b449a42a1019da115f4249ed28cef0afc0e6acc800ff4f4da1aadaa1b7837"
+    },
+    {
+      "path": "assets/real/Dubai_Hills_-_Golf_Grove/Dubai_Hills_-_Golf_Grove_1.jpg",
+      "bytes": 116346,
+      "sha256": "bb57b3df687e0b430d2b77fe22dddea85086130f01170ef409711800119c33b6"
+    },
+    {
+      "path": "assets/real/Dubai_Hills_-_Golf_Grove/Dubai_Hills_-_Golf_Grove_2.jpg",
+      "bytes": 119108,
+      "sha256": "056ad942cbfaf47608c181ef0bc1fc4eb7922fd596938fe78cc385b35c8ea929"
+    },
+    {
+      "path": "assets/real/Dubai_Hills_-_Golf_Grove/Dubai_Hills_-_Golf_Grove_3.jpg",
+      "bytes": 52411,
+      "sha256": "d8eb165f481c301ebfafb464d05645ef0b463c9c8328ee431bfde37ce118fd99"
+    },
+    {
+      "path": "assets/real/Dubai_Hills_-_Golf_Grove/Dubai_Hills_-_Golf_Grove_4.jpg",
+      "bytes": 57776,
+      "sha256": "1ff0c61902eae9d1ecf149b02af9e7d348fb41f3834b116bf72253456a944655"
+    },
+    {
+      "path": "assets/real/Dubai_Parks_-_Motiongate/Dubai_Parks_-_Motiongate_1.jpg",
+      "bytes": 119403,
+      "sha256": "6093f1cc7a9ec0d5430cda7691564a4b25baa6c2e26e63188dc7baac999b00e2"
+    },
+    {
+      "path": "assets/real/Dubai_Parks_-_Motiongate/Dubai_Parks_-_Motiongate_10.jpg",
+      "bytes": 47331,
+      "sha256": "07161fb1840461ccc71f2790c8ec4ffc4d2575bb185f6d5bcb6b544271696a91"
+    },
+    {
+      "path": "assets/real/Dubai_Parks_-_Motiongate/Dubai_Parks_-_Motiongate_2.jpg",
+      "bytes": 58231,
+      "sha256": "094848e490e5d637f3fdc456551d3c841bbaba42ba07742e9d24d53c7a8ee77b"
+    },
+    {
+      "path": "assets/real/Dubai_Parks_-_Motiongate/Dubai_Parks_-_Motiongate_3.jpg",
+      "bytes": 50909,
+      "sha256": "9e890b0cd7009b14896913720421d75ead73fb57239eda2164142605a5fdeb4d"
+    },
+    {
+      "path": "assets/real/Dubai_Parks_-_Motiongate/Dubai_Parks_-_Motiongate_4.jpg",
+      "bytes": 199245,
+      "sha256": "926730e60a793f780e3748ae34e107932e4f4a932737f9337e62d219f47a02c0"
+    },
+    {
+      "path": "assets/real/Dubai_Parks_-_Motiongate/Dubai_Parks_-_Motiongate_5.jpg",
+      "bytes": 162527,
+      "sha256": "8f004fb66d2a4918f61b7048d4f3e541f889defe5f291f1f2aefbb7084f5d64c"
+    },
+    {
+      "path": "assets/real/Dubai_Parks_-_Motiongate/Dubai_Parks_-_Motiongate_6.jpg",
+      "bytes": 45488,
+      "sha256": "5ea822e2abbcaf0e2186131b1e36885a062e68dccdb54b8676797a6d982ea351"
+    },
+    {
+      "path": "assets/real/Dubai_Parks_-_Motiongate/Dubai_Parks_-_Motiongate_7.jpg",
+      "bytes": 41199,
+      "sha256": "3b7934d4c702ff5c1fbdd449fd33b9a569029f976cce25301f71699308bed2c0"
+    },
+    {
+      "path": "assets/real/Dubai_Parks_-_Motiongate/Dubai_Parks_-_Motiongate_8.jpg",
+      "bytes": 74919,
+      "sha256": "f368d3407f0cbd8e48139457f634729d97fa067bb978a9c84cd34c529c65037f"
+    },
+    {
+      "path": "assets/real/Dubai_Parks_-_Motiongate/Dubai_Parks_-_Motiongate_9.jpg",
+      "bytes": 73393,
+      "sha256": "ff877c6f97f305146c846b71bd619faf75a29d364b8cbeddd301d7a590438cf0"
+    },
+    {
+      "path": "assets/real/La_Mer_Water_Park/La_Mer_Water_Park_1.jpg",
+      "bytes": 52885,
+      "sha256": "9422aebccbe809d6d79c16704c4787ebbbff472c8377ac81cba4acd91f91120c"
+    },
+    {
+      "path": "assets/real/La_Mer_Water_Park/La_Mer_Water_Park_10.jpg",
+      "bytes": 97917,
+      "sha256": "a30cc3260269e00116236a5eee565962a4449077ae3bc28d43002a407d519679"
+    },
+    {
+      "path": "assets/real/La_Mer_Water_Park/La_Mer_Water_Park_2.jpg",
+      "bytes": 56550,
+      "sha256": "c2ea814be10eabd4e97cf76a0d998e668bebe7f005ec3674c00b94ce126be3b4"
+    },
+    {
+      "path": "assets/real/La_Mer_Water_Park/La_Mer_Water_Park_3.jpg",
+      "bytes": 170083,
+      "sha256": "2c67bec920df430fe5fe1c13644fc940a4fed9969add871b045c72a09486c01a"
+    },
+    {
+      "path": "assets/real/La_Mer_Water_Park/La_Mer_Water_Park_4.jpg",
+      "bytes": 130322,
+      "sha256": "add425eb9c75059ab096525ce7f6328d4c6218a899c5a2e1e8d3c1e44b4594d0"
+    },
+    {
+      "path": "assets/real/La_Mer_Water_Park/La_Mer_Water_Park_5.jpg",
+      "bytes": 128142,
+      "sha256": "413f5ef20c14d0fca62bd880fbfe7912293bf0c7f507649c7c856587ea93b802"
+    },
+    {
+      "path": "assets/real/La_Mer_Water_Park/La_Mer_Water_Park_6.jpg",
+      "bytes": 64889,
+      "sha256": "d1e081abe2707ab17cc5bccf8af29f9b28961b9e6293d19a538b5ccd5a3e1a06"
+    },
+    {
+      "path": "assets/real/La_Mer_Water_Park/La_Mer_Water_Park_7.jpg",
+      "bytes": 64734,
+      "sha256": "869b05f043bd06d97607a5a191f6db12a3f6067416aaeae3fbea576823aaf58c"
+    },
+    {
+      "path": "assets/real/La_Mer_Water_Park/La_Mer_Water_Park_8.jpg",
+      "bytes": 71411,
+      "sha256": "4397be2a19e15a580b257dcbd353506504bc93517872857f6de2d3e863e52ab3"
+    },
+    {
+      "path": "assets/real/La_Mer_Water_Park/La_Mer_Water_Park_9.jpg",
+      "bytes": 64946,
+      "sha256": "2b0c212f1b33d476427b3477414da905a1286f3ce760a4eef521d5d998b50b7b"
+    },
+    {
+      "path": "assets/real/Louvre_Abu_Dhabi/03_promenade.jpg",
+      "bytes": 3795803,
+      "sha256": "a898a10d85ecc685a0fc22d6cfcd4f9beea460706066fe17d05d6b4e89475f7a"
+    },
+    {
+      "path": "assets/real/Louvre_Abu_Dhabi/04_louvre_approach.jpg",
+      "bytes": 3368658,
+      "sha256": "ec13b7bca690d583223dede6707864fb3bc074995c02a8d95326f1c12cea687a"
+    },
+    {
+      "path": "assets/real/Louvre_Abu_Dhabi/06_louvre_fountain.jpg",
+      "bytes": 3132859,
+      "sha256": "0af36a54bad3c682a042751535ed4f8050df1d2815c8c51a500bcf67da125d40"
+    },
+    {
+      "path": "assets/real/Louvre_Abu_Dhabi/06_louvre_palms.jpg",
+      "bytes": 3253583,
+      "sha256": "827636888aef0aeb45ced5db674d9a37a7a41889450cc0897373e1ee888edb20"
+    },
+    {
+      "path": "assets/real/Louvre_Abu_Dhabi/Louvre-Abu-Dhabi.jpg",
+      "bytes": 909572,
+      "sha256": "03b511be1ab35ed062bf48ae9381c0076cfc0d5dde2164bb5018ac4df86439b3"
+    },
+    {
+      "path": "assets/real/Marsa_Al_Arab_-_Kempinski/Marsa_Al_Arab_-_Kempinski_1.jpg",
+      "bytes": 193421,
+      "sha256": "070f6bdb920208815d95f173e6f61d8a19277a02718ff0cbda67fcfb80f356dd"
+    },
+    {
+      "path": "assets/real/Marsa_Al_Arab_-_Kempinski/Marsa_Al_Arab_-_Kempinski_2.jpg",
+      "bytes": 307779,
+      "sha256": "d672d83d7b062149f1b611b54d82cfa348c015d47c23eb3435c9e5a1b1fa5c1a"
+    },
+    {
+      "path": "assets/real/Marsa_Al_Arab_-_Kempinski/Marsa_Al_Arab_-_Kempinski_3.jpg",
+      "bytes": 94389,
+      "sha256": "e5d4bdb4e063deac73a7db0bcd6ef313a6bbb11a59ad27a61caa64151355e407"
+    },
+    {
+      "path": "assets/real/Marsa_Al_Arab_-_Kempinski/Marsa_Al_Arab_-_Kempinski_4.jpg",
+      "bytes": 116606,
+      "sha256": "fa7046ddcb4b623883818c6441e18e4282ecf8642e761ce60176fd602cfe3125"
+    },
+    {
+      "path": "assets/real/Masdar_Central_Park/Masdar_Central_Park_1.jpg",
+      "bytes": 1949178,
+      "sha256": "79c494b1ece2c7c666587963a37ae59d75135f4d299988bf2910e56d2c2c9eec"
+    },
+    {
+      "path": "assets/real/Masdar_Central_Park/Masdar_Central_Park_2.jpg",
+      "bytes": 1592333,
+      "sha256": "f6b1f2097c476ac4b40fefef77b73c4b07ea271814529cb8ab27988ad74d2470"
+    },
+    {
+      "path": "assets/real/Masdar_Central_Park/Masdar_Central_Park_3.jpg",
+      "bytes": 1870342,
+      "sha256": "f3fbe8324df7087bcb107e545cf51613bd9079457292d618c86f6cf51e7d8c63"
+    },
+    {
+      "path": "assets/real/Masdar_Central_Park/Masdar_Central_Park_4.jpg",
+      "bytes": 2004550,
+      "sha256": "1cdfc87cdcfb2584a4e825ffe4027f5d3c05df0593500f81c775f17751a742ea"
+    },
+    {
+      "path": "assets/real/Masdar_Central_Park/Masdar_Central_Park_5.jpg",
+      "bytes": 1704491,
+      "sha256": "74eeb425f03fe7c4e2c09cb952f28918a18810e386f45426097b05c848f624be"
+    },
+    {
+      "path": "assets/real/Masdar_Central_Park/Masdar_Central_Park_6.jpg",
+      "bytes": 1507735,
+      "sha256": "6e9f961a98e3d36b60ae95088a52d2062aacec2be8ecadc274493df6e2cf7a87"
+    },
+    {
+      "path": "assets/real/Masdar_Central_Park/Masdar_Central_Park_7.jpg",
+      "bytes": 1468468,
+      "sha256": "d7750a85fa2acc67341815504996f026ff3ee789b0e428d96714c5767f3e3139"
+    },
+    {
+      "path": "assets/real/Pearl_Jumeirah/Pearl_Jumeirah_1.jpg",
+      "bytes": 80007,
+      "sha256": "0c048f72fa7791ae888ff946a0a1ffcc973853875b85d619a889bda622cf9fa7"
+    },
+    {
+      "path": "assets/real/Pearl_Jumeirah/Pearl_Jumeirah_2.jpg",
+      "bytes": 1344661,
+      "sha256": "85a8fa454bf068c50da0d508aea7d3b9181f810e6c14baf0d28853451d093755"
+    },
+    {
+      "path": "assets/real/Pearl_Jumeirah/Pearl_Jumeirah_3.jpg",
+      "bytes": 73116,
+      "sha256": "49964c920afba0b69b9d4a05aea3f9e0a7c8c530f942b9715b1aa2d26df087fd"
+    },
+    {
+      "path": "assets/real/Pearl_Jumeirah/Pearl_Jumeirah_4.jpg",
+      "bytes": 1994259,
+      "sha256": "0f9b4863723a2e35964103782ea507443eaee7058e71dc6bcae53d00664ff193"
+    },
+    {
+      "path": "assets/real/Pearl_Jumeirah/Pearl_Jumeirah_5.jpg",
+      "bytes": 2940309,
+      "sha256": "32f174b0e5b350e4c9994ebb57ab154148a16c3a4275c5fff7fc8a0008fd7f5b"
+    },
+    {
+      "path": "assets/real/Pearl_Jumeirah/Pearl_Jumeirah_6.jpg",
+      "bytes": 2665756,
+      "sha256": "764308182f30260a669bf51c06c207cd3189e2a81403ef32416db2ea733202f7"
+    },
+    {
+      "path": "assets/real/Pearl_Jumeirah/Pearl_Jumeirah_7.jpg",
+      "bytes": 1491262,
+      "sha256": "eefa354b80308d5647176651c269d1b94c757802451dbc49031c90f366c8805a"
+    },
+    {
+      "path": "assets/real/Pipeline_Treated_Wastewater/Pipeline_Treated_Wastewater_1.jpg",
+      "bytes": 67769,
+      "sha256": "0ee89174913772d3ed32e4349adb24be9f1b2bdd7bdd33c4d337c8238551ad4e"
+    },
+    {
+      "path": "assets/real/Pipeline_Treated_Wastewater/Pipeline_Treated_Wastewater_2.jpg",
+      "bytes": 49016,
+      "sha256": "84ac806564b67f1aba9a8331d47b723c17faf2872bb1276e195994b401488c22"
+    },
+    {
+      "path": "assets/real/Pipeline_Treated_Wastewater/Pipeline_Treated_Wastewater_3.jpg",
+      "bytes": 41075,
+      "sha256": "20296b3f28f28d32246d188e26bf47b000d67f20ba92f2761fa5b72332bfceb0"
+    },
+    {
+      "path": "assets/real/Pipeline_Treated_Wastewater/Pipeline_Treated_Wastewater_4.jpg",
+      "bytes": 116650,
+      "sha256": "02844a0645fd846c0ab0d0b8724ce5bb476842eeb00a125dc68196eaa987c624"
+    },
+    {
+      "path": "assets/real/Pipeline_Treated_Wastewater/Pipeline_Treated_Wastewater_5.jpg",
+      "bytes": 36800,
+      "sha256": "f0086514e56b3f72a0f9df73f2f9b61aeeeb8bd10ac59a5efad076c21e9c01f8"
+    },
+    {
+      "path": "assets/real/TRUMP INTERNATIONAL GOLF CLUB - DUBAI(2).jpg",
+      "bytes": 385886,
+      "sha256": "bf49d2fd8a0da66d6ad8cbcb5a8d467889b686f361760fe2f06b0be3327e2ea9"
+    },
+    {
+      "path": "assets/real/TRUMP INTERNATIONAL GOLF CLUB - DUBAI.jpg",
+      "bytes": 319349,
+      "sha256": "212e4bd398589cf5e3619d5fded8a7866905c1d580adc2c1ec3aef97b775cf63"
+    },
+    {
+      "path": "assets/real/about-new/abu_dhabi_promenade_sunset.jpg",
+      "bytes": 673343,
+      "sha256": "887008a85fdfecc97285ec8d3cbd6ef859697fc05008ddd75cce52a959007186"
+    },
+    {
+      "path": "assets/real/about-new/contact-hero.webp",
+      "bytes": 197400,
+      "sha256": "1692684db082a40c4e2b90872facb25072b07f35a43bda65a1e58cb22451151b"
+    },
+    {
+      "path": "assets/real/about-new/desert_construction_sustainability.jpg",
+      "bytes": 781366,
+      "sha256": "0d64291b601217dda0c476a363411b32c6e63ef96a2304d8524e97305b93cc12"
+    },
+    {
+      "path": "assets/real/about-new/desert_logistics_yard.jpg",
+      "bytes": 766812,
+      "sha256": "9a20a9be9a31e0491bddb7814573424e5484b1501779d822b7143c69e396f9d0"
+    },
+    {
+      "path": "assets/real/about-new/desert_resort_golden_hour.jpg",
+      "bytes": 702066,
+      "sha256": "9dd373e0eb6e71c6629bb64a9cbca758835241a34d2f01dc3e9bc3217e4d4259"
+    },
+    {
+      "path": "assets/real/about-new/luxury_villa_courtyard_1.jpg",
+      "bytes": 601136,
+      "sha256": "a3f5aad68e6c2be90abe31eb5030355214c6c3474a82438361ea5bf4993de704"
+    },
+    {
+      "path": "assets/real/about-new/luxury_water_park_uae.jpg",
+      "bytes": 675761,
+      "sha256": "a09a01ce013c25fea1cdf83522950141b69faf9813dc1067b86f04b24e44b7ee"
+    },
+    {
+      "path": "assets/real/about-new/mep_plant_room_uae.jpg",
+      "bytes": 625013,
+      "sha256": "7e71625066af59147527aa28419dc491951752a0a9e4e29b39e9d657756a5be1"
+    },
+    {
+      "path": "assets/real/about-new/metal_fabrication_workshop.jpg",
+      "bytes": 795791,
+      "sha256": "8bed5265b9707feb2cf9c4665f6451770d10de91b40e8b7c1e16ff895b79dd43"
+    },
+    {
+      "path": "assets/real/about-new/safety_station_uae_construction.jpg",
+      "bytes": 736928,
+      "sha256": "5ea33799db094e5bc5f42ddbc8381a667fb7ee83c2ac955e938cfe64354eecaa"
+    },
+    {
+      "path": "assets/real/about-new/uae_highway_interchange_dawn.jpg",
+      "bytes": 511496,
+      "sha256": "8a42ede0871ef7e73d0fb931a7346b2d6165f26cd9db5fe4d23c50e441ec30a7"
+    },
+    {
+      "path": "assets/real/about-new/uae_nursery_desert.jpg",
+      "bytes": 1057720,
+      "sha256": "0a4a54f64bebe7ffc7d7173c2c814bc0e60e932c707d22259e323de7546f4ad3"
+    },
+    {
+      "path": "assets/real/about-new/uae_rooftop_hvac_plant.jpg",
+      "bytes": 567482,
+      "sha256": "4c23d0d2a21c431f9ef20c803edea26fbc8dc8914f9ffd934127fffca33db1be"
+    },
+    {
+      "path": "assets/real/al-falah-event-plaza.jpg",
+      "bytes": 996377,
+      "sha256": "367e3625959d1298f49cca67f6673be4c25b0c35aa66987f322d6bd8e46adf39"
+    },
+    {
+      "path": "assets/real/contact-hero.webp",
+      "bytes": 197400,
+      "sha256": "1692684db082a40c4e2b90872facb25072b07f35a43bda65a1e58cb22451151b"
+    },
+    {
+      "path": "assets/real/dubai-parks-and-resort.jpg",
+      "bytes": 276998,
+      "sha256": "20af177e6174fdcd1f97e7e61c80a988be11ab70f7da455de0275637e29fa3bb"
+    },
+    {
+      "path": "assets/real/dubai-parks-hd.jpg",
+      "bytes": 126849,
+      "sha256": "779b583f4d02b6cc2c2eb7a8f89fd0e1b32d5242e768d3f2978e9523c00a0f91"
+    },
+    {
+      "path": "assets/real/electrical-mechwork.jpg",
+      "bytes": 518954,
+      "sha256": "6d4f94f8dfc246cee4acf706d1e9c5ac1bd1985a8c81dd5e3c788bead82fa066"
+    },
+    {
+      "path": "assets/real/emirates-palace.jpg",
+      "bytes": 781089,
+      "sha256": "bfd02398aa6e89cf108a33808ccadcba1311c20dac4bc1f4e39efec3daea6990"
+    },
+    {
+      "path": "assets/real/engineering-concept-feasibility.jpg",
+      "bytes": 243679,
+      "sha256": "22ff15205426799bd89ee5cdb73e48210fc30ad532041cc88ca8d706fd32c511"
+    },
+    {
+      "path": "assets/real/engineering-design-management.jpg",
+      "bytes": 248657,
+      "sha256": "13401ff3eae0cc35dd3800ff90a230f7ca0724276b8947ad933b158c352e291d"
+    },
+    {
+      "path": "assets/real/engineering-detailed-engineering.jpg",
+      "bytes": 224059,
+      "sha256": "a640bfa2e41d632ed726e44ad5871ea6e9daf97c3ba612211ed1f57e39455ea9"
+    },
+    {
+      "path": "assets/real/engineering-landscape-architecture.jpg",
+      "bytes": 296472,
+      "sha256": "93e6ab8b35e8de5b4d75420fe14cc6bf2652cf3030a389b641416949051f2222"
+    },
+    {
+      "path": "assets/real/gallery-00.jpg",
+      "bytes": 67155,
+      "sha256": "09feeb9969395693d49c6a63f01f3857ea0f1d59aac35225919c4a211b5ee68e"
+    },
+    {
+      "path": "assets/real/gallery-01.jpg",
+      "bytes": 67155,
+      "sha256": "09feeb9969395693d49c6a63f01f3857ea0f1d59aac35225919c4a211b5ee68e"
+    },
+    {
+      "path": "assets/real/gallery-03.jpg",
+      "bytes": 53544,
+      "sha256": "f5a3ea6c4533e0469150e72a8db91cc2d15abb9ed946dd03fdd7f238eff6ad25"
+    },
+    {
+      "path": "assets/real/gallery-04.jpg",
+      "bytes": 71532,
+      "sha256": "1b948a8155fbee3bb9dc56ab0505fffb6459d506f3dced6a29216b27f85e9b8b"
+    },
+    {
+      "path": "assets/real/gallery-05.jpg",
+      "bytes": 19632,
+      "sha256": "40c86470e8b74c52969ca5d252f38ac92f0be4d4bf043861d02159f3e43e7466"
+    },
+    {
+      "path": "assets/real/gallery-06.jpg",
+      "bytes": 53544,
+      "sha256": "f5a3ea6c4533e0469150e72a8db91cc2d15abb9ed946dd03fdd7f238eff6ad25"
+    },
+    {
+      "path": "assets/real/gallery-10.jpg",
+      "bytes": 19632,
+      "sha256": "40c86470e8b74c52969ca5d252f38ac92f0be4d4bf043861d02159f3e43e7466"
+    },
+    {
+      "path": "assets/real/gallery-14.jpg",
+      "bytes": 61884,
+      "sha256": "5be11e804d1bb213e6a80078334a1006fc20810969fabcc982b7c2d243245b41"
+    },
+    {
+      "path": "assets/real/gallery-16.jpg",
+      "bytes": 19632,
+      "sha256": "40c86470e8b74c52969ca5d252f38ac92f0be4d4bf043861d02159f3e43e7466"
+    },
+    {
+      "path": "assets/real/gallery-17.jpg",
+      "bytes": 92308,
+      "sha256": "d442585e29bbb46221ce94f784e7110b0a5ce358fc584e5dcd2ee6bfd195ab23"
+    },
+    {
+      "path": "assets/real/gallery-18.jpg",
+      "bytes": 67155,
+      "sha256": "09feeb9969395693d49c6a63f01f3857ea0f1d59aac35225919c4a211b5ee68e"
+    },
+    {
+      "path": "assets/real/gallery-19.jpg",
+      "bytes": 71532,
+      "sha256": "1b948a8155fbee3bb9dc56ab0505fffb6459d506f3dced6a29216b27f85e9b8b"
+    },
+    {
+      "path": "assets/real/gallery-23.jpg",
+      "bytes": 92308,
+      "sha256": "d442585e29bbb46221ce94f784e7110b0a5ce358fc584e5dcd2ee6bfd195ab23"
+    },
+    {
+      "path": "assets/real/gallery-28.jpg",
+      "bytes": 26899,
+      "sha256": "d7a2aa6395679a8d2e9749747ba2d99aaf9ffa0d367c3c9ea94f3c65505eea2e"
+    },
+    {
+      "path": "assets/real/gallery-30.jpg",
+      "bytes": 71532,
+      "sha256": "1b948a8155fbee3bb9dc56ab0505fffb6459d506f3dced6a29216b27f85e9b8b"
+    },
+    {
+      "path": "assets/real/gallery-31.jpg",
+      "bytes": 77695,
+      "sha256": "03e6ccff9014585b2e41f029832ab9debd6050b4ce451ac63cf97c0d85ec3245"
+    },
+    {
+      "path": "assets/real/gallery-32.jpg",
+      "bytes": 71532,
+      "sha256": "1b948a8155fbee3bb9dc56ab0505fffb6459d506f3dced6a29216b27f85e9b8b"
+    },
+    {
+      "path": "assets/real/gallery-34.jpg",
+      "bytes": 92308,
+      "sha256": "d442585e29bbb46221ce94f784e7110b0a5ce358fc584e5dcd2ee6bfd195ab23"
+    },
+    {
+      "path": "assets/real/gallery-35.jpg",
+      "bytes": 67155,
+      "sha256": "09feeb9969395693d49c6a63f01f3857ea0f1d59aac35225919c4a211b5ee68e"
+    },
+    {
+      "path": "assets/real/gallery-38.jpg",
+      "bytes": 67155,
+      "sha256": "09feeb9969395693d49c6a63f01f3857ea0f1d59aac35225919c4a211b5ee68e"
+    },
+    {
+      "path": "assets/real/gallery-39.jpg",
+      "bytes": 71532,
+      "sha256": "1b948a8155fbee3bb9dc56ab0505fffb6459d506f3dced6a29216b27f85e9b8b"
+    },
+    {
+      "path": "assets/real/gallery-40.jpg",
+      "bytes": 53544,
+      "sha256": "f5a3ea6c4533e0469150e72a8db91cc2d15abb9ed946dd03fdd7f238eff6ad25"
+    },
+    {
+      "path": "assets/real/gallery-42.jpg",
+      "bytes": 67155,
+      "sha256": "09feeb9969395693d49c6a63f01f3857ea0f1d59aac35225919c4a211b5ee68e"
+    },
+    {
+      "path": "assets/real/gallery-44.jpg",
+      "bytes": 71532,
+      "sha256": "1b948a8155fbee3bb9dc56ab0505fffb6459d506f3dced6a29216b27f85e9b8b"
+    },
+    {
+      "path": "assets/real/gallery-46.jpg",
+      "bytes": 77695,
+      "sha256": "03e6ccff9014585b2e41f029832ab9debd6050b4ce451ac63cf97c0d85ec3245"
+    },
+    {
+      "path": "assets/real/gallery-47.jpg",
+      "bytes": 71532,
+      "sha256": "1b948a8155fbee3bb9dc56ab0505fffb6459d506f3dced6a29216b27f85e9b8b"
+    },
+    {
+      "path": "assets/real/gallery-48.jpg",
+      "bytes": 589935,
+      "sha256": "69f6cbb35f1509a2340456433d22dfc81343fa3c0749e662a86cefcb1c65c5a3"
+    },
+    {
+      "path": "assets/real/gallery-54.jpg",
+      "bytes": 67155,
+      "sha256": "09feeb9969395693d49c6a63f01f3857ea0f1d59aac35225919c4a211b5ee68e"
+    },
+    {
+      "path": "assets/real/gallery-57.jpg",
+      "bytes": 26899,
+      "sha256": "d7a2aa6395679a8d2e9749747ba2d99aaf9ffa0d367c3c9ea94f3c65505eea2e"
+    },
+    {
+      "path": "assets/real/gallery-59.jpg",
+      "bytes": 64190,
+      "sha256": "6e82425fb512d5e80d7f8f27a73386a72a3e7718e59b849fbb11b6e1a9f7b705"
+    },
+    {
+      "path": "assets/real/gallery-60.jpg",
+      "bytes": 53544,
+      "sha256": "f5a3ea6c4533e0469150e72a8db91cc2d15abb9ed946dd03fdd7f238eff6ad25"
+    },
+    {
+      "path": "assets/real/gallery-61.jpg",
+      "bytes": 71532,
+      "sha256": "1b948a8155fbee3bb9dc56ab0505fffb6459d506f3dced6a29216b27f85e9b8b"
+    },
+    {
+      "path": "assets/real/gallery-65.jpg",
+      "bytes": 77695,
+      "sha256": "03e6ccff9014585b2e41f029832ab9debd6050b4ce451ac63cf97c0d85ec3245"
+    },
+    {
+      "path": "assets/real/gallery-67.jpg",
+      "bytes": 53544,
+      "sha256": "f5a3ea6c4533e0469150e72a8db91cc2d15abb9ed946dd03fdd7f238eff6ad25"
+    },
+    {
+      "path": "assets/real/gallery-68.jpg",
+      "bytes": 38351,
+      "sha256": "77e8f1b3be0a8c490f7cafc5b20e505150cf0e80a221fec3731fe2f730ec11d0"
+    },
+    {
+      "path": "assets/real/gallery-72.jpg",
+      "bytes": 64190,
+      "sha256": "6e82425fb512d5e80d7f8f27a73386a72a3e7718e59b849fbb11b6e1a9f7b705"
+    },
+    {
+      "path": "assets/real/gallery-75.jpg",
+      "bytes": 26899,
+      "sha256": "d7a2aa6395679a8d2e9749747ba2d99aaf9ffa0d367c3c9ea94f3c65505eea2e"
+    },
+    {
+      "path": "assets/real/gallery-81.jpg",
+      "bytes": 53544,
+      "sha256": "f5a3ea6c4533e0469150e72a8db91cc2d15abb9ed946dd03fdd7f238eff6ad25"
+    },
+    {
+      "path": "assets/real/gallery-82.jpg",
+      "bytes": 92308,
+      "sha256": "d442585e29bbb46221ce94f784e7110b0a5ce358fc584e5dcd2ee6bfd195ab23"
+    },
+    {
+      "path": "assets/real/gallery-87.jpg",
+      "bytes": 67155,
+      "sha256": "09feeb9969395693d49c6a63f01f3857ea0f1d59aac35225919c4a211b5ee68e"
+    },
+    {
+      "path": "assets/real/gallery-90.jpg",
+      "bytes": 92308,
+      "sha256": "d442585e29bbb46221ce94f784e7110b0a5ce358fc584e5dcd2ee6bfd195ab23"
+    },
+    {
+      "path": "assets/real/gallery-91.jpg",
+      "bytes": 53544,
+      "sha256": "f5a3ea6c4533e0469150e72a8db91cc2d15abb9ed946dd03fdd7f238eff6ad25"
+    },
+    {
+      "path": "assets/real/hd/TRUMP INTERNATIONAL GOLF CLUB - DUBAI_hd.jpg",
+      "bytes": 919960,
+      "sha256": "053b2962b3e606125af8902cea2ce5f4698b90510d5a57d920e994c4432b427d"
+    },
+    {
+      "path": "assets/real/hd/trump-international-golf-club-dubai_hd.jpg",
+      "bytes": 919960,
+      "sha256": "053b2962b3e606125af8902cea2ce5f4698b90510d5a57d920e994c4432b427d"
+    },
+    {
+      "path": "assets/real/journey-1989-founded.png",
+      "bytes": 4226803,
+      "sha256": "23ce6f3d58726fbf845856586d094880ba4c7779247218bb28d70ac08920f97c"
+    },
+    {
+      "path": "assets/real/journey-1997-diversification.jpg",
+      "bytes": 269415,
+      "sha256": "c1855a95462c48651d626a8195e6e46b8ab09dd83f451ab453656c51c7ed3b13"
+    },
+    {
+      "path": "assets/real/journey-2011-international-expansion.png",
+      "bytes": 4402350,
+      "sha256": "1e9d4648f77cc690793dc291f7c8ac87b89af1c4536d37ceafe6c54b263c7974"
+    },
+    {
+      "path": "assets/real/journey-2020-expo-dubai.png",
+      "bytes": 841756,
+      "sha256": "0d59d7426a4d77b25f87168ff18825a34bf57f0f7da12bd75b3c1bde096ace78"
+    },
+    {
+      "path": "assets/real/journey-2026-island.jpg",
+      "bytes": 260379,
+      "sha256": "64639dc45c2b4a3293f0e408d845c4879797f5cdcdceef5da321c28be1b6a3d8"
+    },
+    {
+      "path": "assets/real/kempinski-hotel.jpg",
+      "bytes": 634885,
+      "sha256": "da149ce1b02579dc22c3d5f6382c350a5e6bafd2a3843314e9773021663783e7"
+    },
+    {
+      "path": "assets/real/legoland-hd-castle.jpg",
+      "bytes": 9214752,
+      "sha256": "000b6e91ea2b8a39db5de1dc188b4a59f8801087332447b8bb3ea4ded3e23734"
+    },
+    {
+      "path": "assets/real/legoland-hd-racer.jpg",
+      "bytes": 8988626,
+      "sha256": "f23d8ad7c93594560ad3865b79f849481f1a6b365a3119e38bd1a98ba674e94a"
+    },
+    {
+      "path": "assets/real/louver-hd.jpg",
+      "bytes": 207642,
+      "sha256": "cec0dc284ecac94fc7427fa6687a16d321c17015fb69e63ef238abea6e6f171d"
+    },
+    {
+      "path": "assets/real/master/al-wathba-park.jpg",
+      "bytes": 240898,
+      "sha256": "2530b21703336b0a74c591cc5a8091383ef667eef02776237d343819b12c0207"
+    },
+    {
+      "path": "assets/real/master/corniche-new.jpg",
+      "bytes": 7176535,
+      "sha256": "89e4a5a7f3d57a98e98e3948d303c20b6c553cf4644eee0933b51a5bd403a034"
+    },
+    {
+      "path": "assets/real/master/emirates-palace.jpg",
+      "bytes": 381947,
+      "sha256": "c0fce7355eede9540c790198e0876ff11d73092c232ba4fd296d88745abdfdcb"
+    },
+    {
+      "path": "assets/real/master/iraqi-embassy-new.jpg",
+      "bytes": 5661813,
+      "sha256": "3e8e7fbacbe8eab4b1f5a5c1d0cb43307eab3c3dcfd0dfce36b761659dbd1cf8"
+    },
+    {
+      "path": "assets/real/master/ruwais-central-park.jpg",
+      "bytes": 121561,
+      "sha256": "f2943ed5e1e162624932c0f1999ae35d6e7df2330b75e150175b4f4eca6d82f8"
+    },
+    {
+      "path": "assets/real/master/saadiyat-expressway-new.jpg",
+      "bytes": 2549797,
+      "sha256": "fb8305fdd0ceffd07af47a5bef2b0da3af8ffbb54e29a08a73c2f7781fada887"
+    },
+    {
+      "path": "assets/real/meydan-hd-aerial.jpg",
+      "bytes": 9610900,
+      "sha256": "d96ddd1694952af9b3a4cc34994394f62a6b30fea9a539d4b0f04db7f5e58b96"
+    },
+    {
+      "path": "assets/real/meydan-hd-grandstand-v2.jpg",
+      "bytes": 11213752,
+      "sha256": "de189d1e87f734942891d78070e3b627c77349206a28938cda71022abb5fcc21"
+    },
+    {
+      "path": "assets/real/meydan-hd-grandstand.jpg",
+      "bytes": 10132331,
+      "sha256": "4629eccd727404fbccef9cf105bb7f4287e9dff428bd19de89d92910a3aa3433"
+    },
+    {
+      "path": "assets/real/modern-construction.jpg",
+      "bytes": 479832,
+      "sha256": "674fecfe93671c9ed69b01bbbf06291f3498b0f9b54d7b3654259393ec2d1654"
+    },
+    {
+      "path": "assets/real/nurseries/al-ryum-group-trucks.webp",
+      "bytes": 632612,
+      "sha256": "30813a7ddd310bef02cbafa039669de7dccb4bedec027c7582c0cac0719396ea"
+    },
+    {
+      "path": "assets/real/nurseries/enclosed-nursery-hardening.jpg",
+      "bytes": 457817,
+      "sha256": "48c3cd7cbb566a49619d02d87d1b7f45ca5be3df4b4c3313d41f3c59accc6259"
+    },
+    {
+      "path": "assets/real/nurseries/greenhouse-nursery-interior.jpg",
+      "bytes": 465045,
+      "sha256": "0c4c79f2cc0de6272516befab8acf86be0d238685f901a2e4ce18310601e8ee4"
+    },
+    {
+      "path": "assets/real/nurseries/plant-propagation-nursery.jpg",
+      "bytes": 3363628,
+      "sha256": "232d42215fe1f72a27ba4430f07cd57d99b05b76e8ba73d61d333e061ce2560e"
+    },
+    {
+      "path": "assets/real/ruwais-golf-course.jpg",
+      "bytes": 487079,
+      "sha256": "cb91228be0a4d07e715443ce7ae6f8abc5272deeb4bce00f381dd065cc649d0c"
+    },
+    {
+      "path": "assets/real/service-architectural-metalwork.jpg",
+      "bytes": 11009183,
+      "sha256": "85f21345dc6381618aee1b8a9e169a04dc22babe7caaa4de5d549b4c99990673"
+    },
+    {
+      "path": "assets/real/service-construction-new.jpg",
+      "bytes": 121211,
+      "sha256": "c2eaf1e7a4818b62b69ba4659fe310b93f2492ce83106c6323c2870e001b8806"
+    },
+    {
+      "path": "assets/real/service-engineering-new.jpg",
+      "bytes": 182748,
+      "sha256": "a0438e0b18ed59fd59f72304d61a8810edc3aed5a5000a546c068a3c23a94e13"
+    },
+    {
+      "path": "assets/real/service-export-finance.jpg",
+      "bytes": 53544,
+      "sha256": "f5a3ea6c4533e0469150e72a8db91cc2d15abb9ed946dd03fdd7f238eff6ad25"
+    },
+    {
+      "path": "assets/real/service-heavy-equip-new.jpg",
+      "bytes": 445359,
+      "sha256": "b118b05e339a00e8d313b2735796b1a5c68c09069e19426856e71c16106730ab"
+    },
+    {
+      "path": "assets/real/service-nursery-new.jpg",
+      "bytes": 229718,
+      "sha256": "9dd9cad5292accac110474951d32c2880585d20847afca2b17a85e05a5bfa362"
+    },
+    {
+      "path": "assets/real/service-procurement-new.jpg",
+      "bytes": 115748,
+      "sha256": "9cc64e8e79afb08dbe00dc6e75af142a445a4db6633bfd17ccf6da4feb6fd71d"
+    },
+    {
+      "path": "assets/real/service-project-mgmt-new.jpg",
+      "bytes": 139446,
+      "sha256": "bf6f7867181d7bd79920975f308874aa569a158bc1cf470a836f97c8efe8fc3a"
+    },
+    {
+      "path": "assets/real/service-protective-finishing.jpg",
+      "bytes": 9752472,
+      "sha256": "a55d68a8f8ea1cb241a4fde3ae197b87903e16bd226896e6fc611ecc35251a34"
+    },
+    {
+      "path": "assets/real/service-site-installation.jpg",
+      "bytes": 10052868,
+      "sha256": "9658bcb347684db5aca191064200e1eeb281d5bfeb45b3a04a35c7ccfe4c5fd4"
+    },
+    {
+      "path": "assets/real/service-steel-new.jpg",
+      "bytes": 102310,
+      "sha256": "ed1a837e01bc55d1c5b7a0b15446118fe76967f4db42846fd02e647e53681a1f"
+    },
+    {
+      "path": "assets/real/service-technology.jpg",
+      "bytes": 70319,
+      "sha256": "3e1d69d2fe1e67a8337d0904d15c8586c9009d2a0ab3b407024fbd2f7c62514d"
+    },
+    {
+      "path": "assets/real/shamkah-hd-gazebo.jpg",
+      "bytes": 9287219,
+      "sha256": "6cfc82538e0f3a562b335a41426d8fae381ad6a567dd73281ac4fa7ffe1b98a7"
+    },
+    {
+      "path": "assets/real/shamkah-hd-padel.jpg",
+      "bytes": 9454110,
+      "sha256": "4d8cb47d3444ebf8abda74ab3d4985fc61c24554a886a09c6c7372d0e5ff8c56"
+    },
+    {
+      "path": "assets/real/shamkah-hd-pavilion.jpg",
+      "bytes": 8128175,
+      "sha256": "0bcced9c9d1becceb18b6d6073771bf55becb28d083d8f083374dbd5abd5e359"
+    },
+    {
+      "path": "assets/real/shamkah-hd-playground1.jpg",
+      "bytes": 9125829,
+      "sha256": "78fd09ec3388237d099d27d29d575895a865ba26d24992871e721228e4a58a75"
+    },
+    {
+      "path": "assets/real/shamkah-hd-playground2.jpg",
+      "bytes": 9950422,
+      "sha256": "16817725015774fd6f0e3f628bd2e47a36a8ca770841f1e8d1427f007caafae9"
+    },
+    {
+      "path": "assets/real/story-landscaping-award-uae.jpg",
+      "bytes": 1106016,
+      "sha256": "07649fba209b6d5fe52e1465e6fd88dad94b1df9a803f32a586e9b73b3c71131"
+    },
+    {
+      "path": "assets/real/story-partnership-tech-uae.jpg",
+      "bytes": 589217,
+      "sha256": "a55f847f0c4874b71deabd03f6649d7434964f71309fe3bdd2fc989c67539771"
+    },
+    {
+      "path": "assets/real/story-smart-building-uae.jpg",
+      "bytes": 629143,
+      "sha256": "cf3598bf30e1007d3e436406ed26726968f5976462bbc13da5271ce4b8d37542"
+    },
+    {
+      "path": "assets/real/story-sustainable-construction-uae.jpg",
+      "bytes": 712864,
+      "sha256": "916b6cb48681412461ad01938643c2fc0fd342bf4b3a0522ddc994b3855232f2"
+    },
+    {
+      "path": "assets/real/trump-international-golf-club-dubai-2.jpg",
+      "bytes": 385886,
+      "sha256": "bf49d2fd8a0da66d6ad8cbcb5a8d467889b686f361760fe2f06b0be3327e2ea9"
+    },
+    {
+      "path": "assets/real/trump-international-golf-club-dubai.jpg",
+      "bytes": 319349,
+      "sha256": "212e4bd398589cf5e3619d5fded8a7866905c1d580adc2c1ec3aef97b775cf63"
+    },
+    {
+      "path": "assets/real/uae-expansion.jpg",
+      "bytes": 2006800,
+      "sha256": "b2802f4d8a70e4410219a9d07383d33e93408fa9aa740cefa24ee7ef456928fc"
+    },
+    {
+      "path": "assets/real/yas-island-public-realm.jpg",
+      "bytes": 64190,
+      "sha256": "6e82425fb512d5e80d7f8f27a73386a72a3e7718e59b849fbb11b6e1a9f7b705"
+    },
+    {
+      "path": "assets/real/zayed-film-0001.jpg",
+      "bytes": 105991,
+      "sha256": "89996c7449ab501153a2fe118fd3195ddace90df7b4ac845137dd3833a046739"
+    },
+    {
+      "path": "assets/real/zayed-film-0017.jpg",
+      "bytes": 93365,
+      "sha256": "73ba1f9dd89d02f99f2d140191340846179a7d12d11fdce026393bf092755314"
+    },
+    {
+      "path": "assets/real/zayed-film-0041.jpg",
+      "bytes": 90840,
+      "sha256": "eee0eee2f80135a46e839e41f56722d99b3d456057d6f28439995002f7bab923"
+    },
+    {
+      "path": "assets/real/zayed-film-0065.jpg",
+      "bytes": 98585,
+      "sha256": "06e023829bae5d065eaccee2b1a749f4dd9c7c8e306840a7e8986838742f49da"
+    },
+    {
+      "path": "assets/real/zayed-musiem-hd.jpg",
+      "bytes": 166858,
+      "sha256": "2e4c04e7a10fc1cc6c3166269311a4d34f3fa820c6ae520b5232429a7603505e"
+    },
+    {
+      "path": "assets/real/zayed-national-museum-2.jpg",
+      "bytes": 2789533,
+      "sha256": "b51be125c52eaab2412c855da9e1c9270e2153b5b83c85a28fdaba8125a7e054"
+    },
+    {
+      "path": "assets/real/zayed-national-museum.jpg",
+      "bytes": 2789533,
+      "sha256": "b51be125c52eaab2412c855da9e1c9270e2153b5b83c85a28fdaba8125a7e054"
+    },
+    {
+      "path": "assets/seamless-mist-loop.mp4",
+      "bytes": 1934986,
+      "sha256": "84f91fc16d8143cdffbee82426f82296c13d3a6b1c86f1b04729fd6a3386b8c5"
+    },
+    {
+      "path": "assets/services/engineering.webp",
+      "bytes": 296614,
+      "sha256": "4f99079fbe84d7400fea4ad603953b39daf018513fb1c096d2797b31246765be"
+    },
+    {
+      "path": "assets/services/nurseries.webp",
+      "bytes": 453152,
+      "sha256": "0c94193acb5e495bc167a48e8c65391b26b2b912eb80b52080a9c2903eba4a07"
+    },
+    {
+      "path": "assets/services/operations.webp",
+      "bytes": 438990,
+      "sha256": "e51f8ed7e2fbdd4f7946d92c55e03429b075784c6e429072e05d615be789227d"
+    },
+    {
+      "path": "assets/services/pmv.webp",
+      "bytes": 276396,
+      "sha256": "0faa5979dfb80944f3651b59d62a5349218ec0ed3fcfbab6aefbc631f6ba38a6"
+    },
+    {
+      "path": "assets/services/procurement.webp",
+      "bytes": 314650,
+      "sha256": "508ecd4ccdbe4a25f8aa154457718a8b46832d9d3b76ef771a6a524da25cef74"
+    },
+    {
+      "path": "assets/services/project-mgmt.webp",
+      "bytes": 317638,
+      "sha256": "e835dd6e5c236f7129d4224b7cc9d6f999dc8e5bbf4991e959211089526bd348"
+    },
+    {
+      "path": "assets/services/steel.webp",
+      "bytes": 298680,
+      "sha256": "92f17005ed6fd540b72f9ea37f3da0509db4719a224901f08fa233cd3a6b7e22"
+    },
+    {
+      "path": "assets/solutions/dubai-truck-drivers.webp",
+      "bytes": 400480,
+      "sha256": "da36b14dacfd69f1687ee22f4306d381b98db79d427568dfc5d8c2fd1f400e21"
+    },
+    {
+      "path": "assets/solutions/procurement-samples-table.webp",
+      "bytes": 311788,
+      "sha256": "de744a20e2b7d275636758150c532e691bdb905fedacd1c5f27983abe2219019"
+    },
+    {
+      "path": "assets/solutions/svc-engineering-design-concept-feasibility.webp",
+      "bytes": 1004138,
+      "sha256": "a9a12e99cea356b0c1eab62ac6ff1c408e68177bd2db70103d406bd955f495b9"
+    },
+    {
+      "path": "assets/solutions/svc-engineering-design-design-management.webp",
+      "bytes": 849002,
+      "sha256": "171a2081b88dfa87bba6d9eda05ae7e59fa094881cc1ad04a0436ad9658e73d2"
+    },
+    {
+      "path": "assets/solutions/svc-engineering-design-detailed-engineering.webp",
+      "bytes": 247316,
+      "sha256": "2eb98f6d11f5c2480b923c89d4fb4b58d11f5d9921c31f850419f32f4bb5f395"
+    },
+    {
+      "path": "assets/solutions/svc-engineering-design-landscape-architecture.webp",
+      "bytes": 816010,
+      "sha256": "a3c17ad1a178dc4e61c00994ccca2a6a34df5ae74f20fb71261a7ac1bc1b0f8d"
+    },
+    {
+      "path": "assets/solutions/svc-nurseries-acclimatisation.webp",
+      "bytes": 935250,
+      "sha256": "faf9d93a7977f72f5f54b326b2458c0bd80f4ba265089e503588cc759c2aef4a"
+    },
+    {
+      "path": "assets/solutions/svc-nurseries-greenhouse-operations.webp",
+      "bytes": 985298,
+      "sha256": "69e4151d5f3946dfaae923de6b2e465a33abcb01d54559b41dec75232506c996"
+    },
+    {
+      "path": "assets/solutions/svc-nurseries-plant-propagation.webp",
+      "bytes": 752412,
+      "sha256": "3af954b411b8b983b3a263a8f79f8e826255f53233786ef45a1347f2fa7a4ab5"
+    },
+    {
+      "path": "assets/solutions/svc-nurseries-supply-logistics.webp",
+      "bytes": 964354,
+      "sha256": "0eea5df7c295827fa0223bf9713481ec5cb2da1f741b522fd562dad0b46c81a9"
+    },
+    {
+      "path": "assets/solutions/svc-operations-irrigation-management.webp",
+      "bytes": 696804,
+      "sha256": "b824ed7a948c74a34bca25bbe28e2ab3e5c3402089d5d6811696d650862a1950"
+    },
+    {
+      "path": "assets/solutions/svc-operations-landscape-maintenance.webp",
+      "bytes": 1007970,
+      "sha256": "e5db012d437fdcefd63749d73c83d1e937bc8e8d27cb1ebf9b04ba7957c4ec1f"
+    },
+    {
+      "path": "assets/solutions/svc-operations-sports-turf-care.webp",
+      "bytes": 889746,
+      "sha256": "7702f90a333c63e5c4a77768130007a8bfb5941f308d4607faf91d20b20c7f5b"
+    },
+    {
+      "path": "assets/solutions/svc-pmv-earthmoving-excavation.webp",
+      "bytes": 726650,
+      "sha256": "2a6434d0b6f98362036fab22630c42281133cc4eb7a1f5c24e8a289d35b964db"
+    },
+    {
+      "path": "assets/solutions/svc-pmv-fleet-maintenance.webp",
+      "bytes": 518372,
+      "sha256": "db4b237fecf3d3dfb90ebe547ba5e11afc41f692d00da77407cf4dcc057ee17a"
+    },
+    {
+      "path": "assets/solutions/svc-pmv-specialist-landscaping-equipment.webp",
+      "bytes": 873648,
+      "sha256": "801c321d4f1828350ec49f43fd31d13caff45c495da2dbcaf69ca49d8fcb7caf"
+    },
+    {
+      "path": "assets/solutions/svc-procurement-logistics-warehousing.webp",
+      "bytes": 460390,
+      "sha256": "6d4d64ffdefc9dd3fa5fb317831d53615496769806e9fdedbc16ccb35ae8afad"
+    },
+    {
+      "path": "assets/solutions/svc-procurement-plant-equipment-supply.webp",
+      "bytes": 602966,
+      "sha256": "debcd6e5f73a5869a1942f2fe4da6f659c859c6f33f18e1cf3e8f79b06fa2849"
+    },
+    {
+      "path": "assets/solutions/svc-project-mgmt-programme-planning.webp",
+      "bytes": 945716,
+      "sha256": "416417d5e7e058c1adf6050eba8e34d507b25ce8e602bcbfb22f6d74094df3d3"
+    },
+    {
+      "path": "assets/solutions/svc-project-mgmt-site-management.webp",
+      "bytes": 770980,
+      "sha256": "c80309442a25506f6dc95b569e9fba0866185e5740e03c8e86eea8a29c47ecb4"
+    },
+    {
+      "path": "assets/solutions/svc-steel-architectural-metalwork.webp",
+      "bytes": 785722,
+      "sha256": "43d16f26bdb690e75273509ec725c589ad981fd064fb026075366bebbf49e25c"
+    },
+    {
+      "path": "assets/solutions/svc-steel-protective-finishing.webp",
+      "bytes": 560966,
+      "sha256": "22ba6f280d0ea5a8f0f01ff715ad671b7f8774c18f2966f700001e9e4d110ede"
+    },
+    {
+      "path": "assets/solutions/svc-steel-site-installation.webp",
+      "bytes": 576928,
+      "sha256": "b979d66b7f710aff2de159e27f8f7e30fe766b4b77776869f2b6f40b76c265e6"
+    },
+    {
+      "path": "assets/solutions/svc-steel-structural-steel.webp",
+      "bytes": 538442,
+      "sha256": "fa79b792f53068956d3bb7ade5db09a2f089443d0ba774cccbe26eb524c124c8"
+    },
+    {
+      "path": "assets/three.core.js",
+      "bytes": 1408569,
+      "sha256": "283be43b2229e15f46dac84cd19354ede5f06cac7ffb185e765cfcfb2c1eec90"
+    },
+    {
+      "path": "assets/three.min.js",
+      "bytes": 668024,
+      "sha256": "7b1c5d75b28d9de15042e2b374f83566d8c7146697af8fdeb4558b0fb528a585"
+    },
+    {
+      "path": "assets/three.module.js",
+      "bytes": 631039,
+      "sha256": "d835eab0b3bca3fdfd51e2ce7d06911f4a089b08db73cc3cd70fe5e3005a623f"
+    },
+    {
+      "path": "index-astra.html",
+      "bytes": 10243,
+      "sha256": "bdf9999d6445d18ea9e603063b641ea45392cfb3d50b469d8d23f797eaf74169"
+    },
+    {
+      "path": "index.html",
+      "bytes": 10809,
+      "sha256": "b7f6ea4c11aa54e901030d91bc0544f6c10541b84ea0d0db2298b0c33229726a"
+    },
+    {
+      "path": "transitions/frame_0001.webp",
+      "bytes": 22696,
+      "sha256": "cf8c98facde2ae28caa0eaf928dbf3bee536d2abe51a4246e4cd2c7976aa8081"
+    },
+    {
+      "path": "transitions/frame_0002.webp",
+      "bytes": 20998,
+      "sha256": "ff9166de1bfed3f06ca19cc6ba8a94c5f8d308d52ef9cd702077ffab6c5c09f8"
+    },
+    {
+      "path": "transitions/frame_0003.webp",
+      "bytes": 18652,
+      "sha256": "04c548fe97998cc277637ae94a55ea2a32683263356a783a93484d31947cb1c8"
+    },
+    {
+      "path": "transitions/frame_0004.webp",
+      "bytes": 17048,
+      "sha256": "f53482430b7d88f8954d5d786d53a62eb9261a2c7e7c47b2a136ffcb27f04e0c"
+    },
+    {
+      "path": "transitions/frame_0005.webp",
+      "bytes": 16102,
+      "sha256": "e95c48909c8a049058285133dff3faef4d704ba437d061e63c2b74b9f9c8f1e1"
+    },
+    {
+      "path": "transitions/frame_0006.webp",
+      "bytes": 15166,
+      "sha256": "c3e5245272be6a590672e039d65bc9851101ca05789151709f18758cabf6740e"
+    },
+    {
+      "path": "transitions/frame_0007.webp",
+      "bytes": 14076,
+      "sha256": "029177c924003aaeb4515e81740c5094d0d8f441ae31d0ae5faf20a099e726bc"
+    },
+    {
+      "path": "transitions/frame_0008.webp",
+      "bytes": 12830,
+      "sha256": "ad616eb6a4597bfc9a4850e8e9c2196cc644225d960a181cbd99e2793f82c003"
+    },
+    {
+      "path": "transitions/frame_0009.webp",
+      "bytes": 12184,
+      "sha256": "2a14f95c7b2d05aeb1a93cebed2bd89a6369e4ab0ad2558aa4a4eda820ece72d"
+    },
+    {
+      "path": "transitions/frame_0010.webp",
+      "bytes": 11730,
+      "sha256": "a30c6d443e2b4ed12090740f6f6fda2a68667d5813d488d719e446df3048031e"
+    },
+    {
+      "path": "transitions/frame_0011.webp",
+      "bytes": 10990,
+      "sha256": "8b571dc7da83478009f78141f0cd2c2baf5e9f3b8b5a010d7303a793bf2b876d"
+    },
+    {
+      "path": "transitions/frame_0012.webp",
+      "bytes": 10802,
+      "sha256": "1b69f9e4783268b37a587b239f430a31e545f855fcede8b92f0033e9c5d8aa28"
+    },
+    {
+      "path": "transitions/frame_0013.webp",
+      "bytes": 10546,
+      "sha256": "0c2a59d587928e545210e7cc94699b6e9fb6193891696ac7aaabaaa2d8ef0fb7"
+    },
+    {
+      "path": "transitions/frame_0014.webp",
+      "bytes": 10640,
+      "sha256": "4a054ea79f91a3fa4b5b9a4f61835e08ca8fb7442a212a07bc226538d4cec141"
+    },
+    {
+      "path": "transitions/frame_0015.webp",
+      "bytes": 10592,
+      "sha256": "64b7bea6f89a6336a7f750686e3f7f97943b0a8c576917023d89df63731d820b"
+    },
+    {
+      "path": "transitions/frame_0016.webp",
+      "bytes": 10412,
+      "sha256": "91ca6abd26b48f198e347a519bbf4e122a6e706c3d871dde831aebd357661c19"
+    },
+    {
+      "path": "transitions/frame_0017.webp",
+      "bytes": 10250,
+      "sha256": "84799d413af3a07199d779baf25636c0bf2fb6b5b8e5538404fabdd8cb2c0242"
+    },
+    {
+      "path": "transitions/frame_0018.webp",
+      "bytes": 10108,
+      "sha256": "2def84d2ac66ad7a06d9eb1a0d00e57d47a6b705f6be64a3e504509255d7a54d"
+    },
+    {
+      "path": "transitions/frame_0019.webp",
+      "bytes": 10118,
+      "sha256": "75aaae0e601fc318d01d701b1a5394eb4e7da7ba400989f9c58b51e2678af3f7"
+    },
+    {
+      "path": "transitions/frame_0020.webp",
+      "bytes": 9632,
+      "sha256": "f96c44d12ce7ef84367ccce4f8db83c43f2f62ed1e9df0f5433f7f681181d19e"
+    },
+    {
+      "path": "transitions/frame_0021.webp",
+      "bytes": 9686,
+      "sha256": "d8bb5e2d51c4594d353c58af181ac0e19006bccd46039b61ca227376e60d5d8f"
+    },
+    {
+      "path": "transitions/frame_0022.webp",
+      "bytes": 9496,
+      "sha256": "5e2d705a9fdadf4c77c157a30757d5fef68fe72c4e9221d80e3c9b07555497e7"
+    },
+    {
+      "path": "transitions/frame_0023.webp",
+      "bytes": 9348,
+      "sha256": "b4b2f3acf59360ff0ba4f10ae9f09532499d5c00957a7f03db0c3da5254c957b"
+    },
+    {
+      "path": "transitions/frame_0024.webp",
+      "bytes": 9116,
+      "sha256": "5a5d8b884485f01490106d4d8b524fc42af6ce3670298639e69e2cb2cb940343"
+    },
+    {
+      "path": "transitions/frame_0025.webp",
+      "bytes": 8826,
+      "sha256": "aab0fb5797489cc11b2e34f74d31ed4ecb3d8e2dd7debed9afcf21ab68afb882"
+    },
+    {
+      "path": "transitions/frame_0026.webp",
+      "bytes": 8622,
+      "sha256": "b7d40e28f21acb5dca56fb0e4451f08d0a55f35be96dfee4c6b71520a3758b93"
+    },
+    {
+      "path": "transitions/frame_0027.webp",
+      "bytes": 8508,
+      "sha256": "529f608e894ba0d2259e2e63db396b8ab19c8e51ac06ff8a3ac8ab92420da058"
+    },
+    {
+      "path": "transitions/frame_0028.webp",
+      "bytes": 8208,
+      "sha256": "d9e23984429b4e0d095b00cc5115bfd1f9c2125f367fef0c3b50d9c6fe99100e"
+    },
+    {
+      "path": "transitions/frame_0029.webp",
+      "bytes": 8000,
+      "sha256": "fb93b1c5e7e5f9e9433376a5ddf0f68d9fb9a92e5565cde6c022fffcf1de8453"
+    },
+    {
+      "path": "transitions/frame_0030.webp",
+      "bytes": 7958,
+      "sha256": "486c3689e1df2f8475998b779939e3f185912497e88279b477d9bf2691b69e39"
+    },
+    {
+      "path": "transitions/frame_0031.webp",
+      "bytes": 7686,
+      "sha256": "6b483c0818b1969eecc933bce082b7201de045e7f17653f6868d3a4114e8b2ae"
+    },
+    {
+      "path": "transitions/frame_0032.webp",
+      "bytes": 7352,
+      "sha256": "3d619c638011b6da41f90e19e076a3e58110dd2de03672dac85face53df21776"
+    },
+    {
+      "path": "transitions/frame_0033.webp",
+      "bytes": 7156,
+      "sha256": "fa0de3e374dea124595f30ecbeac78a869e7e1bc341322dc3356266e97d3d87d"
+    },
+    {
+      "path": "transitions/frame_0034.webp",
+      "bytes": 7070,
+      "sha256": "2610d7952ea9e8254723997834e72bf7add88e10b89c2813c33c3da5b5c87ea6"
+    },
+    {
+      "path": "transitions/frame_0035.webp",
+      "bytes": 6876,
+      "sha256": "b25638d325e78d2ac3a2392ae20927ccb9fcded4463f906a49395d7f122d27ff"
+    },
+    {
+      "path": "transitions/frame_0036.webp",
+      "bytes": 6582,
+      "sha256": "c8d9f44b349605f81f827829751149a14bb3e25c490757f07949fd4b943ccc3b"
+    },
+    {
+      "path": "transitions/frame_0037.webp",
+      "bytes": 5842,
+      "sha256": "cf011aca94c8ec8e5b51bcd1acdddfc550c5fc1e4081b3f3893a76eda36b029b"
+    },
+    {
+      "path": "transitions/frame_0038.webp",
+      "bytes": 4340,
+      "sha256": "ba853503a3b9b7414a7a3ae2e5b2d1c6e3c0bbc726bdb2ea177ca4b23c444548"
+    },
+    {
+      "path": "transitions/frame_0039.webp",
+      "bytes": 3928,
+      "sha256": "0b2409994c83d1126cc149455dd6b9ce74c4a65e2dadc853dd7d5bf54d8ad2eb"
+    },
+    {
+      "path": "transitions/frame_0040.webp",
+      "bytes": 3848,
+      "sha256": "c1e4acff5b6988b82afdc9d6b7cf85e5473154593fb9ea63df0e77eed76c8669"
+    },
+    {
+      "path": "transitions/frame_0041.webp",
+      "bytes": 3670,
+      "sha256": "351a73fe6918f5ed69efe25a60fa0a3e3754f0668ddaa7b0b23766fe4279b7d5"
+    },
+    {
+      "path": "transitions/frame_0042.webp",
+      "bytes": 3826,
+      "sha256": "b6e113efaea13a1f427df0fee57a4a11013e6f27ea2c3035d588c80ec66c0d91"
+    },
+    {
+      "path": "transitions/frame_0043.webp",
+      "bytes": 4130,
+      "sha256": "301c04557bce1de92608d346f44284b0ffad88eddf1bfe6dc544daf92de68ea6"
+    },
+    {
+      "path": "transitions/frame_0044.webp",
+      "bytes": 4412,
+      "sha256": "429018871635e3d7f120e220b39635771478e34cc82622b43f25bd9592aa5fad"
+    },
+    {
+      "path": "transitions/frame_0045.webp",
+      "bytes": 4512,
+      "sha256": "f5d4329c1fdfb9611db1ca45f08053f01949e2ebca6f1429cf425ca3bb520a6f"
+    },
+    {
+      "path": "transitions/frame_0046.webp",
+      "bytes": 4822,
+      "sha256": "df26b06886cd7e1e8a81e51142322c34a2d12f6ac114aa47b5961d7a40638bd5"
+    },
+    {
+      "path": "transitions/frame_0047.webp",
+      "bytes": 4880,
+      "sha256": "b6b2200e3fb5aa352588b85adcbaebaa6e3a759621e67c9ed14f598996f381d6"
+    },
+    {
+      "path": "transitions/frame_0048.webp",
+      "bytes": 5226,
+      "sha256": "851bf1351ffa3f92fef84314c103bb692f2c40cf1706343daba7c847d1a05edd"
+    },
+    {
+      "path": "transitions/frame_0049.webp",
+      "bytes": 5476,
+      "sha256": "ea31b8a6ce6ecdbac20d6fe6be5cb695be1d58e76e343d55b8e4d7b3499f3acd"
+    },
+    {
+      "path": "transitions/frame_0050.webp",
+      "bytes": 5744,
+      "sha256": "2c7acfd94515d91e4c50a060b93d5f3b2b5552e72939c4d2b82d24aeb29f0b12"
+    },
+    {
+      "path": "transitions/frame_0051.webp",
+      "bytes": 6042,
+      "sha256": "12d71dde4e0e198daacd9d30cb0ee1d618ceb82ddfbcde1a19da162232b6d674"
+    },
+    {
+      "path": "transitions/frame_0052.webp",
+      "bytes": 6232,
+      "sha256": "4670bff48d06dc2cae41d55d36fd56f1bc8d423298f0aebd7a88595458e8c341"
+    },
+    {
+      "path": "transitions/frame_0053.webp",
+      "bytes": 6398,
+      "sha256": "845b4d133e6b1e8e87ca9d1bdee75cfab30d211254c770eac662198ea7df7a4c"
+    },
+    {
+      "path": "transitions/frame_0054.webp",
+      "bytes": 6500,
+      "sha256": "df428c5e487ad8a99089a830c549e6b848f098e3e5ed8dee7f82f06d12ec226e"
+    },
+    {
+      "path": "transitions/frame_0055.webp",
+      "bytes": 6990,
+      "sha256": "9de9352c62b6089f384a6747c29ae4fa39f30b3b5391fbf400b99969806f4e5f"
+    },
+    {
+      "path": "transitions/frame_0056.webp",
+      "bytes": 7496,
+      "sha256": "5ef5ae708bea15e69da4aa0df7cb3a40fe3c444d22e213261499fcd40bb5bf80"
+    },
+    {
+      "path": "transitions/frame_0057.webp",
+      "bytes": 8094,
+      "sha256": "09433ef7f0489fd1f6ea67c8dca4e69e77bac3730d3da4a707d860c2c7c11539"
+    },
+    {
+      "path": "transitions/frame_0058.webp",
+      "bytes": 8686,
+      "sha256": "061626ef910389c32df73945c5ebab7ca14ba6dccb8a1f6a95db3aecdb51f306"
+    },
+    {
+      "path": "transitions/frame_0059.webp",
+      "bytes": 9348,
+      "sha256": "79d325ac2d60a2774d8ef71457934c9bb45b6a4353bd77f638c4abeb2d61806c"
+    },
+    {
+      "path": "transitions/frame_0060.webp",
+      "bytes": 9882,
+      "sha256": "4975220183daa688b222c95be3fd1b7d5554c4c1072ff487a5cecae26eca93ab"
+    },
+    {
+      "path": "transitions/frame_0061.webp",
+      "bytes": 10324,
+      "sha256": "e3e65983e27219605ab8d8039334567a95292c03ad1e8e507f02fa4de71ad32c"
+    },
+    {
+      "path": "transitions/frame_0062.webp",
+      "bytes": 10806,
+      "sha256": "75f25b4b9465dc0c7d3605c6505966d84cf0007a9ad392e0c6bd47bd272903c2"
+    },
+    {
+      "path": "transitions/frame_0063.webp",
+      "bytes": 11354,
+      "sha256": "f156fe4dd5731081d795cbe4d923061415137f7a92bbe9c6e0b3c721c3fea46c"
+    },
+    {
+      "path": "transitions/frame_0064.webp",
+      "bytes": 12352,
+      "sha256": "644232671a5771dc2baf2ec98312f4fbc674b6d9223b3270c6d80b2fbe1a9733"
+    },
+    {
+      "path": "transitions/frame_0065.webp",
+      "bytes": 12574,
+      "sha256": "fefe040bead9ca30bf9c5eaff3eee19adbd688a5ed00fb2fd80503d5c9f9149a"
+    },
+    {
+      "path": "transitions/frame_0066.webp",
+      "bytes": 12618,
+      "sha256": "782638787d464eafce464af0d692f125d5baab7f021674497cc49a365d38ba7f"
+    },
+    {
+      "path": "transitions/frame_0067.webp",
+      "bytes": 12836,
+      "sha256": "eb0ec17e67a1d18a8aa48fda1fa78713f90c3022b003d58079bbd440b78cd8b3"
+    },
+    {
+      "path": "transitions/frame_0068.webp",
+      "bytes": 13900,
+      "sha256": "73edabbf70e042fcab0e0291eeb35ffecedd940df4f97d81a5ee376f1a573bae"
+    },
+    {
+      "path": "transitions/frame_0069.webp",
+      "bytes": 15006,
+      "sha256": "fe9a1ed386e1735c0f973a7178b8a15dbb3c2b68479728bc4250f8dcc8fd3bb2"
+    },
+    {
+      "path": "transitions/frame_0070.webp",
+      "bytes": 15936,
+      "sha256": "d52a66ab538a4fc03dfd54c99afd235cb5af20bc77c1ca86590fe3d8e9fb53b8"
+    },
+    {
+      "path": "transitions/frame_0071.webp",
+      "bytes": 16596,
+      "sha256": "d85e9e6f93640a6fdab6057d01f80b78fc3b445d5da6570c01c6b595eb5c24d8"
+    },
+    {
+      "path": "transitions/frame_0072.webp",
+      "bytes": 17908,
+      "sha256": "c96b721e37c3898d5b90ed54afac45571cfb034539a8c569985223f5ae52169e"
+    },
+    {
+      "path": "transitions/frame_0073.webp",
+      "bytes": 19380,
+      "sha256": "683684b373fef58e448866d533d487cde00652fc8c9751bc0252e6f99327517e"
+    },
+    {
+      "path": "transitions/frame_0074.webp",
+      "bytes": 20540,
+      "sha256": "d3edb7b7cb56f4cf2d7d28cf485ba76dbcdd921f964192fc0607b0f52db5b12c"
+    },
+    {
+      "path": "transitions/frame_0075.webp",
+      "bytes": 22064,
+      "sha256": "098958705da222a090503ac4168526d5b68fb100f8c87bbb7c26c773c89e9f8c"
+    },
+    {
+      "path": "transitions/frame_0076.webp",
+      "bytes": 23188,
+      "sha256": "cae48ecb707f5993bac6175a79d1d898adc6c870614228cf03c1debf65c56218"
+    },
+    {
+      "path": "transitions/frame_0077.webp",
+      "bytes": 24740,
+      "sha256": "16d4786674e0c2a93de96aeb330002fe34377e26689bc58a2b89c215b44a9996"
+    },
+    {
+      "path": "transitions/frame_0078.webp",
+      "bytes": 26422,
+      "sha256": "9fb5ad9f4d3874b41bd6eccecc133a0802f7614a3c14ea43990e6961ce68d5d8"
+    },
+    {
+      "path": "transitions/frame_0079.webp",
+      "bytes": 28552,
+      "sha256": "6065ff6db819153a18a485ed5d8b6e1d5f36ce8ca80799c8f634f3efcefc04bd"
+    },
+    {
+      "path": "transitions/frame_0080.webp",
+      "bytes": 30896,
+      "sha256": "047f1cbbb6f7c3bd27b4e759f85967e31293dcde51b5baad847ca3bb5a643ca1"
+    },
+    {
+      "path": "transitions/frame_0081.webp",
+      "bytes": 34158,
+      "sha256": "43ab69e47b1ace9c44edee6d75d4406277439e32a0a48f90959cc00449c47a25"
+    },
+    {
+      "path": "transitions/frame_0082.webp",
+      "bytes": 37678,
+      "sha256": "2f9634229765c1d160eeec4d9b69f776e9241ff0c1d7b8b24fd235d5596fa99a"
+    },
+    {
+      "path": "transitions/frame_0083.webp",
+      "bytes": 39374,
+      "sha256": "6d957b8cd5d81f052b9be9ab14cecf73b910f50f0491b546ae18d358a186d00c"
+    },
+    {
+      "path": "transitions/frame_0084.webp",
+      "bytes": 45238,
+      "sha256": "b60e656ae48da786ba4261d33b93a4d2f1396c97272a89ff8d14cde38577bf35"
+    },
+    {
+      "path": "transitions/frame_0085.webp",
+      "bytes": 51962,
+      "sha256": "54b0ef844c17bd2e5cd86435ce394c841b2c2c71fd76ab91dd0299547231dc61"
+    },
+    {
+      "path": "transitions/frame_0086.webp",
+      "bytes": 54814,
+      "sha256": "cf59da765e8b490505e6f3232227dca5d03d07593908f993bb0cfb861dde7b17"
+    },
+    {
+      "path": "transitions/frame_0087.webp",
+      "bytes": 55488,
+      "sha256": "da0257df8cf4c543a1daa1a685fb4d32dbc48b6d4d58fa0995e392bd0e4513d1"
+    },
+    {
+      "path": "transitions/frame_0088.webp",
+      "bytes": 55826,
+      "sha256": "c4c501888c4d11b109a5df9db26ddb776bc23bba64974c92fca48cd0f9b744d1"
+    },
+    {
+      "path": "transitions/frame_0089.webp",
+      "bytes": 56142,
+      "sha256": "224e9ef786a593207ff77266af40c28ce85eabb473f5cfd33a72f7468f89ca5e"
+    },
+    {
+      "path": "transitions/frame_0090.webp",
+      "bytes": 56388,
+      "sha256": "c23b6bffee118f967a6491c8accc63d8836861b3fdf991c1f76e05a75fca4957"
+    },
+    {
+      "path": "transitions/frame_0091.webp",
+      "bytes": 56550,
+      "sha256": "12be060983dd271f2dc213577a9b7b39c2a2686ef1c2dceb91aff965800e56cc"
+    },
+    {
+      "path": "transitions/frame_0092.webp",
+      "bytes": 55858,
+      "sha256": "ebeed0b20183ba0bebd1da4ddbeecddabbcdaad74c7ed38f5cf3e5f78714baa1"
+    },
+    {
+      "path": "transitions/frame_0093.webp",
+      "bytes": 56544,
+      "sha256": "e889459690151ee2e8c048e556f119a5f83299c36892f1f62975527f58284445"
+    },
+    {
+      "path": "transitions/frame_0094.webp",
+      "bytes": 56734,
+      "sha256": "138871c5d34cede314ea59bafa14432a2fbd2c53a38e30a1e6d127cb886de536"
+    },
+    {
+      "path": "transitions/frame_0095.webp",
+      "bytes": 56454,
+      "sha256": "9348cae7304b809244ecb13bd8dd2c590653efbc650b9674eb49d2cb24b21569"
+    }
+  ],
+  "modules": [
+    {
+      "path": "assets/al-ryum-3d-scroll-astra.js",
+      "bytes": 23727,
+      "sha256": "d7a92bfb9c79919f6cc6d2428f70e9303e7e40868c0500f355c4dfa3516347da",
+      "rafReferences": 1,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll-hero-astra-v2.js",
+      "bytes": 36057,
+      "sha256": "7596859f054feb54e155d7817eb2ea815bcf53d7ce9b3923dce9ce6e79b7fe0e",
+      "rafReferences": 4,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll-hero-astra-v3.js",
+      "bytes": 42939,
+      "sha256": "e61e6fc87a5522e1f93cb63f3fef257a95a71d4e6dd106de432683f416736514",
+      "rafReferences": 4,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll-hero-astra-v4.js",
+      "bytes": 44873,
+      "sha256": "fd1248a71d6e90b87866b4c0424d8c165b4c1f4408d653f6ac14d5122dfc54c8",
+      "rafReferences": 4,
+      "mutationObserverReferences": 1,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll-hero-astra.js",
+      "bytes": 38929,
+      "sha256": "6cec2b4ea4e4ab36a9c42ef7a42e5522bb10c0e943892568995ea42767ce975e",
+      "rafReferences": 4,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll-minimax.js",
+      "bytes": 24065,
+      "sha256": "9539c28514d8555e559a9d515361c4b048ecc63c3576066a20bd7921aa316963",
+      "rafReferences": 2,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-3d-scroll.js",
+      "bytes": 17532,
+      "sha256": "31d19e3d8ad3cc06a45c7ecf62ef1bfa55670eec9a8fb17e3fbdc0f3e64d6090",
+      "rafReferences": 2,
+      "mutationObserverReferences": 0,
+      "assetReferences": [
+        "/assets/three.min.js",
+        "/assets/al-ryum-3d-scroll.js"
+      ]
+    },
+    {
+      "path": "assets/al-ryum-cinematic-astra.js",
+      "bytes": 13992,
+      "sha256": "49b1815cdede61b5f2aad43e5e8097707edd8b58993b28c62b16c09254ba5f8e",
+      "rafReferences": 2,
+      "mutationObserverReferences": 1,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-cinematic.js",
+      "bytes": 7828,
+      "sha256": "63ce96fd29fea0a229c8687557d97a1edfea4f7f93371b387d85fdd1cdfabe6c",
+      "rafReferences": 1,
+      "mutationObserverReferences": 3,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-client-marquee-astra.js",
+      "bytes": 14481,
+      "sha256": "e58dbab5dcb4c00bf5941bc169ea0299c7fd137c80f1cfd7cb10fd72ede3ffe5",
+      "rafReferences": 1,
+      "mutationObserverReferences": 1,
+      "assetReferences": [
+        "/assets/clients/masdar_nobg.png",
+        "/assets/clients/adnoc_nobg.png",
+        "/assets/clients/tdic_nobg.png",
+        "/assets/clients/aldar_nobg.png",
+        "/assets/clients/mubadala_nobg.png",
+        "/assets/clients/abudhabi-municipality_nobg.png",
+        "/assets/clients/damac_nobg.png",
+        "/assets/clients/meraas_nobg.png",
+        "/assets/clients/emaar_nobg.png",
+        "/assets/clients/nakheel_nobg.png",
+        "/assets/clients/tecom_nobg.png",
+        "/assets/clients/fewa_clean.png"
+      ]
+    },
+    {
+      "path": "assets/al-ryum-client-marquee.js",
+      "bytes": 9029,
+      "sha256": "29cc4b4b3e8d44c958a39f75291af7578d914a1b8beb4f1f3de2801478e45f14",
+      "rafReferences": 2,
+      "mutationObserverReferences": 3,
+      "assetReferences": [
+        "/assets/clients/masdar_nobg.png",
+        "/assets/clients/adnoc_nobg.png",
+        "/assets/clients/tdic_nobg.png",
+        "/assets/clients/aldar_nobg.png",
+        "/assets/clients/mubadala_nobg.png",
+        "/assets/clients/abudhabi-municipality_nobg.png",
+        "/assets/clients/damac_nobg.png",
+        "/assets/clients/meraas_nobg.png",
+        "/assets/clients/emaar_nobg.png",
+        "/assets/clients/nakheel_nobg.png",
+        "/assets/clients/tecom_nobg.png",
+        "/assets/clients/fewa_clean.png"
+      ]
+    },
+    {
+      "path": "assets/al-ryum-earth-module-astra.js",
+      "bytes": 18499,
+      "sha256": "4ee433c9f59e81d324a9b98ffc135d6ba05754d8fc88d56a129e8b6f7a46d550",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-earth-module.js",
+      "bytes": 8034,
+      "sha256": "f529f1bb24ed853d381f813fef75a34c22ae7038ac5ffd0d6da6f36aaa14614c",
+      "rafReferences": 2,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-final-cinematic-astra.js",
+      "bytes": 7451,
+      "sha256": "f54d8edb77ff5d11f03c1686a2708f9440440ed518f16defaf54c6d28a54aa4b",
+      "rafReferences": 1,
+      "mutationObserverReferences": 1,
+      "assetReferences": [
+        "/assets/hero-0817-astra/frame_",
+        "/assets/hero-mist.mp4"
+      ]
+    },
+    {
+      "path": "assets/al-ryum-gcc-globe.js",
+      "bytes": 1550560,
+      "sha256": "20e2c84e5710f4ba619a0ade24d203ea28ccd03bc97e123f5c248569f0ca99bb",
+      "rafReferences": 5,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-header-dark.css",
+      "bytes": 4902,
+      "sha256": "0e9d86ea3b7645f1cb9498dbe9b865291c7e3fa651094db8d36847a0e6bc6bba",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-hero-mist-astra.js",
+      "bytes": 2384,
+      "sha256": "98a84b7b2f7db0cf9f6ecef52e394ba48d8b650023e433669832ea623c7d728a",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": [
+        "/assets/hero-mist.mp4"
+      ]
+    },
+    {
+      "path": "assets/al-ryum-icreon-projects.js",
+      "bytes": 626145,
+      "sha256": "3c1b0f352cc895ec555d52aa4925306eb960c9ce7eeacedf2a33202274db0618",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": [
+        "/assets/concepts/abu-dhabi-corniche-concept.webp",
+        "/assets/concepts/zayed-national-museum-concept.jpg",
+        "/assets/concepts/pearl-jumeirah-concept.webp",
+        "/assets/concepts/louvre-abu-dhabi-concept.jpg",
+        "/assets/concepts/legoland-concept.webp",
+        "/assets/concepts/madinat-zayed-concept.webp",
+        "/assets/concepts/trump-international-golf-concept.webp",
+        "/assets/concepts/marsa-al-arab-kempinski-concept.webp",
+        "/assets/concepts/meydan-racecourse-concept.webp",
+        "/assets/concepts/la-mer-water-park-concept.webp",
+        "/assets/concepts/masdar-central-park-concept.webp",
+        "/assets/concepts/dubai-hills-golf-grove-concept.webp"
+      ]
+    },
+    {
+      "path": "assets/al-ryum-mist-open-astra.js",
+      "bytes": 6114,
+      "sha256": "34d5bd59f65d57eb68f447362c5f611ac7bd1e401ad566a360a643f728ec9a39",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-mist-screen-astra.js",
+      "bytes": 4774,
+      "sha256": "5b36b1d513fa89fa066cae46d0492168f9653eb9cc4cb661506c516837e55614",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": [
+        "/assets/seamless-mist-loop.mp4",
+        "/assets/seamless-mist-loop-poster.jpg"
+      ]
+    },
+    {
+      "path": "assets/al-ryum-motion-astra.js",
+      "bytes": 17142,
+      "sha256": "b6393ae47f2349cd09e2c824bb872601c0cc3d7c20ef682651a699bc7debc1d2",
+      "rafReferences": 4,
+      "mutationObserverReferences": 2,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-motion.js",
+      "bytes": 9165,
+      "sha256": "24e51e2cd513ec3f4303b90316c93a89eec5a5efd4e6fa893e40625f653dadb3",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-project-detail-astra.js",
+      "bytes": 38435,
+      "sha256": "d66836c86deeb476cbb64cba8b596dc7fbbd3183e5bf91a2434c14d043142a7c",
+      "rafReferences": 1,
+      "mutationObserverReferences": 1,
+      "assetReferences": [
+        "/assets/projects-data.json",
+        "/assets/project-profiles.json"
+      ]
+    },
+    {
+      "path": "assets/al-ryum-project-detail.js",
+      "bytes": 9358,
+      "sha256": "8650fd13c76be1174ed1f862ec998184c6aad3188d1efa3a8c2f130a89255db8",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": [
+        "/assets/projects-data.json"
+      ]
+    },
+    {
+      "path": "assets/al-ryum-project-films-astra.css",
+      "bytes": 11523,
+      "sha256": "60ea89f6ab87792e8f48f4109dc9b70562d131eea0cc06362384623c44f7520e",
+      "rafReferences": 1,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-project-films-astra.js",
+      "bytes": 30796,
+      "sha256": "8d256a8f5d51f3b5ee5a566e99cfc90015f2fab71d49fea86cd4eb0cc66e0741",
+      "rafReferences": 5,
+      "mutationObserverReferences": 2,
+      "assetReferences": [
+        "/assets/projects/warner-bros/frames/frame_",
+        "/assets/projects/emirates/frames/frame_",
+        "/assets/projects/louvre/frames/frame_",
+        "/assets/frames/zayed/frame_"
+      ]
+    },
+    {
+      "path": "assets/al-ryum-project-films.css",
+      "bytes": 8452,
+      "sha256": "d0ffd86dd35df0cc880d3525ad48233ee038a016c34e1739eb8263fe1cb8d14d",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-project-films.js",
+      "bytes": 25486,
+      "sha256": "45674691dd77e31a9e8793771c84d291d81ff5131f38c5f957c6e31bd713243e",
+      "rafReferences": 4,
+      "mutationObserverReferences": 2,
+      "assetReferences": [
+        "/assets/projects/warner-bros/frames/frame_",
+        "/assets/projects/emirates/frames/frame_",
+        "/assets/projects/louvre/frames/frame_",
+        "/assets/frames/zayed/frame_"
+      ]
+    },
+    {
+      "path": "assets/al-ryum-projects-index.css",
+      "bytes": 13875,
+      "sha256": "899d66ff8579fa4e187069722a3d707a40d9c9693463c1348c984c799dce765a",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-projects-index.js",
+      "bytes": 1760,
+      "sha256": "90f09dcdd419ce7b60102aa957fadfa40d649516401d644794016a02cab88fdd",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-scroll-spy-astra.js",
+      "bytes": 17390,
+      "sha256": "2e6b4c2d319fa384f838e57728893209427a3f3d36b8680349348a6d07d97931",
+      "rafReferences": 2,
+      "mutationObserverReferences": 2,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-scroll-spy.css",
+      "bytes": 6390,
+      "sha256": "7b1385eecc50916209fdbfdcda5cdc8c04fa57d6bf283b9f7495fc149fd8d15e",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-scroll-spy.js",
+      "bytes": 8293,
+      "sha256": "6487632a83e5f94f3f4c086499665fdea49708515b363a4b45cf3306a64bb8fa",
+      "rafReferences": 1,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-services-3d.css",
+      "bytes": 8082,
+      "sha256": "0c311b0228648a4577d18fb1751b7607dd56ee0cc72890bbebb1523cc3692f37",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-services-3d.js",
+      "bytes": 19840,
+      "sha256": "41d714c0d75e6aef67cb98922eff851d388d659171161891ddf74ba29be1f5d0",
+      "rafReferences": 1,
+      "mutationObserverReferences": 1,
+      "assetReferences": [
+        "/assets/services/"
+      ]
+    },
+    {
+      "path": "assets/al-ryum-theme-toggle.js",
+      "bytes": 3462,
+      "sha256": "c0dda982da79b67e0790f4fc94c406f538d15f72878dc73f0d964ecf9f952083",
+      "rafReferences": 0,
+      "mutationObserverReferences": 1,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/al-ryum-topmist-astra.js",
+      "bytes": 14397,
+      "sha256": "1c292f5ea57f5419f20b417aba4fc5bfea1bb3fe5e2a9354e3c84ae4de76d15c",
+      "rafReferences": 0,
+      "mutationObserverReferences": 2,
+      "assetReferences": [
+        "/assets/seamless-mist-loop.mp4"
+      ]
+    },
+    {
+      "path": "assets/fonts/manrope.css",
+      "bytes": 11634,
+      "sha256": "52c6a62eae126234534408ee910ba26b581540c78be14754386b42d1dff2a199",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/fonts/montserrat.css",
+      "bytes": 10206,
+      "sha256": "e79ee435ec4256bae417a2aa560cf1bca8cf4d417d2dda460826d40c66d85894",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/global-reach.css",
+      "bytes": 12446,
+      "sha256": "f982501b3d6078eba37e38ee9df32f7464194c54b3ac8525743e76979ccc8352",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/icreon-projects-astra.css",
+      "bytes": 14087,
+      "sha256": "00c89c2228a98e0fff76adce10a38e0a88523297de22f641dfcfb32f8f9810eb",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/icreon-projects.css",
+      "bytes": 27205,
+      "sha256": "8f986c9f4c1cabba650b65222d3fc3638f2cd3fec0ec025dd30edb649fc197e5",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/index-DKJEREcW.css",
+      "bytes": 100953,
+      "sha256": "83135d560b3f6256283e598fb26f6ca5eefb6e254ea2a3fd46a7f948a37c763a",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/index-v10-projectscrub-astra.js",
+      "bytes": 13052,
+      "sha256": "32c5c6a938ae330fa3253921c69c604af7ffa02cb0cd98af0db7dbd4f787d3ec",
+      "rafReferences": 3,
+      "mutationObserverReferences": 1,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/index-v10-projectscrub.js",
+      "bytes": 7670,
+      "sha256": "6366935235a3a454be2510c97ef5079c332db191ff7c765f114b5a94af5661b3",
+      "rafReferences": 1,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/index-v10-safe-loader-astra.js",
+      "bytes": 4939,
+      "sha256": "1e189aa78a394808df918e2b46cfbc8ffc02c5f7643e6f1f7f7e8080d68c9fc3",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": [
+        "/assets/index-v10-timeline.js?v=93"
+      ]
+    },
+    {
+      "path": "assets/index-v10-safe-loader.js",
+      "bytes": 441,
+      "sha256": "aa44e96fdcd9077890add5123d1c6e48dc40339cdb3391faa32d6de8da9a0e4e",
+      "rafReferences": 0,
+      "mutationObserverReferences": 0,
+      "assetReferences": [
+        "/assets/index-v10-timeline.js?v=93"
+      ]
+    },
+    {
+      "path": "assets/index-v10-scrub-astra.js",
+      "bytes": 14915,
+      "sha256": "a563a9e7c03c517e6747478e7c764d613aabd83e7439a8f5e05ae7aa2653e5ec",
+      "rafReferences": 1,
+      "mutationObserverReferences": 1,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/index-v10-scrub.js",
+      "bytes": 6480,
+      "sha256": "88cd21b13e965b29e2a1d64cd6359ae50a8115a51015a4b1b98ff0476efaf346",
+      "rafReferences": 1,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/index-v10-timeline.js",
+      "bytes": 611603,
+      "sha256": "1848bed9fde9ae061594a3dc96d0aa4c66b2df937ba238be846bf67342960d69",
+      "rafReferences": 5,
+      "mutationObserverReferences": 1,
+      "assetReferences": [
+        "/assets/hero-garden.mp4",
+        "/assets/arc-logo.png",
+        "/assets/hero-garden-full.mp4",
+        "/assets/real/service-engineering-new.jpg",
+        "/assets/real/service-nursery-new.jpg",
+        "/assets/real/service-construction-new.jpg",
+        "/assets/real/service-heavy-equip-new.jpg",
+        "/assets/real/service-procurement-new.jpg",
+        "/assets/real/service-project-mgmt-new.jpg",
+        "/assets/real/service-steel-new.jpg",
+        "/assets/solutions/svc-engineering-design-concept-feasibility.webp",
+        "/assets/real/engineering-detailed-engineering.jpg",
+        "/assets/solutions/svc-engineering-design-landscape-architecture.webp",
+        "/assets/solutions/svc-engineering-design-design-management.webp",
+        "/assets/concepts/zayed-national-museum-concept.jpg",
+        "/assets/concepts/masdar-central-park-concept.webp",
+        "/assets/concepts/louvre-abu-dhabi-concept.jpg",
+        "/assets/real/nurseries/plant-propagation-nursery.jpg?v=20260911b",
+        "/assets/solutions/dubai-truck-drivers.webp",
+        "/assets/solutions/svc-nurseries-greenhouse-operations.webp",
+        "/assets/solutions/svc-nurseries-acclimatisation.webp",
+        "/assets/real/journey-2020-expo-dubai.png",
+        "/assets/real/gallery-81.jpg",
+        "/assets/concepts/al-wathba-park-concept.webp",
+        "/assets/real/about-new/uae_rooftop_hvac_plant.jpg",
+        "/assets/solutions/svc-operations-landscape-maintenance.webp",
+        "/assets/solutions/svc-operations-irrigation-management.webp",
+        "/assets/solutions/svc-operations-sports-turf-care.webp",
+        "/assets/real/gallery-47.jpg",
+        "/assets/concepts/abu-dhabi-corniche-concept.webp",
+        "/assets/real/gallery-35.jpg",
+        "/assets/real/gallery-57.jpg",
+        "/assets/concepts/madinat-zayed-concept.webp",
+        "/assets/concepts/al-shamkah-concept.webp",
+        "/assets/concepts/al-falah-event-plaza-concept.webp",
+        "/assets/concepts/al-falah-central-circle-concept.webp",
+        "/assets/concepts/mbz-parks-concept.webp",
+        "/assets/concepts/legoland-concept.webp",
+        "/assets/concepts/motiongate-concept.webp",
+        "/assets/concepts/akoya-concept.webp",
+        "/assets/concepts/dubai-production-city-concept.webp",
+        "/assets/concepts/akoya-golf-clubhouse-concept.webp",
+        "/assets/concepts/al-qala-vvip-area-concept.webp",
+        "/assets/concepts/khalifa-city-public-realm-concept.webp",
+        "/assets/concepts/yas-saadiyat-island-streetscapes-concept.webp",
+        "/assets/concepts/recreational-park-landscaping-works-concept.webp",
+        "/assets/concepts/20-playgrounds-abu-dhabi-main-land-phase-1-concept.webp",
+        "/assets/concepts/new-corniche-road-concept.webp",
+        "/assets/concepts/saadiyat-expressway-early-landscape-works-c40-concept.webp",
+        "/assets/concepts/central-park-f1-car-park-concept.webp",
+        "/assets/concepts/emirates-palace-concept.webp",
+        "/assets/concepts/the-palm-jumeirah-concept.webp",
+        "/assets/concepts/cw-630-2007-concept.webp",
+        "/assets/concepts/al-dhabiya-maritime-residential-complex-concept.webp",
+        "/assets/solutions/svc-pmv-earthmoving-excavation.webp",
+        "/assets/solutions/svc-pmv-specialist-landscaping-equipment.webp",
+        "/assets/solutions/svc-pmv-fleet-maintenance.webp",
+        "/assets/real/gallery-54.jpg",
+        "/assets/real/master/saadiyat-expressway-new.jpg",
+        "/assets/real/gallery-82.jpg",
+        "/assets/solutions/procurement-samples-table.webp",
+        "/assets/solutions/svc-procurement-plant-equipment-supply.webp",
+        "/assets/concepts/masdar-central-park-concept.webp?v=20260911b",
+        "/assets/real/legoland-hd-castle.jpg",
+        "/assets/solutions/svc-project-mgmt-programme-planning.webp",
+        "/assets/real/gallery-46.jpg",
+        "/assets/solutions/svc-project-mgmt-site-management.webp",
+        "/assets/solutions/svc-steel-structural-steel.webp",
+        "/assets/real/service-architectural-metalwork.jpg",
+        "/assets/solutions/svc-steel-site-installation.webp",
+        "/assets/solutions/svc-steel-protective-finishing.webp",
+        "/assets/real/gallery-44.jpg",
+        "/assets/real/journey-1989-founded.png",
+        "/assets/real/gallery-65.jpg",
+        "/assets/concepts/pearl-jumeirah-concept.webp?v=20260911b",
+        "/assets/real/ruwais-golf-course.jpg",
+        "/assets/projects/warner-bros/frames/frame_0001.jpg",
+        "/assets/real/about-new/abu_dhabi_promenade_sunset.jpg",
+        "/assets/real/about-new/desert_logistics_yard.jpg",
+        "/assets/real/about-new/luxury_villa_courtyard_1.jpg",
+        "/assets/real/about-new/desert_resort_golden_hour.jpg",
+        "/assets/real/about-new/metal_fabrication_workshop.jpg",
+        "/assets/real/about-new/uae_nursery_desert.jpg",
+        "/assets/real/about-new/safety_station_uae_construction.jpg",
+        "/assets/real/about-new/mep_plant_room_uae.jpg",
+        "/assets/concepts/trump-international-golf-concept.webp",
+        "/assets/real/about-new/luxury_water_park_uae.jpg",
+        "/assets/real/about-new/uae_highway_interchange_dawn.jpg",
+        "/assets/real/about-new/desert_construction_sustainability.jpg",
+        "/assets/real/journey-1997-diversification.jpg",
+        "/assets/real/uae-expansion.jpg",
+        "/assets/concepts/marsa-al-arab-kempinski-concept.webp",
+        "/assets/real/journey-2011-international-expansion.png",
+        "/assets/real/journey-2026-island.jpg",
+        "/assets/concepts/pearl-jumeirah-concept.webp",
+        "/assets/concepts/meydan-racecourse-concept.webp",
+        "/assets/concepts/la-mer-water-park-concept.webp",
+        "/assets/concepts/dubai-hills-golf-grove-concept.webp",
+        "/assets/concepts/pipeline-treated-wastewater-concept.webp",
+        "/assets/concepts/DMT_Parks_-_MBZ_Parks_5.jpg",
+        "/assets/real/story-landscaping-award-uae.jpg",
+        "/assets/real/story-sustainable-construction-uae.jpg",
+        "/assets/real/story-partnership-tech-uae.jpg",
+        "/assets/real/gallery-28.jpg",
+        "/assets/real/gallery-14.jpg",
+        "/assets/real/electrical-mechwork.jpg",
+        "/assets/real/gallery-59.jpg",
+        "/assets/real/master/iraqi-embassy-new.jpg",
+        "/assets/real/master/ruwais-central-park.jpg",
+        "/assets/real/gallery-23.jpg",
+        "/assets/real/gallery-01.jpg",
+        "/assets/real/gallery-48.jpg",
+        "/assets/real/gallery-61.jpg",
+        "/assets/real/gallery-34.jpg",
+        "/assets/real/gallery-60.jpg",
+        "/assets/real/gallery-87.jpg",
+        "/assets/real/gallery-67.jpg",
+        "/assets/real/gallery-32.jpg",
+        "/assets/real/gallery-00.jpg",
+        "/assets/real/gallery-40.jpg",
+        "/assets/real/gallery-05.jpg",
+        "/assets/real/gallery-31.jpg",
+        "/assets/real/gallery-18.jpg",
+        "/assets/real/gallery-17.jpg",
+        "/assets/real/gallery-39.jpg",
+        "/assets/real/gallery-04.jpg",
+        "/assets/real/gallery-30.jpg",
+        "/assets/real/gallery-72.jpg",
+        "/assets/real/gallery-10.jpg",
+        "/assets/real/gallery-38.jpg",
+        "/assets/real/gallery-91.jpg",
+        "/assets/real/gallery-06.jpg",
+        "/assets/real/gallery-90.jpg",
+        "/assets/real/gallery-68.jpg",
+        "/assets/real/gallery-75.jpg",
+        "/assets/real/gallery-16.jpg",
+        "/assets/real/contact-hero.webp",
+        "/assets/real/gallery-42.jpg"
+      ]
+    },
+    {
+      "path": "assets/three.core.js",
+      "bytes": 1408569,
+      "sha256": "283be43b2229e15f46dac84cd19354ede5f06cac7ffb185e765cfcfb2c1eec90",
+      "rafReferences": 1,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/three.min.js",
+      "bytes": 668024,
+      "sha256": "7b1c5d75b28d9de15042e2b374f83566d8c7146697af8fdeb4558b0fb528a585",
+      "rafReferences": 2,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "assets/three.module.js",
+      "bytes": 631039,
+      "sha256": "d835eab0b3bca3fdfd51e2ce7d06911f4a089b08db73cc3cd70fe5e3005a623f",
+      "rafReferences": 3,
+      "mutationObserverReferences": 0,
+      "assetReferences": []
+    },
+    {
+      "path": "index-astra.html",
+      "bytes": 10243,
+      "sha256": "bdf9999d6445d18ea9e603063b641ea45392cfb3d50b469d8d23f797eaf74169",
+      "rafReferences": 2,
+      "mutationObserverReferences": 0,
+      "assetReferences": [
+        "/assets/al-ryum-final-cinematic-astra.js?v=1",
+        "/assets/index-v10-safe-loader-astra.js?v=62",
+        "/assets/index-DKJEREcW.css",
+        "/assets/global-reach.css?v=20260830-nomap2",
+        "/assets/icreon-projects-astra.css",
+        "/assets/index-v10-projectscrub-astra.js",
+        "/assets/al-ryum-motion-astra.js",
+        "/assets/al-ryum-cinematic-astra.js?v=20260830-notitle",
+        "/assets/al-ryum-client-marquee-astra.js",
+        "/assets/al-ryum-gcc-globe.js",
+        "/assets/al-ryum-icreon-projects.js",
+        "/assets/al-ryum-project-films-astra.css?v=20260901-fix",
+        "/assets/al-ryum-project-films-astra.js?v=final4",
+        "/assets/icreon-projects-astra.css?v=20260831-projectdetail",
+        "/assets/al-ryum-project-detail-astra.js?v=20260901-lenis",
+        "/assets/al-ryum-scroll-spy.css?v=4",
+        "/assets/al-ryum-scroll-spy.js?v=4"
+      ]
+    },
+    {
+      "path": "index.html",
+      "bytes": 10809,
+      "sha256": "b7f6ea4c11aa54e901030d91bc0544f6c10541b84ea0d0db2298b0c33229726a",
+      "rafReferences": 2,
+      "mutationObserverReferences": 0,
+      "assetReferences": [
+        "/assets/al-ryum-final-cinematic-astra.js?v=1",
+        "/assets/index-v10-safe-loader.js?v=62",
+        "/assets/index-DKJEREcW.css",
+        "/assets/global-reach.css?v=20260830-nomap2",
+        "/assets/icreon-projects.css",
+        "/assets/index-v10-projectscrub.js",
+        "/assets/al-ryum-motion.js",
+        "/assets/al-ryum-cinematic.js?v=20260830-notitle",
+        "/assets/al-ryum-client-marquee.js",
+        "/assets/al-ryum-gcc-globe.js",
+        "/assets/al-ryum-icreon-projects.js?v=20260911-groups",
+        "/assets/al-ryum-project-films-astra.css?v=nav-restored1",
+        "/assets/al-ryum-project-films-astra.js?v=final4",
+        "/assets/icreon-projects.css?v=20260911-groups",
+        "/assets/al-ryum-projects-index.css?v=2",
+        "/assets/al-ryum-services-3d.css?v=1",
+        "/assets/al-ryum-header-dark.css?v=1",
+        "/assets/al-ryum-projects-index.js?v=1",
+        "/assets/al-ryum-services-3d.js?v=1",
+        "/assets/al-ryum-theme-toggle.js?v=1",
+        "/assets/al-ryum-project-detail-astra.js?v=ship2",
+        "/assets/al-ryum-scroll-spy.css?v=4",
+        "/assets/al-ryum-scroll-spy.js?v=4"
+      ]
+    }
+  ]
+}

@@ -33,6 +33,7 @@
   var active = false;
   var panelOpen = false;
   var fullView = false;
+  var panelBeforeFull = true;   // restore the details sheet when full view ends
   var hovering = false;
   var autoplayTimer = null;
   var AUTOPLAY_MS = 5000;   // matches the reference site's data-autoplaytime
@@ -273,11 +274,13 @@
     overlay.addEventListener("click", function (event) {
       var target = event.target instanceof Element ? event.target : null;
       if (!target) return;
-      // With the details sheet open, any click outside it closes the sheet — and only the sheet.
+      // With the details sheet open, a click on the photograph or backdrop closes the sheet —
+      // and only the sheet. The overlay's own controls still act on the first click.
       if (panelOpen) {
-        if (target.closest("[data-ar-pd-sheet]")) {
-          // clicks inside the sheet fall through to their own handler
-        } else {
+        var control = target.closest(
+          "[data-ar-pd-sheet], .ar-pd-close, [data-ar-pd-full], [data-ar-pd-prev], [data-ar-pd-next], [data-ar-pd-more], [data-ar-pd-image-index]"
+        );
+        if (!control) {
           setPanel(false);
           return;
         }
@@ -321,7 +324,11 @@
   }
 
   function setFullView(on) {
-    fullView = !!on;
+    var next = !!on;
+    // Full view is the photograph alone: tuck the details away, and bring them back after.
+    if (next && !fullView) { panelBeforeFull = panelOpen; if (panelOpen) setPanel(false); }
+    else if (!next && fullView && panelBeforeFull) applyPanel(true);
+    fullView = next;
     if (!overlay) return;
     overlay.classList.toggle("is-full", fullView);
     syncSideControls();
@@ -652,8 +659,11 @@
       if (fallback) currentList.push(fallback);
     }
     currentIndex = 0;
-    applyPanel(false);
+    // Every project opens with its full details showing (no history step of its own,
+    // so Back still leaves the project in one press).
+    fullView = false;
     setFullView(false);
+    applyPanel(true);
     renderFilm();
     showImage(currentList[0]);
     updateGalleryState();
@@ -794,6 +804,9 @@
       entry = { returnUrl: location.pathname + location.search + location.hash };
     }
     originalPush.call(history, stateWithEntry(entry), "", path);
+    // Record the new URL: without this, Back to the previous project looked like a
+    // same-URL (details-sheet) step and the old project stayed on screen.
+    lastHref = location.href;
     syncRoute();
   }
 

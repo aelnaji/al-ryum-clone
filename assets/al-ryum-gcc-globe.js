@@ -33621,10 +33621,12 @@ void main() {
 
   // client/src/components/GccGlobe.tsx
   var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
+  // Earth imagery: NASA Blue Marble (day) and Black Marble (night lights), public domain,
+  // self-hosted — see assets/globe/SOURCES.txt. Equirectangular, longitude -180 at the left
+  // edge, which is exactly how SphereGeometry lays out its UVs and how toVector() maps.
   var earthAssets = {
-    day: "https://cdn.prod.website-files.com/6a4002cce4ba0d72bb35a7fc/6a418ffc9ea227a7c2e11171_day_2.webp",
-    night: "https://cdn.prod.website-files.com/6a4002cce4ba0d72bb35a7fc/6a418ffc55c6edeb67368418_night_2.webp",
-    bump: "https://cdn.prod.website-files.com/6a4002cce4ba0d72bb35a7fc/6a418ffc495223e0854f7b13_clouds_2.webp"
+    day: "/assets/globe/earth-day.webp",
+    night: "/assets/globe/earth-night.webp"
   };
   var cities = [
     { name: "ABU DHABI", lat: 24.4539, lon: 54.3773 },
@@ -33637,6 +33639,13 @@ void main() {
     const phi = (90 - lat) * Math.PI / 180;
     const theta = (lon + 180) * Math.PI / 180;
     return new Vector3(-radius * Math.sin(phi) * Math.cos(theta), radius * Math.cos(phi), radius * Math.sin(phi) * Math.sin(theta));
+  }
+  // Earth rotation (Euler XYZ) that turns a city toward the camera: Y brings its longitude
+  // to the front, X tilts its latitude to sit a little above the globe's visible crown.
+  var FACE_LAT = 14;
+  function facing(city) {
+    const theta = (city.lon + 180) * Math.PI / 180;
+    return { x: (city.lat - FACE_LAT) * Math.PI / 180, y: Math.PI / 2 - theta };
   }
   function GccGlobe({ focus }) {
     const canvasRef = (0, import_react.useRef)(null);
@@ -33651,7 +33660,7 @@ void main() {
       if (!canvas || !stage) return;
       const compact = stage.getBoundingClientRect().width < 640;
       const renderer = new WebGLRenderer({ canvas, alpha: true, antialias: true, powerPreference: "high-performance" });
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, compact ? 1.5 : 1));
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, compact ? 1.5 : 1.25));
       renderer.outputColorSpace = SRGBColorSpace;
       renderer.toneMapping = ACESFilmicToneMapping;
       renderer.toneMappingExposure = 1.16;
@@ -33665,10 +33674,11 @@ void main() {
       const earth = new Group();
       earth.position.set(0, compact ? -0.32 : -0.46, 0);
       earth.scale.setScalar(1.36);
-      earth.rotation.set(0.04, 3.73, 0);
+      const first = facing(cities[0]);
+      earth.rotation.set(first.x, first.y, 0);
       scene.add(earth);
-      const globeGeometry = new SphereGeometry(1, 64, 64);
-      const earthMaterial = new MeshStandardMaterial({ color: 10727357, roughness: 0.3, metalness: 0.02, emissive: 725016, emissiveIntensity: 0.95, transparent: true });
+      const globeGeometry = new SphereGeometry(1, 96, 64);
+      const earthMaterial = new MeshStandardMaterial({ color: 10727357, roughness: 0.42, metalness: 0.02, emissive: 725016, emissiveIntensity: 0.95, transparent: true });
       const globe = new Mesh(globeGeometry, earthMaterial);
       earth.add(globe);
       const atmosphereMaterial = new MeshBasicMaterial({ color: 4678814, side: BackSide, transparent: true, opacity: 0.08, depthWrite: false });
@@ -33679,6 +33689,7 @@ void main() {
       const loadTexture = (url, onLoad) => {
         textures.load(url, (texture) => {
           texture.colorSpace = SRGBColorSpace;
+          texture.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
           onLoad(texture);
           earthMaterial.needsUpdate = true;
         });
@@ -33689,14 +33700,10 @@ void main() {
       loadTexture(earthAssets.night, (texture) => {
         earthMaterial.emissiveMap = texture;
       });
-      textures.load(earthAssets.bump, (texture) => {
-        earthMaterial.bumpMap = texture;
-        earthMaterial.bumpScale = 0.06;
-        earthMaterial.needsUpdate = true;
-      });
       const network = new Group();
       earth.add(network);
       const rings = [];
+      const points = [];
       const hoverTargets = [];
       const raycaster = new Raycaster();
       const pointer = new Vector2();
@@ -33716,19 +33723,17 @@ void main() {
         const point = new Mesh(new SphereGeometry(9e-3, 14, 14), new MeshBasicMaterial({ color: 16121855 }));
         point.position.y = 0.08;
         marker.add(point);
-        marker.userData.offset = index * 0.72;
         network.add(marker);
         rings.push(ring);
-        if (index < 3) {
-          const hitTarget = new Mesh(
-            new SphereGeometry(0.05, 12, 12),
-            new MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false })
-          );
-          hitTarget.position.y = 0.08;
-          hitTarget.userData.city = city.name;
-          marker.add(hitTarget);
-          hoverTargets.push(hitTarget);
-        }
+        points.push(point);
+        const hitTarget = new Mesh(
+          new SphereGeometry(0.05, 12, 12),
+          new MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false })
+        );
+        hitTarget.position.y = 0.08;
+        hitTarget.userData.city = city.name;
+        marker.add(hitTarget);
+        hoverTargets.push(hitTarget);
       });
       const route = (from, to) => {
         const start = toVector(from.lat, from.lon, 1.016);
@@ -33741,11 +33746,15 @@ void main() {
       route(cities[0], cities[3]);
       route(cities[0], cities[4]);
       route(cities[1], cities[2]);
+      let width = 1;
+      let height = 1;
       const resize = () => {
         const bounds = stage.getBoundingClientRect();
-        camera.aspect = bounds.width / bounds.height;
+        width = Math.max(1, bounds.width);
+        height = Math.max(1, bounds.height);
+        camera.aspect = width / height;
         camera.updateProjectionMatrix();
-        renderer.setSize(bounds.width, bounds.height, false);
+        renderer.setSize(width, height, false);
       };
       const resizeObserver = new ResizeObserver(resize);
       resizeObserver.observe(stage);
@@ -33776,22 +33785,65 @@ void main() {
       };
       stage.addEventListener("pointermove", showHoverLabel);
       stage.addEventListener("pointerleave", hideHoverLabel);
+      // Labels ride their pins: each frame the pin is projected to the screen and the
+      // matching .marker-label is moved there; it shows only for the active city and only
+      // while that city faces the camera.
+      const pinWorld = new Vector3();
+      const centre = new Vector3();
+      const toCamera = new Vector3();
+      const ndc = new Vector3();
+      const placeLabels = (activeIndex) => {
+        const labels = stage.querySelectorAll(".marker-label");
+        if (!labels.length) return;
+        earth.getWorldPosition(centre);
+        points.forEach((point, index) => {
+          const label = labels[index];
+          if (!label) return;
+          point.getWorldPosition(pinWorld);
+          toCamera.copy(camera.position).sub(pinWorld);
+          const facingCamera = pinWorld.clone().sub(centre).normalize().dot(toCamera.normalize());
+          ndc.copy(pinWorld).project(camera);
+          const x = (ndc.x + 1) / 2 * width;
+          const y = (1 - ndc.y) / 2 * height;
+          label.style.transform = `translate3d(${x.toFixed(1)}px, ${y.toFixed(1)}px, 0)`;
+          label.style.opacity = index === activeIndex && facingCamera > 0.25 ? "1" : "0";
+        });
+      };
+      const scaleTarget = new Vector3();
       const clock = new Clock();
       let frame = 0;
+      let inView = true;
       const render = () => {
+        frame = 0;
+        if (!inView) return;
         frame = requestAnimationFrame(render);
         const elapsed = clock.getElapsedTime();
-        const scale = 1.36 - focusRef.current * 0.24;
-        earth.scale.lerp(new Vector3(scale, scale, scale), 0.045);
-        earth.rotation.y = 3.73 + focusRef.current * 0.12 + elapsed * 0.22;
-        rings.forEach((ring, index) => ring.scale.setScalar(0.9 + Math.sin(elapsed * 1.45 + index * 0.72) * 0.1));
-        earthMaterial.opacity = 1 - focusRef.current * 0.36;
-        atmosphereMaterial.opacity = 0.08 * (1 - focusRef.current * 0.4);
+        const progress = focusRef.current;
+        // Scroll picks the city; the globe turns to it along the shortest way round.
+        const activeIndex = Math.min(cities.length - 1, Math.max(0, Math.floor(progress * cities.length)));
+        const target = facing(cities[activeIndex]);
+        const k = reducedMotion ? 1 : 0.055;
+        const dy = Math.atan2(Math.sin(target.y - earth.rotation.y), Math.cos(target.y - earth.rotation.y));
+        earth.rotation.y += dy * k;
+        earth.rotation.x += (target.x - earth.rotation.x) * k;
+        const scale = 1.36 - progress * 0.24;
+        earth.scale.lerp(scaleTarget.set(scale, scale, scale), reducedMotion ? 1 : 0.045);
+        if (!reducedMotion) rings.forEach((ring, index) => ring.scale.setScalar(0.9 + Math.sin(elapsed * 1.45 + index * 0.72) * 0.1));
+        earthMaterial.opacity = 1 - progress * 0.36;
+        atmosphereMaterial.opacity = 0.08 * (1 - progress * 0.4);
         renderer.render(scene, camera);
+        placeLabels(activeIndex);
       };
+      // No GPU work while the section is off-screen.
+      const visibility = new IntersectionObserver((entries) => {
+        inView = entries[entries.length - 1].isIntersecting;
+        if (inView && !frame) frame = requestAnimationFrame(render);
+      });
+      visibility.observe(stage);
       render();
       return () => {
         cancelAnimationFrame(frame);
+        visibility.disconnect();
         resizeObserver.disconnect();
         stage.removeEventListener("pointermove", showHoverLabel);
         stage.removeEventListener("pointerleave", hideHoverLabel);
@@ -33802,7 +33854,7 @@ void main() {
       };
     }, []);
     return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("canvas", { ref: canvasRef, className: "gcc-globe-canvas", "aria-label": "3D animation: a globe with GCC city markers" }),
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("canvas", { ref: canvasRef, className: "gcc-globe-canvas", "aria-label": "3D globe marking Al Ryum Group's five regional locations" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { ref: hoverLabelRef, className: "globe-hover-label", "data-visible": "false", "aria-live": "polite" })
     ] });
   }
@@ -33810,6 +33862,13 @@ void main() {
   // client/src/hooks/useInertialSectionProgress.ts
   var import_react2 = __toESM(require_react(), 1);
   var clamp2 = (value) => Math.max(0, Math.min(0.999, value));
+  // The globe tour runs while the globe stage is pinned: from the section's top until the
+  // partnership layer (which slides over the globe) reaches the bottom of the screen.
+  var tourTravel = (section) => {
+    const layer = section.querySelector(".partnership-layer");
+    const span = layer ? layer.getBoundingClientRect().top - section.getBoundingClientRect().top : section.offsetHeight;
+    return Math.max(1, span - window.innerHeight);
+  };
   var damp = (current, target, smoothing, delta) => current + (target - current) * (1 - Math.exp(-smoothing * delta));
   function useInertialSectionProgress(sectionRef) {
     const [progress, setProgress] = (0, import_react2.useState)(0);
@@ -33818,7 +33877,7 @@ void main() {
         const updateImmediately = () => {
           const section = sectionRef.current;
           if (!section) return;
-          const travel = Math.max(1, section.offsetHeight - window.innerHeight);
+          const travel = tourTravel(section);
           setProgress(clamp2(-section.getBoundingClientRect().top / travel));
         };
         updateImmediately();
@@ -33837,7 +33896,7 @@ void main() {
       const sampleScroll = () => {
         const section = sectionRef.current;
         if (!section) return;
-        const travel = Math.max(1, section.offsetHeight - window.innerHeight);
+        const travel = tourTravel(section);
         target = clamp2(-section.getBoundingClientRect().top / travel);
       };
       const tick = (time) => {
@@ -33929,7 +33988,7 @@ void main() {
             "SCROLL TO TRACE ",
             /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("span", { children: [
               String(activeIndex + 1).padStart(2, "0"),
-              "/03"
+              "/" + String(cities2.length).padStart(2, "0")
             ] })
           ] })
         ] }),

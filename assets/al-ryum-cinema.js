@@ -349,6 +349,7 @@ function buildReveals() {
   if (!gsap || !ST || !motionOn()) return null;
   const triggers = [];
   const els = [];
+  const zoomed = [];
   for (const sel of REVEAL_SECTIONS) {
     const el = document.querySelector(sel);
     if (!el || el.dataset.arcReveal) continue;
@@ -364,8 +365,10 @@ function buildReveals() {
       }
     );
     triggers.push(tw);
-    const media = el.querySelector("video, img");
+    // The Solutions cards animate their own images (framer-motion): leave them be.
+    const media = sel === "#solutions" ? null : el.querySelector("video, img");
     if (media && media.closest(".overflow-hidden")) {
+      zoomed.push(media);
       triggers.push(
         gsap.fromTo(media, { scale: 1.12 }, {
           scale: 1, ease: "none",
@@ -378,6 +381,8 @@ function buildReveals() {
     get connected() { return els.every((el) => el.isConnected); },
     destroy() {
       triggers.forEach((t) => { t.scrollTrigger && t.scrollTrigger.kill(); t.kill(); });
+      // Killing a tween leaves its last inline transform behind: reset the media.
+      zoomed.forEach((m) => gsap.set(m, { clearProps: "transform" }));
       for (const sel of REVEAL_SECTIONS) {
         const el = document.querySelector(sel);
         if (el) { el.style.clipPath = ""; delete el.dataset.arcReveal; }

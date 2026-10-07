@@ -416,14 +416,24 @@
 
   // React mounts after this script runs (its bundle is fetched at runtime), so a single attempt loses the
   // race on a hard refresh. Retry until its container exists, then keep watching the whole subtree.
+  // Any path that mounts the page fresh must also arm its reveal/tilt/hero; mounting alone left every
+  // scene at opacity 0 whenever React rendered after the first attempt (empty dark gaps on /services).
+  function ensureMounted() {
+    if (!isServices() || document.getElementById(MOUNT_ID)) return;
+    mount();
+    if (!document.getElementById(MOUNT_ID)) return;
+    if (!hero) startHero();
+    bindTilt();
+    bindReveal();
+  }
   var mo = new MutationObserver(function () {
-    if (isServices() && !document.getElementById(MOUNT_ID)) mount();
+    if (isServices() && !document.getElementById(MOUNT_ID)) ensureMounted();
   });
   var tries = 0;
   function retryMount() {
     if (!isServices()) return;
     tries++;
-    if (!document.getElementById(MOUNT_ID)) mount();
+    if (!document.getElementById(MOUNT_ID)) ensureMounted();
     if (tries < 60 && (!document.getElementById(MOUNT_ID))) setTimeout(retryMount, 250);
   }
   function begin() {

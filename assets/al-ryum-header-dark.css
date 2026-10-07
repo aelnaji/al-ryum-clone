@@ -80,9 +80,16 @@ header nav { position: relative; }
 
 /* small screens: sit left of the menu button rather than over it */
 @media (max-width: 1279px) {
-  /* the menu button occupies right 32..72px, so the toggle sits clear of it */
-  .ar-theme-toggle { right: 82px; width: 30px; height: 30px; }
+  /* sits 8px left of the menu button: nav padding (48px) + button (40px) + 8px */
+  .ar-theme-toggle { right: 96px; width: 30px; height: 30px; }
   .ar-theme-toggle svg { width: 15px; height: 15px; }
+}
+@media (max-width: 767px) {
+  /* nav padding is 24-32px here: 32px + button (40px) + 8px */
+  .ar-theme-toggle { right: 80px; }
+  /* the wordmark was wider than the bar, pushing the menu button off-screen
+     and sitting under the toggle; let it shrink and size it for phones */
+  header nav > div > a.flex-shrink-0 { flex-shrink: 1; min-width: 0; padding-right: 40px; }
 }
 
 /* ---------- search control: nudged 1cm (≈38px) to the left ---------- */
@@ -102,11 +109,20 @@ header nav > div > div > a {
   font-size: 17px !important;
   letter-spacing: 0.01em !important;
 }
-/* the wordmark gets a matching step up from 30px */
+/* the wordmark gets a matching step up from 30px — on tablet and up only;
+   at 33px it is wider than a phone's header bar */
 header nav a span[style*="font-weight: 700"],
 header nav a span.text-2xl,
 header nav a span.text-3xl {
   font-size: 33px !important;
+}
+@media (max-width: 767px) {
+  header nav a span[style*="font-weight: 700"],
+  header nav a span.text-2xl,
+  header nav a span.text-3xl {
+    font-size: 19px !important;
+    white-space: nowrap;
+  }
 }
 /* the round search button's icon scales with the type, so lift it a touch too */
 header nav button svg.w-5 { width: 21px !important; height: 21px !important; }

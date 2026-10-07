@@ -44,7 +44,11 @@
     .ar-pf-plane{backface-visibility:hidden;transform-style:preserve-3d}
   `;
   document.head.append(style);
-  const images = new Array(142); let next = 0; let loaded = 0;
+  const images = new Array(142); let next = 0; let loaded = 0; let failed = 0;
+  // Scroll distance the strip scrubs over, in viewports (region = SCRUB_VH + 1 pinned viewport).
+  const SCRUB_VH = 2;
+  // Damped follow: smooth += (target - smooth) * DAMPING per frame.
+  const DAMPING = 0.14, SETTLE = 0.0005;
   let started = false;
   function preload() {
     if (started) return; started = true;
@@ -54,7 +58,7 @@
     const i = next++; if (i >= images.length) return;
     const img = new Image(); img.decoding = 'async';
     img.onload = () => { images[i] = img; loaded++; active?.update(); worker(); };
-    img.onerror = () => { active?.update(); worker(); };
+    img.onerror = () => { failed++; active?.update(); worker(); };
     img.src = '/assets/hero-0817-astra/frame_' + String(i + 1).padStart(4, '0') + '.webp';
   }
   function mount(canvas) {
@@ -71,16 +75,21 @@
     const loader = hero.querySelector('#hero-scrub-loader');
     const copy = hero.querySelector(':scope > .relative');
     let frame = -1, width = 0, height = 0, raf = 0;
-    const state = { progress: 0, frame: 0, loaded: 0, source: '0817.mp4' };
+    // smooth: damped progress (null = snap to the target). inView: off-screen gate.
+    let smooth = null, inView = true, loaderText = '';
+    const state = { progress: 0, target: 0, frame: 0, loaded: 0, source: '0817.mp4' };
     function update() {
-      if (raf) return;
+      if (raf || !inView) return;
       raf = requestAnimationFrame(() => {
-        raf = 0; if (!region.isConnected) return;
+        raf = 0; if (!region.isConnected || !inView) return;
         const rect = region.getBoundingClientRect();
         const vh = innerHeight;
         const raw = clamp(-rect.top / Math.max(1, region.offsetHeight - vh));
-        const p = motion.enabled ? raw : 0;
-        state.progress = p; state.loaded = loaded;
+        const goal = motion.enabled ? raw : 0;
+        smooth = smooth === null || !motion.enabled ? goal : smooth + (goal - smooth) * DAMPING;
+        if (Math.abs(goal - smooth) < SETTLE) smooth = goal;
+        const p = smooth;
+        state.target = goal; state.progress = p; state.loaded = loaded;
         const target = Math.round(clamp(p / 0.86) * (images.length - 1));
         let best = -1;
         for (let i = 0; i < images.length; i++) if (images[i] && (best < 0 || Math.abs(i-target) < Math.abs(best-target))) best = i;
@@ -93,20 +102,35 @@
           frame = best; state.frame = best + 1;
         }
         if (loader) {
-          loader.style.display = best < 0 ? 'flex' : 'none';
+          const show = best < 0 ? 'flex' : 'none';
+          if (loader.style.display !== show) loader.style.display = show;
           const text = loader.querySelector('span');
-          if (text && best < 0) text.textContent = next >= 148 ? 'Hero media unavailable — reload to retry' : 'Loading original hero…';
+          const msg = next >= 148 && loaded === 0 ? 'Hero media unavailable — reload to retry'
+            : `Loading original hero… ${Math.round((loaded + failed) / images.length * 100)}%`;
+          // Only touch the DOM while the loader shows and the text actually changes.
+          if (text && best < 0 && msg !== loaderText) { loaderText = msg; text.textContent = msg; }
         }
         const exit = clamp((p-0.86)/0.14);
         canvas.style.transform = motion.enabled ? `translate3d(0,${-exit*5}%,${p*45}px) rotateX(${exit*3}deg) scale(${1.03+p*0.06})` : 'none';
         mist.style.opacity = motion.enabled ? String(0.62 * (1-clamp(p/0.32))) : '0.12';
         mist.style.transform = `translate3d(0,${-p*18}%,${p*90}px) scale(${1+p*0.15})`;
-        if (copy) { copy.style.opacity = String(1-exit*0.8); copy.style.transform = motion.enabled ? `translate3d(0,${-exit*65}px,${p*25}px)` : 'none'; }
+        // The headline clears before the ARC building enters (strip frame ~88 of 142,
+        // p ≈ 0.54), so it never ghosts over the company sign.
+        const fade = clamp((p-0.44)/0.14);
+        if (copy) { copy.style.opacity = String(1-fade); copy.style.transform = motion.enabled ? `translate3d(0,${-fade*65}px,${p*25}px)` : 'none'; }
         if (motion.enabled && rect.bottom > 0 && rect.top < vh && p < 0.32) mist.play().catch(() => {}); else mist.pause();
+        // Keep following until settled; every scroll event re-kicks it.
+        if (smooth !== goal) update();
       });
     }
+    // No work while the hero region is off-screen; the latest entry is the current state.
+    const io = 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
+      inView = entries[entries.length - 1].isIntersecting;
+      if (inView) update(); else { cancelAnimationFrame(raf); raf = 0; smooth = null; mist.pause(); }
+    }) : null;
+    io?.observe(region);
     function layout() {
-      region.style.height = motion.enabled ? `${innerHeight * 2}px` : `${innerHeight}px`;
+      region.style.height = motion.enabled ? `${innerHeight * (1 + SCRUB_VH)}px` : `${innerHeight}px`;
       update(); window.lenis?.resize(); window.ScrollTrigger?.refresh();
     }
     const scrollButton = hero.querySelector('button[aria-label="Scroll down"]');
@@ -114,7 +138,7 @@
     scrollButton?.addEventListener('click', skip, true);
     window.addEventListener('scroll', update, {passive:true}); window.addEventListener('resize', layout);
     active = { canvas, update, layout, state, destroy() {
-      cancelAnimationFrame(raf); mist.pause(); mist.removeAttribute('src'); mist.load();
+      cancelAnimationFrame(raf); io?.disconnect(); mist.pause(); mist.removeAttribute('src'); mist.load();
       window.removeEventListener('scroll', update); window.removeEventListener('resize', layout);
       scrollButton?.removeEventListener('click', skip, true);
     }};

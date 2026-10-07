@@ -53,6 +53,10 @@
   ];
 
   const FRAME_TOTAL = 80;
+  // Scroll distance each film scrubs over, in viewports (scene = SCRUB_VH + 1 pinned viewport).
+  const SCRUB_VH = 1.4;
+  // Damped follow: the drawn frame eases toward the scroll target (0.14 per frame).
+  const DAMPING = 0.14;
   const SCALE_MIN = 1.10;
   const SCALE_MAX = 1.16;
   const ROTATE_MAX_DEG = 4;
@@ -147,6 +151,7 @@
     let inFlight = 0;
     let raf = 0;
     let lastDrawn = -1;
+    let cur = null;
     let queue = [];
     let background = false;
 
@@ -158,7 +163,11 @@
     function draw() {
       raf = 0;
       if (destroyed) return;
-      const target = targetFrame();
+      const goal = targetFrame();
+      cur = cur === null || !motion ? goal : cur + (goal - cur) * DAMPING;
+      if (Math.abs(goal - cur) < 0.05) cur = goal;
+      if (cur !== goal) scheduleDraw();
+      const target = Math.round(cur);
       let best = -1;
       for (let i = 0; i < FRAME_TOTAL; i++) {
         if (states[i] === 2 &&
@@ -750,7 +759,7 @@
       if (dead) return;
       viewportHeight = Math.max(1, window.innerHeight || document.documentElement.clientHeight);
       instances.forEach((instance) => {
-        instance.scene.style.height = `${viewportHeight * (reduced ? 1 : 1.5)}px`;
+        instance.scene.style.height = `${viewportHeight * (reduced ? 1 : 1 + SCRUB_VH)}px`;
         instance.stage.style.height = `${viewportHeight}px`;
         instance.stage.style.position = reduced ? "relative" : "sticky";
         instance.setReduced(reduced);
@@ -796,7 +805,17 @@
 
     listen(nav, "click", onNavClick);
     listen(window, "alryum-motion-change", onMotionChange);
-    listen(window, "scroll", scheduleUpdate, { passive: true });
+    // Only track scroll while the films are within a viewport of the screen.
+    let filmsNear = true;
+    if (window.IntersectionObserver) {
+      const nearObserver = new IntersectionObserver((entries) => {
+        filmsNear = entries[entries.length - 1].isIntersecting;
+        scheduleUpdate(); // one last update parks the scenes when leaving
+      }, { rootMargin: "100% 0px" });
+      nearObserver.observe(finale);
+      cleanup.push(() => nearObserver.disconnect());
+    }
+    listen(window, "scroll", () => { if (filmsNear) scheduleUpdate(); }, { passive: true });
     listen(window, "resize", scheduleLayout, { passive: true });
     listen(window, "orientationchange", scheduleLayout);
     listen(window, "load", scheduleLayout);
@@ -840,9 +859,20 @@
       if (dead) return;
       if (!finale.isConnected || !host.isConnected) {
         destroy();
+        // The page was re-rendered (an in-app route change): mount again as
+        // soon as a new films host appears, instead of staying stopped.
+        stopped = false;
+        mounted = false;
+        waitingObserver = null;
+        init();
         return;
       }
-      if (records.some((record) => !finale.contains(record.target))) {
+      // Ignore transient nodes (added and removed again before this callback),
+      // e.g. ScrollTrigger's own 100vh measuring div: re-laying out for those
+      // made every refresh trigger another refresh.
+      const lasting = (record) =>
+        [...record.addedNodes, ...record.removedNodes].some((node) => node.isConnected);
+      if (records.some((record) => !finale.contains(record.target) && lasting(record))) {
         scheduleLayout();
       }
     });

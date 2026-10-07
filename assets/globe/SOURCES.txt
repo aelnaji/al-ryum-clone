@@ -1,0 +1,5 @@
+Earth textures (equirectangular, longitude -180 at the left edge), downscaled to 2048x1024 WebP:
+- earth-day.webp   NASA Visible Earth, "Blue Marble: Next Generation" (July 2004, topography + bathymetry)
+                   https://visibleearth.nasa.gov/images/73751  — NASA imagery, public domain.
+- earth-night.webp NASA Earth Observatory, "Black Marble 2016" (night lights, 0.1 degree)
+                   https://earthobservatory.nasa.gov/features/NightLights  — NASA imagery, public domain.

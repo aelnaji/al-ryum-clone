@@ -859,6 +859,12 @@
       if (dead) return;
       if (!finale.isConnected || !host.isConnected) {
         destroy();
+        // The page was re-rendered (an in-app route change): mount again as
+        // soon as a new films host appears, instead of staying stopped.
+        stopped = false;
+        mounted = false;
+        waitingObserver = null;
+        init();
         return;
       }
       // Ignore transient nodes (added and removed again before this callback),

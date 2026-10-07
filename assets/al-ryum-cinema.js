@@ -53,9 +53,13 @@ const FIELD = {
   ],
 };
 
+let webglOK = null;
 function buildField(anchor) {
-  const probe = document.createElement("canvas");
-  if (!(probe.getContext("webgl2") || probe.getContext("webgl"))) return null;
+  if (webglOK === null) {
+    const probe = document.createElement("canvas");
+    webglOK = !!(probe.getContext("webgl2") || probe.getContext("webgl"));
+  }
+  if (!webglOK) return null;
 
   const section = document.createElement("section");
   section.className = "arc-field";
@@ -100,6 +104,7 @@ function buildField(anchor) {
   try {
     renderer = new THREE.WebGLRenderer({ canvas, antialias: !small, alpha: false, powerPreference: "high-performance" });
   } catch (e) {
+    webglOK = false; // don't retry on every page mutation
     section.remove();
     return null;
   }
@@ -328,7 +333,11 @@ function buildHud(films) {
     kick();
   });
   items.forEach((it) => io.observe(it.scene));
-  return { kick, destroy() { io.disconnect(); cancelAnimationFrame(raf); items.forEach((i) => i.hud.remove()); } };
+  return {
+    kick,
+    get connected() { return items.every((i) => i.scene.isConnected); },
+    destroy() { io.disconnect(); cancelAnimationFrame(raf); items.forEach((i) => i.hud.remove()); },
+  };
 }
 
 /* ============================================================== 3. REVEAL */
@@ -339,10 +348,12 @@ function buildReveals() {
   const gsap = window.gsap, ST = window.ScrollTrigger;
   if (!gsap || !ST || !motionOn()) return null;
   const triggers = [];
+  const els = [];
   for (const sel of REVEAL_SECTIONS) {
     const el = document.querySelector(sel);
     if (!el || el.dataset.arcReveal) continue;
     el.dataset.arcReveal = "1";
+    els.push(el);
     const tw = gsap.fromTo(
       el,
       { clipPath: "inset(36px 2.5% 0px 2.5% round 36px)" },
@@ -364,6 +375,7 @@ function buildReveals() {
     }
   }
   return {
+    get connected() { return els.every((el) => el.isConnected); },
     destroy() {
       triggers.forEach((t) => { t.scrollTrigger && t.scrollTrigger.kill(); t.kill(); });
       for (const sel of REVEAL_SECTIONS) {
@@ -388,14 +400,17 @@ function boot() {
     ["field", "hud", "reveal"].forEach((k) => { if (api[k]) { api[k].destroy(); api[k] = null; } });
     return;
   }
+  // React replaces the page on route changes: rebuild anything that was detached.
   if (api.field && !api.field.el.isConnected) { api.field.destroy(); api.field = null; }
+  if (api.hud && !api.hud.connected) { api.hud.destroy(); api.hud = null; }
+  if (api.reveal && !api.reveal.connected) { api.reveal.destroy(); api.reveal = null; }
   const filmsHost = document.getElementById("arc-cinematic-host");
   if (!api.field) {
     const anchor = filmsHost || document.getElementById("projects");
     // Wait for the films host when the cinematic script is going to create it.
-    if (anchor && (filmsHost || !window.gsap)) {
+    if (anchor && (filmsHost || !window.gsap) && webglOK !== false) {
       api.field = buildField(anchor);
-      refreshLayout();
+      if (api.field) refreshLayout();
     }
   }
   if (!api.hud && window.__alRyumProjectFilms) api.hud = buildHud(window.__alRyumProjectFilms);
@@ -417,12 +432,13 @@ addEventListener("alryum-motion-change", () => {
 });
 addEventListener("popstate", boot);
 
-// The React app and the films mount after this module runs: watch for them,
-// then stop watching once everything is in place.
+// The React app and the films mount after this module runs, and React rebuilds
+// the page on route changes (pushState, no popstate): watch for both. boot() is
+// coalesced to one call per frame and is a few lookups when nothing changed.
+let bootQueued = 0;
 const mo = new MutationObserver(() => {
-  boot();
-  if (api.field && api.hud && api.reveal) mo.disconnect();
+  if (!bootQueued) bootQueued = requestAnimationFrame(() => { bootQueued = 0; boot(); });
 });
-mo.observe(document.documentElement, { childList: true, subtree: true });
+mo.observe(document.body || document.documentElement, { childList: true, subtree: true });
 addEventListener("load", boot);
 boot();

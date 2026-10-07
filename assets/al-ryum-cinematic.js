@@ -158,14 +158,16 @@
     // Bind film scroll triggers
     FILMS.forEach(function (f) { bindFilm(f.canvas, f.base, f.n); });
 
-    // MutationObserver: re-inject if anyone wipes the wrapper
+    // MutationObserver: re-inject if anyone wipes the wrapper. Watches the app
+    // root, not the container: an in-app route change replaces the container
+    // itself, and the wrapper must come back when the home page does.
     var obs = new MutationObserver(function () {
-      if (!document.getElementById(CINEMATIC_ID)) {
+      if (!document.getElementById(CINEMATIC_ID) && document.getElementById("projects")) {
         obs.disconnect();
         boot();
       }
     });
-    obs.observe(container, { childList: true });
+    obs.observe(root, { childList: true, subtree: true });
 
     if (window.ScrollTrigger) ScrollTrigger.refresh();
   }

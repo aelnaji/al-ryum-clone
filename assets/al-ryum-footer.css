@@ -1,0 +1,105 @@
+/* AL RYUM — site footer (markup: function At() in assets/index-v10-timeline.js).
+   The site's own palette: #0a1416 / #122023 grounds, #f8fafa ink, #7dd6aa accent,
+   #c8a86e gold; DM Serif Display for display type. */
+.arf {
+  position: relative; overflow: hidden; isolation: isolate;
+  color: #f8fafa; font-family: "Manrope", "Montserrat", system-ui, sans-serif;
+  background:
+    radial-gradient(ellipse 80% 60% at 85% 0%, rgba(125, 214, 170, 0.10), transparent 60%),
+    linear-gradient(180deg, #122023 0%, #0a1416 100%);
+  border-top: 1px solid rgba(200, 168, 110, 0.28);
+}
+.arf-wrap { max-width: 1400px; margin: 0 auto; padding: 0 clamp(1.5rem, 6vw, 6rem); }
+.arf-ico { width: 1rem; height: 1rem; flex: none; }
+
+/* CTA band */
+.arf-cta {
+  display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 2rem;
+  padding: clamp(4rem, 9vw, 7.5rem) 0 clamp(3rem, 6vw, 4.5rem);
+  border-bottom: 1px solid rgba(248, 250, 250, 0.1);
+}
+.arf-eyebrow {
+  margin: 0 0 1rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: #c8a86e;
+}
+.arf-cta-title {
+  margin: 0; max-width: 14ch; font-family: "DM Serif Display", Georgia, serif; font-weight: 400;
+  font-size: clamp(2.6rem, 6vw, 5.2rem); line-height: 1; letter-spacing: -0.02em; color: #f8fafa;
+}
+.arf-cta-actions { display: flex; flex-wrap: wrap; gap: 0.85rem; }
+.arf-btn {
+  display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.95rem 1.6rem; border-radius: 999px;
+  font-size: 0.9rem; font-weight: 600; letter-spacing: 0.01em; text-decoration: none;
+  transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+.arf-btn:hover { transform: translateY(-2px); }
+.arf-btn--solid { background: #7dd6aa; color: #0a1416; }
+.arf-btn--solid:hover { background: #9ee6c3; }
+.arf-btn--ghost { border: 1px solid rgba(248, 250, 250, 0.32); color: #f8fafa; }
+.arf-btn--ghost:hover { border-color: #7dd6aa; color: #7dd6aa; }
+
+/* Columns */
+.arf-grid {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.3fr; gap: clamp(2rem, 4vw, 4rem);
+  padding: clamp(3rem, 6vw, 4.5rem) 0;
+}
+.arf-logo { display: inline-flex; align-items: center; gap: 0.75rem; color: #f8fafa; text-decoration: none; font-size: 1.25rem; font-weight: 700; letter-spacing: 0.01em; }
+.arf-logo-img { height: 2.6rem; width: auto; }
+.arf-tagline { margin: 1.25rem 0 1.5rem; max-width: 30ch; font-size: 0.92rem; line-height: 1.7; color: rgba(248, 250, 250, 0.62); }
+.arf-social { display: flex; gap: 0.6rem; }
+.arf-social-link {
+  display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: 50%;
+  border: 1px solid rgba(248, 250, 250, 0.22); color: #f8fafa; transition: background-color 0.25s, border-color 0.25s, color 0.25s;
+}
+.arf-social-link:hover { background: #7dd6aa; border-color: #7dd6aa; color: #0a1416; }
+.arf-col-title { margin: 0 0 1.25rem; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase; color: #c8a86e; }
+.arf-col ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.8rem; }
+.arf-link { color: rgba(248, 250, 250, 0.82); text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+.arf-link:hover { color: #7dd6aa; }
+.arf-region { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.95rem; color: rgba(248, 250, 250, 0.82); padding-bottom: 0.8rem; border-bottom: 1px solid rgba(248, 250, 250, 0.08); }
+.arf-region em { font-style: normal; font-size: 0.8rem; color: rgba(248, 250, 250, 0.45); }
+.arf-contact { display: inline-flex; align-items: center; gap: 0.65rem; font-size: 0.95rem; color: rgba(248, 250, 250, 0.82); }
+.arf-contact .arf-ico { color: #7dd6aa; }
+
+/* Oversized wordmark */
+.arf-wordmark {
+  margin: 0 auto; max-width: 1400px; padding: 0 clamp(1rem, 4vw, 4rem);
+  font-family: "Montserrat", system-ui, sans-serif; font-weight: 800; line-height: 0.8; letter-spacing: -0.04em;
+  font-size: clamp(4.5rem, 17vw, 16rem); text-align: center; white-space: nowrap; user-select: none;
+  color: transparent; -webkit-text-stroke: 1px rgba(125, 214, 170, 0.22);
+  background: linear-gradient(180deg, rgba(125, 214, 170, 0.14), rgba(125, 214, 170, 0)); -webkit-background-clip: text; background-clip: text;
+  transform: translateY(0.12em);
+}
+
+/* Bottom bar — padded so the fixed "Cinematic motion" pill never covers it */
+.arf-bottom { position: relative; border-top: 1px solid rgba(248, 250, 250, 0.1); background: rgba(6, 12, 13, 0.6); }
+.arf-bottom-row {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem 2rem;
+  padding-top: 1.4rem; padding-bottom: 4.6rem; font-size: 0.8rem; color: rgba(248, 250, 250, 0.55);
+}
+.arf-bottom-row p { margin: 0; }
+.arf-certs { letter-spacing: 0.06em; }
+.arf-top {
+  display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.55rem 1rem; border-radius: 999px; cursor: pointer;
+  border: 1px solid rgba(248, 250, 250, 0.22); background: transparent; color: #f8fafa; font: inherit; font-size: 0.78rem;
+  transition: border-color 0.25s, color 0.25s;
+}
+.arf-top:hover { border-color: #7dd6aa; color: #7dd6aa; }
+.arf a:focus-visible, .arf button:focus-visible { outline: 2px solid #7dd6aa; outline-offset: 3px; }
+
+@media (max-width: 960px) {
+  .arf-grid { grid-template-columns: 1fr 1fr; }
+  .arf-brand { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .arf-grid { grid-template-columns: 1fr; }
+  .arf-cta { align-items: flex-start; }
+  .arf-cta-actions, .arf-btn { width: 100%; }
+  .arf-btn { justify-content: center; }
+  .arf-bottom-row { flex-direction: column; align-items: flex-start; padding-bottom: 5.2rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .arf-btn, .arf-btn:hover { transition: none; transform: none; }
+}
+
+/* Pages that end with their own call to action get the footer without its CTA band. */
+.arf--plain .arf-grid { padding-top: clamp(3.5rem, 7vw, 5.5rem); }

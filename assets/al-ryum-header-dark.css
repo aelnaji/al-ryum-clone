@@ -131,3 +131,15 @@ header nav button svg.w-5 { width: 21px !important; height: 21px !important; }
 @media (min-width: 1280px) and (max-width: 1600px) {
   header nav > div { gap: 1.6rem !important; }
 }
+
+/* narrow phones: the pill header leaves ~200px for the wordmark once the toggle and
+   menu button are placed, so step it down a size and give the toggle its own room */
+@media (max-width: 420px) {
+  header nav a span[style*="font-weight: 700"],
+  header nav a span.text-2xl,
+  header nav a span.text-3xl {
+    font-size: 16px !important;
+    letter-spacing: 0 !important;
+  }
+  header nav > div > a.flex-shrink-0 { padding-right: 48px; }
+}

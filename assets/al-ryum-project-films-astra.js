@@ -38,7 +38,8 @@
       place: "Saadiyat Island · Abu Dhabi, UAE",
       category: "Cultural District · Landscaping & Approach",
       base: "/assets/projects/louvre/frames/frame_",
-      ext: "jpg",
+      ext: "webp",
+      frames: 120,
     },
     {
       id: "zayed-national-museum",
@@ -47,12 +48,15 @@
       sub: "Architecture in the Landscape",
       place: "Saadiyat Island · Abu Dhabi, UAE",
       category: "Cultural District · Landscaping, Irrigation & Car Park",
-      base: "/assets/frames/zayed/frame_",
+      base: "/assets/projects/zayed/frames/frame_",
       ext: "webp",
+      frames: 120,
     },
   ];
 
+  // Frames per film; a film with a richer source can set its own `frames`.
   const FRAME_TOTAL = 80;
+  const framesOf = (film) => film.frames || FRAME_TOTAL;
   // Scroll distance each film scrubs over, in viewports (scene = SCRUB_VH + 1 pinned viewport).
   const SCRUB_VH = 1.4;
   // Damped follow: the drawn frame eases toward the scroll target (0.14 per frame).
@@ -140,8 +144,9 @@
   function FrameScrubber(film) {
     const surface = createSurface(film);
     const { canvas } = surface;
-    const images = new Array(FRAME_TOTAL);
-    const states = new Uint8Array(FRAME_TOTAL);
+    const total = framesOf(film);
+    const images = new Array(total);
+    const states = new Uint8Array(total);
     const hooks = { onLoadProgress: () => {} };
     let destroyed = false;
     let progress = 0;
@@ -158,7 +163,7 @@
     const url = (n) =>
       `${film.base}${String(n + 1).padStart(4, "0")}.${film.ext}`;
     const targetFrame = () =>
-      Math.round(mapHold(progress, film.holdLast) * (FRAME_TOTAL - 1));
+      Math.round(mapHold(progress, film.holdLast) * (total - 1));
 
     function draw() {
       raf = 0;
@@ -169,7 +174,7 @@
       if (cur !== goal) scheduleDraw();
       const target = Math.round(cur);
       let best = -1;
-      for (let i = 0; i < FRAME_TOTAL; i++) {
+      for (let i = 0; i < total; i++) {
         if (states[i] === 2 &&
             (best < 0 || Math.abs(i - target) < Math.abs(best - target))) {
           best = i;
@@ -207,7 +212,7 @@
           settled++;
           states[n] = success && image.naturalWidth ? 2 : 3;
           if (states[n] === 3) images[n] = null;
-          hooks.onLoadProgress(settled / FRAME_TOTAL);
+          hooks.onLoadProgress(settled / total);
           scheduleDraw();
 
           // If a poster fails, find another still even in reduced-motion mode.
@@ -238,10 +243,10 @@
         candidates.push(center + i, center - i);
       }
       if (background && motion) {
-        for (let i = 0; i < FRAME_TOTAL; i++) candidates.push(i);
+        for (let i = 0; i < total; i++) candidates.push(i);
       }
       queue = [...new Set(candidates)].filter(
-        (n) => n >= 0 && n < FRAME_TOTAL && states[n] === 0
+        (n) => n >= 0 && n < total && states[n] === 0
       );
       pump();
     }
@@ -265,7 +270,22 @@
     function activate(enabled) {
       active = enabled;
       background = enabled && motion;
+      if (!enabled) release();
       prioritize();
+    }
+
+    // Far from the screen: let go of decoded frames so four films never hold
+    // hundreds of full-HD bitmaps at once (the browser would evict and then
+    // re-decode them mid-scroll). The canvas keeps its last picture, and the
+    // frames come back from the HTTP cache when the film is near again.
+    function release() {
+      for (let i = 0; i < total; i++) {
+        if (states[i] === 2 && i !== lastDrawn) {
+          images[i] = null;
+          states[i] = 0;
+          settled--;
+        }
+      }
     }
 
     function resize() {
@@ -477,7 +497,7 @@
           <span>${film.category}</span>
         </div>
         <div class="ar-pf-topbar__right">
-          <span>FRAME <b data-ar-pf-frame>00</b> / ${FRAME_TOTAL}</span>
+          <span>FRAME <b data-ar-pf-frame>00</b> / ${framesOf(film)}</span>
         </div>
       </div>
       <div class="ar-pf-titleblock">
@@ -535,6 +555,7 @@
     return {
       scene, stage, plane, loader, scrubber,
       __holdLast: film.holdLast || 0,
+      __frames: framesOf(film),
       $fill: progress.querySelector("[data-ar-pf-fill]"),
       $frame: overlay.querySelector("[data-ar-pf-frame]"),
       $pct: overlay.querySelector("[data-ar-pf-pct]"),
@@ -659,7 +680,7 @@
       );
       instance.$fill.style.width = `${(mapped * 100).toFixed(1)}%`;
       instance.$frame.textContent = String(
-        Math.round(mapped * (FRAME_TOTAL - 1)) + 1
+        Math.round(mapped * (instance.__frames - 1)) + 1
       ).padStart(2, "0");
       instance.$pct.textContent = `${Math.round(mapped * 100)}%`;
       instance.scrubber.setProgress(p);

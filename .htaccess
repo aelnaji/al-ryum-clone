@@ -1,0 +1,7 @@
+# Apache / cPanel / LiteSpeed: serve the app for every path that isn't a real file,
+# so direct links such as /about or /projects/3 open the right page.
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]

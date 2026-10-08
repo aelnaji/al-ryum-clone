@@ -127,6 +127,20 @@ header nav a span.text-3xl {
 /* the round search button's icon scales with the type, so lift it a touch too */
 header nav button svg.w-5 { width: 21px !important; height: 21px !important; }
 
+/* laptops: a 33px wordmark and 17px links crowd a short screen, so scale them with the
+   viewport and keep the full sizes for large monitors */
+@media (min-width: 768px) {
+  header nav a span[style*="font-weight: 700"],
+  header nav a span.text-2xl,
+  header nav a span.text-3xl {
+    font-size: clamp(24px, min(2.2vw, 4.2vh), 33px) !important;
+  }
+  header nav a,
+  header nav > div > div > a {
+    font-size: clamp(14.5px, min(1.15vw, 2.3vh), 17px) !important;
+  }
+}
+
 /* keep the bar on one line — if the bigger type would wrap, tighten the gaps instead */
 @media (min-width: 1280px) and (max-width: 1600px) {
   header nav > div { gap: 1.6rem !important; }

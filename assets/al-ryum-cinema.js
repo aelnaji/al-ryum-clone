@@ -47,9 +47,8 @@ const FIELD = {
   textures: Array.from({ length: 28 }, (_, i) => `/assets/field/field-${String(i + 1).padStart(2, "0")}.webp?v=2`),
   depth: 150, // world units the camera travels
   beats: [
-    { at: [0.02, 0.3], eyebrow: "Al Ryum Group · Since 1989", title: "Over 35 years in the landscape." },
-    { at: [0.36, 0.64], eyebrow: "UAE · Saudi Arabia · Qatar · Iraq · Jordan", title: "Built across the region." },
-    { at: [0.7, 1.01], eyebrow: "Project films", title: "Four landmarks, frame by frame." },
+    { at: [0.02, 0.45], eyebrow: "Al Ryum Group · Since 1989", title: "Over 35 years in the landscape." },
+    { at: [0.52, 1.01], eyebrow: "UAE · Saudi Arabia · Qatar · Iraq · Jordan", title: "Built across the region." },
   ],
 };
 

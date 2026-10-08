@@ -30,7 +30,7 @@
 }
 .arc-field__title {
   margin: 0 auto; max-width: 16ch; font-family: "DM Serif Display", Georgia, serif; font-weight: 400;
-  font-size: clamp(2.3rem, 6.2vw, 5.6rem); line-height: 1.02; letter-spacing: -0.01em; color: #f8fafa; text-wrap: balance;
+  font-size: clamp(2.3rem, min(6.2vw, 9.6vh), 5.6rem); line-height: 1.02; letter-spacing: -0.01em; color: #f8fafa; text-wrap: balance;
 }
 /* Line-by-line (word) mask reveal, MOTO-style. */
 .arc-field__w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: 0.06em; }

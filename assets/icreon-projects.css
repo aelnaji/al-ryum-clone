@@ -4,7 +4,7 @@
 .icreon-projects { background: #0b1416; color: #f2fbfa; padding: clamp(4rem, 9vw, 8rem) 0; overflow: hidden; width: 100%; }
 .icreon-projects__head { max-width: 1400px; margin: 0 auto; padding: 0 clamp(1.5rem, 6vw, 5rem); display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: 3rem; }
 .icreon-projects__kicker { display: block; color: #9ef3ee; font-size: .66rem; font-weight: 800; letter-spacing: .2em; margin-bottom: 1rem; }
-.icreon-projects__title { margin: 0; font-family: "DM Serif Display", Georgia, serif; font-size: clamp(2.4rem, 6vw, 6rem); font-weight: 400; letter-spacing: -.06em; line-height: .92; max-width: 14ch; }
+.icreon-projects__title { margin: 0; font-family: "DM Serif Display", Georgia, serif; font-size: clamp(2.4rem, min(6vw, 9.3vh), 6rem); font-weight: 400; letter-spacing: -.06em; line-height: .92; max-width: 14ch; }
 .icreon-projects__count { color: rgba(242,251,250,.5); font-size: .7rem; font-weight: 700; letter-spacing: .14em; white-space: nowrap; }
 .icreon-projects__rail { display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; scroll-behavior: auto; }
 .icreon-projects__rail::-webkit-scrollbar { display: none; }
@@ -48,7 +48,7 @@
 @media (max-width: 760px) {
   .icreon-card { flex-basis: min(86vw, 24rem); grid-template-rows: auto 15rem; }
   .icreon-projects__head { flex-direction: column; align-items: flex-start; }
-  .icreon-projects__title { font-size: clamp(2.2rem, 11vw, 3.4rem); }
+  .icreon-projects__title { font-size: clamp(2.2rem, min(11vw, 17.1vh), 3.4rem); }
   .icreon-projects__count { display: none; }
 }
 
@@ -392,7 +392,7 @@ body.ar-pd-locked { overflow: hidden; overscroll-behavior: none; position: fixed
 
 @media (max-width: 900px) {
   .ar-pd-top { padding-right: 3.9rem; }
-  .ar-pd-title { font-size: clamp(1.35rem, 6vw, 1.9rem); }
+  .ar-pd-title { font-size: clamp(1.35rem, min(6vw, 9.3vh), 1.9rem); }
   .ar-pd-dock { flex-direction: column; align-items: stretch; gap: .9rem; }
   .ar-pd-brief { max-width: none; order: 2; }
   .ar-pd-film { width: 100%; order: 1; }

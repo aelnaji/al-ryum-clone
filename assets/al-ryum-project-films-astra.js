@@ -84,7 +84,7 @@
     const canvas = document.createElement("canvas");
     canvas.className = "ar-pf-canvas";
     canvas.setAttribute("role", "img");
-    canvas.setAttribute("aria-label", `${film.title} — project film, scroll to scrub`);
+    canvas.setAttribute("aria-label", `${film.title} — scroll to move through the project`);
     styles(canvas, {
       position: "absolute",
       inset: "0",
@@ -452,7 +452,7 @@
     scene.setAttribute("data-film", film.id);
     scene.setAttribute(
       "aria-label",
-      `${film.title} — project film ${film.index} of ${FILMS.length}`
+      `${film.title} — signature project ${film.index} of ${FILMS.length}`
     );
 
     const stage = document.createElement("div");
@@ -466,7 +466,7 @@
     loader.setAttribute("aria-hidden", "true");
     loader.innerHTML = `
       <div class="ar-pf-loader__row">
-        <span class="ar-pf-loader__label">LOADING FILM</span>
+        <span class="ar-pf-loader__label">LOADING</span>
         <span class="ar-pf-loader__pct" data-ar-pf-loader-pct>0%</span>
       </div>
       <div class="ar-pf-loader__rail">
@@ -493,7 +493,7 @@
     overlay.innerHTML = `
       <div class="ar-pf-topbar">
         <div class="ar-pf-topbar__left">
-          <span>PROJECT FILM <b>${film.index}</b> / ${String(FILMS.length).padStart(2, "0")}</span>
+          <span>PROJECT <b>${film.index}</b> / ${String(FILMS.length).padStart(2, "0")}</span>
           <span>${film.category}</span>
         </div>
         <div class="ar-pf-topbar__right">
@@ -581,7 +581,7 @@
   function buildNav() {
     const nav = document.createElement("nav");
     nav.className = "ar-pf-nav";
-    nav.setAttribute("aria-label", "Jump to project film");
+    nav.setAttribute("aria-label", "Jump to a signature project");
     FILMS.forEach((film, i) => {
       const button = document.createElement("button");
       button.type = "button";
@@ -589,7 +589,7 @@
       button.setAttribute("data-target", film.id);
       button.setAttribute("aria-current", i === 0 ? "true" : "false");
       button.innerHTML = `
-        <span class="ar-pf-nav__index">FILM ${film.index} / ${String(FILMS.length).padStart(2, "0")}</span>
+        <span class="ar-pf-nav__index">${film.index} / ${String(FILMS.length).padStart(2, "0")}</span>
         <span class="ar-pf-nav__label">${film.title}</span>`;
       nav.appendChild(button);
     });
@@ -622,7 +622,7 @@
     finale.removeAttribute("style");
     finale.classList.add("ar-pf-section");
     finale.id = "ar-pf-section";
-    finale.setAttribute("aria-label", "Al Ryum project films");
+    finale.setAttribute("aria-label", "Al Ryum signature projects");
 
     [finale, host].forEach((element) => styles(element, {
       position: "relative", inset: "auto", height: "auto",
@@ -635,9 +635,9 @@
     [title].forEach((element) => styles(element, {
       position: "relative", inset: "auto", "z-index": "1",
     }));
-    // Nav is sticky (per CSS) so the film selector stays visible while
-    // scrubbing through all four films, until the section is passed.
-    styles(nav, { position: "sticky", top: "0", "z-index": "60" });
+    // The project index scrolls with the page. Pinned at top 0 it sat under the
+    // fixed site header and showed only as a cut-off strip over every project.
+    styles(nav, { position: "relative", "z-index": "60" });
     finale.append(title, nav, host);
 
     const instances = FILMS.map(buildScene);

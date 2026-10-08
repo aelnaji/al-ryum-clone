@@ -54,7 +54,7 @@ html.ar-services-3d .min-h-screen {
   font-size: 11.5px; margin-bottom: 1.1rem;
 }
 #ar-services-mount .ar-s3d-hero h1 {
-  font-size: clamp(42px, 7vw, 92px); line-height: 1.02; margin: 0 0 1rem;
+  font-size: clamp(42px, min(7vw, 10.8vh), 92px); line-height: 1.02; margin: 0 0 1rem;
   text-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
 }
 #ar-services-mount .ar-s3d-hero p {

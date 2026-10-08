@@ -44,7 +44,7 @@ function sectionProgress(el) {
 
 const FIELD = {
   scrubVh: 2.6, // scroll distance in viewports; scene = scrubVh + 1 pinned viewport
-  textures: Array.from({ length: 28 }, (_, i) => `/assets/field/field-${String(i + 1).padStart(2, "0")}.webp`),
+  textures: Array.from({ length: 28 }, (_, i) => `/assets/field/field-${String(i + 1).padStart(2, "0")}.webp?v=2`),
   depth: 150, // world units the camera travels
   beats: [
     { at: [0.02, 0.3], eyebrow: "Al Ryum Group · Since 1989", title: "Over 35 years in the landscape." },

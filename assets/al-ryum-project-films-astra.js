@@ -18,7 +18,7 @@
       place: "Yas Island · Abu Dhabi, UAE",
       category: "Theme Park · Landscaping & External Works",
       base: "/assets/projects/warner-bros/frames/frame_",
-      ext: "jpg",
+      ext: "webp",
     },
     {
       id: "emirates-palace",
@@ -28,7 +28,7 @@
       place: "Corniche · Abu Dhabi, UAE",
       category: "Hospitality · External Works & Hardscape",
       base: "/assets/projects/emirates/frames/frame_",
-      ext: "jpg",
+      ext: "webp",
     },
     {
       id: "louvre-abu-dhabi",
@@ -219,7 +219,12 @@
           pump();
         };
 
-        image.onload = () => finish(true);
+        // Decode before the frame counts as ready, so drawImage never has to
+        // decode on the main thread mid-scroll (the visible hitch between shots).
+        image.onload = () => {
+          if (typeof image.decode !== "function") return finish(true);
+          image.decode().then(() => finish(true), () => finish(true));
+        };
         image.onerror = () => finish(false);
         image.src = url(n);
       }
@@ -667,8 +672,10 @@
       instances.forEach((instance, index) => {
         const rect = instance.scene.getBoundingClientRect();
         if (rect.top <= viewportHeight * 0.5) activeIndex = index;
+        // Start loading a film well before it arrives, so a fast scroll
+        // doesn't land on a scene whose frames are still in flight.
         const near = rect.bottom > -viewportHeight &&
-          rect.top < viewportHeight * 2;
+          rect.top < viewportHeight * 4;
         if (instance.__near !== near) {
           instance.__near = near;
           instance.scrubber.activate(near);
@@ -805,13 +812,13 @@
 
     listen(nav, "click", onNavClick);
     listen(window, "alryum-motion-change", onMotionChange);
-    // Only track scroll while the films are within a viewport of the screen.
+    // Only track scroll while the films are within three viewports of the screen.
     let filmsNear = true;
     if (window.IntersectionObserver) {
       const nearObserver = new IntersectionObserver((entries) => {
         filmsNear = entries[entries.length - 1].isIntersecting;
         scheduleUpdate(); // one last update parks the scenes when leaving
-      }, { rootMargin: "100% 0px" });
+      }, { rootMargin: "300% 0px" });
       nearObserver.observe(finale);
       cleanup.push(() => nearObserver.disconnect());
     }

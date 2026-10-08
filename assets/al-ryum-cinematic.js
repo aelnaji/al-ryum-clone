@@ -24,7 +24,7 @@
 
   var FILMS = [
     // Louvre + Zayed films have been moved into the dedicated
-    // "Project Films" section (al-ryum-project-films.js) which
+    // "Project Films" section (al-ryum-project-films-astra.js) which
     // uses the new full-bleed canvas frame-scrub pattern. The
     // existing in-cinematic Louvre / Zayed entries are removed
     // to avoid duplication.
@@ -33,10 +33,10 @@
   function buildSections() {
     // The original Louvre + Zayed film sections and the "Built to last."
     // finale have been moved into the new dedicated Project Films section
-    // (al-ryum-project-films.js). This script now only renders:
+    // (al-ryum-project-films-astra.js). This script now only renders:
     //   1. The intro bridge "Our signature projects, in motion."
     //   2. An empty `arc-finale` placeholder that the new Project Films
-    //      section (al-ryum-project-films.js) replaces in place.
+    //      section (al-ryum-project-films-astra.js) replaces in place.
     return ''
       // Empty placeholder — the new Project Films section takes over
       // this slot in-place on mount. Kept so the cinematic host

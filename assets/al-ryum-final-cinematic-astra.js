@@ -58,7 +58,9 @@
   function worker() {
     const i = next++; if (i >= images.length) return;
     const img = new Image(); img.decoding = 'async';
-    img.onload = () => { images[i] = img; loaded++; active?.update(); worker(); };
+    // Decode off the scroll path before the frame becomes drawable.
+    const ready = () => { images[i] = img; loaded++; active?.update(); worker(); };
+    img.onload = () => (img.decode ? img.decode().then(ready, ready) : ready());
     img.onerror = () => { failed++; active?.update(); worker(); };
     img.src = '/assets/hero-0817-astra/frame_' + String(i + 1).padStart(4, '0') + '.webp';
   }

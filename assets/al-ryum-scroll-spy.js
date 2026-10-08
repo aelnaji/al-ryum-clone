@@ -22,7 +22,7 @@
     { label: "Services",   sel: "#solutions" },
     { label: "GCC",        sel: "#global-reach" },
     { label: "Journey",    sel: "#journey" },
-    { label: "Films",      sel: "#arc-cinematic-host, #ar-pf-section" },
+    { label: "Signature",  sel: "#arc-cinematic-host, #ar-pf-section" },
     { label: "Projects",   sel: "#projects" },
     { label: "News",       sel: "#news" },
     { label: "Contact",    sel: "#contact" }

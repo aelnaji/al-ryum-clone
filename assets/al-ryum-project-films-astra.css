@@ -79,10 +79,10 @@
   overflow-wrap: anywhere;
 }
 
-/* 2. Sticky navigation; active underline reserves its space. */
+/* 2. Project index; active underline reserves its space. It scrolls with the page:
+   pinned, it slid under the fixed site header and showed only as a cut-off strip. */
 .ar-pf-nav {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 60;
   width: 100%;
   display: grid;

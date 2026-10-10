@@ -42,6 +42,21 @@ html.ar-services-3d .min-h-screen {
   position: absolute; inset: 0; width: 100%; height: 100%; display: block; z-index: 1;
 }
 #ar-services-mount .ar-s3d-canvas.is-paused { opacity: 0.85; }
+/* Gold masterplan linework (the Corniche plan) drifting faintly behind the particles. */
+#ar-services-mount .ar-s3d-hero::before {
+  content: ""; position: absolute; inset: -4%; z-index: 0; pointer-events: none;
+  background: url("/assets/services/hero-masterplan.webp") center 40% / cover no-repeat;
+  opacity: 0.4;
+  /* calmer behind the heading, full strength toward the edges */
+  -webkit-mask-image: radial-gradient(ellipse 42% 34% at 50% 46%, rgba(0, 0, 0, 0.3), #000 100%);
+  mask-image: radial-gradient(ellipse 42% 34% at 50% 46%, rgba(0, 0, 0, 0.3), #000 100%);
+  animation: ar-s3d-plan 38s ease-in-out infinite alternate;
+}
+@keyframes ar-s3d-plan {
+  from { transform: scale(1) translate3d(0, 0, 0); }
+  to { transform: scale(1.07) translate3d(-1.5%, -1%, 0); }
+}
+@media (prefers-reduced-motion: reduce) { #ar-services-mount .ar-s3d-hero::before { animation: none; } }
 #ar-services-mount .ar-s3d-vignette {
   position: absolute; inset: 0; z-index: 2; pointer-events: none;
   background: radial-gradient(ellipse at 50% 42%, rgba(18, 32, 35, 0) 28%, rgba(11, 22, 24, 0.86) 100%);
@@ -50,8 +65,8 @@ html.ar-services-3d .min-h-screen {
   position: relative; z-index: 3; text-align: center; max-width: 780px;
 }
 #ar-services-mount .ar-s3d-eyebrow {
-  display: block; color: var(--gold); letter-spacing: 0.5em; text-transform: uppercase;
-  font-size: 11.5px; margin-bottom: 1.1rem;
+  display: block; color: var(--gold); letter-spacing: 0.36em; text-transform: uppercase;
+  font-size: clamp(13px, 1.1vw, 16px); font-weight: 600; margin-bottom: 1.1rem;
 }
 #ar-services-mount .ar-s3d-hero h1 {
   font-size: clamp(42px, min(7vw, 10.8vh), 92px); line-height: 1.02; margin: 0 0 1rem;

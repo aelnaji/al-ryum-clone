@@ -1,8 +1,3 @@
-/* ═══════ AL RYUM · @astra ═══════
-   Rebuilt via GPT-6 Astra (experientiallabs). CANDIDATE — to disconnect:
-   remove this file and revert the <script src> in index.html to the original.
-   DO NOT hand-edit alongside the original; treat as a drop-in replacement. */
-
 // Al Ryum — Project Films. Classic-script, section-local frame scrubbing.
 (() => {
   "use strict";

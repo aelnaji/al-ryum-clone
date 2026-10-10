@@ -101,7 +101,7 @@
   if (projects) {
     // Only the cards themselves. A generic "div with an image and a heading" match also
     // caught the section, group and grid wrappers whenever the cards mounted first.
-    var projCards = Array.prototype.slice.call(projects.querySelectorAll(".icreon-card"));
+    var projCards = Array.prototype.slice.call(projects.querySelectorAll(".ar-showcase-card"));
     // Ensure every card is visible even if GSAP/JS fails: set a base opacity of 1
     // so nothing is ever permanently hidden. Then animate a gentle rise per-card,
     // each firing once when IT enters the viewport (not a single section-wide trigger).
@@ -119,7 +119,7 @@
   /* ---------- 4. (removed) 3D TILT on project cards ----------
      It matched every div holding an image and a heading, so when the cards were already
      mounted it rotated the whole projects section with the mouse. The cards are text-led
-     and read better still; their hover state is in icreon-projects.css. */
+     and read better still; their hover state is in al-ryum-projects-showcase.css. */
 
   /* ---------- 5. REEL-EXPAND on about video (padding -> full-bleed) ---------- */
   var about = document.getElementById("about");

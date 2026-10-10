@@ -1,4 +1,4 @@
-/* ==== AL RYUM @astra ==== Projects index restyle.
+/* AL RYUM — Projects index restyle.
    Turns /projects from six sector "category" blocks + white dropdowns into one uniform
    portfolio grid on the site's ink background, with gold accents matching the project
    viewer. React's markup, filtering and card clicks are untouched — only presentation. */

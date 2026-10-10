@@ -1,4 +1,4 @@
-/* ==== AL RYUM @astra ==== Services page, rebuilt as a cinematic 3D page.
+/* AL RYUM — Services page, rebuilt as a cinematic 3D page.
    Template: the standalone "3D Cinematic Sample" the client supplied (WebGL particle hero + scroll scenes +
    tilt cards). Rebuilt here on the live site's own tokens, with all seven services, real links into
    /solutions/<id>, per-service imagery, and no unverifiable claims.

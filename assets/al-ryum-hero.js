@@ -1,4 +1,4 @@
-/* @astra — 0817 cinematic controller. Disconnect: restore backed-up entry HTML.
+/* AL RYUM — home hero: scroll-scrubbed aerial flight (assets/hero/frames/).
  * Original footage + perspective planes (2.5D), not reconstructed geometry.
  */
 (() => {
@@ -62,7 +62,7 @@
     const ready = () => { images[i] = img; loaded++; active?.update(); worker(); };
     img.onload = () => (img.decode ? img.decode().then(ready, ready) : ready());
     img.onerror = () => { failed++; active?.update(); worker(); };
-    img.src = '/assets/hero-0817-astra/frame_' + String(i + 1).padStart(4, '0') + '.webp';
+    img.src = '/assets/hero/frames/frame_' + String(i + 1).padStart(4, '0') + '.webp';
   }
   function mount(canvas) {
     const hero = canvas.closest('section'); if (!hero) return;
@@ -80,7 +80,7 @@
     let frame = -1, width = 0, height = 0, raf = 0;
     // smooth: damped progress (null = snap to the target). inView: off-screen gate.
     let smooth = null, inView = true, loaderText = '';
-    const state = { progress: 0, target: 0, frame: 0, loaded: 0, source: '0817.mp4' };
+    const state = { progress: 0, target: 0, frame: 0, loaded: 0, source: 'hero/frames' };
     function update() {
       if (raf || !inView) return;
       raf = requestAnimationFrame(() => {

@@ -27,11 +27,20 @@ Set in `index.html`:
 
 ## Media
 - **Project films**: frame strips in `assets/projects/<film>/frames/`, wired in
-  `assets/al-ryum-project-films-astra.js`.
+  `assets/al-ryum-project-films.js`.
 - **4K masters**: kept in `assets/cinematic-4k/` for future re-cuts. No page loads them.
-- **Landing hero**: 142 frames in `assets/hero-0817-astra/`, wired in
-  `assets/al-ryum-final-cinematic-astra.js`.
+- **Landing hero**: 142 frames in `assets/hero/frames/`, wired in
+  `assets/al-ryum-hero.js`.
 - **Garden video** ("Who we are", after the hero): `assets/garden-film.mp4`
   (1080p) and `assets/garden-film-poster.webp`.
 - **After changing a file**, bump its `?v=` number where it is referenced, so
   browsers fetch the new copy.
+
+## File naming
+- **App bundle**: `assets/app.js` (loaded by `assets/app-loader.js`) and `assets/app.css`.
+- **Site features**: `assets/al-ryum-<feature>.js` / `.css`, one pair per feature
+  (for example `al-ryum-hero.js`, `al-ryum-project-films.css`).
+- **Media**: lowercase words joined by hyphens, in a folder named for what it holds
+  (`assets/real/about/`, `assets/projects/<film>/frames/frame_0001.webp`).
+- **Never** put a tool, model, agency or version name in a file name, class name or
+  comment. Say what the file does.

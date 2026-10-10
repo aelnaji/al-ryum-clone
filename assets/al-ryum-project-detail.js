@@ -1,5 +1,3 @@
-/* ==== AL RYUM @astra ==== Rebuilt via GPT-6 Astra (experientiallabs). CANDIDATE - disconnect: remove file + revert index.html src. */
-
 /* al-ryum-project-detail.js — singleton project viewer.
    Single-screen cinematic layout: the image IS the page. Nothing scrolls except the
    filmstrip (horizontal) and the optional details sheet (which owns its own scroll).
@@ -834,10 +832,10 @@
         event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     var target = event.target instanceof Element ? event.target : null;
     if (!target || (overlayEl && overlayEl.contains(target))) return;
-    var card = target.closest(".icreon-card");
+    var card = target.closest(".ar-showcase-card");
     if (!card && event.detail > 0 && document.elementFromPoint) {
       var hit = document.elementFromPoint(event.clientX, event.clientY);
-      card = hit && hit.closest(".icreon-card");
+      card = hit && hit.closest(".ar-showcase-card");
     }
     var link = target.closest("a[href]");
     if (link && (link.hasAttribute("download") ||
@@ -855,7 +853,7 @@
     }
     if (id === null && !card) return;
     if (id === null && target.closest("button,input,select,textarea,[contenteditable]")) return;
-    var title = card && card.querySelector(".icreon-card__title");
+    var title = card && card.querySelector(".ar-showcase-card__title");
     var name = title ? title.textContent.trim() : "";
     if (id === null && !name) return;
     event.preventDefault();

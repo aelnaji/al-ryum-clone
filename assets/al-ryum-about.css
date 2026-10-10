@@ -1,0 +1,107 @@
+/* AL RYUM — home "Who we are" section: dark, gold accents, full-screen garden film
+   in a thin gold frame. Markup: function xS() in assets/index-v10-timeline.js. */
+.ar-about {
+  position: relative;
+  background: #0a1416;
+  color: #f8fafa;
+  padding: clamp(4.5rem, 9vw, 8rem) 0 0;
+}
+.ar-about__intro {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 6vw, 6rem) clamp(2.75rem, 5vw, 4.5rem);
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  column-gap: clamp(2rem, 6vw, 6rem);
+  row-gap: 1.6rem;
+  align-items: end;
+}
+.ar-about__eyebrow {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  font-family: "Manrope", system-ui, sans-serif;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: #c8a86e;
+}
+.ar-about__eyebrow::before { content: ""; width: 2.6rem; height: 1px; background: #c8a86e; }
+.ar-about__title {
+  margin: 0;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.4rem, min(4.6vw, 7.2vh), 4.4rem);
+  line-height: 1.04;
+  letter-spacing: -.02em;
+  color: #f8fafa;
+}
+.ar-about__title em { font-style: italic; color: #c8a86e; }
+.ar-about__text {
+  margin: 0;
+  max-width: 36rem;
+  font-size: clamp(.98rem, 1.1vw, 1.08rem);
+  line-height: 1.8;
+  color: rgba(248, 250, 250, .68);
+}
+
+/* Full-screen film. The section is UI-scaled on desktop (al-ryum-desktop-scale.css),
+   so divide by that factor to fill the real viewport height. */
+.ar-about__film {
+  position: relative;
+  width: 100%;
+  height: calc(100svh / var(--ar-ui-zoom, 1));
+  min-height: 420px;
+  overflow: hidden;
+  background: #061112;
+}
+.ar-about__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* Soft fades into the dark sections above and below. */
+.ar-about__film::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, #0a1416 0%, rgba(10, 20, 22, 0) 14%),
+    linear-gradient(0deg, #122023 0%, rgba(18, 32, 35, 0) 16%);
+}
+/* Thin gold frame with heavier corner marks. */
+.ar-about__frame {
+  --i: clamp(14px, 2.2vw, 30px);
+  position: absolute;
+  inset: var(--i);
+  z-index: 1;
+  pointer-events: none;
+  border: 1px solid rgba(200, 168, 110, .55);
+}
+.ar-about__frame::before,
+.ar-about__frame::after {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border: 0 solid #c8a86e;
+}
+.ar-about__frame::before { top: -1px; left: -1px; border-top-width: 2px; border-left-width: 2px; }
+.ar-about__frame::after { right: -1px; bottom: -1px; border-right-width: 2px; border-bottom-width: 2px; }
+.ar-about__caption {
+  position: absolute;
+  z-index: 2;
+  left: calc(clamp(14px, 2.2vw, 30px) + 1.3rem);
+  bottom: calc(clamp(14px, 2.2vw, 30px) + 1.1rem);
+  font-family: "Manrope", system-ui, sans-serif;
+  font-size: .66rem;
+  font-weight: 700;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: #c8a86e;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, .6);
+}
+
+@media (max-width: 860px) {
+  .ar-about__intro { grid-template-columns: 1fr; }
+  .ar-about__film { height: 72svh; }
+}

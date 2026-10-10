@@ -51,7 +51,8 @@
     // only split if the element holds plain text (not already wrapped)
     if (el.querySelectorAll(".sw-word").length) return el.querySelectorAll(".sw-word");
     var txt = el.textContent.trim();
-    if (!txt || el.querySelector("img, svg, canvas, video")) return null;
+    // data-keep-words: headings with styled inner spans (e.g. a gold <em>) keep their markup.
+    if (!txt || el.hasAttribute("data-keep-words") || el.querySelector("img, svg, canvas, video")) return null;
     var words = txt.split(/\s+/);
     el.innerHTML = words.map(function (w) {
       return '<span class="sw-mask" style="display:inline-block;overflow:hidden;vertical-align:top;">' +

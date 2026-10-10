@@ -11,51 +11,8 @@
 
   const FILMS = [
     {
-      id: "warner-bros",
-      index: "01",
-      title: "Warner Bros. World Abu Dhabi",
-      sub: "Rotating Entrance Dome",
-      place: "Yas Island · Abu Dhabi, UAE",
-      category: "Theme Park · Landscaping & External Works",
-      base: "/assets/projects/warner-bros/rise/frame_",
-      ext: "webp",
-      frames: 120,
-    },
-    {
-      id: "emirates-palace",
-      index: "02",
-      title: "Emirates Palace",
-      sub: "Exterior Approach",
-      place: "Corniche · Abu Dhabi, UAE",
-      category: "Hospitality · External Works & Hardscape",
-      base: "/assets/projects/emirates/frames/frame_",
-      ext: "webp",
-    },
-    {
-      id: "louvre-abu-dhabi",
-      index: "03",
-      title: "Louvre Abu Dhabi",
-      sub: "Transition Through the Dome",
-      place: "Saadiyat Island · Abu Dhabi, UAE",
-      category: "Cultural District · Landscaping & Approach",
-      base: "/assets/projects/louvre/frames/frame_",
-      ext: "webp",
-      frames: 120,
-    },
-    {
-      id: "zayed-national-museum",
-      index: "04",
-      title: "Zayed National Museum",
-      sub: "Architecture in the Landscape",
-      place: "Saadiyat Island · Abu Dhabi, UAE",
-      category: "Cultural District · Landscaping, Irrigation & Car Park",
-      base: "/assets/projects/zayed/frames/frame_",
-      ext: "webp",
-      frames: 120,
-    },
-    {
       id: "abu-dhabi-corniche",
-      index: "05",
+      index: "01",
       title: "Abu Dhabi Corniche",
       sub: "From Masterplan to Promenade",
       place: "Corniche · Abu Dhabi, UAE",
@@ -66,19 +23,68 @@
       ext: "webp",
       frames: 120,
     },
+    {
+      id: "warner-bros",
+      index: "02",
+      title: "Warner Bros. World Abu Dhabi",
+      sub: "Rotating Entrance Dome",
+      place: "Yas Island · Abu Dhabi, UAE",
+      category: "Theme Park · Landscaping & External Works",
+      base: "/assets/projects/warner-bros/rise/frame_",
+      ext: "webp",
+      frames: 120,
+    },
+    {
+      id: "emirates-palace",
+      index: "03",
+      title: "Emirates Palace",
+      sub: "Exterior Approach",
+      place: "Corniche · Abu Dhabi, UAE",
+      category: "Hospitality · External Works & Hardscape",
+      base: "/assets/projects/emirates/frames/frame_",
+      ext: "webp",
+    },
+    {
+      id: "louvre-abu-dhabi",
+      index: "04",
+      title: "Louvre Abu Dhabi",
+      sub: "Transition Through the Dome",
+      place: "Saadiyat Island · Abu Dhabi, UAE",
+      category: "Cultural District · Landscaping & Approach",
+      base: "/assets/projects/louvre/frames/frame_",
+      ext: "webp",
+      frames: 120,
+    },
+    {
+      id: "zayed-national-museum",
+      index: "05",
+      title: "Zayed National Museum",
+      sub: "Architecture in the Landscape",
+      place: "Saadiyat Island · Abu Dhabi, UAE",
+      category: "Cultural District · Landscaping, Irrigation & Car Park",
+      base: "/assets/projects/zayed/frames/frame_",
+      ext: "webp",
+      frames: 120,
+    },
   ];
 
   // Frames per film; a film with a richer source can set its own `frames`.
   const FRAME_TOTAL = 80;
   const framesOf = (film) => film.frames || FRAME_TOTAL;
   // Scroll distance each film scrubs over, in viewports (scene = SCRUB_VH + 1 pinned viewport).
-  const SCRUB_VH = 1.4;
+  const SCRUB_VH = 2;
   // Damped follow: the drawn frame eases toward the scroll target (0.14 per frame).
   const DAMPING = 0.14;
-  const SCALE_MIN = 1.10;
-  const SCALE_MAX = 1.16;
-  const ROTATE_MAX_DEG = 4;
-  const Z_RANGE = 80;
+  // Share of the "cover" scale a frame may shrink to on wide screens (see draw()).
+  const FIT = 0.88;
+  const STAGE_BG = "#0a1416";
+  const STAGE_BG_CLEAR = "rgba(10, 20, 22, 0)";
+  // Gentle depth only: a 1° tilt needs ~3% zoom to keep the corners covered, so the
+  // frame stays close to full (it was cropped by about a quarter at 4° / 1.16 / 80px).
+  const SCALE_MIN = 1.035;
+  const SCALE_MAX = 1.06;
+  const ROTATE_MAX_DEG = 1;
+  const Z_RANGE = 20;
   const clamp = (value) =>
     Math.max(0, Math.min(1, Number.isFinite(value) ? value : 0));
   const easeInOut = (t) =>
@@ -136,19 +142,51 @@
     function draw(source, iw, ih) {
       if (!context || !iw || !ih || !width || !height) return false;
       const zoom = Math.max(1, Number(film.zoom) || 1);
-      const scale = Math.max(width / iw, height / ih) * zoom;
-      const sw = width / scale;
-      const sh = height / scale;
+      // Wide browser windows (~2:1) crop 16:9 and 3:2 footage hard when it fills the
+      // width. Scale to at most FIT of "cover" (never below "contain"), so more of the
+      // shot shows; any margin left at the sides fades into the stage colour.
+      const cover = Math.max(width / iw, height / ih);
+      const contain = Math.min(width / iw, height / ih);
+      const scale = Math.max(contain, cover * FIT) * zoom;
+      const dw = Math.min(width, iw * scale);
+      const dh = Math.min(height, ih * scale);
+      const sw = dw / scale;
+      const sh = dh / scale;
       const fx = film.focusX == null ? 0.5 : clamp(film.focusX);
       const fy = film.focusY == null ? 0.5 : clamp(film.focusY);
       const sx = Math.max(0, Math.min(iw - sw, iw * fx - sw / 2));
       const sy = Math.max(0, Math.min(ih - sh, ih * fy - sh / 2));
+      const dx = (width - dw) / 2;
+      const dy = (height - dh) / 2;
       try {
         context.setTransform(dpr, 0, 0, dpr, 0, 0);
-        context.drawImage(source, sx, sy, sw, sh, 0, 0, width, height);
+        if (dx > 0.5 || dy > 0.5) {
+          context.fillStyle = STAGE_BG;
+          context.fillRect(0, 0, width, height);
+        }
+        context.drawImage(source, sx, sy, sw, sh, dx, dy, dw, dh);
+        if (dx > 0.5) feather(dx, dw, true);
+        if (dy > 0.5) feather(dy, dh, false);
         return true;
       } catch (_) {
         return false;
+      }
+    }
+
+    // Soft edges where the frame meets a side margin, so it reads as intentional.
+    function feather(offset, size, horizontal) {
+      const f = Math.min(90, size * 0.08);
+      const ends = [[offset, offset + f], [offset + size, offset + size - f]];
+      for (const [a, b] of ends) {
+        const g = horizontal
+          ? context.createLinearGradient(a, 0, b, 0)
+          : context.createLinearGradient(0, a, 0, b);
+        g.addColorStop(0, STAGE_BG);
+        g.addColorStop(1, STAGE_BG_CLEAR);
+        context.fillStyle = g;
+        const lo = Math.min(a, b);
+        if (horizontal) context.fillRect(lo, 0, f, height);
+        else context.fillRect(0, lo, width, f);
       }
     }
 
@@ -649,9 +687,9 @@
     [title].forEach((element) => styles(element, {
       position: "relative", inset: "auto", "z-index": "1",
     }));
-    // The project index scrolls with the page. Pinned at top 0 it sat under the
-    // fixed site header and showed only as a cut-off strip over every project.
-    styles(nav, { position: "relative", "z-index": "60" });
+    // The project index stays pinned just below the fixed site header (whose height
+    // changes with its pill/bar state and the desktop UI scale), as a slim bar.
+    styles(nav, { position: "sticky", top: "var(--ar-header-offset, 68px)", "z-index": "60" });
     finale.append(title, nav, host);
 
     const instances = FILMS.map(buildScene);
@@ -700,9 +738,20 @@
       instance.scrubber.setProgress(p);
     }
 
+    let headerOffset = -1;
+    function syncHeaderOffset() {
+      const header = document.querySelector("header");
+      const bottom = header ? Math.max(0, Math.round(header.getBoundingClientRect().bottom)) : 0;
+      if (bottom !== headerOffset) {
+        headerOffset = bottom;
+        document.documentElement.style.setProperty("--ar-header-offset", `${bottom}px`);
+      }
+    }
+
     function update() {
       updateRaf = 0;
       if (dead) return;
+      syncHeaderOffset();
       let activeIndex = 0;
       instances.forEach((instance, index) => {
         const rect = instance.scene.getBoundingClientRect();

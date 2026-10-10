@@ -1,0 +1,49 @@
+/* AL RYUM — desktop UI scale.
+   The site was laid out for ~1920px-wide windows, so on laptop and standard desktop
+   windows the header, type, cards and spacing read about 15-20% too large (it looked
+   right at 80% browser zoom). This scales the ordinary content blocks down.
+
+   The full-screen scroll stages are left alone: hero, Global Reach, the 3D field and
+   the project films measure the viewport in JavaScript and must stay edge to edge. */
+:root { --ar-ui-zoom: 1; }
+@media (min-width: 1024px) { :root { --ar-ui-zoom: 0.85; } }
+@media (min-width: 1800px) { :root { --ar-ui-zoom: 0.92; } }
+
+header.fixed,
+#root .min-h-screen > :is(section, div, footer):not(header):not(.ar-hero-region):not(#global-reach):not(#arc-field):not(#arc-cinematic-host) {
+  zoom: var(--ar-ui-zoom);
+}
+
+/* Project index: a slim bar that stays under the site header while the films play.
+   --ar-header-offset is the header's on-screen height, set by the films script. */
+#arc-cinematic-host .ar-pf-nav {
+  top: var(--ar-header-offset, 68px);
+}
+#arc-cinematic-host .ar-pf-nav__item {
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  min-height: 0;
+  padding: .7rem clamp(.9rem, 1.6vw, 1.4rem) .6rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#arc-cinematic-host .ar-pf-nav__index { display: inline; margin: 0; flex: none; font-size: .64rem; }
+#arc-cinematic-host .ar-pf-nav__label {
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: clamp(.72rem, .9vw, .86rem);
+  letter-spacing: .1em;
+}
+#arc-cinematic-host .ar-pf-nav__item::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+#arc-cinematic-host .ar-pf-nav__item { position: relative; }
+
+/* Inside a scaled block, 100vw is scaled too; the section is already full width. */
+#projects .icreon-projects-host { width: 100%; margin-left: 0; }

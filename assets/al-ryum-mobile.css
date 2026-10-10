@@ -1,0 +1,66 @@
+/* AL RYUM — phone layout (screens under 768px; desktop is untouched).
+   On a phone the desktop rows stacked into one tall block after another, so these turn
+   them into swipeable rows: What we do, the Global Reach country cards and the projects
+   showcase. The next card peeks in from the right so the swipe is obvious. Works in both
+   the light and the dark theme. Scroll lengths for the hero, the 3D field and the films
+   are shortened in their scripts (al-ryum-hero.js, al-ryum-cinema.js,
+   al-ryum-project-films.js). */
+@media (max-width: 767px) {
+  /* shared: a horizontal row that snaps card by card */
+  #solutions .md\:hidden.space-y-6,
+  .country-cards,
+  .ar-showcase__grid {
+    display: flex !important;
+    gap: 14px !important;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 24px;
+    padding-inline: 24px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  #solutions .md\:hidden.space-y-6::-webkit-scrollbar,
+  .country-cards::-webkit-scrollbar,
+  .ar-showcase__grid::-webkit-scrollbar { display: none; }
+
+  /* What we do: seven tiles, one swipe each, instead of seven stacked 400px tiles */
+  #solutions .md\:hidden.space-y-6 > * {
+    flex: 0 0 78%;
+    height: 340px !important;
+    margin: 0 !important;
+    scroll-snap-align: start;
+  }
+
+  /* Global Reach: the country cards side by side */
+  .country-cards {
+    margin-inline: -24px;
+    background: none !important;
+    border: 0 !important;
+  }
+  .country-card {
+    flex: 0 0 84%;
+    scroll-snap-align: start;
+    border: 1px solid rgba(236, 255, 252, .16);
+  }
+  .country-card:last-child { width: auto; }
+  .country-card { min-height: 0; padding: 1.4rem 1.3rem; }
+  .country-card h3 { margin: 1rem 0 .7rem; font-size: 2rem; }
+  .country-card p { font-size: .92rem; line-height: 1.55; }
+  .country-card small { margin-top: 1.1rem; }
+  /* the globe holds while it tours the cities; a shorter hold on phones */
+  .partnership-layer { margin-top: 120svh; }
+
+  /* Projects showcase: each group is one swipeable row of shorter cards */
+  .ar-showcase__grid {
+    margin-inline: -24px;
+    padding-bottom: 6px;
+  }
+  .ar-showcase__grid .ar-showcase-card {
+    flex: 0 0 84%;
+    width: auto;
+    scroll-snap-align: start;
+    grid-template-rows: auto 11rem;
+  }
+  .ar-showcase-card__desc { -webkit-line-clamp: 3; }
+}

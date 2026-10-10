@@ -69,7 +69,9 @@
   const FRAME_TOTAL = 80;
   const framesOf = (film) => film.frames || FRAME_TOTAL;
   // Scroll distance each film scrubs over, in viewports (scene = SCRUB_VH + 1 pinned viewport).
-  const SCRUB_VH = 2;
+  // Phones get a shorter run: the same frames, less thumb travel.
+  const SCRUB_VH = 2, SCRUB_VH_PHONE = 1;
+  const scrubVh = () => (innerWidth < 768 ? SCRUB_VH_PHONE : SCRUB_VH);
   // Damped follow: the drawn frame eases toward the scroll target (0.14 per frame).
   const DAMPING = 0.14;
   // Share of the "cover" scale a frame may shrink to on wide screens (see draw()).
@@ -853,7 +855,7 @@
       if (dead) return;
       viewportHeight = Math.max(1, window.innerHeight || document.documentElement.clientHeight);
       instances.forEach((instance) => {
-        instance.scene.style.height = `${viewportHeight * (reduced ? 1 : 1 + SCRUB_VH)}px`;
+        instance.scene.style.height = `${viewportHeight * (reduced ? 1 : 1 + scrubVh())}px`;
         instance.stage.style.height = `${viewportHeight}px`;
         instance.stage.style.position = reduced ? "relative" : "sticky";
         instance.setReduced(reduced);

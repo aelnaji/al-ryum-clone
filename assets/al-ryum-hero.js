@@ -47,7 +47,9 @@
   const images = new Array(142); let next = 0; let loaded = 0; let failed = 0;
   // Scroll distance the strip scrubs over, in viewports (region = SCRUB_VH + 1 pinned viewport).
   // Two viewports give the clouds-to-headquarters flight room to play.
-  const SCRUB_VH = 2;
+  // Phones get a shorter run: the same frames, less thumb travel.
+  const SCRUB_VH = 2, SCRUB_VH_PHONE = 1.3;
+  const scrubVh = () => (innerWidth < 768 ? SCRUB_VH_PHONE : SCRUB_VH);
   // Damped follow: smooth += (target - smooth) * DAMPING per frame.
   const DAMPING = 0.14, SETTLE = 0.0005;
   let started = false;
@@ -133,7 +135,7 @@
     }) : null;
     io?.observe(region);
     function layout() {
-      region.style.height = motion.enabled ? `${innerHeight * (1 + SCRUB_VH)}px` : `${innerHeight}px`;
+      region.style.height = motion.enabled ? `${innerHeight * (1 + scrubVh())}px` : `${innerHeight}px`;
       update(); window.lenis?.resize(); window.ScrollTrigger?.refresh();
     }
     const scrollButton = hero.querySelector('button[aria-label="Scroll down"]');

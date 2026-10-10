@@ -12,7 +12,7 @@
      - cards-rise       : solution cards + global-reach cards + journey cards
                           rise up staggered on scroll
      - shuffle-rise     : project cards stagger up with a shuffle feel
-     - 3D tilt cards    : project card rotateX/rotateY tilt + glare on hover
+     - 3D tilt cards    : removed (it rotated the whole projects section)
      - reel-expand      : about hero video expands padding to full-bleed
      - char-reveal      : big statement heading chars fade in
      - marquee          : footer marquee direction-aware infinite scroll
@@ -98,9 +98,9 @@
   /* ---------- 3. PROJECT CARDS — reveal each card as it enters view ---------- */
   var projects = document.getElementById("projects");
   if (projects) {
-    var projCards = Array.prototype.slice.call(projects.querySelectorAll("div")).filter(function (d) {
-      return d.querySelector("img") && d.querySelector("h3,h4,h5") && d.children.length >= 2;
-    });
+    // Only the cards themselves. A generic "div with an image and a heading" match also
+    // caught the section, group and grid wrappers whenever the cards mounted first.
+    var projCards = Array.prototype.slice.call(projects.querySelectorAll(".icreon-card"));
     // Ensure every card is visible even if GSAP/JS fails: set a base opacity of 1
     // so nothing is ever permanently hidden. Then animate a gentle rise per-card,
     // each firing once when IT enters the viewport (not a single section-wide trigger).
@@ -115,28 +115,10 @@
     });
   }
 
-  /* ---------- 4. 3D TILT on project cards (rotateX/rotateY + glare) ---------- */
-  if (projects) {
-    var tiltCards = Array.prototype.slice.call(projects.querySelectorAll("div")).filter(function (d) {
-      return d.querySelector("img") && d.children.length >= 2 && d.querySelector("h3,h4,h5");
-    });
-    tiltCards.forEach(function (card) {
-      card.style.position = "relative";
-      card.style.transformStyle = "preserve-3d";
-      card.style.willChange = "transform";
-      card.style.transition = "transform .5s ease, box-shadow .5s ease";
-      card.style.perspective = "1000px";
-      card.addEventListener("mousemove", function (e) {
-        var r = card.getBoundingClientRect();
-        var rx = ((e.clientY - r.top) / r.height - 0.5) * -10;
-        var ry = ((e.clientX - r.left) / r.width - 0.5) * 10;
-        card.style.transform = "perspective(1000px) rotateX(" + rx.toFixed(2) + "deg) rotateY(" + ry.toFixed(2) + "deg)";
-      });
-      card.addEventListener("mouseleave", function () {
-        card.style.transform = "rotateX(0deg) rotateY(0deg)";
-      });
-    });
-  }
+  /* ---------- 4. (removed) 3D TILT on project cards ----------
+     It matched every div holding an image and a heading, so when the cards were already
+     mounted it rotated the whole projects section with the mouse. The cards are text-led
+     and read better still; their hover state is in icreon-projects.css. */
 
   /* ---------- 5. REEL-EXPAND on about video (padding -> full-bleed) ---------- */
   var about = document.getElementById("about");

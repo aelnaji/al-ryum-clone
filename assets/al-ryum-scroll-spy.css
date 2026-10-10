@@ -208,3 +208,8 @@
   .sw-route { display: none; }
   .sw-hint { display: none; }
 }
+
+/* Where the hint shows, the home hero's own round arrow sat on top of it; keep one cue. */
+@media (min-width: 821px) {
+  .ar-hero-region section > .absolute.bottom-12 { display: none; }
+}

@@ -73,7 +73,10 @@
     const background = canvas.parentElement;
     const mist = document.createElement('video');
     mist.className = 'ar-integrated-mist'; mist.muted = true; mist.playsInline = true;
-    mist.preload = 'auto'; mist.loop = true; mist.src = '/assets/hero-mist.mp4?v=2';
+    mist.preload = 'auto'; mist.loop = true;
+    // The mist clip is a second aerial shot; on phones and tablets it doubles the towers
+    // instead of reading as mist, so it is left out there (and not downloaded).
+    if (innerWidth >= 1024) mist.src = '/assets/hero-mist.mp4?v=2'; else mist.hidden = true;
     mist.setAttribute('aria-hidden', 'true'); background.append(mist);
     const fallback = hero.querySelector('#hero-scrub-fallback'); fallback?.pause();
     const ctx = canvas.getContext('2d');

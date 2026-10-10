@@ -24,7 +24,6 @@
     { label: "Journey",    sel: "#journey" },
     { label: "Signature",  sel: "#arc-cinematic-host, #ar-pf-section" },
     { label: "Projects",   sel: "#projects" },
-    { label: "News",       sel: "#news" },
     { label: "Contact",    sel: "#contact" }
   ];
 

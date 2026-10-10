@@ -23,6 +23,14 @@ its breakpoint tells it to do — the breakpoint is simply set too high for lapt
 
 ## Evidence
 
+**Below the breakpoint — blank centre, hamburger instead of links:**
+
+![Header at 1200px: logo left, blank centre, hamburger right](header-1200.jpg)
+
+**At the breakpoint — full five-link menu:**
+
+![Header at 1280px: full five-link menu](header-1280.jpg)
+
 Screenshots of the live build, one per width:
 
 | CSS width | Navigation links | Hamburger | Header pill |
@@ -36,6 +44,10 @@ Screenshots of the live build, one per width:
 | 1366 px   | **present (5)**  | absent    | full menu |
 | 1440 px   | **present (5)**  | absent    | full menu |
 | 1485 px   | **present (5)**  | absent    | full menu |
+
+Every crop is in this folder: `header-900.jpg` … `header-1485.jpg`.
+There is also an `index.html` in this folder that lays all nine out side by side —
+open it locally to compare them in one view.
 
 Breakpoint located in `assets/app.css`:
 

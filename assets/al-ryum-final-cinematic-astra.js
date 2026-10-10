@@ -71,7 +71,7 @@
     const background = canvas.parentElement;
     const mist = document.createElement('video');
     mist.className = 'ar-integrated-mist'; mist.muted = true; mist.playsInline = true;
-    mist.preload = 'auto'; mist.loop = true; mist.src = '/assets/hero-mist.mp4';
+    mist.preload = 'auto'; mist.loop = true; mist.src = '/assets/hero-mist.mp4?v=2';
     mist.setAttribute('aria-hidden', 'true'); background.append(mist);
     const fallback = hero.querySelector('#hero-scrub-fallback'); fallback?.pause();
     const ctx = canvas.getContext('2d');

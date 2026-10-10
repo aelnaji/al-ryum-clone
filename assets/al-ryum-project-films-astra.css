@@ -526,5 +526,23 @@
   }
 }
 
+/* Small "Visualisation" tag on films made from rendered imagery. */
+.ar-pf-note {
+  position: absolute;
+  z-index: 3;
+  left: max(1.5rem, env(safe-area-inset-left, 0px));
+  bottom: max(2.1rem, calc(env(safe-area-inset-bottom, 0px) + 1.25rem));
+  padding: .35rem .6rem;
+  font-family: "Manrope", system-ui, sans-serif;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: #c8a86e;
+  background: rgba(10, 20, 22, .55);
+  border: 1px solid rgba(200, 168, 110, .4);
+  pointer-events: none;
+}
+
 /* Clean cinematic: hide all film overlay chrome (nav, topbar, title, footbar). */
 .ar-pf-topbar, .ar-pf-titleblock, .ar-pf-footbar { display: none !important; }

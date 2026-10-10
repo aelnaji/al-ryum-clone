@@ -1,0 +1,128 @@
+/* AL RYUM — "cinema" light mix.
+   Reading sections sit on warm ivory with ink type and gold; the cinematic pieces stay dark:
+   the hero flight, the 3D field, the project films, the Global Reach globe, the project
+   viewer and the footer. Loaded after every other stylesheet, so each rule here only has to
+   restate what changes for light. Every rule is scoped to :root:not(.ar-theme-dark): the
+   sun/moon switch in the header adds .ar-theme-dark and brings back the all-dark site. */
+:root {
+  --lt-ivory: #F7F2E9;
+  --lt-sand: #EFE7D8;
+  --lt-ink: #122023;
+  --lt-muted: rgba(18, 32, 35, .68);
+  --lt-faint: rgba(18, 32, 35, .45);
+  --lt-line: rgba(18, 32, 35, .14);
+  --lt-gold: #8c6d34;        /* gold for small text on ivory */
+  --lt-gold-display: #9a7637; /* gold for large serif type on ivory */
+}
+
+/* ---------- home: Who we are ---------- */
+:root:not(.ar-theme-dark) .ar-about { background: var(--lt-ivory); color: var(--lt-ink); }
+:root:not(.ar-theme-dark) .ar-about__title { color: var(--lt-ink); }
+:root:not(.ar-theme-dark) .ar-about__title em { color: var(--lt-gold-display); }
+:root:not(.ar-theme-dark) .ar-about__eyebrow { color: var(--lt-gold); }
+:root:not(.ar-theme-dark) .ar-about__eyebrow::before { background: var(--lt-gold); }
+:root:not(.ar-theme-dark) .ar-about__text { color: var(--lt-muted); }
+:root:not(.ar-theme-dark) .ar-about__film::after {
+  background:
+    linear-gradient(180deg, var(--lt-ivory) 0%, rgba(247, 242, 233, 0) 14%),
+    linear-gradient(0deg, var(--lt-ivory) 0%, rgba(247, 242, 233, 0) 16%);
+}
+/* ---------- home: What we do (heading strip; the photo tiles keep white type) ---------- */
+:root:not(.ar-theme-dark) #solutions { background-color: var(--lt-ivory) !important; }
+:root:not(.ar-theme-dark) #solutions > div:first-child h2 { color: var(--lt-ink) !important; }
+:root:not(.ar-theme-dark) #solutions > div:first-child p { color: var(--lt-muted) !important; }
+/* ---------- home: Our journey ---------- */
+:root:not(.ar-theme-dark) .ar-journey { background: var(--lt-ivory); color: var(--lt-ink); }
+:root:not(.ar-theme-dark) .ar-journey__title,
+:root:not(.ar-theme-dark) .ar-journey__h { color: var(--lt-ink); }
+:root:not(.ar-theme-dark) .ar-journey__title em,
+:root:not(.ar-theme-dark) .ar-journey__year { color: var(--lt-gold-display); }
+:root:not(.ar-theme-dark) .ar-journey__eyebrow { color: var(--lt-gold); }
+:root:not(.ar-theme-dark) .ar-journey__eyebrow::before { background: var(--lt-gold); }
+:root:not(.ar-theme-dark) .ar-journey__text { color: var(--lt-muted); }
+:root:not(.ar-theme-dark) .ar-journey__track::before { background: rgba(140, 109, 52, .3); }
+:root:not(.ar-theme-dark) .ar-journey__track::after { background: var(--lt-gold); }
+:root:not(.ar-theme-dark) .ar-journey__stop { color: var(--lt-faint); }
+:root:not(.ar-theme-dark) .ar-journey__stop:hover { color: var(--lt-ink); }
+:root:not(.ar-theme-dark) .ar-journey__stop.is-active { color: var(--lt-gold); }
+:root:not(.ar-theme-dark) .ar-journey__stop::before { background: var(--lt-ivory); border-color: rgba(140, 109, 52, .6); }
+:root:not(.ar-theme-dark) .ar-journey__stop.is-past::before { background: rgba(140, 109, 52, .55); }
+:root:not(.ar-theme-dark) .ar-journey__stop.is-active::before { background: var(--lt-gold); box-shadow: 0 0 0 5px rgba(140, 109, 52, .14); }
+:root:not(.ar-theme-dark) .ar-journey__btn { border-color: rgba(140, 109, 52, .6); color: var(--lt-gold); }
+:root:not(.ar-theme-dark) .ar-journey__btn:hover:not(:disabled) { background: var(--lt-gold); color: var(--lt-ivory); }
+:root:not(.ar-theme-dark) .ar-journey__count { color: var(--lt-faint); }
+:root:not(.ar-theme-dark) .ar-journey__timer { background: var(--lt-gold); }
+/* ---------- home: projects showcase (the project viewer overlay stays dark) ---------- */
+:root:not(.ar-theme-dark) .ar-showcase { background: var(--lt-sand); color: var(--lt-ink); }
+:root:not(.ar-theme-dark) .ar-showcase__title { color: var(--lt-ink); }
+:root:not(.ar-theme-dark) .ar-showcase__kicker,
+:root:not(.ar-theme-dark) .ar-showcase-card__eyebrow,
+:root:not(.ar-theme-dark) .ar-showcase-card__cta,
+:root:not(.ar-theme-dark) .ar-showcase__group-count,
+:root:not(.ar-theme-dark) .ar-showcase__empty button { color: var(--lt-gold); }
+:root:not(.ar-theme-dark) .ar-showcase__count,
+:root:not(.ar-theme-dark) .ar-showcase__hint { color: var(--lt-faint); }
+:root:not(.ar-theme-dark) .ar-showcase__search,
+:root:not(.ar-theme-dark) .ar-showcase__select { background-color: #fffdf8; border-color: var(--lt-line); color: var(--lt-ink); }
+:root:not(.ar-theme-dark) .ar-showcase__search::placeholder { color: var(--lt-faint); }
+:root:not(.ar-theme-dark) .ar-showcase__search:focus,
+:root:not(.ar-theme-dark) .ar-showcase__select:focus { border-color: var(--lt-gold); }
+:root:not(.ar-theme-dark) .ar-showcase__select option { background: #fffdf8; color: var(--lt-ink); }
+:root:not(.ar-theme-dark) .ar-showcase__empty { color: var(--lt-muted); }
+:root:not(.ar-theme-dark) .ar-showcase__arrow { background: rgba(255, 253, 248, .92); border-color: var(--lt-line); color: var(--lt-gold); }
+:root:not(.ar-theme-dark) .ar-showcase__arrow:hover { border-color: var(--lt-gold); background: rgba(140, 109, 52, .1); }
+:root:not(.ar-theme-dark) .ar-showcase-card,
+:root:not(.ar-theme-dark) .ar-showcase-card__infos { border-top-color: var(--lt-line); border-bottom-color: var(--lt-line); }
+:root:not(.ar-theme-dark) .ar-showcase-card:hover { background: rgba(18, 32, 35, .04); }
+:root:not(.ar-theme-dark) .ar-showcase-card__title { color: var(--lt-ink); }
+:root:not(.ar-theme-dark) .ar-showcase-card__label,
+:root:not(.ar-theme-dark) .ar-showcase-card__sumlabel { color: var(--lt-faint); }
+:root:not(.ar-theme-dark) .ar-showcase-card__value { color: var(--lt-ink); }
+:root:not(.ar-theme-dark) .ar-showcase-card__value--accent { color: var(--lt-gold-display); }
+:root:not(.ar-theme-dark) .ar-showcase-card__desc { color: var(--lt-muted); }
+:root:not(.ar-theme-dark) .ar-showcase__group-head { border-bottom-color: var(--lt-line); }
+:root:not(.ar-theme-dark) .ar-showcase__group-title { color: var(--lt-ink); }
+/* ---------- services page: the masterplan hero stays dark; the sections below go ivory ---------- */
+:root:not(.ar-theme-dark).ar-services-3d .min-h-screen.bg-white,
+:root:not(.ar-theme-dark).ar-services-3d .min-h-screen { background: var(--lt-ivory) !important; }
+:root:not(.ar-theme-dark) #ar-services-mount { background: var(--lt-ivory); }
+:root:not(.ar-theme-dark) #ar-services-mount .ar-s3d-hero { background: #122023; color: #f2fbfa; }
+:root:not(.ar-theme-dark) #ar-services-mount .ar-s3d-intro,
+:root:not(.ar-theme-dark) #ar-services-mount .ar-s3d-scene,
+:root:not(.ar-theme-dark) #ar-services-mount .ar-s3d-cards,
+:root:not(.ar-theme-dark) #ar-services-mount .ar-s3d-cta {
+  --text: #122023; --muted: rgba(18, 32, 35, .68); --gold: #8c6d34; --hair: rgba(140, 109, 52, .3);
+  color: var(--text);
+}
+:root:not(.ar-theme-dark) #ar-services-mount .ar-s3d-link:hover { color: var(--lt-ink); }
+:root:not(.ar-theme-dark) #ar-services-mount .ar-s3d-media { box-shadow: 0 26px 50px rgba(18, 32, 35, .18); }
+:root:not(.ar-theme-dark) #ar-services-mount .ar-s3d-card { background: #fffdf8; border-color: var(--lt-line); }
+:root:not(.ar-theme-dark) #ar-services-mount .ar-s3d-btn { background: var(--lt-ink); color: var(--lt-ivory); }
+:root:not(.ar-theme-dark) #ar-services-mount .ar-s3d-btn:hover { background: #8c6d34; color: var(--lt-ivory); }
+/* ---------- projects page: the photo banner stays dark; the list goes ivory ---------- */
+:root:not(.ar-theme-dark).ar-proj-index #root > div > div > section:nth-of-type(2) { background: var(--lt-ivory) !important; }
+:root:not(.ar-theme-dark).ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:first-child { border-bottom-color: rgba(140, 109, 52, .3) !important; }
+:root:not(.ar-theme-dark).ar-proj-index #root > div > div > section:nth-of-type(2) select { background-color: #fffdf8 !important; color: var(--lt-ink) !important; border-color: rgba(140, 109, 52, .45) !important; }
+:root:not(.ar-theme-dark).ar-proj-index #root > div > div > section:nth-of-type(2) select option { background: #fffdf8; color: var(--lt-ink); }
+:root:not(.ar-theme-dark).ar-proj-index #root > div > div > section:nth-of-type(2) .relative > svg { color: var(--lt-gold) !important; }
+:root:not(.ar-theme-dark).ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:nth-child(2) > div > div:first-child { border-bottom-color: rgba(140, 109, 52, .3) !important; }
+:root:not(.ar-theme-dark).ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:nth-child(2) > div > div:first-child h2 { color: var(--lt-ink) !important; }
+:root:not(.ar-theme-dark).ar-proj-index #root > div > div > section:nth-of-type(2) > div > div:nth-child(2) > div > div:first-child span { color: var(--lt-gold) !important; }
+/* ---------- about, contact, solutions: white becomes ivory; the dark text bands become sand.
+   (About keeps its two dark accent bands; the closing call-to-action bands stay dark too.) ---------- */
+:root:not(.ar-theme-dark) #root .min-h-screen.bg-white:not(:has(#global-reach)) { background-color: var(--lt-ivory) !important; }
+:root:not(.ar-theme-dark) #root .min-h-screen > section.bg-white { background-color: var(--lt-ivory) !important; }
+:root:not(.ar-theme-dark) #root .min-h-screen > section[style*="248, 250, 251"],
+:root:not(.ar-theme-dark) #root .min-h-screen > section[style*="#f8fafb"] { background-color: var(--lt-sand) !important; }
+:root:not(.ar-theme-dark) section.bg-\[\#122023\].py-24.px-8 { background-color: var(--lt-sand) !important; }
+:root:not(.ar-theme-dark) section.bg-\[\#122023\].py-24.px-8 h2,
+:root:not(.ar-theme-dark) section.bg-\[\#122023\].py-24.px-8 .text-white { color: var(--lt-ink) !important; }
+:root:not(.ar-theme-dark) section.bg-\[\#122023\].py-24.px-8 .text-white\/80,
+:root:not(.ar-theme-dark) section.bg-\[\#122023\].py-24.px-8 .text-white\/70,
+:root:not(.ar-theme-dark) section.bg-\[\#122023\].py-24.px-8 .text-white\/60 { color: var(--lt-muted) !important; }
+:root:not(.ar-theme-dark) section.bg-\[\#122023\].py-24.px-8 .text-white\/40 { color: var(--lt-faint) !important; }
+:root:not(.ar-theme-dark) section.bg-\[\#122023\].py-24.px-8 .border-white\/10 { border-color: var(--lt-line) !important; background-color: #fffdf8; }
+:root:not(.ar-theme-dark) section.bg-\[\#122023\].py-24.px-8 .text-\[\#c8a86e\] { color: var(--lt-gold) !important; }
+:root:not(.ar-theme-dark) section.bg-\[\#f0f9f9\] { background-color: var(--lt-sand) !important; }
+:root:not(.ar-theme-dark) #ar-services-mount .ar-s3d-media { background: #fffdf8; }
+:root:not(.ar-theme-dark) #ar-services-mount .ar-s3d-media figcaption { background: #fffdf8; }

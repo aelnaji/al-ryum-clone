@@ -44,3 +44,10 @@ Set in `index.html`:
   (`assets/real/about/`, `assets/projects/<film>/frames/frame_0001.webp`).
 - **Never** put a tool, model, agency or version name in a file name, class name or
   comment. Say what the file does.
+
+## Light and dark
+- **Light is the default.** Reading sections are ivory with ink type and gold; the hero, the
+  3D field, the project films, the globe, the project viewer and the footer stay dark.
+- **The sun/moon switch** in the header turns the whole site dark and remembers the choice.
+- Light rules live in `assets/al-ryum-light.css`, each scoped to `:root:not(.ar-theme-dark)`,
+  so the dark site is simply the other stylesheets without that file's rules.

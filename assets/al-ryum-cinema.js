@@ -283,6 +283,10 @@ const FILM_SITES = {
   "emirates-palace": { coord: "24.46°N / 54.32°E", site: "Corniche · Abu Dhabi", scope: "External Works & Hardscape" },
   "louvre-abu-dhabi": { coord: "24.53°N / 54.40°E", site: "Saadiyat Island · Abu Dhabi", scope: "Landscaping & Approach" },
   "zayed-national-museum": { coord: "24.53°N / 54.40°E", site: "Saadiyat Island · Abu Dhabi", scope: "Landscaping, Irrigation & Car Park" },
+  "abu-dhabi-corniche": {
+    coord: "24.47°N / 54.34°E", site: "Corniche · Abu Dhabi", scope: "Landscaping & Irrigation",
+    steps: [[0.0, "MASTERPLAN"], [0.24, "DELIVERED"], [0.55, "EVENING"]],
+  },
 };
 const HUD_STEPS = [
   [0.0, "APPROACH"],
@@ -303,10 +307,10 @@ function buildHud(films) {
       <span class="arc-hud__row"><b>COORD</b>${meta.coord}</span>
       <span class="arc-hud__row"><b>SITE</b>${meta.site}</span>
       <span class="arc-hud__row"><b>SCOPE</b>${meta.scope}</span>
-      <span class="arc-hud__row arc-hud__status"><b>STATUS</b><em>${HUD_STEPS[0][1]}</em></span>
+      <span class="arc-hud__row arc-hud__status"><b>STATUS</b><em>${(meta.steps || HUD_STEPS)[0][1]}</em></span>
       <span class="arc-hud__bar"><i></i></span>`;
     inst.stage.appendChild(hud);
-    items.push({ scene: inst.scene, hud, status: hud.querySelector("em").firstChild, bar: hud.querySelector("i"), step: -1, visible: false });
+    items.push({ scene: inst.scene, hud, status: hud.querySelector("em").firstChild, bar: hud.querySelector("i"), steps: meta.steps || HUD_STEPS, step: -1, visible: false });
   }
   if (!items.length) return null;
 
@@ -317,8 +321,8 @@ function buildHud(films) {
       if (!it.visible) continue;
       const p = motionOn() ? sectionProgress(it.scene) : 0;
       let s = 0;
-      HUD_STEPS.forEach(([at], i) => { if (p >= at) s = i; });
-      if (s !== it.step) { it.step = s; it.status.data = HUD_STEPS[s][1]; }
+      it.steps.forEach(([at], i) => { if (p >= at) s = i; });
+      if (s !== it.step) { it.step = s; it.status.data = it.steps[s][1]; }
       it.bar.style.transform = `scaleX(${p.toFixed(3)})`;
       it.hud.classList.toggle("is-on", p > 0.02 && p < 0.98);
     }

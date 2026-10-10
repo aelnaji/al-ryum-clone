@@ -17,8 +17,9 @@
       sub: "Rotating Entrance Dome",
       place: "Yas Island · Abu Dhabi, UAE",
       category: "Theme Park · Landscaping & External Works",
-      base: "/assets/projects/warner-bros/frames/frame_",
+      base: "/assets/projects/warner-bros/rise/frame_",
       ext: "webp",
+      frames: 120,
     },
     {
       id: "emirates-palace",
@@ -49,6 +50,19 @@
       place: "Saadiyat Island · Abu Dhabi, UAE",
       category: "Cultural District · Landscaping, Irrigation & Car Park",
       base: "/assets/projects/zayed/frames/frame_",
+      ext: "webp",
+      frames: 120,
+    },
+    {
+      id: "abu-dhabi-corniche",
+      index: "05",
+      title: "Abu Dhabi Corniche",
+      sub: "From Masterplan to Promenade",
+      place: "Corniche · Abu Dhabi, UAE",
+      category: "Public Beach · Landscaping & Irrigation",
+      // First 36 frames: the gold masterplan revealing into the finished promenade;
+      // the rest: the lights coming on along the paths at blue hour.
+      base: "/assets/projects/corniche/frames/frame_",
       ext: "webp",
       frames: 120,
     },

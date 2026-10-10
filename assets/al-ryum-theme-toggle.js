@@ -1,4 +1,4 @@
-/* ==== AL RYUM @astra ==== Header theme switcher.
+/* AL RYUM — Header theme switcher.
    Adds one small control to the floating nav that flips the header strip between the ink-and-gold
    (default) and the light ivory variant. The choice is remembered per browser, and a matching inline
    snippet in <head> applies it before first paint so there is no flash of the wrong theme.

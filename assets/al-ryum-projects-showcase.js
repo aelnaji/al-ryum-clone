@@ -12755,15 +12755,15 @@
   // client/src/inject-projects.tsx
   var import_client = __toESM(require_client(), 1);
 
-  // client/src/IcreonProjects.tsx
+  // client/src/ProjectsShowcase.tsx
   var import_react = __toESM(require_react(), 1);
 
   // client/src/vn_data.js
   var vn_data_default = [{ id: 12, name: "Abu Dhabi Corniche", image: "/assets/concepts/abu-dhabi-corniche-concept.webp", location: "Abu Dhabi, UAE", industry: "Landscaping", sector: "Public Realm", status: "Completed", size: "medium", description: "Construction, completion and maintenance of the Abu Dhabi Corniche Public Beach \u2014 irrigation works, soft and hard landscaping, kiosks, civil construction, and planting of trees, shrubs, grasses, bunkers and fairways including associated practice areas and access paths.", year: "2009", client: "Urban Planning Council", value: "-", images: ["/assets/concepts/abu-dhabi-corniche-concept.webp"] }, { id: 1, name: "Zayed National Museum", image: "/assets/concepts/zayed-national-museum-concept.jpg", location: "Abu Dhabi, UAE", industry: "Cultural", sector: "Heritage", status: "Completed", size: "large", description: "Landscaping and irrigation works and car park for the iconic Zayed National Museum on Saadiyat Island.", year: "2025", client: "Department of Culture and Tourism", value: "AED 96M", images: ["/assets/concepts/zayed-national-museum-concept.jpg"] }, { id: 2, name: "Pearl Jumeirah", image: "/assets/concepts/pearl-jumeirah-concept.webp", location: "Abu Dhabi, UAE", industry: "Hospitality", sector: "Commercial", status: "Completed", size: "large", description: "Construction of the landscape works at Pearl Jumeirah (MH-0034) for Meraas Development.", year: "2004", client: "Meraas Development LLC", value: "-", images: ["/assets/concepts/pearl-jumeirah-concept.webp"] }, { id: 3, name: "Louvre Abu Dhabi", image: "/assets/concepts/louvre-abu-dhabi-concept.jpg", location: "Saadiyat Island - Abu Dhabi, UAE", industry: "Cultural", sector: "Heritage", status: "Completed", size: "large", description: "C02- Louvre Abu Dhabi External Works including hard and soft landscaping, MEP works, lighting and irrigation.", year: "2017", client: "Tourism Development and Investment Company", value: "AED 130M", images: ["/assets/concepts/louvre-abu-dhabi-concept.jpg"] }, { id: 4, name: "Dubai Parks and Resorts", image: "/assets/concepts/legoland-concept.webp", location: "Dubai, UAE", industry: "Hospitality", sector: "Entertainment", status: "Completed", size: "large", description: "Complete construction of Motiongate area development and Legoland Water Park including themed attractions and landscaping.", year: "2017", client: "Motiongate LLC", value: "-", images: ["/assets/concepts/legoland-concept.webp"] }, { id: 5, name: "DMT Parks", image: "/assets/concepts/madinat-zayed-concept.webp", location: "Abu Dhabi, UAE", industry: "Community", sector: "Recreation", status: "Completed", size: "large", description: "Design and Construction of Al Shamkah Parks Package 8 and 9. Landscaping and irrigation works.", year: "2024", client: "DMT", value: "-", images: ["/assets/concepts/madinat-zayed-concept.webp"] }, { id: 6, name: "Trump International Golf Course", image: "/assets/concepts/trump-international-golf-concept.webp", location: "Dubai, UAE", industry: "Sports and Leisure", sector: "Recreation", status: "Completed", size: "large", description: "World-class golf course development with championship-level fairways and premium landscaping.", year: "-", client: "-", value: "-", images: ["/assets/concepts/trump-international-golf-concept.webp"] }, { id: 7, name: "Kempinski Hotel", image: "/assets/concepts/marsa-al-arab-kempinski-concept.webp", location: "Dubai, UAE", industry: "Hospitality", sector: "Commercial", status: "Completed", size: "medium", description: "Soft and hard landscaping works for Kempinski Hotel & Residences at the Palm — Phase II.", year: "2009", client: "Emerald Palace Group Management FZ-LLC", value: "-", images: ["/assets/concepts/marsa-al-arab-kempinski-concept.webp"] }, { id: 8, name: "Meydan Race Track and Hotel", image: "/assets/concepts/meydan-racecourse-concept.webp", location: "Dubai, UAE", industry: "Sports and Leisure", sector: "Recreation", status: "Completed", size: "medium", description: "Landscaping works for the Meydan Racecourse complex in Dubai.", year: "-", client: "-", value: "-", images: ["/assets/concepts/meydan-racecourse-concept.webp"] }, { id: 9, name: "La Mer Water Park", image: "/assets/concepts/la-mer-water-park-concept.webp", location: "Dubai, UAE", industry: "Hospitality", sector: "Entertainment", status: "Completed", size: "large", description: "Design and Build of the On-Shore Works for La Mer Ring Show and Water Park.", year: "2018", client: "Meraas Development LLC", value: "-", images: ["/assets/concepts/la-mer-water-park-concept.webp"] }, { id: 10, name: "Masdar Central Park", image: "/assets/concepts/masdar-central-park-concept.webp", location: "Abu Dhabi, UAE", industry: "Landscaping", sector: "Recreation", status: "Completed", size: "medium", description: "Construction of Central Park — Phase 2 (Masdar). Commercial and public buildings, terrace event lawns and hard and soft landscaping across the park parcels.", year: "2020", client: "MASDAR", value: "-", images: ["/assets/concepts/masdar-central-park-concept.webp"] }, { id: 11, name: "Dubai Hills Communities", image: "/assets/concepts/dubai-hills-golf-grove-concept.webp", location: "Dubai, UAE", industry: "Community", sector: "Residential", status: "Completed", size: "medium", description: "Community facilities for Golf Grove and Club Villas at Dubai Hills Estate.", year: "2023", client: "Dubai Hills Estate LLC", value: "AED 45M", images: ["/assets/concepts/dubai-hills-golf-grove-concept.webp"] }];
 
-  // client/src/IcreonProjects.tsx
+  // client/src/ProjectsShowcase.tsx
   var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
-  function IcreonCard({ p, dragJustHappened }) {
+  function ShowcaseCard({ p, dragJustHappened }) {
     const metric = p.value && p.value !== "-" ? p.value : p.year && p.year !== "-" ? p.year : "30+";
     const go = (0, import_react.useCallback)((e) => {
       e.preventDefault();
@@ -12776,7 +12776,7 @@
     return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
       "article",
       {
-        className: "icreon-card",
+        className: "ar-showcase-card",
         onClick: go,
         role: "link",
         tabIndex: 0,
@@ -12785,30 +12785,30 @@
           if (e.key === "Enter" || e.key === " ") go(e);
         },
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "icreon-card__body", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "icreon-card__eyebrow", children: p.industry?.toUpperCase() }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "icreon-card__title", children: p.name }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "icreon-card__infos", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "icreon-card__info", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "icreon-card__label", children: "Client" }),
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "icreon-card__value", children: p.client || "Al Ryum Group" })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "ar-showcase-card__body", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "ar-showcase-card__eyebrow", children: p.industry?.toUpperCase() }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { className: "ar-showcase-card__title", children: p.name }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "ar-showcase-card__infos", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "ar-showcase-card__info", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "ar-showcase-card__label", children: "Client" }),
+                /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "ar-showcase-card__value", children: p.client || "Al Ryum Group" })
               ] })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "icreon-card__summary", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "icreon-card__sumlabel", children: "Project Summary" }),
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "icreon-card__desc", children: p.description })
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "ar-showcase-card__summary", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "ar-showcase-card__sumlabel", children: "Project Summary" }),
+              /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "ar-showcase-card__desc", children: p.description })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", { className: "icreon-card__cta", href: `/projects/${p.id}`, onClick: (e) => go(e), children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", { className: "ar-showcase-card__cta", href: `/projects/${p.id}`, onClick: (e) => go(e), children: [
               "View Project ",
               /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { "aria-hidden": "true", children: "\u2192" })
             ] })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "icreon-card__asset", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: p.image, alt: p.name, loading: "lazy" }) })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "ar-showcase-card__asset", children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", { src: p.image, alt: p.name, loading: "lazy" }) })
         ]
       }
     );
   }
-  function IcreonProjects() {
+  function ProjectsShowcase() {
     const railRef = (0, import_react.useRef)(null);
     const pauseRef = (0, import_react.useRef)(false);
     const dragRef = (0, import_react.useRef)({ down: false, startX: 0, startLeft: 0, moved: false });
@@ -12833,7 +12833,7 @@
       const rail = railRef.current;
       if (!rail) return;
       pauseRef.current = true;
-      const card = rail.querySelector(".icreon-card");
+      const card = rail.querySelector(".ar-showcase-card");
       const step = card ? card.offsetWidth + 8 : Math.round(rail.clientWidth * 0.8);
       rail.scrollBy({ left: dir * step, behavior: "smooth" });
     }, []);
@@ -12900,24 +12900,24 @@
         rail.removeEventListener("pointercancel", up);
       };
     }, []);
-    return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "icreon-projects", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "icreon-projects__head", children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "ar-showcase", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "ar-showcase__head", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "icreon-projects__kicker", children: "OUR PROJECTS" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { className: "icreon-projects__title", children: "Landmarks that shape the region." })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "ar-showcase__kicker", children: "OUR PROJECTS" }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", { className: "ar-showcase__title", children: "Landmarks that shape the region." })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "icreon-projects__count", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { className: "ar-showcase__count", children: [
           filtered.length,
           " of ",
           vn_data_default.length,
           " projects"
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "icreon-projects__filters", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "ar-showcase__filters", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
           "input",
           {
-            className: "icreon-projects__search",
+            className: "ar-showcase__search",
             type: "text",
             placeholder: "Search projects\u2026",
             value: q,
@@ -12929,9 +12929,9 @@
           { label: "Industry", value: industry, set: setIndustry, opts: industries },
           { label: "Sector", value: sector, set: setSector, opts: sectors },
           { label: "Status", value: status, set: setStatus, opts: statuses }
-        ].map((f) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("select", { className: "icreon-projects__select", value: f.value, onChange: (e) => f.set(e.target.value), "aria-label": f.label, children: f.opts.map((o) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { value: o, children: o === "All" ? f.label : o }, o)) }, f.label))
+        ].map((f) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("select", { className: "ar-showcase__select", value: f.value, onChange: (e) => f.set(e.target.value), "aria-label": f.label, children: f.opts.map((o) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("option", { value: o, children: o === "All" ? f.label : o }, o)) }, f.label))
       ] }),
-      filtered.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "icreon-projects__empty", children: [
+      filtered.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "ar-showcase__empty", children: [
         "No projects match your search. ",
         /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick: () => {
           setQ("");
@@ -12939,14 +12939,14 @@
           setSector("All");
           setStatus("All");
         }, children: "Clear filters" })
-      ] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "icreon-projects__groups", children: groups.map((g) => (0, import_jsx_runtime.jsxs)("section", { className: "icreon-projects__group", children: [
-        (0, import_jsx_runtime.jsxs)("div", { className: "icreon-projects__group-head", children: [
-          (0, import_jsx_runtime.jsx)("h3", { className: "icreon-projects__group-title", children: g.cat }),
-          (0, import_jsx_runtime.jsxs)("span", { className: "icreon-projects__group-count", children: [g.items.length, " ", g.items.length === 1 ? "project" : "projects"] })
+      ] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "ar-showcase__groups", children: groups.map((g) => (0, import_jsx_runtime.jsxs)("section", { className: "ar-showcase__group", children: [
+        (0, import_jsx_runtime.jsxs)("div", { className: "ar-showcase__group-head", children: [
+          (0, import_jsx_runtime.jsx)("h3", { className: "ar-showcase__group-title", children: g.cat }),
+          (0, import_jsx_runtime.jsxs)("span", { className: "ar-showcase__group-count", children: [g.items.length, " ", g.items.length === 1 ? "project" : "projects"] })
         ] }),
-        (0, import_jsx_runtime.jsx)("div", { className: "icreon-projects__grid", children: g.items.map((p) => (0, import_jsx_runtime.jsx)(IcreonCard, { p, dragJustHappened }, p.id)) })
+        (0, import_jsx_runtime.jsx)("div", { className: "ar-showcase__grid", children: g.items.map((p) => (0, import_jsx_runtime.jsx)(ShowcaseCard, { p, dragJustHappened }, p.id)) })
       ] }, g.cat)) }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "icreon-projects__hint", children: "Browse by category \xB7 click a card to open" })
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "ar-showcase__hint", children: "Browse by category \xB7 click a card to open" })
     ] });
   }
 
@@ -12957,9 +12957,9 @@
     if (!target) return false;
     target.className = "";
     const host = document.createElement("div");
-    host.className = "icreon-projects-host";
+    host.className = "ar-showcase-host";
     target.replaceChildren(host);
-    (0, import_client.createRoot)(host).render(/* @__PURE__ */ (0, import_jsx_runtime2.jsx)(IcreonProjects, {}));
+    (0, import_client.createRoot)(host).render(/* @__PURE__ */ (0, import_jsx_runtime2.jsx)(ProjectsShowcase, {}));
     return true;
   }
   if (document.readyState === "loading") {

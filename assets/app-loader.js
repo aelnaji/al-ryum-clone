@@ -1,5 +1,5 @@
-const response = await fetch("/assets/index-v10-timeline.js?v=117");
-if (!response.ok) throw new Error(`Preview bundle failed to load: ${response.status}`);
+const response = await fetch("/assets/app.js?v=1");
+if (!response.ok) throw new Error(`App bundle failed to load: ${response.status}`);
 
 const source = await response.text();
 const patched = source

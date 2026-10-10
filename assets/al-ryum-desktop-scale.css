@@ -46,7 +46,7 @@ header.fixed,
 #arc-cinematic-host .ar-pf-nav__item { position: relative; }
 
 /* Inside a scaled block, 100vw is scaled too; the section is already full width. */
-#projects .icreon-projects-host { width: 100%; margin-left: 0; }
+#projects .ar-showcase-host { width: 100%; margin-left: 0; }
 
 /* Slide-in blocks wait off to the side until they scroll into view; clip that sideways
    overflow so phones never get a horizontal scroll. It sits on the route container, not

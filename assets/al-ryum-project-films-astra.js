@@ -17,6 +17,8 @@
       sub: "From Masterplan to Promenade",
       place: "Corniche · Abu Dhabi, UAE",
       category: "Public Beach · Landscaping & Irrigation",
+      // AI-generated imagery, so it is labelled as an impression, not site footage.
+      note: "Visualisation",
       // First 36 frames: the gold masterplan revealing into the finished promenade;
       // the rest: the lights coming on along the paths at blue hour.
       base: "/assets/projects/corniche/frames/frame_",
@@ -602,6 +604,12 @@
     if (scrubber.video) plane.appendChild(scrubber.video);
     plane.appendChild(loader);
     stage.append(plane, overlay, progress);
+    if (film.note) {
+      const note = document.createElement("span");
+      note.className = "ar-pf-note";
+      note.textContent = film.note;
+      stage.appendChild(note);
+    }
     scene.appendChild(stage);
 
     return {

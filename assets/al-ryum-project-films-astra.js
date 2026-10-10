@@ -687,9 +687,9 @@
     [title].forEach((element) => styles(element, {
       position: "relative", inset: "auto", "z-index": "1",
     }));
-    // The project index scrolls with the page. Pinned at top 0 it sat under the
-    // fixed site header and showed only as a cut-off strip over every project.
-    styles(nav, { position: "relative", "z-index": "60" });
+    // The project index stays pinned just below the fixed site header (whose height
+    // changes with its pill/bar state and the desktop UI scale), as a slim bar.
+    styles(nav, { position: "sticky", top: "var(--ar-header-offset, 68px)", "z-index": "60" });
     finale.append(title, nav, host);
 
     const instances = FILMS.map(buildScene);
@@ -738,9 +738,20 @@
       instance.scrubber.setProgress(p);
     }
 
+    let headerOffset = -1;
+    function syncHeaderOffset() {
+      const header = document.querySelector("header");
+      const bottom = header ? Math.max(0, Math.round(header.getBoundingClientRect().bottom)) : 0;
+      if (bottom !== headerOffset) {
+        headerOffset = bottom;
+        document.documentElement.style.setProperty("--ar-header-offset", `${bottom}px`);
+      }
+    }
+
     function update() {
       updateRaf = 0;
       if (dead) return;
+      syncHeaderOffset();
       let activeIndex = 0;
       instances.forEach((instance, index) => {
         const rect = instance.scene.getBoundingClientRect();

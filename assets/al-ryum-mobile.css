@@ -64,3 +64,20 @@
   }
   .ar-showcase-card__desc { -webkit-line-clamp: 3; }
 }
+
+/* Very narrow phones (e.g. a Galaxy Fold cover screen, ~344px): tighten the header so the
+   theme switch no longer sits on the wordmark, and let the Global Reach title wrap. */
+@media (max-width: 380px) {
+  header nav { padding-left: 18px !important; padding-right: 18px !important; }
+  header nav > div > a.flex-shrink-0 { padding-right: 0 !important; }
+  header nav a span[style*="font-weight: 700"],
+  header nav a span.text-2xl,
+  header nav a span.text-3xl { font-size: 15px !important; }
+  .ar-theme-toggle { right: 66px !important; }
+  .intro-panel h1, .intro-title { white-space: normal !important; }
+}
+@media (max-width: 340px) {
+  header nav a span[style*="font-weight: 700"],
+  header nav a span.text-2xl,
+  header nav a span.text-3xl { font-size: 13.5px !important; }
+}

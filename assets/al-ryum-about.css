@@ -1,5 +1,5 @@
-/* AL RYUM — home "Who we are" section: dark, gold accents, full-screen garden film
-   in a thin gold frame. Markup: function xS() in assets/index-v10-timeline.js. */
+/* AL RYUM — home "Who we are" (function xS) and "Our journey" (function PS) sections:
+   dark ink, gold accents, thin gold frames. Markup in assets/index-v10-timeline.js. */
 .ar-about {
   position: relative;
   background: #0a1416;
@@ -105,3 +105,93 @@
   .ar-about__intro { grid-template-columns: 1fr; }
   .ar-about__film { height: 72svh; }
 }
+
+/* ---------- Our journey: gold year rail, one milestone at a time ---------- */
+.ar-journey {
+  position: relative;
+  background: #0a1416;
+  color: #f8fafa;
+  padding: clamp(4.5rem, 9vw, 8rem) 0;
+}
+.ar-journey__inner { max-width: 1400px; margin: 0 auto; padding: 0 clamp(1.5rem, 6vw, 6rem); }
+.ar-journey__head { display: flex; flex-direction: column; gap: 1.1rem; margin-bottom: clamp(2.4rem, 4.5vw, 3.6rem); }
+.ar-journey__eyebrow {
+  display: flex; align-items: center; gap: .9rem;
+  font-family: "Manrope", system-ui, sans-serif; font-size: .7rem; font-weight: 700;
+  letter-spacing: .3em; text-transform: uppercase; color: #c8a86e;
+}
+.ar-journey__eyebrow::before { content: ""; width: 2.6rem; height: 1px; background: #c8a86e; }
+.ar-journey__title {
+  margin: 0; font-family: "DM Serif Display", Georgia, serif; font-weight: 400;
+  font-size: clamp(2.4rem, min(4.6vw, 7.2vh), 4.4rem); line-height: 1.04; letter-spacing: -.02em; color: #f8fafa;
+}
+.ar-journey__title em { font-style: italic; color: #c8a86e; }
+
+/* the rail scrolls sideways on narrow screens; the active year is kept in view by PS() */
+.ar-journey__rail { overflow-x: auto; scrollbar-width: none; margin-bottom: clamp(2.6rem, 5vw, 4.2rem); }
+.ar-journey__rail::-webkit-scrollbar { display: none; }
+.ar-journey__track {
+  position: relative; display: flex; justify-content: space-between; gap: 1.2rem;
+  min-width: max(100%, 760px); padding: 26px 0 4px;
+}
+/* line between the first and last dots, and the gold run up to the active one */
+.ar-journey__track::before,
+.ar-journey__track::after {
+  content: ""; position: absolute; top: 8px; height: 1px; left: var(--ar-j-start, 0);
+}
+.ar-journey__track::before { width: var(--ar-j-span, 100%); background: rgba(200, 168, 110, .25); }
+.ar-journey__track::after { width: var(--ar-j-fill, 0); background: #c8a86e; transition: width .6s ease; }
+.ar-journey__stop {
+  position: relative; flex: none; background: none; border: 0; padding: 0 .25rem; cursor: pointer;
+  font-family: "Manrope", system-ui, sans-serif; font-size: .78rem; font-weight: 600;
+  letter-spacing: .12em; color: rgba(248, 250, 250, .42); transition: color .25s ease;
+}
+.ar-journey__stop::before {
+  content: ""; position: absolute; left: 50%; top: -24px; width: 11px; height: 11px; margin-left: -5.5px;
+  border-radius: 50%; background: #0a1416; border: 1px solid rgba(200, 168, 110, .6);
+  transition: background .25s ease, transform .25s ease, box-shadow .25s ease; z-index: 1;
+}
+.ar-journey__stop:hover { color: #f8fafa; }
+.ar-journey__stop.is-past::before { background: rgba(200, 168, 110, .6); }
+.ar-journey__stop.is-active { color: #c8a86e; }
+.ar-journey__stop.is-active::before { background: #c8a86e; transform: scale(1.3); box-shadow: 0 0 0 5px rgba(200, 168, 110, .16); }
+.ar-journey__stop:focus-visible { outline: 1px solid #c8a86e; outline-offset: 6px; }
+
+.ar-journey__stage { display: grid; grid-template-columns: 1.25fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.ar-journey__media { position: relative; margin: 0; aspect-ratio: 16 / 10; overflow: hidden; background: #061112; }
+.ar-journey__media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ar-journey__frame { position: absolute; inset: 12px; border: 1px solid rgba(200, 168, 110, .55); pointer-events: none; }
+.ar-journey__frame::before,
+.ar-journey__frame::after { content: ""; position: absolute; width: 26px; height: 26px; border: 0 solid #c8a86e; }
+.ar-journey__frame::before { top: -1px; left: -1px; border-top-width: 2px; border-left-width: 2px; }
+.ar-journey__frame::after { right: -1px; bottom: -1px; border-right-width: 2px; border-bottom-width: 2px; }
+.ar-journey__year {
+  display: block; margin-bottom: .9rem; font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(3.6rem, min(7vw, 11vh), 6.4rem); line-height: .9; color: #c8a86e;
+}
+.ar-journey__h {
+  margin: 0 0 1rem; font-family: "DM Serif Display", Georgia, serif; font-weight: 400;
+  font-size: clamp(1.7rem, 2.6vw, 2.4rem); line-height: 1.15; color: #f8fafa;
+}
+.ar-journey__text { margin: 0 0 2rem; max-width: 34rem; font-size: clamp(.98rem, 1.1vw, 1.08rem); line-height: 1.8; color: rgba(248, 250, 250, .68); }
+.ar-journey__nav { display: flex; align-items: center; gap: 1rem; }
+.ar-journey__btn {
+  width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(200, 168, 110, .55);
+  background: transparent; color: #c8a86e; font-size: 1.05rem; cursor: pointer;
+  transition: background .25s ease, color .25s ease, opacity .25s ease;
+}
+.ar-journey__btn:hover:not(:disabled) { background: #c8a86e; color: #0a1416; }
+.ar-journey__btn:disabled { opacity: .3; cursor: default; }
+.ar-journey__count { font-family: "Manrope", system-ui, sans-serif; font-size: .72rem; font-weight: 600; letter-spacing: .24em; color: rgba(248, 250, 250, .55); }
+
+@media (max-width: 860px) {
+  .ar-journey__stage { grid-template-columns: 1fr; }
+}
+
+/* auto-advance countdown: a gold hairline filling along the photo's lower edge */
+.ar-journey__timer {
+  position: absolute; left: 0; bottom: 0; height: 2px; width: 100%;
+  background: #c8a86e; transform-origin: 0 50%; transform: scaleX(0); pointer-events: none;
+}
+.ar-journey__timer.is-running { animation: ar-journey-timer linear forwards; }
+@keyframes ar-journey-timer { from { transform: scaleX(0); } to { transform: scaleX(1); } }

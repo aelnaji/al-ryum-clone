@@ -1,6 +1,6 @@
-/* AL RYUM — Header theme: ink-and-gold (default) and the light ivory option.
+/* AL RYUM — Header theme: light ivory (default) and the ink-and-gold option.
    Rules under html.ar-theme-dark style the ink header; the ivory rules at the end apply otherwise.
-   Ink is the default (set before first paint in index.html); the light option is ivory, below.
+   Ivory is the default; index.html adds .ar-theme-dark before first paint only when chosen.
 
    The pill nav ships as mint #c8a86e on some routes and #c8a86e on others, with dark text and dark logo
    artwork — so the dark variant restates background, text and the logo treatment together. */

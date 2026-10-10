@@ -1,16 +1,17 @@
 /* AL RYUM — Header theme switcher.
-   Adds one small control to the floating nav that flips the header strip between the ink-and-gold
-   (default) and the light ivory variant. The choice is remembered per browser, and a matching inline
+   Adds one small control to the floating nav that flips the header strip between light ivory
+   (default) and the ink-and-gold variant, and with it the whole site: assets/al-ryum-light.css
+   applies only while .ar-theme-dark is off. The choice is remembered per browser, and a matching inline
    snippet in <head> applies it before first paint so there is no flash of the wrong theme.
 
-   It only touches the header: it appends one button and toggles one class on <html>. No React markup
+   It appends one button to the header and toggles one class on <html>. No React markup
    is modified, and every route gets the same control. */
 (function () {
   "use strict";
   if (window.__alryumThemeToggle) return;
   window.__alryumThemeToggle = true;
 
-  var KEY = "alryum-header-theme-v2"; // v2: ink became the default
+  var KEY = "alryum-header-theme-v3"; // v3: ivory is the default
   var CLASS = "ar-theme-dark";
 
   function stored() {
@@ -32,7 +33,7 @@
   function syncLabel() {
     if (!btn) return;
     btn.setAttribute("aria-pressed", String(isDark()));
-    btn.setAttribute("title", isDark() ? "Switch the header to the light theme" : "Switch the header to the dark theme");
+    btn.setAttribute("title", isDark() ? "Switch to the light theme" : "Switch to the dark theme");
     // icon-only: the moon means "go dark", the sun means "go light"
     btn.setAttribute("data-mode", isDark() ? "dark" : "light");
   }
@@ -45,7 +46,7 @@
     btn = document.createElement("button");
     btn.type = "button";
     btn.className = "ar-theme-toggle";
-    btn.setAttribute("aria-label", "Toggle the header theme");
+    btn.setAttribute("aria-label", "Switch between the light and dark theme");
     btn.innerHTML =
       '<svg class="ar-tt-moon" viewBox="0 0 24 24" aria-hidden="true">' +
         '<path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z"/>' +

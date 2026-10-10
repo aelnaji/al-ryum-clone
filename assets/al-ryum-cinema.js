@@ -44,6 +44,7 @@ function sectionProgress(el) {
 
 const FIELD = {
   scrubVh: 2.6, // scroll distance in viewports; scene = scrubVh + 1 pinned viewport
+  scrubVhPhone: 1.6, // phones: same panels, less thumb travel
   textures: Array.from({ length: 28 }, (_, i) => `/assets/field/field-${String(i + 1).padStart(2, "0")}.webp?v=2`),
   depth: 150, // world units the camera travels
   beats: [
@@ -196,7 +197,7 @@ function buildField(anchor) {
   function layout() {
     const on = motionOn();
     section.classList.toggle("is-still", !on);
-    section.style.height = on ? `${(FIELD.scrubVh + 1) * innerHeight}px` : `${innerHeight}px`;
+    section.style.height = on ? `${((innerWidth < 768 ? FIELD.scrubVhPhone : FIELD.scrubVh) + 1) * innerHeight}px` : `${innerHeight}px`;
     resize();
     kick();
   }

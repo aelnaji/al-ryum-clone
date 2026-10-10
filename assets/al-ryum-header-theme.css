@@ -166,3 +166,20 @@ html:not(.ar-theme-dark) header nav {
 }
 html:not(.ar-theme-dark) header nav a:hover,
 html:not(.ar-theme-dark) header nav a:hover span { color: #8c6d34 !important; }
+
+/* ---------- 1024–1279px: show the full menu instead of the hamburger ----------
+   The app switches its links on at 1280px (Tailwind xl), so laptops running Windows display
+   scaling at 110–125% (a 1366 screen is then ~1093–1242 CSS px) got an empty-looking pill
+   with only the logo and a menu icon. In this range the links, search and theme switch sit
+   in the bar as on desktop, at the smallest desktop type sizes. */
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  header nav .hidden.xl\:flex { display: flex !important; gap: 1.6rem !important; }
+  header nav button.hidden.xl\:flex { display: flex !important; }
+  header nav button.xl\:hidden { display: none !important; }
+  header nav a,
+  header nav > div > div > a { font-size: 14.5px !important; }
+  header nav a span[style*="font-weight: 700"],
+  header nav a span.text-2xl,
+  header nav a span.text-3xl { font-size: 23px !important; }
+  .ar-theme-toggle { right: 14px; width: 34px; height: 34px; }
+}

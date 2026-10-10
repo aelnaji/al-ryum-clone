@@ -47,3 +47,8 @@ header.fixed,
 
 /* Inside a scaled block, 100vw is scaled too; the section is already full width. */
 #projects .icreon-projects-host { width: 100%; margin-left: 0; }
+
+/* Slide-in blocks wait off to the side until they scroll into view; clip that sideways
+   overflow so phones never get a horizontal scroll. It sits on the route container, not
+   html/body: on the root it passes to the viewport as "hidden" and un-pins the sticky stages. */
+#root .min-h-screen { overflow-x: clip; }

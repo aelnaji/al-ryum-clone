@@ -31,7 +31,7 @@ Set in `index.html`:
 - **4K masters**: kept in `assets/cinematic-4k/` for future re-cuts. No page loads them.
 - **Landing hero**: 142 frames in `assets/hero-0817-astra/`, wired in
   `assets/al-ryum-final-cinematic-astra.js`.
-- **Garden video** ("Who we are", after the hero): `assets/garden-film.webm`,
-  `assets/garden-film.mp4` and `assets/garden-film-poster.webp`.
+- **Garden video** ("Who we are", after the hero): `assets/garden-film.mp4`
+  (1080p) and `assets/garden-film-poster.webp`.
 - **After changing a file**, bump its `?v=` number where it is referenced, so
   browsers fetch the new copy.

@@ -26,14 +26,14 @@ html.ar-proj-index #root > div > div > section:nth-of-type(1)::after {
 html.ar-proj-index #root > div > div > section:nth-of-type(1) > div.relative { z-index: 2; }
 
 /* eyebrow: gold, letterspaced, with the gold rule the viewer uses */
-html.ar-proj-index #root > div > div > section:nth-of-type(1) p.text-\[\#9ef3ee\] {
+html.ar-proj-index #root > div > div > section:nth-of-type(1) p.text-\[\#c8a86e\] {
   color: #C8A86E !important;
   font-size: .68rem !important;
   font-weight: 800 !important;
   letter-spacing: .22em !important;
   display: inline-flex; align-items: center; gap: .6rem;
 }
-html.ar-proj-index #root > div > div > section:nth-of-type(1) p.text-\[\#9ef3ee\]::before {
+html.ar-proj-index #root > div > div > section:nth-of-type(1) p.text-\[\#c8a86e\]::before {
   content: ""; width: 2.2rem; height: 1px; background: #C8A86E; opacity: .85;
 }
 
@@ -66,7 +66,7 @@ html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:gri
   color: rgba(200, 168, 110, .85) !important;
   letter-spacing: .14em !important;
 }
-html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] p.text-\[\#9ef3ee\] {
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] p.text-\[\#c8a86e\] {
   color: #C8A86E !important;
   font-family: "DM Serif Display", Georgia, serif !important;
   font-weight: 400 !important;
@@ -118,7 +118,7 @@ html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:gri
   background-size: 20px 20px !important;
   font-size: 0 !important;
 }
-html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] p.text-\[\#9ef3ee\] {
+html.ar-proj-index #root > div > div > section:nth-of-type(1) div[class*="sm:grid-cols-4"] p.text-\[\#c8a86e\] {
   font-size: clamp(1.6rem, 2.6vw, 2.4rem) !important;
   line-height: 1 !important;
 }

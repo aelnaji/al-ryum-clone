@@ -1,6 +1,6 @@
 /* ==== AL RYUM @astra ==== Header theme switcher.
-   Adds one small control to the floating nav that flips the header strip between the site's mint
-   (default) and the dark ink variant. The choice is remembered per browser, and a matching inline
+   Adds one small control to the floating nav that flips the header strip between the ink-and-gold
+   (default) and the light ivory variant. The choice is remembered per browser, and a matching inline
    snippet in <head> applies it before first paint so there is no flash of the wrong theme.
 
    It only touches the header: it appends one button and toggles one class on <html>. No React markup
@@ -10,7 +10,7 @@
   if (window.__alryumThemeToggle) return;
   window.__alryumThemeToggle = true;
 
-  var KEY = "alryum-header-theme";
+  var KEY = "alryum-header-theme-v2"; // v2: ink became the default
   var CLASS = "ar-theme-dark";
 
   function stored() {

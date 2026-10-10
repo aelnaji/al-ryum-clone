@@ -2,7 +2,7 @@
    Al Ryum — full-page scroll-spy navigation (gold + white boxes + green text)
    Right route rail (one dot per section), top chips nav, top progress
    line, bottom scroll hint. Accent gold #C8A86E, boxes white, text
-   mint-green #9ef3ee, dots glow.
+   mint-green #c8a86e, dots glow.
    ════════════════════════════════════════════════════════════════ */
 
 /* ── Route rail: fixed vertical dots on the right (one per section) ── */
@@ -97,7 +97,7 @@
   transform: translateY(-50%) translateX(0);
 }
 .sw-route__dot:hover .sw-route__label { color: #0a1718; }
-.sw-route__dot.is-active .sw-route__label { color: #0f7a52; }
+.sw-route__dot.is-active .sw-route__label { color: #8c6d34; }
 
 /* ── Top chips nav (same sections, horizontal) — white box, green text ── */
 .sw-nav {
@@ -129,7 +129,7 @@
   transition: color .25s, background .25s;
   white-space: nowrap;
 }
-.sw-nav__item:hover { color: #0f7a52; }
+.sw-nav__item:hover { color: #8c6d34; }
 .sw-nav__item.is-active {
   color: #ffffff;
   background: var(--sw-accent, #C8A86E);
@@ -170,16 +170,16 @@
   font-size: .72rem;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: #9ef3ee;
+  color: #c8a86e;
   transition: opacity .3s;
   pointer-events: none;
-  text-shadow: 0 0 12px rgba(158,243,238,.5);
+  text-shadow: 0 0 12px rgba(200,168,110,.5);
 }
 .sw-hint i {
   width: 22px;
   height: 34px;
   border-radius: 12px;
-  border: 2px solid rgba(158,243,238,.5);
+  border: 2px solid rgba(200,168,110,.5);
   position: relative;
   display: block;
 }

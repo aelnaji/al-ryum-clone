@@ -1,8 +1,8 @@
 /* ==== AL RYUM @astra ==== Header theme switcher — DARK variant only.
    Nothing here applies unless <html> carries .ar-theme-dark, which the toggle sets and remembers.
-   Default site look (mint pill nav) is untouched.
+   Ink is the default (set before first paint in index.html); the light option is ivory, below.
 
-   The pill nav ships as mint #9ef3ee on some routes and #7dd6aa on others, with dark text and dark logo
+   The pill nav ships as mint #c8a86e on some routes and #c8a86e on others, with dark text and dark logo
    artwork — so the dark variant restates background, text and the logo treatment together. */
 
 html.ar-theme-dark header nav {
@@ -157,3 +157,12 @@ header nav button svg.w-5 { width: 21px !important; height: 21px !important; }
   }
   header nav > div > a.flex-shrink-0 { padding-right: 48px; }
 }
+
+/* ---------- light option: Al Ryum ivory with ink type and a gold hairline ---------- */
+html:not(.ar-theme-dark) header nav {
+  background: #F7F2E9 !important;
+  border: 1px solid rgba(200, 168, 110, 0.45);
+  box-shadow: 0 18px 40px rgba(18, 32, 35, 0.18) !important;
+}
+html:not(.ar-theme-dark) header nav a:hover,
+html:not(.ar-theme-dark) header nav a:hover span { color: #8c6d34 !important; }

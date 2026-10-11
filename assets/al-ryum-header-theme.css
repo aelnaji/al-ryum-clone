@@ -183,3 +183,25 @@ html:not(.ar-theme-dark) header nav a:hover span { color: #8c6d34 !important; }
   header nav a span.text-3xl { font-size: 23px !important; }
   .ar-theme-toggle { right: 14px; width: 34px; height: 34px; }
 }
+
+/* ---------- the open phone/tablet menu ----------
+   The menu opens inside the round pill, so it became an oval that cut the links off and let
+   "Contact Us" spill over the page; the theme switch, centred on the whole bar, landed in the
+   middle of the list; and the current page was gold on gold. While the menu is open the pill
+   becomes a rounded panel, the switch stays on the top row and the current page reads in ink. */
+@media (max-width: 1279.98px) {
+  header nav.rounded-full:has(> div.pt-6) { border-radius: 28px !important; }
+  header nav:has(> div.pt-6) .ar-theme-toggle { top: 36px; }
+  header nav.rounded-full:has(> div.pt-6) .ar-theme-toggle { top: 40px; }
+  header nav div.pt-6 a[class*="bg-[#c8a86e]"] {
+    color: #122023 !important;
+    background: rgba(200, 168, 110, 0.24) !important;
+  }
+  html.ar-theme-dark header nav div.pt-6 a[class*="bg-[#c8a86e]"] {
+    color: #F7F2E9 !important;
+    background: rgba(200, 168, 110, 0.2) !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279.98px) {
+  header nav.rounded-full:has(> div.pt-6) .ar-theme-toggle { top: 44px; }
+}

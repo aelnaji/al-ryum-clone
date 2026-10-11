@@ -35,6 +35,8 @@
   style.textContent = `
     #ar-motion-toggle{position:fixed;bottom:16px;right:16px;z-index:10001;border:1px solid #c8a86e80;border-radius:24px;background:#122023ed;color:#fff;padding:11px 16px;font:12px system-ui;cursor:pointer}
     #ar-motion-toggle:focus-visible{outline:3px solid #c8a86e;outline-offset:3px}
+    #ar-motion-toggle{transition:opacity .3s,transform .3s,visibility 0s}
+    #ar-motion-toggle.is-tucked{opacity:0;transform:translateY(10px);visibility:hidden;pointer-events:none;transition:opacity .3s,transform .3s,visibility 0s .3s}
     .ar-hero-region{position:relative;isolation:isolate;overflow:clip;background:#122023}
     .ar-hero-region>section{position:sticky!important;top:0;height:100svh!important;min-height:0;perspective:1200px;isolation:isolate}
     .ar-hero-region #hero-scrub-canvas{display:block!important;transform-origin:50% 50%;will-change:transform}
@@ -159,6 +161,12 @@
     const canvas = document.getElementById('hero-scrub-canvas');
     if (canvas && !active) mount(canvas);
   }
+  // On phones the switch sat over cards, buttons and the footer on every screen, so it
+  // shows on the first screen only and comes back when you scroll to the top.
+  function tuck() {
+    button.classList.toggle('is-tucked', innerWidth < 768 && scrollY > innerHeight * 0.6);
+  }
+  addEventListener('scroll', tuck, {passive:true}); addEventListener('resize', tuck);
   const observer = new MutationObserver(discover);
   observer.observe(document.documentElement, {childList:true,subtree:true});
   discover();
